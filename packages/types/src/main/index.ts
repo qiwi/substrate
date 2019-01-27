@@ -1,1 +1,3 @@
-export { IStringMap } from './IStringMap'
+import { IStringMap } from './IStringMap'
+
+export { IStringMap }
