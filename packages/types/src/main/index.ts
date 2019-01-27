@@ -1,0 +1,1 @@
+export { IStringMap } from './IStringMap'

@@ -7,7 +7,7 @@
     ],
     "strict": true,
     "sourceMap": true,
-    "declaration": true,
+    "declaration": false,
     "noEmitHelpers": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,

@@ -1,0 +1,29 @@
+{
+  "testEnvironment": "node",
+  "collectCoverage": true,
+  "coveragePathIgnorePatterns": [
+    "interface.js"
+  ],
+  "rootDir": "../../",
+  "transform": {
+    "^.+\\.tsx?$": "ts-jest"
+  },
+  "collectCoverageFrom": [
+    "<rootDir>/packages/lang/src/main/*.ts"
+  ],
+  "testMatch": [
+    "<rootDir>/packages/lang/src/test/**/*.ts"
+  ],
+  "transformIgnorePatterns": [
+    "/!node_modules\\/lodash-es/",
+    "<roodDir>/node_modules/(?!lodash-es)"
+  ],
+  "moduleFileExtensions": [
+    "ts",
+    "tsx",
+    "js",
+    "jsx",
+    "json",
+    "node"
+  ]
+}
