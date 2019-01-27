@@ -1,5 +1,5 @@
 {
-  "name": "@qiwi/substrate-types",
+  "name": "@qiwi/substrate",
   "version": "1.0.0",
   "main": "lib/es5/index.js",
   "types": "typings/index.d.ts",
@@ -10,11 +10,11 @@
     "build_es5": "mkdir -p lib/es5 && tsc -p tsconfig.json --target ES5 --outDir lib/es5",
     "build_es6": "mkdir -p lib/es6 && tsc -p tsconfig.json --target ES6 --outDir lib/es6",
     "build_ts": "cp -r src/main/ lib/ts/",
-    "flowfix": "node -r esm ../../scripts/libdef-import-fix.js --flow=./typings/index.flow.js --dts=./typings/index.d.ts",
+    "flowfix": "node -r esm ../../scripts/flowgen-import-fix.js --flow=./typings/index.flow.js --dts=./typings/index.d.ts",
     "flowfix2": "replace-in-file --configFile=./flowfix.config.js",
     "test": "jest --config=jest.config.json",
     "generate": "ts-node -e 'require(\"./src/gen\",).run()'",
-    "dtsgen": "dts-generator --project ./ --out typings/index.d.ts --prefix @qiwi/substrate-types/lib/es5 --name @qiwi/substrate-types --main @qiwi/substrate-types/lib/es5/index --moduleResolution node",
+    "dtsgen": "dts-generator --project ./ --out typings/index.d.ts --prefix @qiwi/substrate-types/lib/es5 --name @qiwi/substrate-types --main @qiwi/substrate-types/lib/es5/index",
     "flowgen": "flowgen typings/index.d.ts --output-file typings/index.flow.js"
   },
   "files": [
@@ -23,7 +23,9 @@
     "typings/",
     "lib/"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "@qiwi/substrate-types": "^1.0.0"
+  },
   "devDependencies": {
     "@types/jest": "^23.3.12",
     "dts-generator": "^3.0.0",
