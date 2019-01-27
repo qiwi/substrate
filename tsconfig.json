@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": "./packages",
+    "paths": {
+      "@qiwi/substrate": ["./facade/src/main"],
+      "@qiwi/substrate/*": ["./facade/src/main/*"],
+      "@qiwi/substrate-core": ["./core/src/main"],
+      "@qiwi/substrate-core/*": ["./core/src/main/*"],
+      "@qiwi/substrate-types": ["./types/src/main"],
+      "@qiwi/substrate-types/*": ["./types/src/main/*"],
+      "@qiwi/substrate-abstracts": ["./abstracts/src/main"],
+      "@qiwi/substrate-abstracts/*": ["./abstracts/src/main/*"]
+    }
+  }
+}
