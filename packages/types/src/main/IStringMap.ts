@@ -2,4 +2,4 @@ type IStringMap = {
   [key: string]: string
 }
 
-export {IStringMap}
+export { IStringMap }
