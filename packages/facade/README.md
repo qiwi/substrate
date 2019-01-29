@@ -1,15 +1,15 @@
-# @qiwi/substrate-types
+# @qiwi/substrate
 Basic types and interfaces
 
 ### Install
 ```bash
-yarn add @qiwi/substrate-types --dev
-npm i @qiwi/substrate-types -D
+yarn add @qiwi/substrate --dev
+npm i @qiwi/substrate -D
 ```
 
 ### Usage
 ```typescript
-import { IStringMap } from '@qiwi/substrate-types'
+import { IStringMap } from '@qiwi/substrate'
 
 const foo: IStringMap = {
   bar: 'baz',
