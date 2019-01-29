@@ -5,7 +5,7 @@
     "outDir": "lib/es5",
     "baseUrl": "src/main",
     "paths": {
-      "@qiwi/substrate-types": [
+      "@qiwi/substrate-facade": [
         "."
       ]
     }

@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    /* Strict Type-Checking Options */
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    /* Additional Checks */
+    /* next line commented out because we need unused vars for type tests */
+    // "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "lib": ["es6"],
+    "skipLibCheck": true,
+    /* dtslint needs these to operate in this directory */
+    "baseUrl": ".",
+    "paths": {
+      "@qiwi/substrate-types": [
+        ".."
+      ]
+    },
+    "baseUrl": ".",
+    "typeRoots": ["."]
+  },
+  "files": [
+    "index.d.ts",
+    "index.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
