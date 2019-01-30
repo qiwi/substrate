@@ -5,7 +5,8 @@
     "outDir": "lib/es5"
   },
   "references": [
-    { "path": "../types" }
+    { "path": "../types" },
+    { "path": "../facade" }
   ],
   "include": [
     "src/main/**/*"

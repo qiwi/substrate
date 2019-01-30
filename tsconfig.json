@@ -3,6 +3,8 @@
   "compilerOptions": {
     "baseUrl": "./packages",
     "paths": {
+      "@qiwi/substrate": ["./facade/src/main"],
+      "@qiwi/substrate/*": ["./facade/src/main/*"],
       "@qiwi/substrate-types": ["./types/src/main"],
       "@qiwi/substrate-types/*": ["./types/src/main/*"]
     }

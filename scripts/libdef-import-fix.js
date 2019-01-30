@@ -15,16 +15,33 @@ const IMPORT_MAIN_PATTERN = /\timport main = require\('(.+)'\);/g
 const IMPORT_ALL_LINE_PATTERN = /^\texport \* from '(.+)';$/
 const IMPORT_MAIN_LINE_PATTERN = /^\timport main = require\('(.+)'\);$/
 const IMPORT_DEPS_LINE_PATTERN = /^\timport { (.+) } from '(.+)';$/
+const BROKEN_MODULE_NAME = /(declare module '.+\/lib\/es5\/)[^/]*\/src\/main\/index'.+/
+const REFERENCE = /\/\/\/.+/
 
 assert(!!flow &&!!dts, '`flow` and `dts` file paths should be specified')
 
 const options = {
   files: DTS,
-  from: [IMPORT_MAIN_PATTERN, '\texport = main;', /^\s*[\r\n]/gm],
-  to: [line => {
-    const [, name] = IMPORT_MAIN_LINE_PATTERN.exec(line)
-    return `	export * from '${name}';`
-  }, '', ''],
+  from: [
+    IMPORT_MAIN_PATTERN,
+    BROKEN_MODULE_NAME,
+    REFERENCE,
+    '\texport = main;',
+    /^\s*[\r\n]/gm
+  ],
+  to: [
+    line => {
+      const [, name] = IMPORT_MAIN_LINE_PATTERN.exec(line)
+      return `	export * from '${name}';`
+    },
+    line => {
+      const [, module] = BROKEN_MODULE_NAME.exec(line)
+      return `${module}index' {`
+    },
+    '',
+    '',
+    ''
+  ],
 }
 
 const changes = replaceSync(options);
