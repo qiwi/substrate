@@ -4,7 +4,11 @@
   "main": "lib/es5/index.js",
   "types": "typings/index.d.ts",
   "typesVersions": {
-    ">=3.1": { "*": ["src/test/*"] }
+    ">=3.1": {
+      "*": [
+        "src/test/*"
+      ]
+    }
   },
   "license": "MIT",
   "scripts": {
@@ -29,7 +33,7 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "@types/jest": "^23.3.12",
+    "@types/jest": "^23.3.13",
     "@types/node": "^10.12.19",
     "@types/lodash": "^4.14.120",
     "@types/parsimmon": "^1.10.0",
@@ -37,9 +41,9 @@
     "flowgen": "^1.3.0",
     "replace-in-file": "^3.4.3",
     "ts-loader": "^5.3.3",
-    "ts-node": "^7.0.1",
+    "ts-node": "^8.0.2",
     "ts-to-flow": "^0.0.3",
-    "typescript": "3.2.2",
+    "typescript": "3.2.4",
     "dtslint": "^0.4.2"
   }
 }
