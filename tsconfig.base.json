@@ -8,13 +8,15 @@
     "noImplicitAny": false,
     "strict": true,
     "sourceMap": true,
-    "declaration": false,
+    "declaration": true,
     "noEmitHelpers": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "importHelpers": true,
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "composite": true
   }
 }

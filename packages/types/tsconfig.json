@@ -1,14 +1,9 @@
 {
-  "extends": "../../tsconfig.base.json",
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
     "rootDir": "src/main",
     "outDir": "lib/es5",
-    "baseUrl": "src/main",
-    "paths": {
-      "@qiwi/substrate-types": [
-        "."
-      ]
-    }
+    "baseUrl": "src/main"
   },
   "include": [
     "src/main/**/*"

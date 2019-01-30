@@ -1,15 +1,12 @@
 {
-  "extends": "../../tsconfig.base.json",
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
     "rootDir": "src/main",
-    "outDir": "lib/es5",
-    "baseUrl": "src/main",
-    "paths": {
-      "@qiwi/substrate-facade": [
-        "."
-      ]
-    }
+    "outDir": "lib/es5"
   },
+  "references": [
+    { "path": "../types" }
+  ],
   "include": [
     "src/main/**/*"
   ]

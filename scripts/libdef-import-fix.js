@@ -20,11 +20,11 @@ assert(!!flow &&!!dts, '`flow` and `dts` file paths should be specified')
 
 const options = {
   files: DTS,
-  from: [IMPORT_MAIN_PATTERN, '\texport = main;'],
+  from: [IMPORT_MAIN_PATTERN, '\texport = main;', /^\s*[\r\n]/gm],
   to: [line => {
     const [, name] = IMPORT_MAIN_LINE_PATTERN.exec(line)
     return `	export * from '${name}';`
-  }, ''],
+  }, '', ''],
 }
 
 const changes = replaceSync(options);
