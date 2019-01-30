@@ -2,17 +2,17 @@
   "testEnvironment": "node",
   "collectCoverage": true,
   "coveragePathIgnorePatterns": [
-    "interface.js"
+    "**/I[A-Z]*.{ts}"
   ],
   "rootDir": "../../",
   "transform": {
     "^.+\\.tsx?$": "ts-jest"
   },
   "collectCoverageFrom": [
-    "<rootDir>/packages/lang/src/main/*.ts"
+    "<rootDir>/packages/types/src/main/*.ts"
   ],
   "testMatch": [
-    "<rootDir>/packages/lang/src/test/**/*.ts"
+    "<rootDir>/packages/types/src/test/**/*.ts"
   ],
   "transformIgnorePatterns": [
     "/!node_modules\\/lodash-es/",
