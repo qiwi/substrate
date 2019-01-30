@@ -67,3 +67,4 @@ docs
 flow-typed
 typings
 raw
+packages/**/src/test/*.d.ts
