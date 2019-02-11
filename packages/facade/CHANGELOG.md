@@ -1,3 +1,10 @@
+# [@qiwi/substrate-v1.2.0](https://github.com/qiwi/substrate/compare/v1.1.1...v1.2.0) (2019-02-11)
+
+
+### Features
+
+* add IEventEmitter ([35eb58f](https://github.com/qiwi/substrate/commit/35eb58f)), closes [#7](https://github.com/qiwi/substrate/issues/7)
+
 # [@qiwi/substrate-v1.1.1](https://github.com/qiwi/substrate/compare/v1.1.0...v1.1.1) (2019-01-30)
 
 
