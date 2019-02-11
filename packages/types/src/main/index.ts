@@ -1,3 +1,7 @@
 import { IStringMap } from './IStringMap'
+import { IEventEmitter } from './IEventEmitter';
 
-export { IStringMap }
+export {
+  IStringMap,
+  IEventEmitter
+}
