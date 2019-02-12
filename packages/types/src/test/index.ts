@@ -1,6 +1,9 @@
 import {
   IStringMap,
-  IEventEmitter
+  IEventEmitter,
+  ILoggerMethod,
+  ILogger,
+  TLogLevel
 } from '@qiwi/substrate-types';
 
 // IStringMap
@@ -18,4 +21,31 @@ const emitter: IEventEmitter = {
   on(event: string, handler: (...args: any[]) => void) { handler(event); },
   off(event: string, handler: (...args: any[]) => void) { handler(event); },
   once(event: string, handler: (...args: any[]) => void) { handler(event); }
+};
+
+// ILogger
+
+const brokenLogLevel: TLogLevel = 'info'; // $ExpectError
+const traceLogLevel: TLogLevel = 5e3;
+
+const brokenLogMethod: ILoggerMethod = () => 'foo'; // $ExpectError
+const logMethod: ILoggerMethod = () => undefined;
+
+const brokenLogger: ILogger = {
+  trace: logMethod,
+  debug: logMethod,
+  info: logMethod,
+  log: logMethod,
+  warn: logMethod,
+  error: () => 'foo' // $ExpectError
+};
+
+const logger: ILogger = {
+  trace: logMethod,
+  debug: logMethod,
+  info: logMethod,
+  log: logMethod,
+  warn: logMethod,
+  error: logMethod,
+  custom: () => 'foo'
 };
