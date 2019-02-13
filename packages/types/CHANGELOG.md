@@ -1,3 +1,10 @@
+# [@qiwi/substrate-types-v1.3.0](https://github.com/qiwi/substrate/compare/v1.2.0...v1.3.0) (2019-02-13)
+
+
+### Features
+
+* add ILogger ([2e5373e](https://github.com/qiwi/substrate/commit/2e5373e)), closes [#2](https://github.com/qiwi/substrate/issues/2)
+
 # [@qiwi/substrate-types-v1.2.0](https://github.com/qiwi/substrate/compare/v1.1.1...v1.2.0) (2019-02-11)
 
 
