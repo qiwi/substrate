@@ -22,7 +22,8 @@
     "libdeffix": "node -r esm ../../scripts/libdef-import-fix.js --flow=./typings/index.flow.js --dts=./typings/index.d.ts",
     "dtsgen": "dts-generator --project ./ --out typings/index.d.ts --prefix @qiwi/substrate/lib/es5 --name @qiwi/substrate --main @qiwi/substrate/lib/es5/index --moduleResolution node",
     "flowgen": "flowgen typings/index.d.ts --output-file typings/index.flow.js",
-    "test": "cp typings/index.d.ts src/test/index.d.ts && yarn dtslint",
+    "testgen": "node -r esm src/gen/testgen.js",
+    "test": "yarn testgen && yarn dtslint",
     "jest": "jest --config=jest.config.json",
     "dtslint": "dtslint src/test --onlyTestTsNext"
   },
@@ -44,6 +45,12 @@
     "ts-node": "^8.0.2",
     "ts-to-flow": "^0.0.3",
     "typescript": "3.2.4",
-    "dtslint": "^0.4.2"
+    "dtslint": "^0.4.2",
+    "cp-file": "^6.0.0",
+    "esm": "^3.2.4"
+  },
+  "esm": {
+    "mode": "all",
+    "cjs": true
   }
 }
