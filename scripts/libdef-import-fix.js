@@ -60,7 +60,7 @@ const flowFile = readFileSync(FLOW, 'utf-8')
 
 let flowOut = flowFile
 
-const replaceByPattern = (pattern, line, res) => {
+const searchByPattern = (pattern, line, res) => {
   if (pattern.test(line)) {
     const [, name] = pattern.exec(line)
 
@@ -68,35 +68,38 @@ const replaceByPattern = (pattern, line, res) => {
   }
 }
 
+const parseImports = (lines) => lines
+  .reduce((res, line) => {
+    if (IMPORT_DEPS_LINE_PATTERN.test(line)) {
+      const [, rawdeps, name] = IMPORT_DEPS_LINE_PATTERN.exec(line)
+      const deps = rawdeps.split(', ')
+      const types = deps.filter(d => /^(I|T)[A-Z].+/.test(d))
+      const vars = deps.filter(d => !types.includes(d))
+
+      res.push({
+        types,
+        vars,
+        deps,
+        name
+      })
+    }
+
+    searchByPattern(IMPORT_MAIN_LINE_PATTERN, line, res)
+    searchByPattern(IMPORT_ALL_LINE_PATTERN, line, res)
+
+    return res
+  }, [])
+
+const parseExports = (lines) => lines.filter(line => /^\texport/.test(line))
+
 const tree = dtsFile
   .split('declare module')
   .reduce((m, v, k) => {
     if (v) {
       const [first, ...lines] = v.split('\n')
       const name = first.replace(/[^@a-z\d\-\/]/g, '')
-      const imports = lines
-        .reduce((res, line) => {
-          if (IMPORT_DEPS_LINE_PATTERN.test(line)) {
-            const [, rawdeps, name] = IMPORT_DEPS_LINE_PATTERN.exec(line)
-            const deps = rawdeps.split(', ')
-
-            const types = deps.filter(d => /^(I|T)[A-Z].+/.test(d))
-            const vars = deps.filter(d => !types.includes(d))
-
-            res.push({
-              types,
-              vars,
-              deps,
-              name
-            })
-          }
-
-          replaceByPattern(IMPORT_MAIN_LINE_PATTERN, line, res)
-          replaceByPattern(IMPORT_ALL_LINE_PATTERN, line, res)
-
-          return res
-        }, [])
-      const exports = lines.filter(line => /^\texport/.test(line))
+      const exports = parseExports(lines)
+      const imports = parseImports(lines)
 
       m[name] = {
         imports,
