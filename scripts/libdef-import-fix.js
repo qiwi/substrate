@@ -52,6 +52,13 @@ const flowFile = readFileSync(FLOW, 'utf-8')
 
 let flowOut = flowFile
 
+const replaceByPattern = (pattern, line, res) => {
+  if (pattern.test(line)) {
+    const [, name] = pattern.exec(line)
+
+    res.push({ name })
+  }
+}
 
 const tree = dtsFile
   .split('declare module')
@@ -76,17 +83,8 @@ const tree = dtsFile
             })
           }
 
-          if (IMPORT_MAIN_LINE_PATTERN.test(line)) {
-            const [, name] = IMPORT_MAIN_LINE_PATTERN.exec(line)
-
-            res.push({ name })
-          }
-
-          if (IMPORT_ALL_LINE_PATTERN.test(line)) {
-            const [, name] = IMPORT_ALL_LINE_PATTERN.exec(line)
-
-            res.push({ name })
-          }
+          replaceByPattern(IMPORT_MAIN_LINE_PATTERN, line, res)
+          replaceByPattern(IMPORT_ALL_LINE_PATTERN, line, res)
 
           return res
         }, [])
