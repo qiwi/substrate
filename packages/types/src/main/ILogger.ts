@@ -1,10 +1,10 @@
 // Inherits log4j logging levels contract and Logback values
 
-type ILoggerMethod = (...args: any[]) => undefined | null
+export type ILoggerMethod = (...args: any[]) => undefined | null
 
-type TLogLevel = number
+export type TLogLevel = number
 
-interface ILogger {
+export interface ILogger {
   trace: ILoggerMethod,
   debug: ILoggerMethod,
   info: ILoggerMethod,
@@ -15,10 +15,4 @@ interface ILogger {
 
   [key: string]: any
   [key: number]: any
-}
-
-export {
-  ILoggerMethod,
-  TLogLevel,
-  ILogger
 }
