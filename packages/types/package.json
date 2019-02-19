@@ -34,8 +34,8 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "@types/jest": "^24.0.4",
-    "@types/node": "^11.9.3",
+    "@types/jest": "^24.0.6",
+    "@types/node": "^11.9.4",
     "@types/lodash": "^4.14.121",
     "@types/parsimmon": "^1.10.0",
     "dts-generator": "^3.0.0",
@@ -45,6 +45,6 @@
     "ts-node": "^8.0.2",
     "ts-to-flow": "^0.0.3",
     "typescript": "3.3.3",
-    "dtslint": "^0.4.2"
+    "dtslint": "^0.4.4"
   }
 }

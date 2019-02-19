@@ -37,7 +37,7 @@
     "@qiwi/substrate-types": "^1.0.0"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.4",
+    "@types/jest": "^24.0.6",
     "dts-generator": "^3.0.0",
     "flowgen": "^1.5.8",
     "replace-in-file": "^3.4.3",
@@ -45,9 +45,9 @@
     "ts-node": "^8.0.2",
     "ts-to-flow": "^0.0.3",
     "typescript": "3.3.3",
-    "dtslint": "^0.4.2",
+    "dtslint": "^0.4.4",
     "cp-file": "^6.0.0",
-    "esm": "^3.2.4"
+    "esm": "^3.2.5"
   },
   "esm": {
     "mode": "all",
