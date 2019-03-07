@@ -1,13 +1,13 @@
-export type TGetMethodPathParam = Array<string | number> | string
+export type TUtilGetPath = Array<string | number> | string
 
-export type TGetMethodObjectParam = object
+export type TUtilGetObject = object
 
-export type TGetMethodDefaultValueParam = any
+export type TUtilGetDefaultValue = any
 
-export type TGetMethodResponse = any
+export type TUtilGetResponse = any
 
-export type TGetMethod = (
-  obj: TGetMethodObjectParam,
-  path: TGetMethodPathParam,
-  defaultValue?: TGetMethodDefaultValueParam
-) => TGetMethodResponse
+export type TUtilGet = (
+  obj: TUtilGetObject,
+  path: TUtilGetPath,
+  defaultValue?: TUtilGetDefaultValue
+) => TUtilGetResponse
