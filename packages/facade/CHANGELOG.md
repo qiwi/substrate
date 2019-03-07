@@ -1,3 +1,10 @@
+# [@qiwi/substrate-v1.4.0](https://github.com/qiwi/substrate/compare/v1.3.1...v1.4.0) (2019-03-07)
+
+
+### Features
+
+* **types:** add TUtilGet ([#19](https://github.com/qiwi/substrate/issues/19)) ([c81b311](https://github.com/qiwi/substrate/commit/c81b311))
+
 # [@qiwi/substrate-v1.3.0](https://github.com/qiwi/substrate/compare/v1.2.0...v1.3.0) (2019-02-13)
 
 
