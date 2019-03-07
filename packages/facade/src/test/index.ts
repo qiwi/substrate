@@ -3,8 +3,9 @@ import {
   IEventEmitter,
   ILoggerMethod,
   ILogger,
-  TLogLevel
-} from '@qiwi/substrate';
+  TLogLevel,
+  TUtilGet
+} from '../main';
 
 // IStringMap
 const map: IStringMap = {
@@ -49,3 +50,8 @@ const logger: ILogger = {
   error: logMethod,
   custom: () => 'foo'
 };
+
+// TUtilGet
+
+const brokenUtilGet: TUtilGet = (obj: object, path: any[], defaultValue?: any) => undefined; // $ExpectError
+const utilGet: TUtilGet = (obj: object, path: Array<string | number> | string, defaultValue?: any) => obj || path || defaultValue;
