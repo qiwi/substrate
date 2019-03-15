@@ -39,15 +39,15 @@
   "devDependencies": {
     "@types/jest": "^24.0.9",
     "dts-generator": "^3.0.0",
-    "flowgen": "^1.6.0",
-    "replace-in-file": "^3.4.3",
+    "flowgen": "^1.7.0",
+    "replace-in-file": "^3.4.4",
     "ts-loader": "^5.3.3",
     "ts-node": "^8.0.3",
     "ts-to-flow": "^0.0.3",
-    "typescript": "3.3.3",
-    "dtslint": "^0.5.3",
+    "typescript": "3.3.3333",
+    "dtslint": "^0.5.5",
     "cp-file": "^6.1.0",
-    "esm": "^3.2.11"
+    "esm": "^3.2.18"
   },
   "esm": {
     "mode": "all",
