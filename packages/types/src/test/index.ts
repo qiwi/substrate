@@ -4,7 +4,10 @@ import {
   ILoggerMethod,
   ILogger,
   TLogLevel,
-  TUtilGet
+  TUtilGet,
+  TUtilSet,
+  TUtilEach,
+  TUtilMap
 } from '../main';
 
 // IStringMap
@@ -53,5 +56,23 @@ const logger: ILogger = {
 
 // TUtilGet
 
-const brokenUtilGet: TUtilGet = (obj: object, path: any[], defaultValue?: any) => undefined; // $ExpectError
-const utilGet: TUtilGet = (obj: object, path: Array<string | number> | string, defaultValue?: any) => obj || path || defaultValue;
+const brokenUtilGet: TUtilGet = (obj: object, path: any[], defaultValue?: any) => { obj || path || defaultValue; }; // $ExpectError
+const utilGet: TUtilGet = (obj: object, path: Array<string | number> | string, defaultValue?: any) => {
+  obj || path;
+  return defaultValue;
+};
+
+// TUtilSet
+
+const brokenUtilSet: TUtilSet = (obj: object, path: any[], value: boolean) => { obj || path || value; }; // $ExpectError
+const utilSet: TUtilSet = (obj: object, path: Array<string | number> | string, value: boolean) => { obj || path || value; };
+
+// TUtilEach
+
+const brokenUtilEach: TUtilEach = (collection: object, handler: (value: string, key: boolean) => void) =>  { handler || collection; }; // $ExpectError
+const utilEach: TUtilEach = (collection: object, handler: (value: string) => void) => { handler(JSON.stringify(collection)); };
+
+// TUtilMap
+
+const brokenUtilMap: TUtilMap = (collection: object, handler: (value: string, key: boolean) => object) => [handler(JSON.stringify(collection), null)]; // $ExpectError
+const utilMap: TUtilMap = (collection: object, handler: (value: string, key: string) => object) => [handler(JSON.stringify(collection), 'key')];
