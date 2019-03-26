@@ -1,4 +1,5 @@
 export { IStringMap } from './IStringMap'
+export { IAnyMap } from './IAnyMap'
 export { IEventEmitter } from './IEventEmitter'
 export { ILogger, TLogLevel, ILoggerMethod } from './ILogger'
 export { TUtilGet } from './IUtilGet'
