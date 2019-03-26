@@ -11,7 +11,7 @@ import {
   TUtilGet,
   TUtilSet,
   TUtilEach,
-  TUtilMap
+  TUtilMap,
   ICloneable
 } from '../main';
 
