@@ -80,8 +80,8 @@ const brokenUtilGet: TUtilGet = (obj: object, path: any[], defaultValue?: any) =
 const utilGet: TUtilGet = (obj: object, path: Array<string | number> | string, defaultValue?: any) => obj || path || defaultValue;
 
 // ICloneable
-const cloneable: ICloneable = {
-  clone(): any { return 'clone'; }
+const cloneable: ICloneable<string> = {
+  clone(): string { return 'clone'; }
 };
 
 cloneable.clone("qwe"); // $ExpectError
