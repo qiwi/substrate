@@ -1,3 +1,10 @@
+# [@qiwi/substrate-types-v1.7.0](https://github.com/qiwi/substrate/compare/v1.6.0...v1.7.0) (2019-03-26)
+
+
+### Features
+
+* **types:** add TUtilEach, TUtilMap, TUtilSet types ([deab615](https://github.com/qiwi/substrate/commit/deab615))
+
 # [@qiwi/substrate-types-v1.6.0](https://github.com/qiwi/substrate/compare/v1.5.0...v1.6.0) (2019-03-26)
 
 
