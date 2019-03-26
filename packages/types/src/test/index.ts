@@ -3,6 +3,7 @@ import { each as underscoreEach, map as underscoreMap } from 'underscore';
 
 import {
   IStringMap,
+  IAnyMap,
   IEventEmitter,
   ILoggerMethod,
   ILogger,
@@ -11,11 +12,33 @@ import {
   TUtilSet,
   TUtilEach,
   TUtilMap
+  ICloneable
 } from '../main';
 
 // IStringMap
 const map: IStringMap = {
   foo: 1 // $ExpectError
+};
+
+// IAnyMap
+const anyMap1: IAnyMap = {
+  one: 1
+};
+
+const anyMap2: IAnyMap = {
+  1: 'two'
+};
+
+const anyMap3: IAnyMap = {
+  0.1: 2
+};
+
+const anyMap4: IAnyMap = {
+  true: 1
+};
+
+const anyMap5: IAnyMap = {
+  Symbol("qwe"): 1; // $ExpectError
 };
 
 // IEventEmitter
@@ -88,3 +111,12 @@ const brokenUtilMap: TUtilMap = (collection: object, handler: (value: string, ke
 const utilMap: TUtilMap = (collection: object, handler: (value: string, key: string, collection: object) => object): any[] => [handler(JSON.stringify(collection), 'key', collection)];
 const lodashUtilMap: TUtilMap = lodashMap;
 const underscoreUtilMap: TUtilMap = underscoreMap;
+
+// ICloneable
+const cloneable: ICloneable<string> = {
+  clone(): string { return 'clone'; }
+};
+
+cloneable.clone("qwe"); // $ExpectError
+cloneable.clone(123); // $ExpectError
+cloneable.clone({ hello: "hello", world: "world"}); // $ExpectError

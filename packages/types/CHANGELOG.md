@@ -1,3 +1,10 @@
+# [@qiwi/substrate-types-v1.5.0](https://github.com/qiwi/substrate/compare/v1.4.0...v1.5.0) (2019-03-26)
+
+
+### Features
+
+* **types:** add IAnyMap ([dbca380](https://github.com/qiwi/substrate/commit/dbca380))
+
 # [@qiwi/substrate-types-v1.4.0](https://github.com/qiwi/substrate/compare/v1.3.1...v1.4.0) (2019-03-07)
 
 
