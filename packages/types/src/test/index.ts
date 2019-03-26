@@ -1,3 +1,6 @@
+import { forEach as lodashEach, map as lodashMap, set as lodashSet, get as lodashGet } from 'lodash';
+import { each as underscoreEach, map as underscoreMap } from 'underscore';
+
 import {
   IStringMap,
   IEventEmitter,
@@ -61,11 +64,13 @@ const utilGet: TUtilGet = (obj: object, path: Array<string | number> | string, d
   obj || path;
   return defaultValue;
 };
+const lodashUtilGet: TUtilGet = lodashGet;
 
 // TUtilSet
 
 const brokenUtilSet: TUtilSet = (obj: object, path: any[], value: boolean) => { obj || path || value; }; // $ExpectError
 const utilSet: TUtilSet = (obj: object, path: Array<string | number> | string, value: boolean) => { obj || path || value; };
+const lodashUtilSet: TUtilSet = lodashSet;
 
 // TUtilEach
 
@@ -74,8 +79,12 @@ const utilEach: TUtilEach = (collection: object, handler: (value: string, key: n
   handler(JSON.stringify(collection), 1, collection);
   return collection;
 };
+const lodashUtilEach: TUtilEach = lodashEach;
+const underscoreUtilEach: TUtilEach = underscoreEach;
 
 // TUtilMap
 
 const brokenUtilMap: TUtilMap = (collection: object, handler: (value: string, key: boolean, collection: object) => object): any[] => [handler(JSON.stringify(collection), false, collection)]; // $ExpectError
 const utilMap: TUtilMap = (collection: object, handler: (value: string, key: string, collection: object) => object): any[] => [handler(JSON.stringify(collection), 'key', collection)];
+const lodashUtilMap: TUtilMap = lodashMap;
+const underscoreUtilMap: TUtilMap = underscoreMap;
