@@ -1,3 +1,10 @@
+# [@qiwi/substrate-types-v1.6.0](https://github.com/qiwi/substrate/compare/v1.5.0...v1.6.0) (2019-03-26)
+
+
+### Features
+
+* **types:** add ICloneable ([f046a34](https://github.com/qiwi/substrate/commit/f046a34)), closes [#8](https://github.com/qiwi/substrate/issues/8) [#25](https://github.com/qiwi/substrate/issues/25)
+
 # [@qiwi/substrate-types-v1.5.0](https://github.com/qiwi/substrate/compare/v1.4.0...v1.5.0) (2019-03-26)
 
 
