@@ -5,7 +5,8 @@ import {
   ILoggerMethod,
   ILogger,
   TLogLevel,
-  TUtilGet
+  TUtilGet,
+  ICloneable
 } from '../main';
 
 // IStringMap
@@ -77,3 +78,12 @@ const logger: ILogger = {
 
 const brokenUtilGet: TUtilGet = (obj: object, path: any[], defaultValue?: any) => undefined; // $ExpectError
 const utilGet: TUtilGet = (obj: object, path: Array<string | number> | string, defaultValue?: any) => obj || path || defaultValue;
+
+// ICloneable
+const cloneable: ICloneable<string> = {
+  clone(): string { return 'clone'; }
+};
+
+cloneable.clone("qwe"); // $ExpectError
+cloneable.clone(123); // $ExpectError
+cloneable.clone({ hello: "hello", world: "world"}); // $ExpectError
