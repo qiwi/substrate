@@ -1,10 +1,14 @@
+import { Promise as BluebirdPromise } from 'bluebird';
+
 import {
   IStringMap,
   IEventEmitter,
   ILoggerMethod,
   ILogger,
   TLogLevel,
-  TUtilGet
+  TUtilGet,
+  IPromise,
+  IPromiseInstance
 } from '../main';
 
 // IStringMap
@@ -55,3 +59,19 @@ const logger: ILogger = {
 
 const brokenUtilGet: TUtilGet = (obj: object, path: any[], defaultValue?: any) => undefined; // $ExpectError
 const utilGet: TUtilGet = (obj: object, path: Array<string | number> | string, defaultValue?: any) => obj || path || defaultValue;
+
+// IPromise
+
+const executor = (resolve: (value: number) => void, reject: (value: number) => void) => {
+  const value = Math.random();
+  if (Math.random() > 0.5) {
+    resolve(value);
+  } else {
+    reject(value);
+  }
+};
+
+const nativePromise: IPromise = Promise;
+const bluebirdPromise: IPromise = BluebirdPromise;
+const nativePromiseInstance: IPromiseInstance = new Promise(executor);
+const bluebirdPromiseInstance: IPromiseInstance = new Promise(executor);

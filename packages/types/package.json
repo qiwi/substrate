@@ -34,17 +34,19 @@
   ],
   "dependencies": {},
   "devDependencies": {
+    "@types/bluebird": "^3.5.26",
     "@types/jest": "^24.0.11",
-    "@types/node": "^11.11.3",
     "@types/lodash": "^4.14.123",
+    "@types/node": "^11.11.3",
     "@types/parsimmon": "^1.10.0",
+    "bluebird": "^3.5.3",
     "dts-generator": "^3.0.0",
+    "dtslint": "^0.5.5",
     "flowgen": "^1.7.0",
     "replace-in-file": "^3.4.4",
     "ts-loader": "^5.3.3",
     "ts-node": "^8.0.3",
     "ts-to-flow": "^0.0.3",
-    "typescript": "3.3.3333",
-    "dtslint": "^0.5.5"
+    "typescript": "3.3.3333"
   }
 }
