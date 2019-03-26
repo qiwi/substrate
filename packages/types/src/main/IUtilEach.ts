@@ -5,4 +5,4 @@ export type TUtilEachHandler = (value: any, key?: string | number, collection?: 
 export type TUtilEach = (
   collection: TUtilEachCollection,
   handler: TUtilEachHandler
-) => void
+) => TUtilEachCollection

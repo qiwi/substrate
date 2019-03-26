@@ -70,9 +70,12 @@ const utilSet: TUtilSet = (obj: object, path: Array<string | number> | string, v
 // TUtilEach
 
 const brokenUtilEach: TUtilEach = (collection: object, handler: (value: string, key: boolean, collection: object) => void) =>  { handler || collection; }; // $ExpectError
-const utilEach: TUtilEach = (collection: object, handler: (value: string, key: number, collection: object) => void) => { handler(JSON.stringify(collection), 1, collection); };
+const utilEach: TUtilEach = (collection: object, handler: (value: string, key: number, collection: object) => void): object => {
+  handler(JSON.stringify(collection), 1, collection);
+  return collection;
+};
 
 // TUtilMap
 
-const brokenUtilMap: TUtilMap = (collection: object, handler: (value: string, key: boolean, collection: object) => object) => [handler(JSON.stringify(collection), false, collection)]; // $ExpectError
-const utilMap: TUtilMap = (collection: object, handler: (value: string, key: string, collection: object) => object) => [handler(JSON.stringify(collection), 'key', collection)];
+const brokenUtilMap: TUtilMap = (collection: object, handler: (value: string, key: boolean, collection: object) => object): any[] => [handler(JSON.stringify(collection), false, collection)]; // $ExpectError
+const utilMap: TUtilMap = (collection: object, handler: (value: string, key: string, collection: object) => object): any[] => [handler(JSON.stringify(collection), 'key', collection)];
