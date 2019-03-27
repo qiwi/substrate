@@ -1,3 +1,10 @@
+# [@qiwi/substrate-types-v1.8.0](https://github.com/qiwi/substrate/compare/v1.7.0...v1.8.0) (2019-03-27)
+
+
+### Features
+
+* add ICurrency ([#26](https://github.com/qiwi/substrate/issues/26)) ([c14f73b](https://github.com/qiwi/substrate/commit/c14f73b))
+
 # [@qiwi/substrate-types-v1.7.0](https://github.com/qiwi/substrate/compare/v1.6.0...v1.7.0) (2019-03-26)
 
 
