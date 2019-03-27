@@ -12,7 +12,8 @@ import {
   TUtilSet,
   TUtilEach,
   TUtilMap,
-  ICloneable
+  ICloneable,
+  ICurrency
 } from '../main';
 
 // IStringMap
@@ -120,3 +121,8 @@ const cloneable: ICloneable<string> = {
 cloneable.clone("qwe"); // $ExpectError
 cloneable.clone(123); // $ExpectError
 cloneable.clone({ hello: "hello", world: "world"}); // $ExpectError
+
+// ICurrency
+const brokenCurrency: ICurrency = 123; // $ExpectError
+const brokenCurrency2: ICurrency = {}; // $ExpectError
+const currency: ICurrency = 'foo';
