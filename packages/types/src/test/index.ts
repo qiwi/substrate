@@ -144,4 +144,4 @@ const executor = (resolve: (value: number) => void, reject: (value: number) => v
 const nativePromise: IPromise = Promise;
 const bluebirdPromise: IPromise = BluebirdPromise;
 const nativePromiseInstance: IPromiseInstance = new Promise(executor);
-const bluebirdPromiseInstance: IPromiseInstance = new Promise(executor);
+const bluebirdPromiseInstance: IPromiseInstance = new BluebirdPromise(executor);
