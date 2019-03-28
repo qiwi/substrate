@@ -1,3 +1,31 @@
+# [@qiwi/substrate-types-v1.8.0](https://github.com/qiwi/substrate/compare/v1.7.0...v1.8.0) (2019-03-27)
+
+
+### Features
+
+* add ICurrency ([#26](https://github.com/qiwi/substrate/issues/26)) ([c14f73b](https://github.com/qiwi/substrate/commit/c14f73b))
+
+# [@qiwi/substrate-types-v1.7.0](https://github.com/qiwi/substrate/compare/v1.6.0...v1.7.0) (2019-03-26)
+
+
+### Features
+
+* **types:** add TUtilEach, TUtilMap, TUtilSet types ([deab615](https://github.com/qiwi/substrate/commit/deab615))
+
+# [@qiwi/substrate-types-v1.6.0](https://github.com/qiwi/substrate/compare/v1.5.0...v1.6.0) (2019-03-26)
+
+
+### Features
+
+* **types:** add ICloneable ([f046a34](https://github.com/qiwi/substrate/commit/f046a34)), closes [#8](https://github.com/qiwi/substrate/issues/8) [#25](https://github.com/qiwi/substrate/issues/25)
+
+# [@qiwi/substrate-types-v1.5.0](https://github.com/qiwi/substrate/compare/v1.4.0...v1.5.0) (2019-03-26)
+
+
+### Features
+
+* **types:** add IAnyMap ([dbca380](https://github.com/qiwi/substrate/commit/dbca380))
+
 # [@qiwi/substrate-types-v1.4.0](https://github.com/qiwi/substrate/compare/v1.3.1...v1.4.0) (2019-03-07)
 
 
