@@ -1,4 +1,4 @@
-import { ICurrency } from '../main'
+import { ICurrency } from './ICurrency'
 
 export type IValue = number
 

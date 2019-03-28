@@ -142,7 +142,7 @@ const brokenAmount2: IAmount = { // $ExpectError
 
 const brokenAmount3: IAmount = {
   value: 'foo', // $ExpectError
-  currency: 123, // $ExpectError
+  currency: 123 // $ExpectError
 };
 
 const brokenAmount4: IAmount = {
