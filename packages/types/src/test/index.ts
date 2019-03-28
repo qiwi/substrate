@@ -131,24 +131,24 @@ const currency: ICurrency = 'foo';
 // IAmount
 const brokenAmount: IAmount = {
   value: 123,
-  toString() {
+  toString() { // $ExpectError
     return 123;
   }
-}; // $ExpectError
+};
 
-const brokenAmount2: IAmount = {
+const brokenAmount2: IAmount = { // $ExpectError
   currency: 'bar',
-}; // $ExpectError
+};
 
 const brokenAmount3: IAmount = {
-  value: 'foo',
-  currency: 123,
-}; // $ExpectError
+  value: 'foo', // $ExpectError
+  currency: 123, // $ExpectError
+};
 
 const brokenAmount4: IAmount = {
-  value: {},
+  value: {}, // $ExpectError
   currency: 'bar',
-}; // $ExpectError
+};
 
 const amount: IAmount = {
   value: 123,
