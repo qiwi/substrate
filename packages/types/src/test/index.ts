@@ -13,7 +13,8 @@ import {
   TUtilEach,
   TUtilMap,
   ICloneable,
-  ICurrency
+  ICurrency,
+  IAmount
 } from '../main';
 
 // IStringMap
@@ -126,3 +127,33 @@ cloneable.clone({ hello: "hello", world: "world"}); // $ExpectError
 const brokenCurrency: ICurrency = 123; // $ExpectError
 const brokenCurrency2: ICurrency = {}; // $ExpectError
 const currency: ICurrency = 'foo';
+
+// IAmount
+const brokenAmount: IAmount = {
+  value: 123,
+  toString() {
+    return 123;
+  }
+}; // $ExpectError
+
+const brokenAmount2: IAmount = {
+  currency: 'bar',
+}; // $ExpectError
+
+const brokenAmount3: IAmount = {
+  value: 'foo',
+  currency: 123,
+}; // $ExpectError
+
+const brokenAmount4: IAmount = {
+  value: {},
+  currency: 'bar',
+}; // $ExpectError
+
+const amount: IAmount = {
+  value: 123,
+  currency: 'RUB',
+  toString() {
+    return this.value.toString();
+  }
+};
