@@ -16,7 +16,7 @@ import {
   ICloneable,
   ICurrency,
   IPromise,
-  IPromiseInstance
+  IPromiseConstructor
 } from '../main';
 
 // IStringMap
@@ -141,7 +141,7 @@ const executor = (resolve: (value: number) => void, reject: (value: number) => v
   }
 };
 
-const nativePromise: IPromise = Promise;
-const bluebirdPromise: IPromise = BluebirdPromise;
-const nativePromiseInstance: IPromiseInstance<number> = new Promise<number>(executor);
-const bluebirdPromiseInstance: IPromiseInstance<number> = new BluebirdPromise<number>(executor);
+const nativePromiseConstructor: IPromiseConstructor = Promise;
+const bluebirdPromiseConstructor: IPromiseConstructor = BluebirdPromise;
+const nativePromise: IPromise<number> = new Promise<number>(executor);
+const bluebirdPromise: IPromise<number> = new BluebirdPromise<number>(executor);
