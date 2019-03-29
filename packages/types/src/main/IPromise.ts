@@ -2,8 +2,8 @@ export type TPromiseExecutor<TValue = any, TReason = any> = (resolve: (value: TV
 
 export interface IPromise<TValue = any, TReason = any> {
   new(executor: TPromiseExecutor<TValue>): IPromiseInstance<TValue, TReason>
-  all: (values: IPromiseInstance<TValue, TReason>[]) => IPromiseInstance<TValue[], TReason>
-  race: (values: IPromiseInstance<TValue, TReason>[]) => IPromiseInstance<TValue, TReason>
+  all: (values: Array<IPromiseInstance<TValue, TReason>>) => IPromiseInstance<TValue[], TReason>
+  race: (values: Array<IPromiseInstance<TValue, TReason>>) => IPromiseInstance<TValue, TReason>
   reject: (reason?: TReason) => IPromiseInstance<TValue, TReason>
   resolve: (value?: TValue) => IPromiseInstance<TValue, TReason>
 }
