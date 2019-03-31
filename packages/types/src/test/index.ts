@@ -14,7 +14,7 @@ import {
   TUtilMap,
   ICloneable,
   ICurrency,
-  IAmount
+  IMoney
 } from '../main';
 
 // IStringMap
@@ -129,28 +129,28 @@ const brokenCurrency2: ICurrency = {}; // $ExpectError
 const currency: ICurrency = 'foo';
 
 // IAmount
-const brokenAmount: IAmount = {
+const brokenAmount: IMoney = {
   value: 123,
   toString() { // $ExpectError
     return 123;
   }
 };
 
-const brokenAmount2: IAmount = { // $ExpectError
+const brokenAmount2: IMoney = { // $ExpectError
   currency: 'bar',
 };
 
-const brokenAmount3: IAmount = {
+const brokenAmount3: IMoney = {
   value: 'foo', // $ExpectError
   currency: 123 // $ExpectError
 };
 
-const brokenAmount4: IAmount = {
+const brokenAmount4: IMoney = {
   value: {}, // $ExpectError
   currency: 'bar',
 };
 
-const amount: IAmount = {
+const amount: IMoney = {
   value: 123,
   currency: 'RUB',
   toString() {
