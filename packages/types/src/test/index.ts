@@ -1,5 +1,6 @@
 import { forEach as lodashEach, map as lodashMap, set as lodashSet, get as lodashGet } from 'lodash';
 import { each as underscoreEach, map as underscoreMap } from 'underscore';
+import { Promise as BluebirdPromise } from 'bluebird';
 
 import {
   IStringMap,
@@ -13,7 +14,9 @@ import {
   TUtilEach,
   TUtilMap,
   ICloneable,
-  ICurrency
+  ICurrency,
+  IPromise,
+  IPromiseConstructor
 } from '../main';
 
 // IStringMap
@@ -126,3 +129,19 @@ cloneable.clone({ hello: "hello", world: "world"}); // $ExpectError
 const brokenCurrency: ICurrency = 123; // $ExpectError
 const brokenCurrency2: ICurrency = {}; // $ExpectError
 const currency: ICurrency = 'foo';
+
+// IPromise
+
+const executor = (resolve: (value: number) => void, reject: (value: number) => void) => {
+  const value = Math.random();
+  if (Math.random() > 0.5) {
+    resolve(value);
+  } else {
+    reject(value);
+  }
+};
+
+const nativePromiseConstructor: IPromiseConstructor = Promise;
+const bluebirdPromiseConstructor: IPromiseConstructor = BluebirdPromise;
+const nativePromise: IPromise<number> = new Promise<number>(executor);
+const bluebirdPromise: IPromise<number> = new BluebirdPromise<number>(executor);
