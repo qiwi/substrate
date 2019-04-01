@@ -1,3 +1,10 @@
+# [@qiwi/substrate-types-v1.9.0](https://github.com/qiwi/substrate/compare/v1.8.0...v1.9.0) (2019-04-01)
+
+
+### Features
+
+* **types:** add IPromise ([8250f24](https://github.com/qiwi/substrate/commit/8250f24)), closes [#4](https://github.com/qiwi/substrate/issues/4)
+
 # [@qiwi/substrate-types-v1.8.0](https://github.com/qiwi/substrate/compare/v1.7.0...v1.8.0) (2019-03-27)
 
 
