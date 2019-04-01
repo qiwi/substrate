@@ -1,5 +1,6 @@
 import { forEach as lodashEach, map as lodashMap, set as lodashSet, get as lodashGet } from 'lodash';
 import { each as underscoreEach, map as underscoreMap } from 'underscore';
+import { Promise as BluebirdPromise } from 'bluebird';
 
 import {
   IStringMap,
@@ -15,6 +16,8 @@ import {
   ICloneable,
   ICurrency,
   IMoney
+  IPromise,
+  IPromiseConstructor
 } from '../main';
 
 // IStringMap
@@ -157,3 +160,19 @@ const amount: IMoney = {
     return this.value.toString();
   }
 };
+
+// IPromise
+
+const executor = (resolve: (value: number) => void, reject: (value: number) => void) => {
+  const value = Math.random();
+  if (Math.random() > 0.5) {
+    resolve(value);
+  } else {
+    reject(value);
+  }
+};
+
+const nativePromiseConstructor: IPromiseConstructor = Promise;
+const bluebirdPromiseConstructor: IPromiseConstructor = BluebirdPromise;
+const nativePromise: IPromise<number> = new Promise<number>(executor);
+const bluebirdPromise: IPromise<number> = new BluebirdPromise<number>(executor);
