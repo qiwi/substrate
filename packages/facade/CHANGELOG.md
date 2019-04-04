@@ -1,3 +1,10 @@
+# [@qiwi/substrate-v1.9.1](https://github.com/qiwi/substrate/compare/v1.9.0...v1.9.1) (2019-04-04)
+
+
+### Bug Fixes
+
+* **types:** make ILogger to be compatible with standard console ([888a85f](https://github.com/qiwi/substrate/commit/888a85f))
+
 # [@qiwi/substrate-v1.4.0](https://github.com/qiwi/substrate/compare/v1.3.1...v1.4.0) (2019-03-07)
 
 
