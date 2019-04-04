@@ -62,7 +62,7 @@ const emitter: IEventEmitter = {
 const brokenLogLevel: TLogLevel = 'info'; // $ExpectError
 const traceLogLevel: TLogLevel = 5e3;
 
-const brokenLogMethod: ILoggerMethod = () => 'foo'; // $ExpectError
+const brokenLogMethod: ILoggerMethod = null; // $ExpectError
 const logMethod: ILoggerMethod = () => undefined;
 
 const brokenLogger: ILogger = {
@@ -71,7 +71,7 @@ const brokenLogger: ILogger = {
   info: logMethod,
   log: logMethod,
   warn: logMethod,
-  error: () => 'foo' // $ExpectError
+  error: null // $ExpectError
 };
 
 const logger: ILogger = {
@@ -83,6 +83,8 @@ const logger: ILogger = {
   error: logMethod,
   custom: () => 'foo'
 };
+
+const legacyLogger: ILogger = console;
 
 // TUtilGet
 

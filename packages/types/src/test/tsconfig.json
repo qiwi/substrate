@@ -14,7 +14,7 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-    "lib": ["es6"],
+    "lib": ["es6", "dom"],
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {

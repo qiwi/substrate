@@ -17,6 +17,7 @@
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "composite": true
+    "composite": true,
+    "strictNullChecks": true
   }
 }
