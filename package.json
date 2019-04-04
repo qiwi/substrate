@@ -14,7 +14,7 @@
     "test_with_report": "npm test",
     "codeclimate_push": "codeclimate-test-reporter < ./coverage/lcov.info",
     "coveralls_push": "cat ./coverage/lcov.info | coveralls",
-    "lint": "tslint -c tslint.json 'packages/**/src/main/*.ts' --fix | snazzy",
+    "lint": "tslint -c tslint.json -p tsconfig.json 'packages/**/src/main/*.ts' --fix | snazzy",
     "docs": "typedoc packages/**/src/main --ignoreCompilerErrors || exit 0"
   },
   "devDependencies": {
