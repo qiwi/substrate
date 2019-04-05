@@ -16,7 +16,8 @@ import {
   ICloneable,
   ICurrency,
   IPromise,
-  IPromiseConstructor
+  IPromiseConstructor,
+  IMoney
 } from '../main';
 
 // IStringMap
@@ -147,3 +148,33 @@ const nativePromiseConstructor: IPromiseConstructor = Promise;
 const bluebirdPromiseConstructor: IPromiseConstructor = BluebirdPromise;
 const nativePromise: IPromise<number> = new Promise<number>(executor);
 const bluebirdPromise: IPromise<number> = new BluebirdPromise<number>(executor);
+
+// IMoney
+const brokenMoney: IMoney = {
+  value: 123,
+  toString() { // $ExpectError
+    return 123;
+  }
+};
+
+const brokenMoney2: IMoney = { // $ExpectError
+  currency: 'bar',
+};
+
+const brokenMoney3: IMoney = {
+  value: 'foo', // $ExpectError
+  currency: 123, // $ExpectError
+};
+
+const brokenMoney4: IMoney = {
+  value: {}, // $ExpectError
+  currency: 'bar',
+};
+
+const money: IMoney = {
+  value: 123,
+  currency: 'RUB',
+  toString() {
+    return this.value.toString();
+  }
+};
