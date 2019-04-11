@@ -1,3 +1,10 @@
+# [@qiwi/substrate-types-v1.10.0](https://github.com/qiwi/substrate/compare/v1.9.1...v1.10.0) (2019-04-08)
+
+
+### Features
+
+* **types:** add IMoney ([8012a91](https://github.com/qiwi/substrate/commit/8012a91))
+
 # [@qiwi/substrate-types-v1.9.1](https://github.com/qiwi/substrate/compare/v1.9.0...v1.9.1) (2019-04-04)
 
 
