@@ -17,6 +17,7 @@ import {
   ICurrency,
   IPromise,
   IPromiseConstructor,
+  IStorage,
   IMoney
 } from '../main';
 
@@ -149,7 +150,38 @@ const bluebirdPromiseConstructor: IPromiseConstructor = BluebirdPromise;
 const nativePromise: IPromise<number> = new Promise<number>(executor);
 const bluebirdPromise: IPromise<number> = new BluebirdPromise<number>(executor);
 
+// IStorage
+
+const storage: IStorage = {
+  get: (key: string): any => key,
+  set: (key: string, value: any, ttl?: number): any => ttl || key || value,
+  has: (key: string) => {
+    key;
+    return false;
+  },
+  remove: (key: string) => {
+    key;
+  },
+  size: () => 42,
+  reset: () => {}
+};
+
+const brokenStorage: IStorage = {
+  get: (key: string): any => key,
+  set: (key: string, value: any, ttl?: number): any => ttl || key || value,
+  has: (key: string) => {  // $ExpectError
+    key;
+    return 42;
+  },
+  remove: (key: string) => {
+    key;
+  },
+  size: () => 42,
+  reset: () => {}
+};
+
 // IMoney
+
 const brokenMoney: IMoney = {
   value: 123,
   toString() { // $ExpectError
