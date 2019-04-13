@@ -1,3 +1,10 @@
+# [@qiwi/substrate-types-v1.11.0](https://github.com/qiwi/substrate/compare/v1.10.0...v1.11.0) (2019-04-13)
+
+
+### Features
+
+* add IStorage ([7dab170](https://github.com/qiwi/substrate/commit/7dab170)), closes [#16](https://github.com/qiwi/substrate/issues/16)
+
 # [@qiwi/substrate-types-v1.10.0](https://github.com/qiwi/substrate/compare/v1.9.1...v1.10.0) (2019-04-08)
 
 
