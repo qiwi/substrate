@@ -69,3 +69,4 @@ typings
 raw
 packages/**/src/test/*.d.ts
 packages/facade/src/test/*.ts
+*.tsbuildinfo

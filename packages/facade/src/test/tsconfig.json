@@ -22,7 +22,7 @@
         ".."
       ]
     },
-    "typeRoots": [".", "../../../types/typings"]
+    "typeRoots": ["."]
   },
   "files": [
     "index.d.ts",
