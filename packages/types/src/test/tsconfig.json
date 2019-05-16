@@ -24,9 +24,8 @@
     },
     "typeRoots": ["."]
   },
-  "files": [
-    "index.d.ts",
-    "index.ts"
+  "include": [
+    "./*"
   ],
   "exclude": [
     "node_modules"

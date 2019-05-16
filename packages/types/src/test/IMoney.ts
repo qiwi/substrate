@@ -1,4 +1,4 @@
-import { IMoney } from './index'
+import { IMoney } from './index';
 
 const brokenMoney: IMoney = {
   value: 123,

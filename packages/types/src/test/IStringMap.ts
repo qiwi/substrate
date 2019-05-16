@@ -1,4 +1,4 @@
-import { IStringMap } from './index'
+import { IStringMap } from './index';
 
 // IStringMap
 const map: IStringMap = {
