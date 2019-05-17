@@ -1,3 +1,10 @@
+# [@qiwi/substrate-v1.11.1](https://github.com/qiwi/substrate/compare/v1.11.0...v1.11.1) (2019-05-17)
+
+
+### Bug Fixes
+
+* tweak up test config, fix IPromise definition ([098e9e7](https://github.com/qiwi/substrate/commit/098e9e7))
+
 # [@qiwi/substrate-v1.9.1](https://github.com/qiwi/substrate/compare/v1.9.0...v1.9.1) (2019-04-04)
 
 
