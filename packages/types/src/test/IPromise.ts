@@ -13,3 +13,7 @@ const nativePromiseConstructor: IPromiseConstructor = Promise;
 const bluebirdPromiseConstructor: IPromiseConstructor = BluebirdPromise;
 const nativePromise: IPromise<number> = new Promise<number>(executor);
 const bluebirdPromise: IPromise<number> = new BluebirdPromise<number>(executor);
+
+async function asyncFunction(): IPromise<number> {
+  return new Promise((resolve) => resolve(42));
+}
