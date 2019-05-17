@@ -1,4 +1,4 @@
-import { IEventEmitter } from './index'
+import { IEventEmitter } from './index';
 
 const brokenEmitter: IEventEmitter = {  // $ExpectError
   on(event: string, handler: (...args: any[]) => void) { handler(event); }

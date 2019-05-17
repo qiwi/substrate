@@ -1,4 +1,4 @@
-import { IStorage } from './index'
+import { IStorage } from './index';
 
 const storage: IStorage = {
   get: (key: string): any => key,

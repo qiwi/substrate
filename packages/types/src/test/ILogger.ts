@@ -1,4 +1,4 @@
-import { ILoggerMethod, ILogger, TLogLevel } from './index'
+import { ILoggerMethod, ILogger, TLogLevel } from './index';
 
 const brokenLogLevel: TLogLevel = 'info'; // $ExpectError
 const traceLogLevel: TLogLevel = 5e3;

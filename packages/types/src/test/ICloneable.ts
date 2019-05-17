@@ -1,4 +1,4 @@
-import { ICloneable } from './index'
+import { ICloneable } from './index';
 
 const cloneable: ICloneable<string> = {
   clone(): string { return 'clone'; }
