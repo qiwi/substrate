@@ -1,3 +1,10 @@
+# [@qiwi/substrate-types-v1.11.2](https://github.com/qiwi/substrate/compare/v1.11.1...v1.11.2) (2019-05-17)
+
+
+### Bug Fixes
+
+* **IPromise:** handle TS1055 error ([1619fb8](https://github.com/qiwi/substrate/commit/1619fb8))
+
 # [@qiwi/substrate-types-v1.11.1](https://github.com/qiwi/substrate/compare/v1.11.0...v1.11.1) (2019-05-17)
 
 
