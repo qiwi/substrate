@@ -1,3 +1,10 @@
+# [@qiwi/substrate-types-v1.12.0](https://github.com/qiwi/substrate/compare/v1.11.2...v1.12.0) (2019-05-21)
+
+
+### Features
+
+* **types:** add TPredicate ([7b09f8b](https://github.com/qiwi/substrate/commit/7b09f8b)), closes [#39](https://github.com/qiwi/substrate/issues/39)
+
 # [@qiwi/substrate-types-v1.11.2](https://github.com/qiwi/substrate/compare/v1.11.1...v1.11.2) (2019-05-17)
 
 
