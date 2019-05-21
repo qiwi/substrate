@@ -1,3 +1,5 @@
+import { ICollection } from './ICollection'
+
 export type IStackItem = any
 
 export interface IStack<T> extends ICollection<T> {
