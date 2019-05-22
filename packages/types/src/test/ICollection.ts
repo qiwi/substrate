@@ -4,7 +4,7 @@ const brokenCollection: ICollection<number> = {
   isEmpty: () => 123, // $ExpectError
   size: () => 'baz', // $ExpectError
   remove: item => 'foo', // $ExpectError
-  add: item => ({}), // $ExpectError
+  add: (index: string, item: string) => ({}), // $ExpectError
   get: (item: boolean) => item, // $ExpectError
   clear: (item: string) => item // $ExpectError
 };
@@ -13,7 +13,7 @@ const collection: ICollection<number> = {
   isEmpty: () => true,
   size: () => 123,
   remove: (index: number | string) => +index,
-  add: item => item,
+  add: (index: number, item) => index + item,
   get: (index: number | string) => +index,
   clear: () => {},
 };

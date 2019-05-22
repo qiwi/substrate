@@ -11,7 +11,7 @@ const brokenStack: IStack<number> = {
   isEmpty: () => 123, // $ExpectError
   size: () => 'baz', // $ExpectError
   remove: (item) => 'foo', // $ExpectError
-  add: item => ({}), // $ExpectError
+  add: (index: string, item: string) => ({}), // $ExpectError
   get: (item: boolean) => item, // $ExpectError
   clear: (item: string) => item // $ExpectError
 };
@@ -27,7 +27,7 @@ const stack: IStack<number> = {
   isEmpty: () => true,
   size: () => 123,
   remove: (item: number | string) => +item,
-  add: item => item,
+  add: (index: number, item) => index + item,
   get: (item: number | string) => +item,
   clear: () => {},
 };
