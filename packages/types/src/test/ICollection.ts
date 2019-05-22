@@ -12,8 +12,8 @@ const brokenCollection: ICollection<number> = {
 const collection: ICollection<number> = {
   isEmpty: () => true,
   size: () => 123,
-  remove: item => item,
+  remove: (index: number | string) => +index,
   add: item => item,
-  get: (item: number | string) => +item,
+  get: (index: number | string) => +index,
   clear: () => {},
 };
