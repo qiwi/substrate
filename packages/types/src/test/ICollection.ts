@@ -9,7 +9,7 @@ const brokenCollection: ICollection<number> = {
   clear: (item: string) => item // $ExpectError
 };
 
-const collectiom: ICollection<number> = {
+const collection: ICollection<number> = {
   isEmpty: () => true,
   size: () => 123,
   remove: item => item,
