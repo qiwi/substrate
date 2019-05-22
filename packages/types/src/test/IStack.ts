@@ -27,7 +27,7 @@ const stack: IStack<number> = {
   isEmpty: () => true,
   size: () => 123,
   remove: (item: number | string) => +item,
-  add: (index: number, item) => index + item,
+  add: (index: number | string, item) => +index + item,
   get: (item: number | string) => +item,
   clear: () => {},
 };

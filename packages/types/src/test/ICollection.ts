@@ -13,7 +13,7 @@ const collection: ICollection<number> = {
   isEmpty: () => true,
   size: () => 123,
   remove: (index: number | string) => +index,
-  add: (index: number, item) => index + item,
+  add: (index: number | string, item) => +index + item,
   get: (index: number | string) => +index,
   clear: () => {},
 };
