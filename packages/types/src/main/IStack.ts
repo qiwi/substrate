@@ -4,10 +4,10 @@ export type IStackItem = any
 
 export interface IStack<T> extends ICollection<T> {
   push: (...items: Array<T>) => T
-  pop: () => T
+  pop: () => T | undefined
   unshift: (...items: Array<T>) => T
-  shift: () => T
+  shift: () => T | undefined
   indexOf: (item: T) => number
-  first: () => T
-  last: () => T
+  first: () => T | undefined
+  last: () => T | undefined
 }
