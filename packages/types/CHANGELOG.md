@@ -1,3 +1,10 @@
+# [@qiwi/substrate-types-v1.13.0](https://github.com/qiwi/substrate/compare/v1.12.0...v1.13.0) (2019-05-22)
+
+
+### Features
+
+* **types:** add IStack and ICollection ([ee56053](https://github.com/qiwi/substrate/commit/ee56053)), closes [#38](https://github.com/qiwi/substrate/issues/38) [#36](https://github.com/qiwi/substrate/issues/36)
+
 # [@qiwi/substrate-types-v1.12.0](https://github.com/qiwi/substrate/compare/v1.11.2...v1.12.0) (2019-05-21)
 
 
