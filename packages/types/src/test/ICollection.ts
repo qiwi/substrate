@@ -3,7 +3,7 @@ import { ICollection } from './index';
 const brokenCollection: ICollection<number> = {
   isEmpty: () => 123, // $ExpectError
   size: () => 'baz', // $ExpectError
-  remove: item => 'foo', // $ExpectError
+  remove: index => 'foo', // $ExpectError
   add: (index: string, item: string) => ({}), // $ExpectError
   get: (item: boolean) => item, // $ExpectError
   clear: (item: string) => item // $ExpectError
