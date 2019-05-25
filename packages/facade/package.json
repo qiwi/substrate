@@ -34,21 +34,21 @@
     "lib/"
   ],
   "dependencies": {
-    "@qiwi/substrate-types": "^1.0.0"
+    "@qiwi/substrate-types": "^1.13.0"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.9",
-    "@types/node": "^11.11.3",
+    "@types/jest": "^24.0.13",
+    "@types/node": "^12.0.2",
     "dts-generator": "^3.0.0",
-    "dtslint": "^0.5.5",
-    "esm": "^3.2.18",
-    "flowgen": "^1.7.0",
-    "fs-extra": "^7.0.1",
-    "replace-in-file": "^3.4.4",
-    "ts-loader": "^5.3.3",
-    "ts-node": "^8.0.3",
+    "dtslint": "^0.7.6",
+    "esm": "^3.2.25",
+    "flowgen": "^1.8.3",
+    "fs-extra": "^8.0.1",
+    "replace-in-file": "^4.1.0",
+    "ts-loader": "^6.0.1",
+    "ts-node": "^8.1.1",
     "ts-to-flow": "^0.0.3",
-    "typescript": "3.3.3333"
+    "typescript": "3.4.5"
   },
   "esm": {
     "mode": "all",
