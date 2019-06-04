@@ -5,7 +5,7 @@
     "lib": [
       "esnext"
     ],
-    "noImplicitAny": false,
+    "noImplicitAny": true,
     "strict": true,
     "sourceMap": true,
     "declaration": true,

@@ -17,5 +17,5 @@ const anyMap4: IAnyMap = {
 };
 
 const anyMap5: IAnyMap = {
-  Symbol("qwe"): 1; // $ExpectError
+  [Symbol('qwe')]: 1 // "...that's because square bracket accesses to {} are unchecked:" from https://github.com/Microsoft/TypeScript/issues/24587#issuecomment-394030482
 };
