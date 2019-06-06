@@ -1,6 +1,15 @@
 import { IConfigurable } from './index';
 
 class WrongConfigurable implements IConfigurable { // $ExpectError
+  someStringField: string;
+
+  constructor(value: string) {
+    this.someStringField = value;
+  }
+
+  getConfig(): string {
+    return this.someStringField;
+  }
 }
 
 class Configurable implements IConfigurable {
@@ -10,7 +19,11 @@ class Configurable implements IConfigurable {
     this.someStringField = value;
   }
 
-  config(value: string) {
+  setConfig(value: string) {
     this.someStringField = value;
+  }
+
+  getConfig(): string {
+    return this.someStringField;
   }
 }
