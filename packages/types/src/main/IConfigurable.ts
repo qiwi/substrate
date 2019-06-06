@@ -1,4 +1,4 @@
 export interface IConfigurable {
-  setConfig: (options: any) => void
+  setConfig: (options?: any) => void
   getConfig: () => any
 }
