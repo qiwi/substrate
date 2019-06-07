@@ -1,3 +1,10 @@
+# [@qiwi/substrate-types-v1.14.0](https://github.com/qiwi/substrate/compare/v1.13.0...v1.14.0) (2019-06-07)
+
+
+### Features
+
+* **types:** add IConfigurable ([ee773a4](https://github.com/qiwi/substrate/commit/ee773a4)), closes [#12](https://github.com/qiwi/substrate/issues/12)
+
 # [@qiwi/substrate-types-v1.13.0](https://github.com/qiwi/substrate/compare/v1.12.0...v1.13.0) (2019-05-22)
 
 
