@@ -1020,11 +1020,6 @@
     universal-user-agent "^2.0.0"
     url-template "^2.0.8"
 
-"@qiwi/substrate-types@^1.14.0":
-  version "1.14.0"
-  resolved "https://registry.yarnpkg.com/@qiwi/substrate-types/-/substrate-types-1.14.0.tgz#35fea81cb7456e68cf54a6e1911a8e3434161b9d"
-  integrity sha512-Fomv9jnR1VmiyxeKHIxFhxDYUWjtLcRtkzNlk8P++M+YNpqSw++gYTqn2mnawEqdF5GmcRmNwHbSlrvg0Dyn8Q==
-
 "@semantic-release/changelog@^3.0.2":
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/@semantic-release/changelog/-/changelog-3.0.2.tgz#b09a8e0d072ef54d2bc7a5c82f6112dc3c8ae85d"
@@ -6684,7 +6679,7 @@ read-pkg@^3.0.0:
     normalize-package-data "^2.3.2"
     path-type "^3.0.0"
 
-read-pkg@^5.0.0:
+read-pkg@^5.0.0, read-pkg@^5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/read-pkg/-/read-pkg-5.1.1.tgz#5cf234dde7a405c90c88a519ab73c467e9cb83f5"
   integrity sha512-dFcTLQi6BZ+aFUaICg7er+/usEoqFdQxiEBsEMNGoipenihtxxtdrQuBXvyANCEI8VuUIVYFgeHGx9sLLvim4w==
@@ -7023,13 +7018,15 @@ sax@^1.2.4:
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
 
-semantic-release-monorepo-hooks@2.9.2:
-  version "2.9.2"
-  resolved "https://registry.yarnpkg.com/semantic-release-monorepo-hooks/-/semantic-release-monorepo-hooks-2.9.2.tgz#146f36c7be02c9f67ca83eedc24e7b699009afbc"
-  integrity sha512-dDsPCKISg9ILbTV54e6yAR/CFqI46519OwGJsfXzqIkYrGsUTBL1LINHK7CqjfqQkhS23oS2wZLXNcGIGTQYQw==
+semantic-release-monorepo-hooks@2.9.3:
+  version "2.9.3"
+  resolved "https://registry.yarnpkg.com/semantic-release-monorepo-hooks/-/semantic-release-monorepo-hooks-2.9.3.tgz#95197f89a654d92b0878a46a1bdb93b565b19e6b"
+  integrity sha512-Bo33DOsKCZ06MrH2cVOWYDiyvl1iLdzI31JjbgwVkvvFr/O9zrxOYCShR6vRG1AVlsimttSlMiN0Vr20Hyk+Mg==
   dependencies:
     app-root-path "^2.2.1"
     lodash "^4.17.11"
+    read-pkg "^5.1.1"
+    semver "^6.1.1"
 
 semantic-release-monorepo@6.1.1:
   version "6.1.1"
@@ -7109,7 +7106,7 @@ semver-regex@^2.0.0:
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.7.0.tgz#790a7cf6fea5459bac96110b29b60412dc8ff96b"
   integrity sha512-Ya52jSX2u7QKghxeoFGpLwCtGlt7j0oY9DYb5apt9nPlJ42ID+ulTXESnt/qAQcoSERyZ5sl3LDIOw0nAn/5DA==
 
-semver@^6.0.0:
+semver@^6.0.0, semver@^6.1.1:
   version "6.1.1"
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.1.1.tgz#53f53da9b30b2103cd4f15eab3a18ecbcb210c9b"
   integrity sha512-rWYq2e5iYW+fFe/oPPtYJxYgjBm8sC4rmoGdUOgBB7VnwKt6HrL793l2voH1UlsyYZpJ4g0wfjnTEO1s1NP2eQ==
