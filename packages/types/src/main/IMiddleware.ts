@@ -1,4 +1,5 @@
 export interface IRequest {
+  res: IResponse
   [key: string]: any
 }
 
@@ -6,6 +7,7 @@ export interface IResponse {
   status: (status: number) => IResponse
   send: (arg: string | object) => IResponse
   json: () => IResponse
+  req: IRequest
   [key: string]: any
 }
 
@@ -14,7 +16,7 @@ export interface INext {
 }
 
 export interface RequestHandler {
-  (reg: IRequest, res: IResponse, next?: INext): void
+  (req: IRequest, res: IResponse, next?: INext): void
 }
 
 export interface ErrorRequestHandler {
