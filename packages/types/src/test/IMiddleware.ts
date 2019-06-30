@@ -1,4 +1,4 @@
-import { IMiddleware, ErrorRequestHandler, RequestHandler, IRequest, IResponse, INext } from './index';
+import { IMiddleware, IErrorMiddleware, IRequestMiddleware, IRequest, IResponse, INext } from './index';
 
 // IMiddleware
 const brokenMiddleware1: IMiddleware = {}; // $ExpectError
@@ -14,19 +14,19 @@ const middlewareError: IMiddleware = (err: Error, req: object, res: object, next
   next && next(err, res, req);
 };
 
-// ErrorRequestHandler
-const brokenErrorRequestHandler1: ErrorRequestHandler = (err: number) => err; // $ExpectError
-const brokenErrorRequestHandler2: ErrorRequestHandler = (req: boolean, res: string) => req + res; // $ExpectError
-const brokenErrorRequestHandler3: ErrorRequestHandler = 'foo'; // $ExpectError
+// IErrorMiddleware
+const brokenErrorMiddleware1: IErrorMiddleware = (err: number) => err; // $ExpectError
+const brokenErrorMiddleware2: IErrorMiddleware = (req: boolean, res: string) => req + res; // $ExpectError
+const brokenErrorMiddleware3: IErrorMiddleware = 'foo'; // $ExpectError
 
-const errorRequestHandler: ErrorRequestHandler = (err: Error, req: object, res: object) => void {err, res, req};
+const errorMiddleware: IErrorMiddleware = (err: Error, req: object, res: object) => void {err, res, req};
 
-// RequestHandler
-const brokenRequestHandler1: RequestHandler = (err: number) => err; // $ExpectError
-const brokenRequestHandler2: RequestHandler = (req: boolean, res: string) => req + res; // $ExpectError
-const brokenRequestHandler2: RequestHandler = 'bar'; // $ExpectError
+// IRequestMiddleware
+const brokenRequestMiddleware1: IRequestMiddleware = (err: number) => err; // $ExpectError
+const brokenRequestMiddleware2: IRequestMiddleware = (req: boolean, res: string) => req + res; // $ExpectError
+const brokenRequestMiddleware2: IRequestMiddleware = 'bar'; // $ExpectError
 
-const requestHandler: RequestHandler = (req: object, res: object) => void {req, res} ;
+const requestMiddleware: IRequestMiddleware = (req: object, res: object) => void {req, res} ;
 
 // IRequest
 const brokenRequest1: IRequest = 'foo'; // $ExpectError

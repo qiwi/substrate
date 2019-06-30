@@ -15,12 +15,12 @@ export interface INext {
   (...args: any[]): any
 }
 
-export interface RequestHandler {
+export interface IRequestMiddleware {
   (req: IRequest, res: IResponse, next?: INext): void
 }
 
-export interface ErrorRequestHandler {
+export interface IErrorMiddleware {
   (err: Error, req: IRequest, res: IResponse, next?: INext): void
 }
 
-export type IMiddleware = RequestHandler | ErrorRequestHandler
+export type IMiddleware = IRequestMiddleware | IErrorMiddleware
