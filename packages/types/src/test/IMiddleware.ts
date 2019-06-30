@@ -17,10 +17,15 @@ const middlewareError: IMiddleware = (err: Error, req: object, res: object, next
 // IAsyncMiddleware
 const brokenAsyncMiddleware1: IAsyncMiddleware = () => {}; // $ExpectError
 const brokenAsyncMiddleware2: IAsyncMiddleware = {}; // $ExpectError
+const brokenAsyncMiddleware3: IAsyncMiddleware = async () => 123; // $ExpectError
 
-const asyncMiddleware: IAsyncMiddleware = (err: Error, req: object, res: object, next?: (err: Error, req: object, res: object) => {}) => {
+const asyncMiddleware1: IAsyncMiddleware = (err: Error, req: object, res: object, next?: (err: Error, req: object, res: object) => {}) => {
   next && next(err, res, req);
   return Promise.resolve();
+};
+
+const asyncMiddleware2: IAsyncMiddleware = async (req: object, res: object, next?: (req: object, res: object) => {}) => {
+  next && next(res, req);
 };
 
 // IErrorMiddleware
