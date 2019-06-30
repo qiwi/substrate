@@ -6,11 +6,11 @@ const brokenMiddleware2: IMiddleware = (res: string, req: object) => 123; // $Ex
 const brokenMiddleware3: IMiddleware = (res: boolean, req: boolean, next: boolean) => ({}); // $ExpectError
 const brokenMiddleware4: IMiddleware = 123; // $ExpectError
 
-const middleware: IMiddleware = (req: object, res: object, next?: (req: object, res: object) => {}) => {
+const middleware1: IMiddleware = (req: IRequest, res: IResponse, next?: INext) => {
   next && next(res, req);
 };
 
-const middlewareError: IMiddleware = (err: Error, req: object, res: object, next?: (err: Error, req: object, res: object) => {}) => {
+const middleware2: IMiddleware = (err: Error, req: IRequest, res: IResponse, next?: INext) => {
   next && next(err, res, req);
 };
 
@@ -19,12 +19,12 @@ const brokenAsyncMiddleware1: IAsyncMiddleware = () => {}; // $ExpectError
 const brokenAsyncMiddleware2: IAsyncMiddleware = {}; // $ExpectError
 const brokenAsyncMiddleware3: IAsyncMiddleware = async () => 123; // $ExpectError
 
-const asyncMiddleware1: IAsyncMiddleware = (err: Error, req: object, res: object, next?: (err: Error, req: object, res: object) => {}) => {
+const asyncMiddleware1: IAsyncMiddleware = (err: Error, req: IRequest, res: IResponse, next?: INext) => {
   next && next(err, res, req);
   return Promise.resolve();
 };
 
-const asyncMiddleware2: IAsyncMiddleware = async (req: object, res: object, next?: (req: object, res: object) => {}) => {
+const asyncMiddleware2: IAsyncMiddleware = async (req: IRequest, res: IResponse, next?: INext) => {
   next && next(res, req);
 };
 
