@@ -1,3 +1,10 @@
+# [@qiwi/substrate-types-v1.15.0](https://github.com/qiwi/substrate/compare/v1.14.0...v1.15.0) (2019-06-30)
+
+
+### Features
+
+* add IMiddleware ([a53f7a6](https://github.com/qiwi/substrate/commit/a53f7a6)), closes [#6](https://github.com/qiwi/substrate/issues/6)
+
 # [@qiwi/substrate-types-v1.14.0](https://github.com/qiwi/substrate/compare/v1.13.0...v1.14.0) (2019-06-07)
 
 
