@@ -1,4 +1,4 @@
-import { IMiddleware, IErrorMiddleware, IRequestMiddleware, IRequest, IResponse, INext } from './index';
+import { IMiddleware, IAsyncMiddleware, IErrorMiddleware, IRequestMiddleware, IRequest, IResponse, INext } from './index';
 
 // IMiddleware
 const brokenMiddleware1: IMiddleware = {}; // $ExpectError
@@ -12,6 +12,15 @@ const middleware: IMiddleware = (req: object, res: object, next?: (req: object, 
 
 const middlewareError: IMiddleware = (err: Error, req: object, res: object, next?: (err: Error, req: object, res: object) => {}) => {
   next && next(err, res, req);
+};
+
+// IAsyncMiddleware
+const brokenAsyncMiddleware1: IAsyncMiddleware = () => {}; // $ExpectError
+const brokenAsyncMiddleware2: IAsyncMiddleware = {}; // $ExpectError
+
+const asyncMiddleware: IAsyncMiddleware = (err: Error, req: object, res: object, next?: (err: Error, req: object, res: object) => {}) => {
+  next && next(err, res, req);
+  return Promise.resolve();
 };
 
 // IErrorMiddleware

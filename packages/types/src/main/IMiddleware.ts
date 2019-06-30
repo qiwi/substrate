@@ -24,3 +24,13 @@ export interface IErrorMiddleware {
 }
 
 export type IMiddleware = IRequestMiddleware | IErrorMiddleware
+
+export interface IAsyncRequestMiddleware {
+  (req: IRequest, res: IResponse, next?: INext): Promise<void>
+}
+
+export interface IAsyncErrorMiddleware {
+  (err: Error, req: IRequest, res: IResponse, next?: INext): Promise<void>
+}
+
+export type IAsyncMiddleware = IAsyncRequestMiddleware | IAsyncErrorMiddleware
