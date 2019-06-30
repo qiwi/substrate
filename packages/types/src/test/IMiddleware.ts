@@ -44,13 +44,9 @@ const requestMiddleware: IRequestMiddleware = (req: object, res: object) => void
 
 // IRequest
 const brokenRequest1: IRequest = 'foo'; // $ExpectError
-const brokenRequest2: IRequest = () => {}; // $ExpectError
-const brokenRequest3: IRequest = { // $ExpectError
-  status: 'bar'
-};
+const brokenRequest2: IRequest = true; // $ExpectError
 
 const request: IRequest = {
-  res: {},
   foo: 'bar'
 };
 

@@ -1,5 +1,5 @@
 export interface IRequest {
-  res: Object
+  res?: IResponse
   [key: string]: any
 }
 
@@ -7,7 +7,7 @@ export interface IResponse {
   status: (status: number) => IResponse
   send: (arg: string | object) => IResponse
   json: () => IResponse
-  req: Object
+  req?: IRequest
   [key: string]: any
 }
 
