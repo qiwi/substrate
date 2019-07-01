@@ -5,6 +5,6 @@ export interface ICollection <T> {
   add: (index: number | string, item: T) => T
   remove: (index: number | string) => T | undefined
   clear: () => void
-  size: () => number
+  size: number
   isEmpty: () => boolean
 }

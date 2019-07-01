@@ -1020,6 +1020,68 @@
     universal-user-agent "^2.0.0"
     url-template "^2.0.8"
 
+"@qiwi/uniconfig-core@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-core/-/uniconfig-core-3.0.0.tgz#d09e4f5e4ad355d4a838031d518eb77f996237d0"
+  integrity sha512-3MeNSQXH0dw+TdIIpNHadHk82vndbRRYgG3J4Cp0mwEbM4YzvqaKIw7r/KRD+Zj3yo0ROjkH1V5lf6X9JT+LJg==
+  dependencies:
+    lodash "^4.17.11"
+    tslib "^1.10.0"
+
+"@qiwi/uniconfig-plugin-api-file@^3.0.0":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-plugin-api-file/-/uniconfig-plugin-api-file-3.0.1.tgz#6e127e39abd69353c992462df95daf6d748769d6"
+  integrity sha512-mksnfJdmooPaHLnfLgknDgiUSOibse1Uump/73knID1F3N+/a+kvfQ+B7JtfDH/2aRtsSFHU9pSVrVl/tuk1CQ==
+  dependencies:
+    "@qiwi/uniconfig-core" "^3.0.0"
+    tslib "^1.10.0"
+
+"@qiwi/uniconfig-plugin-datatree@^3.0.0":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-plugin-datatree/-/uniconfig-plugin-datatree-3.0.1.tgz#d1e78d462230313ecdfbf333228c9ab8b4db6e29"
+  integrity sha512-GyjTHf+EgfdphjAX8t1JyCj52zb0jrgqYxbLlmmhcV4bKpfgowBeIjqJk75fqBzOCzxIAja9cztTFOrDFXCRXA==
+  dependencies:
+    "@qiwi/uniconfig-core" "^3.0.0"
+    lodash "^4.17.11"
+    tslib "^1.10.0"
+
+"@qiwi/uniconfig-plugin-json@^3.0.0":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-plugin-json/-/uniconfig-plugin-json-3.0.1.tgz#183a697bfa2b4872eb6de1fb1adca35b1f4869c0"
+  integrity sha512-gSY8vNj0sNL916XKtxH7JP/Ah5rtHKKu2ljdGIkd7ppqRbuzyvFrdvaGKoHiwEzvdTyevR+7jlihKTUONJ83CQ==
+  dependencies:
+    "@qiwi/uniconfig-core" "^3.0.0"
+    tslib "^1.10.0"
+
+"@qiwi/uniconfig-plugin-path@^3.0.0":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-plugin-path/-/uniconfig-plugin-path-3.0.1.tgz#21fe08f04508c8cc77aa4dccd1bef79900e63046"
+  integrity sha512-Gj/TmjdSGzvOhQ1yDJUe49TpLDIb4zdnh3LpJ0+rLpo2+4zEAiprCdR2ciAKtGJAe+C5kwlTxUdp+t81K+2o5g==
+  dependencies:
+    "@qiwi/uniconfig-core" "^3.0.0"
+    "@qiwi/uniconfig-plugin-root" "^3.0.0"
+    tslib "^1.10.0"
+
+"@qiwi/uniconfig-plugin-root@^3.0.0":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-plugin-root/-/uniconfig-plugin-root-3.0.1.tgz#18f6e32df556081dbfe70b480f39a9d13de4d532"
+  integrity sha512-EwiPu79DDEsTPu2KucAHQo4H9L+Aj04inm4imtEKrnarcb+BRkC8ZsB4JY10e/Q2VVax6lAfigU0vZjSARkCxg==
+  dependencies:
+    "@qiwi/uniconfig-core" "^3.0.0"
+    app-root-path "^2.2.1"
+    tslib "^1.10.0"
+
+"@qiwi/uniconfig@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig/-/uniconfig-3.0.1.tgz#c58f07df4a04e14b5e24e1f7c118f2b1ad79588a"
+  integrity sha512-qjqFSJ4CjDIk4Kizz7C/fDMN0kEyPghHGWKhhQcT/u8PDKseWY7o7JeHUndg9VXTZlmduKN2Edft9++bpApqXg==
+  dependencies:
+    "@qiwi/uniconfig-core" "^3.0.0"
+    "@qiwi/uniconfig-plugin-api-file" "^3.0.0"
+    "@qiwi/uniconfig-plugin-datatree" "^3.0.0"
+    "@qiwi/uniconfig-plugin-json" "^3.0.0"
+    "@qiwi/uniconfig-plugin-path" "^3.0.0"
+
 "@semantic-release/changelog@^3.0.2":
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/@semantic-release/changelog/-/changelog-3.0.2.tgz#b09a8e0d072ef54d2bc7a5c82f6112dc3c8ae85d"
@@ -7948,6 +8010,11 @@ tslib@1.9.0:
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.9.0.tgz#e37a86fda8cbbaf23a057f473c9f4dc64e5fc2e8"
   integrity sha512-f/qGG2tUkrISBlQZEjEqoZ3B2+npJjIf04H1wuAv9iA8i04Icp+61KRXxFdha22670NJopsZCIjhC3SnjPRKrQ==
+
+tslib@^1.10.0:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.10.0.tgz#c3c19f95973fb0a62973fb09d90d961ee43e5c8a"
+  integrity sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ==
 
 tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0:
   version "1.9.3"

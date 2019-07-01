@@ -6,9 +6,6 @@ export interface IConfig<T = any> {
   has: (key: TConfigKey) => boolean
   delete?: (key: TConfigKey) => void
   clear?: () => void
-  onDidChange?: (key: TConfigKey, cb: (newValue: T | undefined, oldValue: T | undefined) => void) => void
-  onDidAnyChange?: (cb: (oldValue: object | undefined, newValue: object | undefined) => void) => void
   size?: number
-  store?: object
-  path?: string
+  [key: string]: any
 }

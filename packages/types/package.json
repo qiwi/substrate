@@ -34,6 +34,7 @@
   ],
   "dependencies": {},
   "devDependencies": {
+    "@qiwi/uniconfig": "^3.0.1",
     "@types/bluebird": "^3.5.27",
     "@types/config": "^0.0.34",
     "@types/jest": "^24.0.13",
