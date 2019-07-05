@@ -1,4 +1,6 @@
-import { TUtilEach, lodashEach, underscoreEach } from './index';
+import { forEach as lodashEach } from 'lodash';
+import { each as underscoreEach } from 'underscore';
+import { TUtilEach } from './index';
 
 const brokenUtilEach: TUtilEach = (collection: object, handler: (value: string, key: boolean, collection: object) => void) =>  { handler || collection; }; // $ExpectError
 const utilEach: TUtilEach = (collection: object, handler: (value: string, key: number, collection: object) => void): object => {
