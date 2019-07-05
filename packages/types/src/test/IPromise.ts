@@ -1,4 +1,5 @@
-import { IPromise, IPromiseConstructor, BluebirdPromise } from './index';
+import * as BluebirdPromise from 'bluebird';
+import { IPromise, IPromiseConstructor } from './index';
 
 const executor = (resolve: (value: number) => void, reject: (value: number) => void) => {
   const value = Math.random();

@@ -33,13 +33,17 @@
     "lib/"
   ],
   "devDependencies": {
+    "@qiwi/uniconfig": "^3.0.1",
     "@types/bluebird": "^3.5.27",
+    "@types/config": "^0.0.34",
     "@types/jest": "^24.0.15",
     "@types/lodash": "^4.14.135",
     "@types/node": "^12.0.10",
     "@types/parsimmon": "^1.10.0",
     "@types/underscore": "^1.9.1",
     "bluebird": "^3.5.5",
+    "conf": "^4.1.0",
+    "config": "^3.1.0",
     "dts-generator": "^3.0.0",
     "dtslint": "^0.8.0",
     "flowgen": "^1.9.0",
