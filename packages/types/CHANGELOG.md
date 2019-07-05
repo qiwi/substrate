@@ -1,3 +1,10 @@
+# [@qiwi/substrate-types-v1.16.0](https://github.com/qiwi/substrate/compare/v1.15.0...v1.16.0) (2019-07-05)
+
+
+### Features
+
+* **types:** add IConfig ([6d5bbaa](https://github.com/qiwi/substrate/commit/6d5bbaa)), closes [#21](https://github.com/qiwi/substrate/issues/21)
+
 # [@qiwi/substrate-types-v1.15.0](https://github.com/qiwi/substrate/compare/v1.14.0...v1.15.0) (2019-06-30)
 
 
