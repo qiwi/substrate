@@ -17,7 +17,7 @@ install:
   - yarn run build
 
 script:
-  - yarn run test_with_report
+  - yarn run test:report
 
 deploy:
   provider: script
