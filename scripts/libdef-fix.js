@@ -9,7 +9,7 @@ const DTS = resolve(dts)
 const IMPORT_MAIN_PATTERN = /\timport main = require\('(.+)'\);/g
 const IMPORT_MAIN_LINE_PATTERN = /^\timport main = require\('(.+)'\);$/
 const REDUNDANT_DECLARE_EXPORT = /([\r\n\t\s]+)export ([^*{\t;]+[;{])/gi
-const BROKEN_MODULE_NAME = /(declare module '.+\/lib\/es5\/)[^/]*\/src\/main\/index'.+/
+const BROKEN_MODULE_NAME = /(declare module '.+\/target\/es5\/)[^/]*\/src\/main\/ts\/index'.+/
 const REFERENCE = /\/\/\/.+/
 
 assert(!!flow &&!!dts, '`flow` and `dts` file paths should be specified')

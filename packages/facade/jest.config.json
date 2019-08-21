@@ -9,7 +9,7 @@
     "^.+\\.tsx?$": "ts-jest"
   },
   "collectCoverageFrom": [
-    "<rootDir>/packages/facade/src/main/*.ts"
+    "<rootDir>/packages/facade/src/main/**/*.ts"
   ],
   "testMatch": [
     "<rootDir>/packages/facade/src/test/**/*.ts"

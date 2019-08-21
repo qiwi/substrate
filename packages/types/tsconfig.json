@@ -1,9 +1,9 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "rootDir": "src/main",
-    "outDir": "lib/es5",
-    "baseUrl": "src/main"
+    "rootDir": "src/main/ts",
+    "outDir": "target/es5",
+    "baseUrl": "src/main/ts"
   },
   "include": [
     "src/main/**/*"

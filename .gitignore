@@ -63,6 +63,7 @@ typings/
 lib
 bundle
 dist
+target
 docs
 flow-typed
 typings
