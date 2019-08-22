@@ -1,0 +1,60 @@
+{
+  "name": "@qiwi/substrate-abstract",
+  "description": "Abstract classes",
+  "version": "1.16.0",
+  "main": "target/es5/index.js",
+  "types": "typings/index.d.ts",
+  "typesVersions": {
+    ">=3.1": {
+      "*": [
+        "typings/index.d.ts",
+        "src/test/ts/*"
+      ]
+    }
+  },
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf target",
+    "build": "yarn build:es5 && yarn build:es6 && yarn build:ts && yarn libdef",
+    "build:es5": "mkdir -p target/es5 && tsc -p tsconfig.json --target ES5 --outDir target/es5",
+    "build:es6": "mkdir -p target/es6 && tsc -p tsconfig.json --target ES6 --outDir target/es6",
+    "build:ts": "cp -r src/main/ts/ target/ts/",
+    "libdef": "yarn dtsgen && yarn libdeffix && yarn flowgen",
+    "libdeffix": "node -r esm ../../scripts/libdef-fix.js --flow=./typings/index.flow.js --dts=./typings/index.d.ts",
+    "dtsgen": "dts-generator --project ./ --out typings/index.d.ts --prefix @qiwi/substrate-abstract/target/es5 --name @qiwi/substrate-abstract --main @qiwi/substrate-abstract/target/es5/index --moduleResolution node",
+    "flowgen": "flowgen typings/index.d.ts --output-file typings/index.flow.js",
+    "test": "yarn test:libdefs && yarn jest",
+    "test:libdefs": "cp typings/index.d.ts src/test/ts/index.d.ts && yarn dtslint",
+    "jest": "jest --config=jest.config.json",
+    "dtslint": "dtslint src/test/ts --onlyTestTsNext"
+  },
+  "files": [
+    "README.md",
+    "CHANGELOG.md",
+    "typings",
+    "target"
+  ],
+  "devDependencies": {
+    "@qiwi/uniconfig": "^3.0.1",
+    "@types/bluebird": "^3.5.27",
+    "@types/config": "^0.0.34",
+    "@types/jest": "^24.0.18",
+    "@types/lodash": "^4.14.137",
+    "@types/node": "^12.7.2",
+    "@types/parsimmon": "^1.10.0",
+    "@types/underscore": "^1.9.2",
+    "bluebird": "^3.5.5",
+    "conf": "^4.1.0",
+    "config": "^3.1.0",
+    "dts-generator": "^3.0.0",
+    "dtslint": "^0.9.1",
+    "flowgen": "^1.10.0",
+    "lodash": "^4.17.15",
+    "replace-in-file": "^4.1.3",
+    "ts-loader": "^6.0.4",
+    "ts-node": "^8.3.0",
+    "ts-to-flow": "^0.0.3",
+    "typescript": "3.5.3",
+    "underscore": "^1.9.1"
+  }
+}

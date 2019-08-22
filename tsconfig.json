@@ -6,7 +6,9 @@
       "@qiwi/substrate": ["./facade/src/main/ts"],
       "@qiwi/substrate/*": ["./facade/src/main/ts/*"],
       "@qiwi/substrate-types": ["./types/src/main/ts"],
-      "@qiwi/substrate-types/*": ["./types/src/main/ts/*"]
+      "@qiwi/substrate-types/*": ["./types/src/main/ts/*"],
+      "@qiwi/substrate-abstract": ["./abstract/src/main/ts"],
+      "@qiwi/substrate-abstract/*": ["./abstract/src/main/ts/*"]
     }
   }
 }
