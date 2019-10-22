@@ -117,7 +117,8 @@ declare module '@qiwi/substrate-types/target/es5/IPromise' {
 	interface IPromise<TValue = any, TReason = any> {
 	    then: (onSuccess?: (value: TValue) => any, onReject?: (reason: TReason) => any) => IPromise;
 	    catch: (onReject: (reason: TReason) => any) => IPromise;
-	    finally?: (onFinally: () => any) => IPromise;
+	    finally: (onFinally: () => any) => IPromise;
+	    readonly [Symbol.toStringTag]: string;
 	}
 	const IPromise: PromiseConstructor;
 }

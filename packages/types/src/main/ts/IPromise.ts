@@ -11,7 +11,8 @@ export interface IPromiseConstructor<TValue = any, TReason = any> {
 export interface IPromise<TValue = any, TReason = any> {
   then: (onSuccess?: (value: TValue) => any, onReject?: (reason: TReason) => any) => IPromise
   catch: (onReject: (reason: TReason) => any) => IPromise
-  finally?: (onFinally: () => any) => IPromise
+  finally: (onFinally: () => any) => IPromise
+  readonly [Symbol.toStringTag]: string
 }
 
 // https://stackoverflow.com/questions/45902881/ts1055-when-using-async-await-using-a-type-alias
