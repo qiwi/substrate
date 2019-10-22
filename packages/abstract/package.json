@@ -26,7 +26,7 @@
     "test": "yarn test:libdefs && yarn jest",
     "test:libdefs": "cp typings/index.d.ts src/test/ts/index.d.ts && yarn dtslint",
     "jest": "jest --config=jest.config.json",
-    "dtslint": "dtslint src/test/ts --onlyTestTsNext"
+    "dtslint": "dtslint src/test/ts --localTs"
   },
   "files": [
     "README.md",

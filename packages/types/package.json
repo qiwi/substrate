@@ -24,7 +24,7 @@
     "flowgen": "flowgen typings/index.d.ts --output-file typings/index.flow.js",
     "test": "cp typings/index.d.ts src/test/ts/index.d.ts && yarn dtslint",
     "jest": "jest --config=jest.config.json",
-    "dtslint": "dtslint src/test/ts --onlyTestTsNext"
+    "dtslint": "dtslint src/test/ts --localTs"
   },
   "files": [
     "README.md",

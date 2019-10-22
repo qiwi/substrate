@@ -25,7 +25,7 @@
     "testgen": "node -r esm src/gen/testgen.js",
     "test": "yarn testgen && yarn dtslint",
     "jest": "jest --config=jest.config.json",
-    "dtslint": "dtslint src/test/ts --onlyTestTsNext"
+    "dtslint": "dtslint src/test/ts --localTs"
   },
   "files": [
     "README.md",
