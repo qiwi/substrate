@@ -3,7 +3,7 @@
   "workspaces": [
     "packages/*"
   ],
-  "version": "1.0.1",
+  "version": "1.17.0",
   "private": true,
   "scripts": {
     "clean": "lerna clean --yes && lerna run clean",
