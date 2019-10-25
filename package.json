@@ -35,6 +35,7 @@
     "jest": "^24.9.0",
     "lerna": "^3.18.2",
     "lodash": "^4.17.15",
+    "multi-semantic-release": "^1.1.1",
     "replace-in-file": "^4.2.0",
     "semantic-release": "15.13.27",
     "snazzy": "^8.0.0",
