@@ -1,4 +1,5 @@
 {
+  "name": "@qiwi/substrate",
   "workspaces": [
     "packages/*"
   ],
