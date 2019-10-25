@@ -2,11 +2,12 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "rootDir": "src/main/ts",
-    "outDir": "target/es5"
+    "outDir": "target/es5",
+    "tsBuildInfoFile": "./buildcache/.tsbuildinfo"
   },
   "references": [
     { "path": "../types" },
-    { "path": "../facade" }
+    { "path": "../abstract" }
   ],
   "include": [
     "src/main/**/*"
