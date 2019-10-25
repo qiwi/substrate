@@ -34,7 +34,8 @@
     "target"
   ],
   "dependencies": {
-    "@qiwi/substrate-types": "1.16.0"
+    "@qiwi/substrate-types": "^1.0.0",
+    "@qiwi/substrate-abstract": "^1.0.0"
   },
   "devDependencies": {
     "@types/jest": "^24.0.19",
