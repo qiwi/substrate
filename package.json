@@ -21,6 +21,9 @@
     "release": "multi-semantic-release --execasync",
     "postupdate": "yarn && yarn bootstrap && yarn build && yarn test"
   },
+  "resolutions": {
+    "multi-semantic-release/semantic-release": "15.13.24"
+  },
   "devDependencies": {
     "@semantic-release/changelog": "^3.0.4",
     "@semantic-release/commit-analyzer": "^6.3.0",
@@ -39,7 +42,7 @@
     "lodash": "^4.17.15",
     "multi-semantic-release": "^1.1.1",
     "replace-in-file": "^4.2.0",
-    "semantic-release": "15.13.27",
+    "semantic-release": "15.13.24",
     "snazzy": "^8.0.0",
     "ts-jest": "^24.1.0",
     "tslint": "^5.20.0",
