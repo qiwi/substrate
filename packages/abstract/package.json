@@ -3,7 +3,11 @@
   "description": "Abstract classes",
   "version": "1.17.0",
   "main": "target/es5/index.js",
+  "source": "target/ts/index.ts",
   "types": "target/es5/index.d.ts",
+  "typescript": {
+    "definition": "target/es5/index.d.ts"
+  },
   "typesVersions": {
     ">=3.1": {
       "*": [
