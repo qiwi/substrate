@@ -1,3 +1,2 @@
-/// <reference path="../../../../types/typings/index.d.ts" />
-
 export * from '@qiwi/substrate-types'
+export * from '@qiwi/substrate-abstract'

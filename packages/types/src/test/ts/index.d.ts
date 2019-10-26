@@ -1,17 +1,17 @@
 declare module '@qiwi/substrate-types/target/es5/IAnyMap' {
-	type IAnyMap = {
+	export type IAnyMap = {
 	    [key: string]: any;
 	    [key: number]: any;
 	};
 }
 declare module '@qiwi/substrate-types/target/es5/ICloneable' {
-	interface ICloneable<T> {
+	export interface ICloneable<T> {
 	    clone(): T;
 	}
 }
 declare module '@qiwi/substrate-types/target/es5/ICollection' {
-	type ICollectionItem = any;
-	interface ICollection<T> {
+	export type ICollectionItem = any;
+	export interface ICollection<T> {
 	    get: (index: number | string) => T | undefined;
 	    add: (index: number | string, item: T) => T;
 	    remove: (index: number | string) => T | undefined;
@@ -21,8 +21,8 @@ declare module '@qiwi/substrate-types/target/es5/ICollection' {
 	}
 }
 declare module '@qiwi/substrate-types/target/es5/IConfig' {
-	type TConfigKey = string;
-	interface IConfig<T = any> {
+	export type TConfigKey = string;
+	export interface IConfig<T = any> {
 	    set?: (key: TConfigKey, value: T) => void;
 	    get: (key: TConfigKey) => T;
 	    has: (key: TConfigKey) => boolean;
@@ -33,18 +33,18 @@ declare module '@qiwi/substrate-types/target/es5/IConfig' {
 	}
 }
 declare module '@qiwi/substrate-types/target/es5/IConfigurable' {
-	interface IConfigurable {
+	export interface IConfigurable {
 	    setConfig: (options?: any) => void;
 	    getConfig: () => any;
 	}
 }
 declare module '@qiwi/substrate-types/target/es5/ICurrency' {
-	type ICurrency = string;
+	export type ICurrency = string;
 }
 declare module '@qiwi/substrate-types/target/es5/IEventEmitter' {
-	type IEventListener = (...args: any[]) => void;
-	type IEmitterMethod = (type: string, listener: IEventListener) => void;
-	interface IEventEmitter {
+	export type IEventListener = (...args: any[]) => void;
+	export type IEmitterMethod = (type: string, listener: IEventListener) => void;
+	export interface IEventEmitter {
 	    emit(type: string, ...args: any[]): void;
 	    off: IEmitterMethod;
 	    on: IEmitterMethod;
@@ -52,9 +52,9 @@ declare module '@qiwi/substrate-types/target/es5/IEventEmitter' {
 	}
 }
 declare module '@qiwi/substrate-types/target/es5/ILogger' {
-	type ILoggerMethod = (...args: any[]) => void;
-	type TLogLevel = number;
-	interface ILogger {
+	export type ILoggerMethod = (...args: any[]) => void;
+	export type TLogLevel = number;
+	export interface ILogger {
 	    trace: ILoggerMethod;
 	    debug: ILoggerMethod;
 	    info: ILoggerMethod;
@@ -67,65 +67,65 @@ declare module '@qiwi/substrate-types/target/es5/ILogger' {
 	}
 }
 declare module '@qiwi/substrate-types/target/es5/IMiddleware' {
-	interface IRequest {
+	export interface IRequest {
 	    res?: IResponse;
 	    [key: string]: any;
 	}
-	interface IResponse {
+	export interface IResponse {
 	    status: (status: number) => IResponse;
 	    send: (arg: string | object) => IResponse;
 	    json: () => IResponse;
 	    req?: IRequest;
 	    [key: string]: any;
 	}
-	interface INext {
+	export interface INext {
 	    (...args: any[]): any;
 	}
-	interface IRequestMiddleware {
+	export interface IRequestMiddleware {
 	    (req: IRequest, res: IResponse, next?: INext): void;
 	}
-	interface IErrorMiddleware {
+	export interface IErrorMiddleware {
 	    (err: Error, req: IRequest, res: IResponse, next?: INext): void;
 	}
-	type IMiddleware = IRequestMiddleware | IErrorMiddleware;
-	interface IAsyncRequestMiddleware {
+	export type IMiddleware = IRequestMiddleware | IErrorMiddleware;
+	export interface IAsyncRequestMiddleware {
 	    (req: IRequest, res: IResponse, next?: INext): Promise<void>;
 	}
-	interface IAsyncErrorMiddleware {
+	export interface IAsyncErrorMiddleware {
 	    (err: Error, req: IRequest, res: IResponse, next?: INext): Promise<void>;
 	}
-	type IAsyncMiddleware = IAsyncRequestMiddleware | IAsyncErrorMiddleware;
+	export type IAsyncMiddleware = IAsyncRequestMiddleware | IAsyncErrorMiddleware;
 }
 declare module '@qiwi/substrate-types/target/es5/IMoney' {
 	import { ICurrency } from '@qiwi/substrate-types/target/es5/ICurrency';
-	type IValue = number;
-	interface IMoney {
+	export type IValue = number;
+	export interface IMoney {
 	    value: IValue;
 	    currency: ICurrency;
 	    toString: () => string;
 	}
 }
 declare module '@qiwi/substrate-types/target/es5/IPromise' {
-	type TPromiseExecutor<TValue = any, TReason = any> = (resolve: (value: TValue) => void, reject: (reason: TReason) => void) => void;
-	interface IPromiseConstructor<TValue = any, TReason = any> {
+	export type TPromiseExecutor<TValue = any, TReason = any> = (resolve: (value: TValue) => void, reject: (reason: TReason) => void) => void;
+	export interface IPromiseConstructor<TValue = any, TReason = any> {
 	    new (executor: TPromiseExecutor<TValue>): IPromise<TValue, TReason>;
 	    all: (values: Array<IPromise<TValue, TReason>>) => IPromise<TValue[], TReason>;
 	    race: (values: Array<IPromise<TValue, TReason>>) => IPromise<TValue, TReason>;
 	    reject: (reason?: TReason) => IPromise<TValue, TReason>;
 	    resolve: (value?: TValue) => IPromise<TValue, TReason>;
 	}
-	interface IPromise<TValue = any, TReason = any> {
+	export interface IPromise<TValue = any, TReason = any> {
 	    then: (onSuccess?: (value: TValue) => any, onReject?: (reason: TReason) => any) => IPromise;
 	    catch: (onReject: (reason: TReason) => any) => IPromise;
 	    finally: (onFinally: () => any) => IPromise;
 	    readonly [Symbol.toStringTag]: string;
 	}
-	const IPromise: PromiseConstructor;
+	export const IPromise: PromiseConstructor;
 }
 declare module '@qiwi/substrate-types/target/es5/IStack' {
 	import { ICollection } from '@qiwi/substrate-types/target/es5/ICollection';
-	type IStackItem = any;
-	interface IStack<T> extends ICollection<T> {
+	export type IStackItem = any;
+	export interface IStack<T> extends ICollection<T> {
 	    push: (...items: Array<T>) => T;
 	    pop: () => T | undefined;
 	    unshift: (...items: Array<T>) => T;
@@ -136,10 +136,10 @@ declare module '@qiwi/substrate-types/target/es5/IStack' {
 	}
 }
 declare module '@qiwi/substrate-types/target/es5/IStorage' {
-	type TStorageKey = string;
-	type TStorageValue = any;
-	type TStorageTTL = number;
-	interface IStorage {
+	export type TStorageKey = string;
+	export type TStorageValue = any;
+	export type TStorageTTL = number;
+	export interface IStorage {
 	    get: (key: TStorageKey) => TStorageValue;
 	    set: (key: TStorageKey, value: TStorageValue, ttl?: TStorageTTL) => void;
 	    has: (key: TStorageKey) => boolean;
@@ -149,35 +149,35 @@ declare module '@qiwi/substrate-types/target/es5/IStorage' {
 	}
 }
 declare module '@qiwi/substrate-types/target/es5/IStringMap' {
-	type IStringMap = {
+	export type IStringMap = {
 	    [key: string]: string;
 	};
 }
 declare module '@qiwi/substrate-types/target/es5/IUtilEach' {
-	type TUtilEachCollection = any[] | object;
-	type TUtilEachHandler = (value: any, key?: string | number, collection?: TUtilEachCollection) => void;
-	type TUtilEach = (collection: TUtilEachCollection, handler: TUtilEachHandler) => TUtilEachCollection;
+	export type TUtilEachCollection = any[] | object;
+	export type TUtilEachHandler = (value: any, key?: string | number, collection?: TUtilEachCollection) => void;
+	export type TUtilEach = (collection: TUtilEachCollection, handler: TUtilEachHandler) => TUtilEachCollection;
 }
 declare module '@qiwi/substrate-types/target/es5/IUtilGet' {
-	type TUtilGetPath = Array<string | number> | string;
-	type TUtilGetObject = object;
-	type TUtilGetDefaultValue = any;
-	type TUtilGetResponse = any;
-	type TUtilGet = (obj: TUtilGetObject, path: TUtilGetPath, defaultValue?: TUtilGetDefaultValue) => TUtilGetResponse;
+	export type TUtilGetPath = Array<string | number> | string;
+	export type TUtilGetObject = object;
+	export type TUtilGetDefaultValue = any;
+	export type TUtilGetResponse = any;
+	export type TUtilGet = (obj: TUtilGetObject, path: TUtilGetPath, defaultValue?: TUtilGetDefaultValue) => TUtilGetResponse;
 }
 declare module '@qiwi/substrate-types/target/es5/IUtilMap' {
-	type TUtilMapCollection = any[] | object;
-	type TUtilMapHandler = (value: any, key?: string | number, collection?: TUtilMapCollection) => any;
-	type TUtilMap = (collection: TUtilMapCollection, handler: TUtilMapHandler) => any[];
+	export type TUtilMapCollection = any[] | object;
+	export type TUtilMapHandler = (value: any, key?: string | number, collection?: TUtilMapCollection) => any;
+	export type TUtilMap = (collection: TUtilMapCollection, handler: TUtilMapHandler) => any[];
 }
 declare module '@qiwi/substrate-types/target/es5/IUtilSet' {
-	type TUtilSetPath = Array<string | number> | string;
-	type TUtilSetObject = object;
-	type TUtilSetValue = any;
-	type TUtilSet = (obj: TUtilSetObject, path: TUtilSetPath, value: TUtilSetValue) => void;
+	export type TUtilSetPath = Array<string | number> | string;
+	export type TUtilSetObject = object;
+	export type TUtilSetValue = any;
+	export type TUtilSet = (obj: TUtilSetObject, path: TUtilSetPath, value: TUtilSetValue) => void;
 }
 declare module '@qiwi/substrate-types/target/es5/TPredicate' {
-	type TPredicate = (...args: any[]) => boolean;
+	export type TPredicate = (...args: any[]) => boolean;
 }
 declare module '@qiwi/substrate-types/target/es5/index' {
 	export { IStringMap } from '@qiwi/substrate-types/target/es5/IStringMap';
