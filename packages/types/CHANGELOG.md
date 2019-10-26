@@ -1,3 +1,10 @@
+## @qiwi/substrate-types [1.16.1](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.16.0...@qiwi/substrate-types@1.16.1) (2019-10-26)
+
+
+### Bug Fixes
+
+* **facade:** remove redundant typings refs ([f7121ce](https://github.com/qiwi/substrate/commit/f7121ce8e639d17fb3225bfb3c2c7babdbd26a0e))
+
 # [@qiwi/substrate-types-v1.16.0](https://github.com/qiwi/substrate/compare/v1.15.0...v1.16.0) (2019-07-05)
 
 
