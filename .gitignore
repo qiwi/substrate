@@ -68,6 +68,6 @@ docs
 flow-typed
 typings
 raw
-packages/**/src/test/*.d.ts
+packages/**/src/test/ts/*.d.ts
 packages/facade/src/test/*.ts
 *.tsbuildinfo
