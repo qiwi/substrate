@@ -1,4 +1,3 @@
-
 import {resolve} from 'path'
 import { argv } from 'yargs'
 import assert from 'assert'
@@ -8,11 +7,10 @@ const {flow, dts} = argv
 const DTS = resolve(dts)
 const IMPORT_MAIN_PATTERN = /\timport main = require\('(.+)'\);/g
 const IMPORT_MAIN_LINE_PATTERN = /^\timport main = require\('(.+)'\);$/
-const REDUNDANT_DECLARE_EXPORT = /([\r\n\t\s]+)export ([^*{\t;]+[;{])/gi
-const BROKEN_MODULE_NAME = /(declare module '.+\/target\/es5\/)[^/]*\/src\/main\/ts\/index'.+/
+const BROKEN_MODULE_NAME = /(declare module '.+\/target\/es5\/)[^/]*\/src\/main\/index'.+/
 const REFERENCE = /\/\/\/.+/
 
-assert(!!flow &&!!dts, '`flow` and `dts` file paths should be specified')
+assert(!!dts, ' `dts` file path should be specified')
 
 const options = {
   files: DTS,
@@ -20,7 +18,6 @@ const options = {
     '\texport = main;',
     IMPORT_MAIN_PATTERN,
     BROKEN_MODULE_NAME,
-    REDUNDANT_DECLARE_EXPORT,
     REFERENCE,
     /^\s*[\r\n]/gm
   ],
@@ -34,16 +31,11 @@ const options = {
       const [, module] = BROKEN_MODULE_NAME.exec(line)
       return `${module}index' {`
     },
-    line => {
-      REDUNDANT_DECLARE_EXPORT.lastIndex = 0
-      const [, indent, declaration] = REDUNDANT_DECLARE_EXPORT.exec(line)
-
-      return `${indent}${declaration}`
-    },
     '',
     ''
   ],
 }
 
 const changes = replaceSync(options);
-console.log('Modified files:', changes.join(', '));
+console.log('Modified files:', changes);
+
