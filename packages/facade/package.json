@@ -38,14 +38,14 @@
     "target"
   ],
   "dependencies": {
-    "@qiwi/substrate-types": "^1.16.1",
-    "@qiwi/substrate-abstract": "^1.16.1"
+    "@qiwi/substrate-types": "^1.16.2",
+    "@qiwi/substrate-abstract": "^1.16.2"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.20",
-    "@types/node": "^12.11.7",
+    "@types/jest": "^24.0.21",
+    "@types/node": "^12.12.5",
     "dts-generator": "^3.0.0",
-    "dtslint": "^0.9.9",
+    "dtslint": "^1.0.2",
     "esm": "^3.2.25",
     "flowgen": "^1.10.0",
     "fs-extra": "^8.1.0",
