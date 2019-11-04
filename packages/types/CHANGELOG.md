@@ -1,3 +1,10 @@
+## @qiwi/substrate-types [1.16.3](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.16.2...@qiwi/substrate-types@1.16.3) (2019-11-04)
+
+
+### Performance Improvements
+
+* **package:** up deps ([2203b38](https://github.com/qiwi/substrate/commit/2203b38a16581cd555f7a604797878a8b80c31a4))
+
 ## @qiwi/substrate-types [1.16.2](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.16.1...@qiwi/substrate-types@1.16.2) (2019-10-26)
 
 
