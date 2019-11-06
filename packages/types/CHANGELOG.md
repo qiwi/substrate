@@ -1,3 +1,10 @@
+## @qiwi/substrate-types [1.16.4](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.16.3...@qiwi/substrate-types@1.16.4) (2019-11-06)
+
+
+### Bug Fixes
+
+* **types:** use Iterables instead of Array in IPromise declaration ([9a99d66](https://github.com/qiwi/substrate/commit/9a99d663bcd02de4ca132b5caffaf853b45dbc1f))
+
 ## @qiwi/substrate-types [1.16.3](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.16.2...@qiwi/substrate-types@1.16.3) (2019-11-04)
 
 
