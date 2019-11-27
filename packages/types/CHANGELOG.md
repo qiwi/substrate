@@ -1,3 +1,10 @@
+# @qiwi/substrate-types [1.17.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.16.4...@qiwi/substrate-types@1.17.0) (2019-11-27)
+
+
+### Features
+
+* add IIterator, IIterable, IIteratorResult ([fd48062](https://github.com/qiwi/substrate/commit/fd48062f1a10467864e694df005c8fb79f5588f3)), closes [#68](https://github.com/qiwi/substrate/issues/68)
+
 ## @qiwi/substrate-types [1.16.4](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.16.3...@qiwi/substrate-types@1.16.4) (2019-11-06)
 
 
