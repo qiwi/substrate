@@ -16,4 +16,17 @@ export { ICollection } from './ICollection'
 export { TPredicate } from './TPredicate'
 export { IConfigurable } from './IConfigurable'
 export { IConfig } from './IConfig'
-export { IMiddleware, IAsyncMiddleware, IErrorMiddleware, IRequestMiddleware, IRequest, IResponse, INext } from './IMiddleware'
+export {
+  IIterable,
+  IIterator,
+  IIteratorResult
+} from './IIterable'
+export {
+  IMiddleware,
+  IAsyncMiddleware,
+  IErrorMiddleware,
+  IRequestMiddleware,
+  IRequest,
+  IResponse,
+  INext
+} from './IMiddleware'
