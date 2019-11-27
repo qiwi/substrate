@@ -38,20 +38,20 @@
     "target"
   ],
   "dependencies": {
-    "@qiwi/substrate-types": "^1.16.3",
-    "@qiwi/substrate-abstract": "^1.16.3"
+    "@qiwi/substrate-types": "^1.16.4",
+    "@qiwi/substrate-abstract": "^1.16.4"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.22",
-    "@types/node": "^12.12.6",
+    "@types/jest": "^24.0.23",
+    "@types/node": "^12.12.14",
     "dts-generator": "^3.0.0",
-    "dtslint": "^1.0.3",
+    "dtslint": "^2.0.2",
     "esm": "^3.2.25",
     "flowgen": "^1.10.0",
     "fs-extra": "^8.1.0",
     "replace-in-file": "^4.2.0",
     "ts-loader": "^6.2.1",
-    "ts-node": "^8.4.1",
+    "ts-node": "^8.5.2",
     "ts-to-flow": "^0.0.3",
     "typescript": "3.7.2"
   },
