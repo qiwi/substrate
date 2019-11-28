@@ -17,11 +17,6 @@
     "lib": ["es6", "dom"],
     "skipLibCheck": true,
     "baseUrl": ".",
-    "paths": {
-      "@qiwi/substrate-abstract": [
-        "../../main/ts"
-      ]
-    },
     "typeRoots": [
       ".",
       "../../../../../node_modules/@types"

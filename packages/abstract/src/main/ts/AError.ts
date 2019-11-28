@@ -8,7 +8,7 @@ export type IErrorOpts = {
   message: string
 }
 
-export class AbstractError extends Error implements IError {
+export class AError extends Error implements IError {
   message: string
   code?: string | number
   constructor(message: string | IErrorOpts) {

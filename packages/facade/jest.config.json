@@ -1,18 +1,15 @@
 {
   "testEnvironment": "node",
   "collectCoverage": true,
-  "coveragePathIgnorePatterns": [
-    "**/(I|T)[A-Z]*.{ts}"
-  ],
   "rootDir": "../../",
   "transform": {
     "^.+\\.tsx?$": "ts-jest"
   },
   "collectCoverageFrom": [
-    "<rootDir>/packages/facade/src/main/**/*.ts"
+    "<rootDir>/packages/facade/src/main/**/A*.ts"
   ],
   "testMatch": [
-    "<rootDir>/packages/facade/src/test/**/*.ts"
+    "<rootDir>/packages/facade/src/test/**/A*.ts"
   ],
   "transformIgnorePatterns": [
     "/!node_modules\\/lodash-es/",

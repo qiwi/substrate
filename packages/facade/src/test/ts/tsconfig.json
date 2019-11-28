@@ -8,21 +8,16 @@
     "strictFunctionTypes": true,
     "noImplicitThis": true,
     "alwaysStrict": true,
-    /* Additional Checks */
-    /* next line commented out because we need unused vars for type tests */
-    // "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "lib": ["es6", "dom"],
     "skipLibCheck": true,
     "baseUrl": ".",
-    "paths": {
-      "@qiwi/substrate-types": [
-        ".."
-      ]
-    },
-    "typeRoots": ["."]
+    "typeRoots": [
+      ".",
+      "../../../../../node_modules/@types"
+    ]
   },
   "include": [
     "./*"

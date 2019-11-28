@@ -26,7 +26,8 @@
     "libdeffix": "node -r esm ../../scripts/js/libdef-fix.js --flow=./typings/index.flow.js --dts=./typings/index.d.ts",
     "dtsgen": "dts-generator --project ./ --out typings/index.d.ts --prefix @qiwi/substrate/target/es5 --name @qiwi/substrate --main @qiwi/substrate/target/es5/index",
     "flowgen": "flowgen typings/index.d.ts --output-file typings/index.flow.js",
-    "testgen": "node -r esm src/gen/testgen.js",
+    "testgen2": "node -r esm src/gen/testgen.js",
+    "testgen": "cp -r ../types/src/test/ts/I*.ts src/test/ts/ && cp -r ../abstract/src/test/ts/A*.ts src/test/ts/",
     "test": "yarn testgen && yarn dtslint",
     "jest": "jest --config=jest.config.json",
     "dtslint": "dtslint src/test/ts --localTs ../../node_modules/typescript/lib --expectOnly"

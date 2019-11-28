@@ -30,7 +30,8 @@
     "test": "yarn test:libdefs && yarn jest",
     "test:libdefs": "cp typings/index.d.ts src/test/ts/index.d.ts && yarn dtslint",
     "jest": "jest --config=jest.config.json",
-    "dtslint": "dtslint src/test/ts --localTs ../../node_modules/typescript/lib --expectOnly"
+    "dtslint": "dtslint src/test/ts --localTs ../../node_modules/typescript/lib --expectOnly",
+    "aliasgen": "node -r esm ../../scripts/js/alias-gen.js"
   },
   "files": [
     "README.md",

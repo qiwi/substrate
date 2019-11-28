@@ -9,7 +9,7 @@
     "<rootDir>/packages/abstract/src/main/**/*.ts"
   ],
   "testMatch": [
-    "<rootDir>/packages/abstract/src/test/**/*.ts"
+    "<rootDir>/packages/abstract/src/test/**/A*.ts"
   ],
   "testPathIgnorePatterns": [
     "<rootDir>/packages/abstract/src/test/ts/index.ts",
