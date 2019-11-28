@@ -7,6 +7,9 @@
     "outDir": "target/es5",
     "tsBuildInfoFile": "./buildcache/.tsbuildinfo"
   },
+  "references": [
+    { "path": "../types" }
+  ],
   "include": [
     "src/main/**/*"
   ],
