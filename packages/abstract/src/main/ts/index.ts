@@ -1,1 +1,1 @@
-export * from './AError'
+export { AbstractError, IError, IErrorOpts } from './AError'
