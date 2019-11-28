@@ -1,3 +1,24 @@
+# @qiwi/substrate [1.17.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate@1.16.5...@qiwi/substrate@1.17.0) (2019-11-28)
+
+
+### Bug Fixes
+
+* **facade:** repair re-export ([87121a4](https://github.com/qiwi/substrate/commit/87121a4b54868ab63f556bdcbff528c5c5472f61))
+
+
+### Features
+
+* add aliases for abstracts ([d453d31](https://github.com/qiwi/substrate/commit/d453d31ef32306ded9e4243cfe9f2fe4ecd7ff92)), closes [#15](https://github.com/qiwi/substrate/issues/15)
+
+
+
+
+
+### Dependencies
+
+* **@qiwi/substrate-types:** upgraded to 1.18.0
+* **@qiwi/substrate-abstract:** upgraded to 1.17.0
+
 ## @qiwi/substrate [1.16.5](https://github.com/qiwi/substrate/compare/@qiwi/substrate@1.16.4...@qiwi/substrate@1.16.5) (2019-11-27)
 
 
