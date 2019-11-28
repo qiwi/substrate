@@ -1,1 +1,1 @@
-export * from '@qiwi/substrate';
+export * from '../../main/ts/index';

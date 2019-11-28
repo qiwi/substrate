@@ -8,6 +8,7 @@ const DTS = resolve(dts)
 const IMPORT_MAIN_PATTERN = /\timport main = require\('(.+)'\);/g
 const IMPORT_MAIN_LINE_PATTERN = /^\timport main = require\('(.+)'\);$/
 const BROKEN_MODULE_NAME = /(declare module '.+\/target\/es5\/)[^/]*\/src\/main\/index'.+/
+const BROKEN_REEXPORT = /(@.+@.+)/gi
 const REFERENCE = /\/\/\/.+/
 
 assert(!!dts, ' `dts` file path should be specified')
@@ -19,7 +20,8 @@ const options = {
     IMPORT_MAIN_PATTERN,
     BROKEN_MODULE_NAME,
     REFERENCE,
-    /^\s*[\r\n]/gm
+    /^\s*[\r\n]/gm,
+    BROKEN_REEXPORT
   ],
   to: [
     '',
@@ -32,7 +34,8 @@ const options = {
       return `${module}index' {`
     },
     '',
-    ''
+    '',
+    line => line.slice(line.lastIndexOf('@'))
   ],
 }
 
