@@ -1,3 +1,11 @@
+# @qiwi/substrate-types [1.18.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.17.0...@qiwi/substrate-types@1.18.0) (2019-11-28)
+
+
+### Features
+
+* add aliases for abstracts ([d453d31](https://github.com/qiwi/substrate/commit/d453d31ef32306ded9e4243cfe9f2fe4ecd7ff92)), closes [#15](https://github.com/qiwi/substrate/issues/15)
+* expose types and ifaces without T/I prefixes ([6238bda](https://github.com/qiwi/substrate/commit/6238bda7bbc13ecee620b8f1ebead1f6605a9b8c)), closes [#15](https://github.com/qiwi/substrate/issues/15)
+
 # @qiwi/substrate-types [1.17.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.16.4...@qiwi/substrate-types@1.17.0) (2019-11-27)
 
 
