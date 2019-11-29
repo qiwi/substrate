@@ -4,7 +4,7 @@ import { resolve } from 'path'
 import { argv } from 'yargs'
 
 const {src, dst} = argv
-const SRC = resolve(src || './src/main/ts/types.ts')
+const SRC = resolve(src || './src/main/ts/export.ts')
 const DST = resolve(dst || './src/main/ts/aliases.ts')
 
 copySync(SRC, DST)
