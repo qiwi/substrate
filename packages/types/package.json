@@ -18,7 +18,7 @@
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf target",
-    "build": "yarn build:es5 && yarn build:es6 && yarn build:ts && yarn libdef",
+    "build": "yarn aliasgen && yarn build:es5 && yarn build:es6 && yarn build:ts && yarn libdef",
     "build:es5": "mkdir -p target/es5 && tsc -p tsconfig.json --target ES5 --outDir target/es5",
     "build:es6": "mkdir -p target/es6 && tsc -p tsconfig.json --target ES6 --outDir target/es6",
     "build:ts": "cp -r src/main/ts/ target/ts/",
