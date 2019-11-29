@@ -27,7 +27,7 @@
     "dtsgen": "dts-generator --project ./ --out typings/index.d.ts --prefix @qiwi/substrate/target/es5 --name @qiwi/substrate --main @qiwi/substrate/target/es5/index",
     "flowgen": "flowgen typings/index.d.ts --output-file typings/index.flow.js",
     "testgen": "cp -r ../types/src/test/ts/I*.ts src/test/ts/ && cp -r ../abstract/src/test/ts/A*.ts src/test/ts/ && cp typings/index.d.ts src/test/ts/index.d.ts",
-    "test": "yarn testgen && yarn dtslint",
+    "test": "yarn testgen && yarn dtslint && yarn jest",
     "jest": "jest --config=jest.config.json",
     "dtslint": "dtslint src/test/ts --localTs ../../node_modules/typescript/lib --expectOnly"
   },

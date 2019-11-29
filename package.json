@@ -1,5 +1,5 @@
 {
-  "name": "@qiwi/substrate",
+  "name": "qiwi-substrate-monorepo",
   "workspaces": [
     "packages/*"
   ],
