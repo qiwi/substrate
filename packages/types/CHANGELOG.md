@@ -1,3 +1,10 @@
+# @qiwi/substrate-types [1.19.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.18.0...@qiwi/substrate-types@1.19.0) (2019-12-02)
+
+
+### Features
+
+* add IPool ([fa4dbd0](https://github.com/qiwi/substrate/commit/fa4dbd069af227cf00732bd11d1a17c6c1d9afc5)), closes [#69](https://github.com/qiwi/substrate/issues/69)
+
 # @qiwi/substrate-types [1.18.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.17.0...@qiwi/substrate-types@1.18.0) (2019-11-28)
 
 
