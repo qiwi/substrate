@@ -1,5 +1,5 @@
 export { IStringMap as StringMap } from './IStringMap'
-export { IAnyMap as AbstractAnyMap } from './IAnyMap'
+export { IAnyMap as AnyMap } from './IAnyMap'
 export { IEventEmitter as EventEmitter } from './IEventEmitter'
 export { ILogger as Logger, TLogLevel as LogLevel, ILoggerMethod as LoggerMethod } from './ILogger'
 export { TUtilGet as UtilGet } from './IUtilGet'
@@ -23,10 +23,11 @@ export {
 } from './IIterable'
 export {
   IMiddleware as Middleware,
-  IAsyncMiddleware as AbstractAsyncMiddleware,
+  IAsyncMiddleware as AsyncMiddleware,
   IErrorMiddleware as ErrorMiddleware,
   IRequestMiddleware as RequestMiddleware,
   IRequest as Request,
   IResponse as Response,
   INext as Next
 } from './IMiddleware'
+export { IPool as Pool, IPooledObject as PooledObject, IPooledObjectFactory as PooledObjectFactory } from './IPool'

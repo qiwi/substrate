@@ -30,3 +30,4 @@ export {
   IResponse,
   INext
 } from './IMiddleware'
+export { IPool, IPooledObject, IPooledObjectFactory } from './IPool'
