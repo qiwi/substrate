@@ -1145,18 +1145,6 @@
     stream-buffers "^3.0.2"
     tempy "^0.3.0"
 
-"@qiwi/substrate-abstract@^1.17.1":
-  version "1.17.1"
-  resolved "https://registry.yarnpkg.com/@qiwi/substrate-abstract/-/substrate-abstract-1.17.1.tgz#e7c77fe30e20ef170f6955cd8c2b778f931f40f1"
-  integrity sha512-ffwPuLtHq216Q4SbM88gGy/4VtjjYkeazRZOe+fZjTmk3CtnDJXJJ2xuI4dbff2iXqiAsygA4AKb7SKrEYi7yA==
-  dependencies:
-    "@qiwi/substrate-types" "^1.18.0"
-
-"@qiwi/substrate-types@^1.19.0":
-  version "1.19.0"
-  resolved "https://registry.yarnpkg.com/@qiwi/substrate-types/-/substrate-types-1.19.0.tgz#bfec03f2cf3ff9773361e383395fe8c0fa1dd887"
-  integrity sha512-/fMLjgTlm9FJPv/413cM17upa5nQevbDaBj//izoEpC83H5uauIYU542Z8SFvi0NvK0av4T2h7HA7RmXQTfMtQ==
-
 "@qiwi/uniconfig-core@^3.2.0":
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-core/-/uniconfig-core-3.2.1.tgz#cff439adb0a27e7d50d31e733026a956c950441c"

@@ -11,7 +11,7 @@ copySync(SRC, DST)
 
 replaceSync({
   files: [DST],
-  from: /((I|T|A)\w+(?:,|\n|\s))/gi,
+  from: /((I|T|A)\w+(?:,|\n|\s))/g,
   to: match => {
     const alias = match.charAt(0) === 'A'
       ? `Abstract${match.slice(1)}`
