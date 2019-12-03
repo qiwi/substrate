@@ -32,7 +32,7 @@
     "jest": "jest --config=jest.config.json",
     "dtslint": "dtslint src/test/ts --localTs ../../node_modules/typescript/lib --expectOnly",
     "aliasgen": "node -r esm ../../scripts/js/alias-gen.js",
-    "docs": "typedoc --readme README.md --tsconfig ./tsconfig.json ./src/main --ignoreCompilerErrors || exit 0"
+    "docs": "rimraf docs && typedoc --readme README.md --tsconfig ./tsconfig.json ./src/main --ignoreCompilerErrors || exit 0"
   },
   "files": [
     "README.md",
