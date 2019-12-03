@@ -38,8 +38,8 @@
     "target"
   ],
   "dependencies": {
-    "@qiwi/substrate-types": "^1.19.2",
-    "@qiwi/substrate-abstract": "^1.17.4"
+    "@qiwi/substrate-types": "^1.19.3",
+    "@qiwi/substrate-abstract": "^1.17.5"
   },
   "devDependencies": {
     "@types/jest": "^24.0.23",
