@@ -1,3 +1,6 @@
+/** @module @qiwi/substrate-types */
+/** */
+
 import { ICurrency } from './ICurrency'
 
 export type IValue = number

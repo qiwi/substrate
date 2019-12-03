@@ -1,3 +1,6 @@
+/** @module @qiwi/substrate-types */
+/** */
+
 export type TPromiseExecutor<TValue = any, TReason = any> = (resolve: (value: TValue) => void, reject: (reason: TReason) => void) => void
 
 export interface IPromiseConstructor<TValue = any, TReason = any> {

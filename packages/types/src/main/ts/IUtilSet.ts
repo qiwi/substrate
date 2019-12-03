@@ -1,3 +1,6 @@
+/** @module @qiwi/substrate-types */
+/** */
+
 export type TUtilSetPath = Array<string | number> | string
 
 export type TUtilSetObject = object

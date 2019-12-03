@@ -1,3 +1,6 @@
+/** @module @qiwi/substrate-types */
+/** */
+
 export { IStringMap as StringMap } from './IStringMap'
 export { IAnyMap as AnyMap } from './IAnyMap'
 export { IEventEmitter as EventEmitter } from './IEventEmitter'

@@ -1,3 +1,6 @@
+/** @module @qiwi/substrate-abstract */
+/** */
+
 export type IError = {
   message: string
   code?: string | number

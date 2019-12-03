@@ -1,3 +1,6 @@
+/** @module @qiwi/substrate-types */
+/** */
+
 export type TUtilEachCollection = any[] | object
 
 export type TUtilEachHandler = (value: any, key?: string | number, collection?: TUtilEachCollection) => void

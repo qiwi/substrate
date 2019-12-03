@@ -1,3 +1,6 @@
+/** @module @qiwi/substrate-types */
+/** */
+
 export interface IRequest {
   res?: IResponse
   [key: string]: any

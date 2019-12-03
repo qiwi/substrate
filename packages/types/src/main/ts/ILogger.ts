@@ -1,3 +1,6 @@
+/** @module @qiwi/substrate-types */
+/** */
+
 // Inherits log4j logging levels contract and Logback values
 
 export type ILoggerMethod = (...args: any[]) => void

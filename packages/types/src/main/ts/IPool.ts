@@ -1,3 +1,6 @@
+/** @module @qiwi/substrate-types */
+/** */
+
 import {IPromise} from './export'
 
 export interface IPooledObject<T> {
