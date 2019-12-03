@@ -1,3 +1,10 @@
+## @qiwi/substrate-types [1.19.3](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.19.2...@qiwi/substrate-types@1.19.3) (2019-12-03)
+
+
+### Performance Improvements
+
+* tech release ([4789a2a](https://github.com/qiwi/substrate/commit/4789a2ab208b8a19de553fd1c84c761eb1d3d5e7))
+
 ## @qiwi/substrate-types [1.19.2](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.19.1...@qiwi/substrate-types@1.19.2) (2019-12-03)
 
 
