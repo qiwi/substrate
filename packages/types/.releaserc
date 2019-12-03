@@ -17,9 +17,10 @@
     [
       "@qiwi/semantic-release-gh-pages-plugin",
       {
+        "branch": "gh-pages",
         "msg": "updated {{=it.nextRelease.gitTag}}",
-        "dst": "./types",
-        "src": "./packages/types/docs"
+        "src": "./packages/types/docs",
+        "dst": "./types"
       }
     ]
   ]

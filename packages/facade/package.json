@@ -39,7 +39,7 @@
   ],
   "dependencies": {
     "@qiwi/substrate-types": "^1.19.3",
-    "@qiwi/substrate-abstract": "^1.17.5"
+    "@qiwi/substrate-abstract": "^1.17.6"
   },
   "devDependencies": {
     "@types/jest": "^24.0.23",
