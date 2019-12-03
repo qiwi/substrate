@@ -1145,21 +1145,28 @@
     stream-buffers "^3.0.2"
     tempy "^0.3.0"
 
-"@qiwi/semantic-release-gh-pages-plugin@^1.14.2":
-  version "1.14.2"
-  resolved "https://registry.yarnpkg.com/@qiwi/semantic-release-gh-pages-plugin/-/semantic-release-gh-pages-plugin-1.14.2.tgz#4c29df6c7501447e8f092432d0782700f91127b6"
-  integrity sha512-f81VJRfMqSmPastPRe1I0zY0Q/VOoA6dA5meCECO7SB5HW3Xzux5BSea+G+PGQ3KZTayL27kDeK2U6BT056RTA==
+"@qiwi/semantic-release-gh-pages-plugin@^1.15.0":
+  version "1.15.0"
+  resolved "https://registry.yarnpkg.com/@qiwi/semantic-release-gh-pages-plugin/-/semantic-release-gh-pages-plugin-1.15.0.tgz#62a9f595a50b28408a72e204273eeb5969b2f987"
+  integrity sha512-MEW/Jptiz5IkhIb7Ay/b3stG7h/hOXgSTj+MFDp7ujdUnxkqDekjIeVAYk75D69CfArKAsMudtQAo5OEurKO/g==
   dependencies:
     "@types/git-url-parse" "^9.0.0"
     aggregate-error "^3.0.1"
     dot "^1.1.2"
-    execa "^3.2.0"
+    execa "^3.3.0"
     gh-pages "^2.1.1"
     git-url-parse "^11.1.2"
     lodash "^4.17.15"
     read-pkg "^5.2.0"
     sync-request "^6.1.0"
     tslib "^1.10.0"
+
+"@qiwi/substrate-abstract@^1.17.2":
+  version "1.17.2"
+  resolved "https://registry.yarnpkg.com/@qiwi/substrate-abstract/-/substrate-abstract-1.17.2.tgz#7778cad83b0f688c7515023bfdcbec23c0d173e2"
+  integrity sha512-cnd7DZEP/rXNWoisgvAEv614zGttvN8v0kiI8rOHbCkElTh3inVnhqZJtt2NhE7hOJH37nWjN/8Aq3TnabRD/g==
+  dependencies:
+    "@qiwi/substrate-types" "^1.19.0"
 
 "@qiwi/uniconfig-core@^3.2.0":
   version "3.2.1"
@@ -3391,7 +3398,7 @@ execa@^1.0.0:
     signal-exit "^3.0.0"
     strip-eof "^1.0.0"
 
-execa@^3.2.0:
+execa@^3.2.0, execa@^3.3.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/execa/-/execa-3.4.0.tgz#c08ed4550ef65d858fac269ffc8572446f37eb89"
   integrity sha512-r9vdGQk4bmCuK1yKQu1KTwcT2zwfWdbdaXfCtAh+5nU/4fSX+JAb7vZGvI5naJrQlvONrEB20jeruESI69530g==

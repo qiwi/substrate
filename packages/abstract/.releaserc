@@ -8,7 +8,7 @@
       "@qiwi/semantic-release-gh-pages-plugin",
       {
         "msg": "@qiwi/substrate-abstract updated {{=it.nextRelease.gitTag}}",
-        "src": "packages/abstract/docs",
+        "src": "./packages/abstract/docs",
         "dst": "./abstract"
       }
     ]

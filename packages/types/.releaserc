@@ -9,7 +9,7 @@
       {
         "msg": "@qiwi/substrate-types updated {{=it.nextRelease.gitTag}}",
         "dst": "./types",
-        "src": "packages/types/docs"
+        "src": "./packages/types/docs"
       }
     ]
 
