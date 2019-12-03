@@ -1,3 +1,18 @@
+## @qiwi/substrate-abstract [1.17.8](https://github.com/qiwi/substrate/compare/@qiwi/substrate-abstract@1.17.7...@qiwi/substrate-abstract@1.17.8) (2019-12-03)
+
+
+### Performance Improvements
+
+* **docs:** switch typedoc mode to file ([086df40](https://github.com/qiwi/substrate/commit/086df4021a15eb8f480ec7da77bc5a1590d3010c))
+
+
+
+
+
+### Dependencies
+
+* **@qiwi/substrate-types:** upgraded to 1.19.5
+
 ## @qiwi/substrate-abstract [1.17.7](https://github.com/qiwi/substrate/compare/@qiwi/substrate-abstract@1.17.6...@qiwi/substrate-abstract@1.17.7) (2019-12-03)
 
 
