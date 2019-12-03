@@ -17,7 +17,7 @@
     [
       "@qiwi/semantic-release-gh-pages-plugin",
       {
-        "msg": "@qiwi/substrate-types updated {{=it.nextRelease.gitTag}}",
+        "msg": "updated {{=it.nextRelease.gitTag}}",
         "dst": "./types",
         "src": "./packages/types/docs"
       }
