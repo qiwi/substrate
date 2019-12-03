@@ -19,7 +19,7 @@
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf target",
-    "build": "yarn aliasgen && yarn build:es5 && yarn build:es6 && yarn build:ts && yarn libdef",
+    "build": "yarn aliasgen && yarn build:es5 && yarn build:es6 && yarn build:ts && yarn libdef && yarn docs",
     "build:es5": "mkdir -p target/es5 && tsc -p tsconfig.json --target ES5 --outDir target/es5",
     "build:es6": "mkdir -p target/es6 && tsc -p tsconfig.json --target ES6 --outDir target/es6",
     "build:ts": "cp -r src/main/ts/ target/ts/",
@@ -31,7 +31,8 @@
     "test:libdefs": "cp typings/index.d.ts src/test/ts/index.d.ts && yarn dtslint",
     "jest": "jest --config=jest.config.json",
     "dtslint": "dtslint src/test/ts --localTs ../../node_modules/typescript/lib --expectOnly",
-    "aliasgen": "node -r esm ../../scripts/js/alias-gen.js"
+    "aliasgen": "node -r esm ../../scripts/js/alias-gen.js",
+    "docs": "typedoc --readme README.md --tsconfig ./tsconfig.json ./src/main --ignoreCompilerErrors || exit 0"
   },
   "files": [
     "README.md",
@@ -60,10 +61,12 @@
     "ts-node": "^8.5.4",
     "ts-to-flow": "^0.0.3",
     "typescript": "3.7.2",
-    "underscore": "^1.9.1"
+    "underscore": "^1.9.1",
+    "typedoc": "^0.15.3",
+    "typedoc-plugin-external-module-name": "^2.1.0"
   },
   "dependencies": {
-    "@qiwi/substrate-types": "^1.18.0"
+    "@qiwi/substrate-types": "^1.19.0"
   },
   "peerDependencies": {}
 }

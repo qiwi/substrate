@@ -23,6 +23,7 @@
     "postupdate": "yarn && yarn bootstrap && yarn build && yarn test"
   },
   "devDependencies": {
+    "@qiwi/multi-semantic-release": "^1.2.0",
     "@semantic-release/changelog": "^3.0.6",
     "@semantic-release/commit-analyzer": "^6.3.3",
     "@semantic-release/git": "7.0.18",
@@ -38,7 +39,6 @@
     "jest": "^24.9.0",
     "lerna": "^3.19.0",
     "lodash": "^4.17.15",
-    "@qiwi/multi-semantic-release": "^1.2.0",
     "replace-in-file": "^4.2.0",
     "semantic-release": "15.13.31",
     "snazzy": "^8.0.0",
@@ -46,6 +46,7 @@
     "tslint": "^5.20.1",
     "tslint-config-standard": "^9.0.0",
     "typedoc": "^0.15.3",
+    "typedoc-plugin-external-module-name": "^2.1.0",
     "typescript": "^3.7.2",
     "yargs": "^15.0.2"
   },

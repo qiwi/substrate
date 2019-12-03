@@ -1145,6 +1145,18 @@
     stream-buffers "^3.0.2"
     tempy "^0.3.0"
 
+"@qiwi/substrate-abstract@^1.17.1":
+  version "1.17.1"
+  resolved "https://registry.yarnpkg.com/@qiwi/substrate-abstract/-/substrate-abstract-1.17.1.tgz#e7c77fe30e20ef170f6955cd8c2b778f931f40f1"
+  integrity sha512-ffwPuLtHq216Q4SbM88gGy/4VtjjYkeazRZOe+fZjTmk3CtnDJXJJ2xuI4dbff2iXqiAsygA4AKb7SKrEYi7yA==
+  dependencies:
+    "@qiwi/substrate-types" "^1.18.0"
+
+"@qiwi/substrate-types@^1.19.0":
+  version "1.19.0"
+  resolved "https://registry.yarnpkg.com/@qiwi/substrate-types/-/substrate-types-1.19.0.tgz#bfec03f2cf3ff9773361e383395fe8c0fa1dd887"
+  integrity sha512-/fMLjgTlm9FJPv/413cM17upa5nQevbDaBj//izoEpC83H5uauIYU542Z8SFvi0NvK0av4T2h7HA7RmXQTfMtQ==
+
 "@qiwi/uniconfig-core@^3.2.0":
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-core/-/uniconfig-core-3.2.1.tgz#cff439adb0a27e7d50d31e733026a956c950441c"
@@ -3475,9 +3487,9 @@ fast-glob@^2.2.6:
     micromatch "^3.1.10"
 
 fast-glob@^3.0.3:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/fast-glob/-/fast-glob-3.1.0.tgz#77375a7e3e6f6fc9b18f061cddd28b8d1eec75ae"
-  integrity sha512-TrUz3THiq2Vy3bjfQUB2wNyPdGBeGmdjbzzBLhfHN4YFurYptCKwGq/TfiRavbGywFRzY6U2CdmQ1zmsY5yYaw==
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/fast-glob/-/fast-glob-3.1.1.tgz#87ee30e9e9f3eb40d6f254a7997655da753d7c82"
+  integrity sha512-nTCREpBY8w8r+boyFYAx21iL6faSsQynliPHM4Uf56SbkyohCNxpVPEH9xrF5TXKy+IsjkPUHDKiUkzBVRXn9g==
   dependencies:
     "@nodelib/fs.stat" "^2.0.2"
     "@nodelib/fs.walk" "^1.2.3"
@@ -7147,9 +7159,9 @@ pseudomap@^1.0.2:
   integrity sha1-8FKijacOYYkX7wqKw0wa5aaChrM=
 
 psl@^1.1.24, psl@^1.1.28:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/psl/-/psl-1.4.0.tgz#5dd26156cdb69fa1fdb8ab1991667d3f80ced7c2"
-  integrity sha512-HZzqCGPecFLyoRj5HLfuDSKYTJkAfB5thKBIkRHtGjWwY7p1dAyveIbXIq4tO0KYfDF2tHqPUgY9SDnGm00uFw==
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/psl/-/psl-1.5.0.tgz#47fd1292def7fdb1e138cd78afa8814cebcf7b13"
+  integrity sha512-4vqUjKi2huMu1OJiLhi3jN6jeeKvMZdI1tYgi/njW5zV52jNLgSAZSdN16m9bJFe61/cT8ulmw4qFitV9QRsEA==
 
 pump@^2.0.0:
   version "2.0.1"
@@ -8764,6 +8776,11 @@ typedoc-default-themes@^0.6.1:
     lunr "^2.3.8"
     underscore "^1.9.1"
 
+typedoc-plugin-external-module-name@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/typedoc-plugin-external-module-name/-/typedoc-plugin-external-module-name-2.1.0.tgz#25f108e99673ad34f3424719c10c299ee50e92f0"
+  integrity sha512-uYYe1yj6COwgyhl3Of71lkkhbEw7LVBEqAlXVvd7b9INGhJq59M1q9wdQdIWfpqe/9JegWSIR9ZDfY6mkPedJg==
+
 typedoc@^0.15.3:
   version "0.15.3"
   resolved "https://registry.yarnpkg.com/typedoc/-/typedoc-0.15.3.tgz#8f5a038cfc1160f70cbc57e37908653483dca689"
@@ -8792,14 +8809,14 @@ typescript@3.7.2, typescript@3.7.x, typescript@^3.4, typescript@^3.7.2:
   integrity sha512-ml7V7JfiN2Xwvcer+XAf2csGO1bPBdRbFCkYBczNZggrBZ9c7G3riSUeJmqEU5uOtXNPMhE3n+R4FA/3YOAWOQ==
 
 typescript@next:
-  version "3.8.0-dev.20191128"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.8.0-dev.20191128.tgz#28d0106f49cbbfcd340a5231c0e5a68008e9d122"
-  integrity sha512-ecJ2qYufEL9u4rY9GxlDxU1M+Kzrm8mn+anROJJLYpsFzZgfFeJx+MfT6kcK+6ppJa8ywN3FvtQnKmTj4naleA==
+  version "3.8.0-dev.20191203"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.8.0-dev.20191203.tgz#cccec5a4a79dd7f3303e3a037cb530a4f743c98d"
+  integrity sha512-ZPMH02RdXSYkYr5JsxksisQsRlJ22w5yXn97vzIgp3ehFnMo/3O1fReQV99iEN4keTLD9IiGGxO0h2u6aKfJUQ==
 
 uglify-js@^3.1.4:
-  version "3.7.0"
-  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.7.0.tgz#14b854003386b7a7c045910f43afbc96d2aa5307"
-  integrity sha512-PC/ee458NEMITe1OufAjal65i6lB58R1HWMRcxwvdz1UopW0DYqlRL3xdu3IcTvTXsB02CRHykidkTRL+A3hQA==
+  version "3.7.1"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.7.1.tgz#35c7de17971a4aa7689cd2eae0a5b39bb838c0c5"
+  integrity sha512-pnOF7jY82wdIhATVn87uUY/FHU+MDUdPLkmGFvGoclQmeu229eTkbG5gjGGBi3R7UuYYSEeYXY/TTY5j2aym2g==
   dependencies:
     commander "~2.20.3"
     source-map "~0.6.1"

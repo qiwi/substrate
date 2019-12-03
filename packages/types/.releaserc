@@ -3,7 +3,8 @@
   "verifyConditions": [
     "@semantic-release/changelog",
     "@semantic-release/npm",
-    "@semantic-release/git"
+    "@semantic-release/git",
+    "@qiwi/semantic-release-gh-pages-plugin"
   ],
   "prepare": [
     "@semantic-release/changelog",
@@ -12,6 +13,13 @@
   ],
   "publish": [
     "@semantic-release/npm",
-    "@semantic-release/github"
+    "@semantic-release/github",
+    [
+      "@qiwi/semantic-release-gh-pages-plugin",
+      {
+        "msg": "@qiwi/substrate-types updated {{=it.nextRelease.gitTag}}",
+        "dst": "./types"
+      }
+    ]
   ]
 }
