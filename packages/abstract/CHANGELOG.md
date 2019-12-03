@@ -1,3 +1,18 @@
+## @qiwi/substrate-abstract [1.17.9](https://github.com/qiwi/substrate/compare/@qiwi/substrate-abstract@1.17.8...@qiwi/substrate-abstract@1.17.9) (2019-12-03)
+
+
+### Performance Improvements
+
+* **docs:** tweak up docgen flow ([cbf4914](https://github.com/qiwi/substrate/commit/cbf491443da5370b16a57524f95c8d298f8ecb24))
+
+
+
+
+
+### Dependencies
+
+* **@qiwi/substrate-types:** upgraded to 1.19.6
+
 ## @qiwi/substrate-abstract [1.17.8](https://github.com/qiwi/substrate/compare/@qiwi/substrate-abstract@1.17.7...@qiwi/substrate-abstract@1.17.8) (2019-12-03)
 
 
