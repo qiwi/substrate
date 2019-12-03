@@ -1,3 +1,10 @@
+## @qiwi/substrate-types [1.19.5](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.19.4...@qiwi/substrate-types@1.19.5) (2019-12-03)
+
+
+### Performance Improvements
+
+* **docs:** switch typedoc mode to file ([086df40](https://github.com/qiwi/substrate/commit/086df4021a15eb8f480ec7da77bc5a1590d3010c))
+
 ## @qiwi/substrate-types [1.19.4](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.19.3...@qiwi/substrate-types@1.19.4) (2019-12-03)
 
 
