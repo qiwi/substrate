@@ -1,3 +1,10 @@
+## @qiwi/substrate-abstract [1.17.2](https://github.com/qiwi/substrate/compare/@qiwi/substrate-abstract@1.17.1...@qiwi/substrate-abstract@1.17.2) (2019-12-03)
+
+
+### Performance Improvements
+
+* add public doc refs & trigger release ([1ae997e](https://github.com/qiwi/substrate/commit/1ae997eff04f11337dd276fb60d9a6318065f75a))
+
 ## @qiwi/substrate-abstract [1.17.1](https://github.com/qiwi/substrate/compare/@qiwi/substrate-abstract@1.17.0...@qiwi/substrate-abstract@1.17.1) (2019-12-02)
 
 
