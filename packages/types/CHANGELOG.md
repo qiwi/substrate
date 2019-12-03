@@ -1,3 +1,10 @@
+## @qiwi/substrate-types [1.19.6](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.19.5...@qiwi/substrate-types@1.19.6) (2019-12-03)
+
+
+### Performance Improvements
+
+* **docs:** tweak up docgen flow ([cbf4914](https://github.com/qiwi/substrate/commit/cbf491443da5370b16a57524f95c8d298f8ecb24))
+
 ## @qiwi/substrate-types [1.19.5](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.19.4...@qiwi/substrate-types@1.19.5) (2019-12-03)
 
 
