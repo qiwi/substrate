@@ -15,7 +15,6 @@
       ]
     }
   },
-  "license": "MIT",
   "scripts": {
     "clean": "rm -rf target",
     "build": "yarn build:es5 && yarn build:es6 && yarn build:ts && yarn libdef",
@@ -38,8 +37,8 @@
     "target"
   ],
   "dependencies": {
-    "@qiwi/substrate-types": "^1.19.3",
-    "@qiwi/substrate-abstract": "^1.17.6"
+    "@qiwi/substrate-types": "^1.19.6",
+    "@qiwi/substrate-abstract": "^1.17.9"
   },
   "devDependencies": {
     "@types/jest": "^24.0.23",
@@ -59,5 +58,14 @@
     "mode": "all",
     "cjs": true
   },
-  "peerDependencies": {}
+  "peerDependencies": {},
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qiwi/substrate.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/qiwi/substrate/issues"
+  }
 }

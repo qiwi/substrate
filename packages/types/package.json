@@ -15,7 +15,6 @@
       ]
     }
   },
-  "license": "MIT",
   "scripts": {
     "clean": "rm -rf target",
     "build": "yarn aliasgen && yarn build:es5 && yarn build:es6 && yarn build:ts && yarn libdef && yarn docs",
@@ -64,5 +63,14 @@
     "typedoc-plugin-external-module-name": "^2.1.0"
   },
   "dependencies": {},
-  "peerDependencies": {}
+  "peerDependencies": {},
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qiwi/substrate.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/qiwi/substrate/issues"
+  }
 }
