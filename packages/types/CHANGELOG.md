@@ -1,3 +1,10 @@
+# @qiwi/substrate-types [1.20.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.19.7...@qiwi/substrate-types@1.20.0) (2019-12-05)
+
+
+### Features
+
+* define IPooledObjectStatus enum ([7bfb244](https://github.com/qiwi/substrate/commit/7bfb244cc589cfe9844b00f85120d5e8a723ba8d))
+
 ## @qiwi/substrate-types [1.19.7](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.19.6...@qiwi/substrate-types@1.19.7) (2019-12-04)
 
 
