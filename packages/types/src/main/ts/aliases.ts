@@ -33,4 +33,9 @@ export {
   IResponse as Response,
   INext as Next
 } from './IMiddleware'
-export { IPool as Pool, IPooledObject as PooledObject, IPooledObjectFactory as PooledObjectFactory } from './IPool'
+export {
+  IPool as Pool,
+  IPooledObject as PooledObject,
+  IPooledObjectFactory as PooledObjectFactory,
+  IPooledObjectStatus as PooledObjectStatus
+} from './IPool'

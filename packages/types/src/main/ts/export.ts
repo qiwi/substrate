@@ -33,4 +33,9 @@ export {
   IResponse,
   INext
 } from './IMiddleware'
-export { IPool, IPooledObject, IPooledObjectFactory } from './IPool'
+export {
+  IPool,
+  IPooledObject,
+  IPooledObjectFactory,
+  IPooledObjectStatus
+} from './IPool'

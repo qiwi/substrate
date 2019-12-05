@@ -1,9 +1,17 @@
-import { IPool, IPooledObject, IPooledObjectFactory } from './index'
+import {
+  IPool,
+  IPooledObject,
+  IPooledObjectFactory,
+  IPooledObjectStatus,
+} from './index'
 
 const instance = new String('foo')
 
+const status: IPooledObjectStatus = IPooledObjectStatus.READY
+
 const pooled: IPooledObject<String> = {
   ref: instance,
+  status,
   activate() {},
   passivate() {},
   validate(): boolean { return true },
@@ -18,6 +26,9 @@ const pool: IPool<String> = {
   invalidate(instance: String): void {void instance},
   borrow () { return Promise.resolve(instance)}
 }
+
+const brokenStatus: IPooledObjectStatus = 'foo' // $ExpectError
+const brokenStatus2: IPooledObjectStatus = 'ready' // $ExpectError
 
 const brokenPooled: IPooledObject<any> = { // $ExpectError
   ref: 'foo'

@@ -3,8 +3,15 @@
 
 import {IPromise} from './export'
 
+export const enum IPooledObjectStatus {
+  READY = 'ready',
+  ACTIVE = 'active',
+  INVALID = 'invalid'
+}
+
 export interface IPooledObject<T> {
   ref: T,
+  status: IPooledObjectStatus
   activate(): void
   passivate(): void
   destroy(): void,
