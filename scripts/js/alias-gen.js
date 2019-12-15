@@ -9,13 +9,21 @@ const DST = resolve(dst || './src/main/ts/aliases.ts')
 
 copySync(SRC, DST)
 
+const reserved = ['Promise', 'PromiseConstructor'].map(v => new RegExp(`^${v}(?:,|\\n|\\s)`))
+
 replaceSync({
   files: [DST],
   from: /((I|T|A)\w+(?:,|\n|\s))/g,
   to: match => {
+    const sliced = match.slice(1)
+
+    if (reserved.find(r => r.test(sliced))){
+      return ''
+    }
+
     const alias = match.charAt(0) === 'A'
-      ? `Abstract${match.slice(1)}`
-      : match.slice(1)
+      ? `Abstract${sliced}`
+      : sliced
 
     return `${match.slice(0, -1)} as ${alias}`
   }
