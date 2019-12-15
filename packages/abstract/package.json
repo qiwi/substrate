@@ -45,7 +45,7 @@
     "@types/config": "^0.0.36",
     "@types/jest": "^24.0.23",
     "@types/lodash": "^4.14.149",
-    "@types/node": "^12.12.14",
+    "@types/node": "^12.12.17",
     "@types/parsimmon": "^1.10.0",
     "@types/underscore": "^1.9.4",
     "bluebird": "^3.7.2",
@@ -55,17 +55,17 @@
     "dtslint": "^2.0.2",
     "flowgen": "^1.10.0",
     "lodash": "^4.17.15",
-    "replace-in-file": "^4.2.0",
+    "replace-in-file": "^5.0.2",
     "ts-loader": "^6.2.1",
     "ts-node": "^8.5.4",
     "ts-to-flow": "^0.0.3",
     "typescript": "3.7.3",
     "underscore": "^1.9.1",
-    "typedoc": "^0.15.3",
+    "typedoc": "^0.15.4",
     "typedoc-plugin-external-module-name": "^2.1.0"
   },
   "dependencies": {
-    "@qiwi/substrate-types": "^1.19.7"
+    "@qiwi/substrate-types": "^1.20.0"
   },
   "peerDependencies": {},
   "license": "MIT",
