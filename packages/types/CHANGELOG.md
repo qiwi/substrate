@@ -1,3 +1,10 @@
+## @qiwi/substrate-types [1.20.1](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.20.0...@qiwi/substrate-types@1.20.1) (2019-12-15)
+
+
+### Bug Fixes
+
+* **aliasgen:** avoid native/reserved name clashes ([49c4231](https://github.com/qiwi/substrate/commit/49c4231171512c6646ae784c1568277c1b610146)), closes [#73](https://github.com/qiwi/substrate/issues/73)
+
 # @qiwi/substrate-types [1.20.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.19.7...@qiwi/substrate-types@1.20.0) (2019-12-05)
 
 
