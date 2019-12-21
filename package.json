@@ -41,7 +41,7 @@
     "lerna": "^3.19.0",
     "lodash": "^4.17.15",
     "replace-in-file": "^5.0.2",
-    "semantic-release": "15.13.31",
+    "semantic-release": "15.14.0",
     "snazzy": "^8.0.0",
     "ts-jest": "^24.2.0",
     "tslint": "^5.20.1",
