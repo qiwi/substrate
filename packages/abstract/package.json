@@ -27,9 +27,9 @@
     "dtsgen": "dts-generator --project ./ --out typings/index.d.ts --prefix @qiwi/substrate-abstract/target/es5 --name @qiwi/substrate-abstract --main @qiwi/substrate-abstract/target/es5/index",
     "flowgen": "flowgen typings/index.d.ts --output-file typings/index.flow.js",
     "test": "yarn test:libdefs && yarn jest",
-    "test:libdefs": "cp typings/index.d.ts src/test/ts/index.d.ts && yarn dtslint",
+    "test:libdefs": "cp typings/index.d.ts src/test/ts/libdef/index.d.ts && yarn dtslint",
     "jest": "jest --config=jest.config.json",
-    "dtslint": "dtslint src/test/ts --localTs ../../node_modules/typescript/lib --expectOnly",
+    "dtslint": "dtslint src/test/ts/libdef --localTs ../../node_modules/typescript/lib --expectOnly",
     "aliasgen": "node -r esm ../../scripts/js/alias-gen.js",
     "docs": "typedoc --readme README.md --tsconfig ./tsconfig.json ./src/main --ignoreCompilerErrors || exit 0"
   },

@@ -9,11 +9,9 @@
     "<rootDir>/packages/std/src/main/ts/*.ts"
   ],
   "testMatch": [
-    "<rootDir>/packages/std/src/test/ts/*.ts"
+    "<rootDir>/packages/std/src/test/ts/unit/*.ts"
   ],
-  "testPathIgnorePatterns": [
-    "<rootDir>/packages/std/src/test/ts/index.ts"
-  ],
+  "testPathIgnorePatterns": [],
   "transformIgnorePatterns": [
     "/!node_modules\\/lodash-es/",
     "<roodDir>/node_modules/(?!lodash-es)"

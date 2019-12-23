@@ -25,10 +25,10 @@
     "libdeffix": "node -r esm ../../scripts/js/libdef-fix.js --flow=./typings/index.flow.js --dts=./typings/index.d.ts",
     "dtsgen": "dts-generator --project ./ --out typings/index.d.ts --prefix @qiwi/substrate/target/es5 --name @qiwi/substrate --main @qiwi/substrate/target/es5/index",
     "flowgen": "flowgen typings/index.d.ts --output-file typings/index.flow.js",
-    "testgen": "cp -r ../types/src/test/ts/I*.ts src/test/ts/ && cp -r ../abstract/src/test/ts/A*.ts src/test/ts/ && cp typings/index.d.ts src/test/ts/index.d.ts",
+    "testgen": "cp typings/index.d.ts src/test/ts/index.d.ts && cp -r ../types/src/test/ts/libdef/I*.ts src/test/ts/libdef && cp -r ../abstract/src/test/ts/unit/*.ts src/test/ts/unit",
     "test": "yarn testgen && yarn dtslint && yarn jest",
     "jest": "jest --config=jest.config.json",
-    "dtslint": "dtslint src/test/ts --localTs ../../node_modules/typescript/lib --expectOnly"
+    "dtslint": "dtslint src/test/ts/libdef --localTs ../../node_modules/typescript/lib --expectOnly"
   },
   "files": [
     "README.md",

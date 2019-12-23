@@ -1,4 +1,4 @@
-import {Stack} from '../../main/ts'
+import {Stack} from '../../../main/ts'
 
 describe('stack', () => {
   describe('constructor', () => {
