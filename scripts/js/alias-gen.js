@@ -13,7 +13,7 @@ const reserved = ['Promise', 'PromiseConstructor'].map(v => new RegExp(`^${v}(?:
 
 replaceSync({
   files: [DST],
-  from: /((I|T|A)\w+(?:,|\n|\s))/g,
+  from: /((I|T|A)[A-Z]\w+(?:,|\n|\s))/g,
   to: match => {
     const sliced = match.slice(1)
 
