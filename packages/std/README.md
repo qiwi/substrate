@@ -12,5 +12,5 @@ npm i @qiwi/substrate-std
 import { IStack } from '@qiwi/substrate-types'
 import { Stack } from '@qiwi/substrate-std'
 
-const foo: IStack = new Stack()
+const foo: IStack<string> = new Stack()
 ```

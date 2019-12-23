@@ -65,7 +65,7 @@
     "typedoc-plugin-external-module-name": "^2.1.0"
   },
   "dependencies": {
-    "@qiwi/substrate-types": "^1.20.1"
+    "@qiwi/substrate-types": "^1.21.0"
   },
   "peerDependencies": {},
   "license": "MIT",
