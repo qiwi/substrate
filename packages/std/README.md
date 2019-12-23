@@ -1,5 +1,5 @@
 # @qiwi/substrate-std
-Standard assets implementations
+Standard iface implementations
 
 ### Install
 ```bash
@@ -10,7 +10,7 @@ npm i @qiwi/substrate-std
 ### Usage
 ```typescript
 import { IStack } from '@qiwi/substrate-types'
-import { StdStack } from '@qiwi/substrate-std'
+import { Stack } from '@qiwi/substrate-std'
 
-const foo: IStack = new StdStack()
+const foo: IStack = new Stack()
 ```
