@@ -1,3 +1,11 @@
+# @qiwi/substrate-types [1.21.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.20.1...@qiwi/substrate-types@1.21.0) (2019-12-23)
+
+
+### Features
+
+* add scope for std implementations ([4e7db08](https://github.com/qiwi/substrate/commit/4e7db089e68ff31a94be8bcd1ed7d8674372cfdd)), closes [#40](https://github.com/qiwi/substrate/issues/40)
+* **types:** add toArray method for IStack ([f0f36b9](https://github.com/qiwi/substrate/commit/f0f36b95cbcdcbfef56947f046164b962a169de6))
+
 ## @qiwi/substrate-types [1.20.1](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.20.0...@qiwi/substrate-types@1.20.1) (2019-12-15)
 
 
