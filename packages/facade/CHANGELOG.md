@@ -1,3 +1,20 @@
+# @qiwi/substrate [1.18.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate@1.17.12...@qiwi/substrate@1.18.0) (2019-12-23)
+
+
+### Features
+
+* add scope for std implementations ([4e7db08](https://github.com/qiwi/substrate/commit/4e7db089e68ff31a94be8bcd1ed7d8674372cfdd)), closes [#40](https://github.com/qiwi/substrate/issues/40)
+
+
+
+
+
+### Dependencies
+
+* **@qiwi/substrate-types:** upgraded to 1.21.0
+* **@qiwi/substrate-abstract:** upgraded to 1.17.13
+* **@qiwi/substrate-std:** upgraded to 1.0.0
+
 ## @qiwi/substrate [1.17.12](https://github.com/qiwi/substrate/compare/@qiwi/substrate@1.17.11...@qiwi/substrate@1.17.12) (2019-12-15)
 
 
