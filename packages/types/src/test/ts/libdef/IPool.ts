@@ -2,29 +2,29 @@ import {
   IPool,
   IPooledObject,
   IPooledObjectFactory,
-  IPooledObjectStatus,
-} from './index'
+  IPooledObjectStatus
+} from '.'
 
-const instance = new String('foo')
+const instance = String('foo')
 
 const status: IPooledObjectStatus = IPooledObjectStatus.READY
 
-const pooled: IPooledObject<String> = {
+const pooled: IPooledObject<string> = {
   ref: instance,
   status,
-  activate() {},
-  passivate() {},
-  validate(): boolean { return true },
-  destroy() {}
+  activate () {},
+  passivate () {},
+  validate (): boolean { return true },
+  destroy () {}
 }
 
-const pooledObjFactory: IPooledObjectFactory<String> = () => pooled
+const pooledObjFactory: IPooledObjectFactory<string> = () => pooled
 
-const pool: IPool<String> = {
+const pool: IPool<string> = {
   factory: pooledObjFactory,
-  release(instance: String): void { void instance},
-  invalidate(instance: String): void {void instance},
-  borrow () { return Promise.resolve(instance)}
+  release (instance: string): void { void instance },
+  invalidate (instance: string): void { void instance },
+  borrow () { return Promise.resolve(instance) }
 }
 
 const brokenStatus: IPooledObjectStatus = 'foo' // $ExpectError
@@ -34,10 +34,10 @@ const brokenPooled: IPooledObject<any> = { // $ExpectError
   ref: 'foo'
 }
 
-const brokenPooledObjFactory: IPooledObjectFactory<String> = () => instance // $ExpectError
+const brokenPooledObjFactory: IPooledObjectFactory<string> = () => instance // $ExpectError
 
-const brokenPool: IPool<String> = { // $ExpectError
+const brokenPool: IPool<string> = { // $ExpectError
   factory: pooledObjFactory,
-  release(instance: String): void { void instance},
-  invalidate(instance: String): void {void instance},
+  release (instance: string): void { void instance },
+  invalidate (instance: string): void { void instance }
 }

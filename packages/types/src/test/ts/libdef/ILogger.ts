@@ -1,10 +1,10 @@
-import { ILoggerMethod, ILogger, TLogLevel } from './index';
+import { ILoggerMethod, ILogger, TLogLevel } from '.'
 
-const brokenLogLevel: TLogLevel = 'info'; // $ExpectError
-const traceLogLevel: TLogLevel = 5e3;
+const brokenLogLevel: TLogLevel = 'info' // $ExpectError
+const traceLogLevel: TLogLevel = 5e3
 
-const brokenLogMethod: ILoggerMethod = null; // $ExpectError
-const logMethod: ILoggerMethod = () => undefined;
+const brokenLogMethod: ILoggerMethod = null // $ExpectError
+const logMethod: ILoggerMethod = () => undefined
 
 const brokenLogger: ILogger = {
   trace: logMethod,
@@ -13,7 +13,7 @@ const brokenLogger: ILogger = {
   log: logMethod,
   warn: logMethod,
   error: null // $ExpectError
-};
+}
 
 const logger: ILogger = {
   trace: logMethod,
@@ -23,6 +23,6 @@ const logger: ILogger = {
   warn: logMethod,
   error: logMethod,
   custom: () => 'foo'
-};
+}
 
-const legacyLogger: ILogger = console;
+const legacyLogger: ILogger = console

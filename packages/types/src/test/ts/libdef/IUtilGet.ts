@@ -1,9 +1,9 @@
-import { get as lodashGet } from 'lodash';
-import { TUtilGet } from './index';
+import { get as lodashGet } from 'lodash'
+import { TUtilGet } from '.'
 
-const brokenUtilGet: TUtilGet = (obj: object, path: any[], defaultValue?: any) => { obj || path || defaultValue; }; // $ExpectError
+const brokenUtilGet: TUtilGet = (obj: object, path: any[], defaultValue?: any) => { obj || path || defaultValue } // $ExpectError
 const utilGet: TUtilGet = (obj: object, path: Array<string | number> | string, defaultValue?: any) => {
-  obj || path;
-  return defaultValue;
-};
-const lodashUtilGet: TUtilGet = lodashGet;
+  obj || path
+  return defaultValue
+}
+const lodashUtilGet: TUtilGet = lodashGet

@@ -1,7 +1,7 @@
-import * as Conf from 'conf';
-import * as NodeConfig from 'config';
-import * as Uniconfig from '@qiwi/uniconfig-core';
-import { Config, IConfig } from './index';
+import * as Conf from 'conf'
+import * as NodeConfig from 'config'
+import * as Uniconfig from '@qiwi/uniconfig-core'
+import { Config, IConfig } from '.'
 
 // FIXME
 // const conf: IConfig = new Conf();
@@ -10,6 +10,6 @@ import { Config, IConfig } from './index';
 
 // const stringConf: IConfig<string> = new Conf<string>();
 
-const nodeConf: IConfig = NodeConfig;
+const nodeConf: IConfig = NodeConfig
 
-const uniConf: Config = new Uniconfig.Config({});
+const uniConf: Config = new Uniconfig.Config({})

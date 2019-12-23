@@ -1,4 +1,4 @@
-import { IIterable, IIteratorResult, IIterator } from './index'
+import { IIterable, IIteratorResult, IIterator } from '.'
 
 const iteratorResult: IIteratorResult = {
   done: false,
@@ -6,7 +6,7 @@ const iteratorResult: IIteratorResult = {
 }
 
 const iterator: IIterator = {
-  next() {
+  next () {
     return iteratorResult
   }
 }
@@ -23,7 +23,7 @@ const brokenIteratorResult: IIteratorResult = {
 }
 
 const brokenIterator: IIterator = {
-  next() { return 'foo' } // $ExpectError
+  next () { return 'foo' } // $ExpectError
 }
 
 const brokenIterable: IIterable = { // $ExpectError

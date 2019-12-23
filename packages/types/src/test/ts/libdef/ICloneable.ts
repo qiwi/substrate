@@ -1,9 +1,9 @@
-import { ICloneable } from './index';
+import { ICloneable } from '.'
 
 const cloneable: ICloneable<string> = {
-  clone(): string { return 'clone'; }
-};
+  clone (): string { return 'clone' }
+}
 
-cloneable.clone("qwe"); // $ExpectError
-cloneable.clone(123); // $ExpectError
-cloneable.clone({ hello: "hello", world: "world"}); // $ExpectError
+cloneable.clone('qwe') // $ExpectError
+cloneable.clone(123) // $ExpectError
+cloneable.clone({ hello: 'hello', world: 'world' }) // $ExpectError

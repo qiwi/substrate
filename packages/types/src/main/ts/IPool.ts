@@ -1,7 +1,7 @@
 /** @module @qiwi/substrate-types */
 /** */
 
-import {IPromise} from './export'
+import { IPromise } from './export'
 
 export const enum IPooledObjectStatus {
   READY = 'ready',

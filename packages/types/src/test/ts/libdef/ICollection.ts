@@ -1,4 +1,4 @@
-import { ICollection } from './index';
+import { ICollection } from '.'
 
 const brokenCollection: ICollection<number> = {
   isEmpty: () => 123, // $ExpectError
@@ -7,7 +7,7 @@ const brokenCollection: ICollection<number> = {
   add: (index: string, item: string) => ({}), // $ExpectError
   get: (item: boolean) => item, // $ExpectError
   clear: (item: string) => item // $ExpectError
-};
+}
 
 const collection: ICollection<number> = {
   isEmpty: () => true,
@@ -15,5 +15,5 @@ const collection: ICollection<number> = {
   remove: (index: number | string) => +index,
   add: (index: number | string, item) => +index + item,
   get: (index: number | string) => +index,
-  clear: () => {},
-};
+  clear: () => {}
+}
