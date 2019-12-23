@@ -13,4 +13,5 @@ export interface IStack<T> extends ICollection<T> {
   indexOf: (item: T) => number
   first: () => T | undefined
   last: () => T | undefined
+  toArray(): Array<T>
 }
