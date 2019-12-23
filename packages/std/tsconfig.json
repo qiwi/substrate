@@ -8,9 +8,7 @@
     "tsBuildInfoFile": "./buildcache/.tsbuildinfo"
   },
   "references": [
-    { "path": "../types" },
-    { "path": "../abstract" },
-    { "path": "../std" }
+    { "path": "../types" }
   ],
   "include": [
     "src/main/**/*"
