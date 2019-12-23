@@ -1,3 +1,19 @@
+## @qiwi/substrate [1.18.1](https://github.com/qiwi/substrate/compare/@qiwi/substrate@1.18.0...@qiwi/substrate@1.18.1) (2019-12-23)
+
+
+### Performance Improvements
+
+* tech release ([4b145af](https://github.com/qiwi/substrate/commit/4b145affb295cab239e7e6d5c068fd554fbd1b48))
+
+
+
+
+
+### Dependencies
+
+* **@qiwi/substrate-abstract:** upgraded to 1.17.14
+* **@qiwi/substrate-std:** upgraded to 1.0.1
+
 # @qiwi/substrate [1.18.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate@1.17.12...@qiwi/substrate@1.18.0) (2019-12-23)
 
 
