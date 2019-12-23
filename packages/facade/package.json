@@ -25,7 +25,7 @@
     "libdeffix": "node -r esm ../../scripts/js/libdef-fix.js --flow=./typings/index.flow.js --dts=./typings/index.d.ts",
     "dtsgen": "dts-generator --project ./ --out typings/index.d.ts --prefix @qiwi/substrate/target/es5 --name @qiwi/substrate --main @qiwi/substrate/target/es5/index",
     "flowgen": "flowgen typings/index.d.ts --output-file typings/index.flow.js",
-    "testgen": "cp typings/index.d.ts src/test/ts/libdef/index.d.ts && cp -r ../types/src/test/ts/libdef/I*.ts src/test/ts/libdef/ && cp -r ../abstract/src/test/ts/unit/*.ts src/test/ts/unit/ && cp -r ../std/src/test/ts/unit/*.ts src/test/ts/unit/",
+    "testgen": "cp typings/index.d.ts src/test/ts/libdef/index.d.ts && cp -r ../types/src/test/ts/libdef/I*.ts ./src/test/ts/libdef/ && cp -r ../abstract/src/test/ts/unit/*.ts ./src/test/ts/unit/ && cp -r ../std/src/test/ts/unit/*.ts ./src/test/ts/unit/",
     "test": "yarn testgen && yarn dtslint && yarn jest",
     "jest": "jest --config=jest.config.json",
     "dtslint": "dtslint src/test/ts/libdef --localTs ../../node_modules/typescript/lib --expectOnly"
