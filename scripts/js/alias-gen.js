@@ -13,17 +13,20 @@ const reserved = ['Promise', 'PromiseConstructor'].map(v => new RegExp(`^${v}(?:
 
 replaceSync({
   files: [DST],
-  from: /((I|T|A)[A-Z]\w+(?:,|\n|\s))/g,
+  from: /((I|T|A|S)[A-Z]\w+(?:,|\n|\s))/g,
   to: match => {
-    const sliced = match.slice(1)
+    const first = match.charAt(0)
+    const rest = match.slice(1)
+    const prefixMap = {
+      A: 'Abstract',
+      S: 'Std' // https://stackoverflow.com/questions/43055682/relationship-between-a-typescript-class-and-an-interface-with-the-same-name/43056090
+    }
+    const prefix = prefixMap[first] | ''
+    const alias = `${prefix}${rest}`
 
-    if (reserved.find(r => r.test(sliced))){
+    if (reserved.find(r => r.test(rest))){
       return ''
     }
-
-    const alias = match.charAt(0) === 'A'
-      ? `Abstract${sliced}`
-      : sliced
 
     return `${match.slice(0, -1)} as ${alias}`
   }
