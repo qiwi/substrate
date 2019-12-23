@@ -8,9 +8,6 @@
     "strictFunctionTypes": true,
     "noImplicitThis": true,
     "alwaysStrict": true,
-    /* Additional Checks */
-    /* next line commented out because we need unused vars for type tests */
-    // "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,

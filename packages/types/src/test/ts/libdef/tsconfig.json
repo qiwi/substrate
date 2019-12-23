@@ -14,11 +14,6 @@
     "lib": ["es6", "dom"],
     "skipLibCheck": true,
     "baseUrl": ".",
-    "paths": {
-      "@qiwi/substrate-types": [
-        ".."
-      ]
-    },
     "typeRoots": ["."]
   },
   "include": [
