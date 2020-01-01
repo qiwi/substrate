@@ -1,3 +1,10 @@
+# @qiwi/substrate-types [1.22.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.21.0...@qiwi/substrate-types@1.22.0) (2020-01-01)
+
+
+### Features
+
+* **types:** add UnionToIntersection helper ([e56d9b6](https://github.com/qiwi/substrate/commit/e56d9b645fd9ac33ef32c5a88a12489aab5769a5))
+
 # @qiwi/substrate-types [1.21.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.20.1...@qiwi/substrate-types@1.21.0) (2019-12-23)
 
 
