@@ -1182,18 +1182,6 @@
     sync-request "^6.1.0"
     tslib "^1.10.0"
 
-"@qiwi/substrate-abstract@^1.17.15":
-  version "1.17.15"
-  resolved "https://registry.yarnpkg.com/@qiwi/substrate-abstract/-/substrate-abstract-1.17.15.tgz#4a4306821e6a167fbd017b042f4a710847f928e3"
-  integrity sha512-TBpAtN9sbgGG/slNdMlrVd40tfEXyeeaRByl+bqsATxx+yUtzS7D6DB5wZ9qtOnIYmzPrTPvnQlbHyOWGdwWsQ==
-  dependencies:
-    "@qiwi/substrate-types" "^1.21.0"
-
-"@qiwi/substrate-types@^1.22.0":
-  version "1.22.0"
-  resolved "https://registry.yarnpkg.com/@qiwi/substrate-types/-/substrate-types-1.22.0.tgz#ae1f886cb348f36679a9adae834a3562c130b9f6"
-  integrity sha512-C4Dxijkml0WyNX36mvQql6/DyAEV83YHcCsMoQDW6DRogfH53DJlFQfpgEq6oxCtBSRDg/HN8PlXLqZJRCW66Q==
-
 "@qiwi/uniconfig-core@^3.2.1":
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-core/-/uniconfig-core-3.2.2.tgz#e0e251545a98a4cdf6fda6299f54b2c339a156a2"

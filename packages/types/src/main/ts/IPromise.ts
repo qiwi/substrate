@@ -1,9 +1,11 @@
 /** @module @qiwi/substrate-types */
 /** */
 
+import { IConstructor } from './IConstructor'
+
 export type TPromiseExecutor<TValue = any, TReason = any> = (resolve: (value: TValue) => void, reject: (reason: TReason) => void) => void
 
-export interface IPromiseConstructor<TValue = any, TReason = any> {
+export interface IPromiseConstructor<TValue = any, TReason = any> extends IConstructor<IPromise<TValue, TReason>> {
   new(executor: TPromiseExecutor<TValue>): IPromise<TValue, TReason>
   all: (values: Iterable<IPromise<TValue, TReason>>) => IPromise<TValue[], TReason>
   race: (values: Iterable<IPromise<TValue, TReason>>) => IPromise<TValue, TReason>

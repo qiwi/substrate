@@ -48,6 +48,11 @@ declare module '@qiwi/substrate-types/target/es5/IConfigurable' {
 	    getConfig: () => any;
 	}
 }
+declare module '@qiwi/substrate-types/target/es5/IConstructor' {
+	/** @qiwi/substrate-types */
+	/** */
+	export type IConstructor<T = {}> = new (...args: any[]) => T;
+}
 declare module '@qiwi/substrate-types/target/es5/ICurrency' {
 	/** @qiwi/substrate-types */
 	/** */
@@ -183,8 +188,9 @@ declare module '@qiwi/substrate-types/target/es5/IUtilMap' {
 declare module '@qiwi/substrate-types/target/es5/IPromise' {
 	/** @qiwi/substrate-types */
 	/** */
+	import { IConstructor } from '@qiwi/substrate-types/target/es5/IConstructor';
 	export type TPromiseExecutor<TValue = any, TReason = any> = (resolve: (value: TValue) => void, reject: (reason: TReason) => void) => void;
-	export interface IPromiseConstructor<TValue = any, TReason = any> {
+	export interface IPromiseConstructor<TValue = any, TReason = any> extends IConstructor<IPromise<TValue, TReason>> {
 	    new (executor: TPromiseExecutor<TValue>): IPromise<TValue, TReason>;
 	    all: (values: Iterable<IPromise<TValue, TReason>>) => IPromise<TValue[], TReason>;
 	    race: (values: Iterable<IPromise<TValue, TReason>>) => IPromise<TValue, TReason>;
@@ -256,6 +262,7 @@ declare module '@qiwi/substrate-types/target/es5/export' {
 	export { TPredicate } from '@qiwi/substrate-types/target/es5/TPredicate';
 	export { IConfigurable } from '@qiwi/substrate-types/target/es5/IConfigurable';
 	export { IConfig } from '@qiwi/substrate-types/target/es5/IConfig';
+	export { IConstructor } from '@qiwi/substrate-types/target/es5/IConstructor';
 	export { IIterable, IIterator, IIteratorResult } from '@qiwi/substrate-types/target/es5/IIterable';
 	export { IMiddleware, IAsyncMiddleware, IErrorMiddleware, IRequestMiddleware, IRequest, IResponse, INext } from '@qiwi/substrate-types/target/es5/IMiddleware';
 	export { IPool, IPooledObject, IPooledObjectFactory, IPooledObjectStatus } from '@qiwi/substrate-types/target/es5/IPool';
@@ -310,6 +317,7 @@ declare module '@qiwi/substrate-types/target/es5/aliases' {
 	export { TPredicate as Predicate } from '@qiwi/substrate-types/target/es5/TPredicate';
 	export { IConfigurable as Configurable } from '@qiwi/substrate-types/target/es5/IConfigurable';
 	export { IConfig as Config } from '@qiwi/substrate-types/target/es5/IConfig';
+	export { IConstructor as Constructor } from '@qiwi/substrate-types/target/es5/IConstructor';
 	export { IIterable as Iterable, IIterator as Iterator, IIteratorResult as IteratorResult } from '@qiwi/substrate-types/target/es5/IIterable';
 	export { IMiddleware as Middleware, IAsyncMiddleware as AsyncMiddleware, IErrorMiddleware as ErrorMiddleware, IRequestMiddleware as RequestMiddleware, IRequest as Request, IResponse as Response, INext as Next } from '@qiwi/substrate-types/target/es5/IMiddleware';
 	export { IPool as Pool, IPooledObject as PooledObject, IPooledObjectFactory as PooledObjectFactory, IPooledObjectStatus as PooledObjectStatus } from '@qiwi/substrate-types/target/es5/IPool';

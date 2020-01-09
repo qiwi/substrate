@@ -19,6 +19,7 @@ export { ICollection as Collection } from './ICollection'
 export { TPredicate as Predicate } from './TPredicate'
 export { IConfigurable as Configurable } from './IConfigurable'
 export { IConfig as Config } from './IConfig'
+export { IConstructor as Constructor } from './IConstructor'
 export {
   IIterable as Iterable,
   IIterator as Iterator,
