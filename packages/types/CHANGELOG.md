@@ -1,3 +1,10 @@
+# @qiwi/substrate-types [1.23.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.22.0...@qiwi/substrate-types@1.23.0) (2020-01-09)
+
+
+### Features
+
+* **types:** add IConstructor iface ([5837fd2](https://github.com/qiwi/substrate/commit/5837fd27108429fcf926aebc3a3db5601817091b))
+
 # @qiwi/substrate-types [1.22.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.21.0...@qiwi/substrate-types@1.22.0) (2020-01-01)
 
 
