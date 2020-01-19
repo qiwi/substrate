@@ -19,7 +19,12 @@ export { ICollection } from './ICollection'
 export { TPredicate } from './TPredicate'
 export { IConfigurable } from './IConfigurable'
 export { IConfig } from './IConfig'
-export { IConstructor } from './IConstructor'
+export {
+  IConstructor,
+  IConstructable,
+  Abstract,
+  IClass
+} from './IConstructor'
 export {
   IIterable,
   IIterator,

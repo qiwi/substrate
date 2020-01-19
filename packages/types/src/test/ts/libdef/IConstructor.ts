@@ -1,9 +1,6 @@
-import { IConstructor } from '.'
+import { IConstructor, IConstructable } from '.'
 
-export interface FooCtor extends IConstructor {
-  new(param: string): FooIface
-}
-
+export type FooCtor = IConstructable<FooIface, ConstructorParameters<typeof Foo>>
 export interface FooIface {
   foo(): any
 }
@@ -24,7 +21,7 @@ export class Bar {
   foo () {}
 }
 
-export const factory = (Ctor: FooCtor, param: string): FooIface => new Ctor(param)
+export const factory = <T extends FooCtor>(Ctor: T, param: string): FooIface => new Ctor(param)
 
 export const foo = factory(Foo, 'foo')
 export const bar = factory(Bar, 'foo') // $ExpectError
