@@ -1,3 +1,18 @@
+## @qiwi/substrate-std [1.0.4](https://github.com/qiwi/substrate/compare/@qiwi/substrate-std@1.0.3...@qiwi/substrate-std@1.0.4) (2020-01-20)
+
+
+### Bug Fixes
+
+* **docs:** rollback typedoc to 0.15.8 ([e930e74](https://github.com/qiwi/substrate/commit/e930e74f45f8038453b64435be185c2d20c781f4))
+
+
+
+
+
+### Dependencies
+
+* **@qiwi/substrate-types:** upgraded to 1.24.0
+
 ## @qiwi/substrate-std [1.0.3](https://github.com/qiwi/substrate/compare/@qiwi/substrate-std@1.0.2...@qiwi/substrate-std@1.0.3) (2020-01-09)
 
 
