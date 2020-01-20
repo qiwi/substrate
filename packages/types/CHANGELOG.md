@@ -1,3 +1,15 @@
+# @qiwi/substrate-types [1.24.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.23.0...@qiwi/substrate-types@1.24.0) (2020-01-20)
+
+
+### Bug Fixes
+
+* **docs:** rollback typedoc to 0.15.8 ([e930e74](https://github.com/qiwi/substrate/commit/e930e74f45f8038453b64435be185c2d20c781f4))
+
+
+### Features
+
+* **types:** add alias IConstructor > IConstructable ([00cc44d](https://github.com/qiwi/substrate/commit/00cc44d4b74387b5ab8e52e7144766fbb98797bb))
+
 # @qiwi/substrate-types [1.23.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.22.0...@qiwi/substrate-types@1.23.0) (2020-01-09)
 
 
