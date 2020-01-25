@@ -51,7 +51,7 @@
     "ts-jest": "^24.3.0",
     "tslint": "^5.20.1",
     "tslint-config-standard": "^9.0.0",
-    "typedoc": "0.15.8",
+    "typedoc": "0.16.9",
     "typedoc-plugin-external-module-name": "3.0.0",
     "typescript": "^3.7.5",
     "yargs": "^15.1.0"
