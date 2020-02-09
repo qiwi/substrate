@@ -1,4 +1,4 @@
-import * as BluebirdPromise from 'bluebird'
+import BluebirdPromise from 'bluebird'
 import { IPromise, IPromiseConstructor } from '.'
 
 const executor = (resolve: (value: number) => void, reject: (value: number) => void) => {
