@@ -1,11 +1,11 @@
+/// <reference lib="dom" />
+
 import axios from 'axios'
-import { IHttpClient } from '.'
+import crossFetch from 'cross-fetch'
 
-const httpClient: IHttpClient = axios
+import {IHttpClient, IHttpFetcher} from ".";
 
-httpClient.delete('test', {
-  headers: { 'X-Custom-Header': 'foobar' },
-  data: { foo: 'bar' },
-  withCredentials: true,
-  params: { bar: 'foo' }
-})
+export const domfetchAsFetcher: IHttpFetcher = fetch
+export const crossFetchAsFetcher: IHttpFetcher = crossFetch
+export const axiosAsFetcher: IHttpFetcher = axios
+export const axiosAsClient: IHttpClient = axios

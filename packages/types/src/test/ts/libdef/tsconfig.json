@@ -14,7 +14,8 @@
     "lib": ["es6", "dom"],
     "skipLibCheck": true,
     "baseUrl": ".",
-    "typeRoots": ["."]
+    "typeRoots": ["."],
+    "esModuleInterop": true
   },
   "include": [
     "./*"

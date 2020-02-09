@@ -75,8 +75,29 @@ declare module '@qiwi/substrate-types/target/es5/IEventEmitter' {
 	    once: IEmitterMethod;
 	}
 }
+declare module '@qiwi/substrate-types/target/es5/IPromise' {
+	/** @qiwi/substrate-types */
+	/** */
+	import { IConstructor } from '@qiwi/substrate-types/target/es5/IConstructor';
+	export type TPromiseExecutor<TValue = any, TReason = any> = (resolve: (value: TValue) => void, reject: (reason: TReason) => void) => void;
+	export interface IPromiseConstructor<TValue = any, TReason = any> extends IConstructor<IPromise<TValue, TReason>> {
+	    new (executor: TPromiseExecutor<TValue>): IPromise<TValue, TReason>;
+	    all: (values: Iterable<IPromise<TValue, TReason>>) => IPromise<TValue[], TReason>;
+	    race: (values: Iterable<IPromise<TValue, TReason>>) => IPromise<TValue, TReason>;
+	    reject: (reason?: TReason) => IPromise<TValue, TReason>;
+	    resolve: (value?: TValue) => IPromise<TValue, TReason>;
+	}
+	export interface IPromise<TValue = any, TReason = any> {
+	    then: (onSuccess?: (value: TValue) => any, onReject?: (reason: TReason) => any) => IPromise;
+	    catch: (onReject: (reason: TReason) => any) => IPromise;
+	    finally: (onFinally: () => any) => IPromise;
+	    readonly [Symbol.toStringTag]: string;
+	}
+	export const IPromise: PromiseConstructor;
+}
 declare module '@qiwi/substrate-types/target/es5/IHttpClient' {
-	export const enum HttpMethods {
+	import { IPromise } from '@qiwi/substrate-types/target/es5/IPromise';
+	export const enum HttpMethod {
 	    GET = "GET",
 	    DELETE = "DELETE",
 	    HEAD = "HEAD",
@@ -85,30 +106,40 @@ declare module '@qiwi/substrate-types/target/es5/IHttpClient' {
 	    PUT = "PUT",
 	    PATCH = "PATCH"
 	}
-	interface IHttpResponse<T = any> {
+	export type IHttpHeaders = Record<string, any>;
+	interface IHttpResponse<D = any> {
 	    status: number;
-	    statusTest: string;
-	    headers: Record<string, any>;
-	    data?: T;
-	    body?: T;
-	} type IHttpClientConfig = {
-	    headers?: Record<string, string>;
-	    data?: any;
-	    withCredentials?: boolean;
-	    params?: any;
-	};
-	export interface IExtHttpResponse extends IHttpResponse {
-	    json(): Promise<any>;
-	    text(): Promise<string>;
+	    statusText: string;
+	    headers: any;
+	    body?: any & {
+	        json(): D;
+	    };
+	    data?: D;
 	}
-	export interface IHttpClient {
-	    get<T = any>(url: string, config?: IHttpClientConfig): Promise<IHttpResponse<T>>;
-	    delete<T = any>(url: string, config?: IHttpClientConfig): Promise<IHttpResponse<T>>;
-	    head<T = any>(url: string, config?: IHttpClientConfig): Promise<IHttpResponse<T>>;
-	    options<T = any>(url: string, config?: IHttpClientConfig): Promise<IHttpResponse<T>>;
-	    post<T = any>(url: string, data?: any, config?: IHttpClientConfig): Promise<IHttpResponse<T>>;
-	    put<T = any>(url: string, data?: any, config?: IHttpClientConfig): Promise<IHttpResponse<T>>;
-	    patch<T = any>(url: string, data?: any, config?: IHttpClientConfig): Promise<IHttpResponse<T>>;
+	interface IHttpRequest {
+	    url?: string;
+	    method?: HttpMethod;
+	    headers?: IHttpHeaders;
+	    params?: any;
+	    body?: any;
+	    data?: any;
+	}
+	export type IAsyncHttpResponse<D, R> = IPromise<R & IHttpResponse<D>>;
+	export interface IHttpFetcher<Req extends IHttpRequest = IHttpRequest, Res extends IHttpResponse = IHttpResponse> {
+	    <D = any>(url: string, req?: Req): IAsyncHttpResponse<D, Res>;
+	}
+	export interface IHttpReqPerform<Req = IHttpRequest, Res = IHttpResponse> {
+	    <D = any>(url: string, body: any, req: Req): IAsyncHttpResponse<D, Res>;
+	    <D = any>(url: string, req: Req): IAsyncHttpResponse<D, Res>;
+	}
+	export interface IHttpClient<Req extends IHttpRequest = IHttpRequest, Res extends IHttpResponse = IHttpResponse> extends IHttpFetcher<Req, Res> {
+	    get: IHttpReqPerform<Req, Res>;
+	    post: IHttpReqPerform<Req, Res>;
+	    put: IHttpReqPerform<Req, Res>;
+	    patch: IHttpReqPerform<Req, Res>;
+	    head: IHttpReqPerform<Req, Res>;
+	    delete: IHttpReqPerform<Req, Res>;
+	    options: IHttpReqPerform<Req, Res>;
 	}
 	export {};
 }
@@ -227,26 +258,6 @@ declare module '@qiwi/substrate-types/target/es5/IUtilMap' {
 	export type TUtilMapHandler = (value: any, key?: string | number, collection?: TUtilMapCollection) => any;
 	export type TUtilMap = (collection: TUtilMapCollection, handler: TUtilMapHandler) => any[];
 }
-declare module '@qiwi/substrate-types/target/es5/IPromise' {
-	/** @qiwi/substrate-types */
-	/** */
-	import { IConstructor } from '@qiwi/substrate-types/target/es5/IConstructor';
-	export type TPromiseExecutor<TValue = any, TReason = any> = (resolve: (value: TValue) => void, reject: (reason: TReason) => void) => void;
-	export interface IPromiseConstructor<TValue = any, TReason = any> extends IConstructor<IPromise<TValue, TReason>> {
-	    new (executor: TPromiseExecutor<TValue>): IPromise<TValue, TReason>;
-	    all: (values: Iterable<IPromise<TValue, TReason>>) => IPromise<TValue[], TReason>;
-	    race: (values: Iterable<IPromise<TValue, TReason>>) => IPromise<TValue, TReason>;
-	    reject: (reason?: TReason) => IPromise<TValue, TReason>;
-	    resolve: (value?: TValue) => IPromise<TValue, TReason>;
-	}
-	export interface IPromise<TValue = any, TReason = any> {
-	    then: (onSuccess?: (value: TValue) => any, onReject?: (reason: TReason) => any) => IPromise;
-	    catch: (onReject: (reason: TReason) => any) => IPromise;
-	    finally: (onFinally: () => any) => IPromise;
-	    readonly [Symbol.toStringTag]: string;
-	}
-	export const IPromise: PromiseConstructor;
-}
 declare module '@qiwi/substrate-types/target/es5/IStorage' {
 	/** @qiwi/substrate-types */
 	/** */
@@ -308,7 +319,7 @@ declare module '@qiwi/substrate-types/target/es5/export' {
 	export { IIterable, IIterator, IIteratorResult } from '@qiwi/substrate-types/target/es5/IIterable';
 	export { IMiddleware, IAsyncMiddleware, IErrorMiddleware, IRequestMiddleware, IRequest, IResponse, INext } from '@qiwi/substrate-types/target/es5/IMiddleware';
 	export { IPool, IPooledObject, IPooledObjectFactory, IPooledObjectStatus } from '@qiwi/substrate-types/target/es5/IPool';
-	export { IHttpClient } from '@qiwi/substrate-types/target/es5/IHttpClient';
+	export { IHttpClient, IHttpFetcher, HttpMethod } from '@qiwi/substrate-types/target/es5/IHttpClient';
 }
 declare module '@qiwi/substrate-types/target/es5/IPool' {
 	/** @qiwi/substrate-types */
@@ -364,7 +375,7 @@ declare module '@qiwi/substrate-types/target/es5/aliases' {
 	export { IIterable as Iterable, IIterator as Iterator, IIteratorResult as IteratorResult } from '@qiwi/substrate-types/target/es5/IIterable';
 	export { IMiddleware as Middleware, IAsyncMiddleware as AsyncMiddleware, IErrorMiddleware as ErrorMiddleware, IRequestMiddleware as RequestMiddleware, IRequest as Request, IResponse as Response, INext as Next } from '@qiwi/substrate-types/target/es5/IMiddleware';
 	export { IPool as Pool, IPooledObject as PooledObject, IPooledObjectFactory as PooledObjectFactory, IPooledObjectStatus as PooledObjectStatus } from '@qiwi/substrate-types/target/es5/IPool';
-	export { IHttpClient as HttpClient } from '@qiwi/substrate-types/target/es5/IHttpClient';
+	export { IHttpClient as HttpClient, IHttpFetcher as HttpFetcher, HttpMethod } from '@qiwi/substrate-types/target/es5/IHttpClient';
 }
 declare module '@qiwi/substrate-types/target/es5/helpers' {
 	export type UnionToIntersection<U> = ((U extends any ? (k: U) => void : never) extends ((k: infer I) => void) ? I : never);
