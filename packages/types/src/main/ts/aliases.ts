@@ -45,3 +45,4 @@ export {
   IPooledObjectFactory as PooledObjectFactory,
   IPooledObjectStatus as PooledObjectStatus
 } from './IPool'
+export { IHttpClient as HttpClient } from './IHttpClient'

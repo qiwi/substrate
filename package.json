@@ -49,8 +49,6 @@
     "semantic-release": "16.0.2",
     "snazzy": "^8.0.0",
     "ts-jest": "^24.3.0",
-    "tslint": "^5.20.1",
-    "tslint-config-standard": "^9.0.0",
     "typedoc": "0.15.8",
     "typedoc-plugin-external-module-name": "3.0.0",
     "typescript": "^3.7.5",
