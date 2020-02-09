@@ -75,6 +75,43 @@ declare module '@qiwi/substrate-types/target/es5/IEventEmitter' {
 	    once: IEmitterMethod;
 	}
 }
+declare module '@qiwi/substrate-types/target/es5/IHttpClient' {
+	export const enum HttpMethods {
+	    GET = "GET",
+	    DELETE = "DELETE",
+	    HEAD = "HEAD",
+	    OPTIONS = "OPTIONS",
+	    POST = "POST",
+	    PUT = "PUT",
+	    PATCH = "PATCH"
+	}
+	interface IHttpResponse<T = any> {
+	    status: number;
+	    statusTest: string;
+	    headers: Record<string, any>;
+	    data?: T;
+	    body?: T;
+	} type IHttpClientConfig = {
+	    headers?: Record<string, string>;
+	    data?: any;
+	    withCredentials?: boolean;
+	    params?: any;
+	};
+	export interface IExtHttpResponse extends IHttpResponse {
+	    json(): Promise<any>;
+	    text(): Promise<string>;
+	}
+	export interface IHttpClient {
+	    get<T = any>(url: string, config?: IHttpClientConfig): Promise<IHttpResponse<T>>;
+	    delete<T = any>(url: string, config?: IHttpClientConfig): Promise<IHttpResponse<T>>;
+	    head<T = any>(url: string, config?: IHttpClientConfig): Promise<IHttpResponse<T>>;
+	    options<T = any>(url: string, config?: IHttpClientConfig): Promise<IHttpResponse<T>>;
+	    post<T = any>(url: string, data?: any, config?: IHttpClientConfig): Promise<IHttpResponse<T>>;
+	    put<T = any>(url: string, data?: any, config?: IHttpClientConfig): Promise<IHttpResponse<T>>;
+	    patch<T = any>(url: string, data?: any, config?: IHttpClientConfig): Promise<IHttpResponse<T>>;
+	}
+	export {};
+}
 declare module '@qiwi/substrate-types/target/es5/IIterable' {
 	/** @qiwi/substrate-types */
 	/** */
@@ -271,6 +308,7 @@ declare module '@qiwi/substrate-types/target/es5/export' {
 	export { IIterable, IIterator, IIteratorResult } from '@qiwi/substrate-types/target/es5/IIterable';
 	export { IMiddleware, IAsyncMiddleware, IErrorMiddleware, IRequestMiddleware, IRequest, IResponse, INext } from '@qiwi/substrate-types/target/es5/IMiddleware';
 	export { IPool, IPooledObject, IPooledObjectFactory, IPooledObjectStatus } from '@qiwi/substrate-types/target/es5/IPool';
+	export { IHttpClient } from '@qiwi/substrate-types/target/es5/IHttpClient';
 }
 declare module '@qiwi/substrate-types/target/es5/IPool' {
 	/** @qiwi/substrate-types */
@@ -326,6 +364,7 @@ declare module '@qiwi/substrate-types/target/es5/aliases' {
 	export { IIterable as Iterable, IIterator as Iterator, IIteratorResult as IteratorResult } from '@qiwi/substrate-types/target/es5/IIterable';
 	export { IMiddleware as Middleware, IAsyncMiddleware as AsyncMiddleware, IErrorMiddleware as ErrorMiddleware, IRequestMiddleware as RequestMiddleware, IRequest as Request, IResponse as Response, INext as Next } from '@qiwi/substrate-types/target/es5/IMiddleware';
 	export { IPool as Pool, IPooledObject as PooledObject, IPooledObjectFactory as PooledObjectFactory, IPooledObjectStatus as PooledObjectStatus } from '@qiwi/substrate-types/target/es5/IPool';
+	export { IHttpClient as HttpClient } from '@qiwi/substrate-types/target/es5/IHttpClient';
 }
 declare module '@qiwi/substrate-types/target/es5/helpers' {
 	export type UnionToIntersection<U> = ((U extends any ? (k: U) => void : never) extends ((k: infer I) => void) ? I : never);
