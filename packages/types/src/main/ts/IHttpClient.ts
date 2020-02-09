@@ -1,4 +1,4 @@
-import {IPromise} from './IPromise'
+import { IPromise } from './IPromise'
 
 export const enum HttpMethod {
   GET = 'GET',

@@ -3,7 +3,7 @@
 import axios from 'axios'
 import crossFetch from 'cross-fetch'
 
-import {IHttpClient, IHttpFetcher} from ".";
+import { IHttpClient, IHttpFetcher } from '.'
 
 export const domfetchAsFetcher: IHttpFetcher = fetch
 export const crossFetchAsFetcher: IHttpFetcher = crossFetch
