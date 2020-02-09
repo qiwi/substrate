@@ -1,4 +1,6 @@
-export const enum HttpMethods {
+import {IPromise} from './IPromise'
+
+export const enum HttpMethod {
   GET = 'GET',
   DELETE = 'DELETE',
   HEAD = 'HEAD',
@@ -8,32 +10,42 @@ export const enum HttpMethods {
   PATCH = 'PATCH'
 }
 
-interface IHttpResponse<T = any> {
+export type IHttpHeaders = Record<string, any>
+
+interface IHttpResponse<D=any>{
   status: number
-  statusTest: string
-  headers: Record<string, any>,
-  data?: T
-  body?: T
+  statusText: string,
+  headers: any,
+  body?: any & { json(): D },
+  data?: D
 }
 
-type IHttpClientConfig = {
-  headers?: Record<string, string>
-  data?: any,
-  withCredentials?: boolean
-  params?: any;
+interface IHttpRequest {
+  url?: string,
+  method?: HttpMethod,
+  headers?: IHttpHeaders,
+  params?: any,
+  body?: any,
+  data?: any
 }
 
-export interface IExtHttpResponse extends IHttpResponse {
-  json(): Promise<any>;
-  text(): Promise<string>;
+export type IAsyncHttpResponse<D, R> = IPromise<R & IHttpResponse<D>>
+
+export interface IHttpFetcher<Req extends IHttpRequest = IHttpRequest, Res extends IHttpResponse = IHttpResponse> {
+  <D=any>(url: string, req?: Req): IAsyncHttpResponse<D, Res>
 }
 
-export interface IHttpClient {
-  get<T = any>(url: string, config?: IHttpClientConfig): Promise<IHttpResponse<T>>;
-  delete<T = any>(url: string, config?: IHttpClientConfig): Promise<IHttpResponse<T>>;
-  head<T = any>(url: string, config?: IHttpClientConfig): Promise<IHttpResponse<T>>;
-  options<T = any>(url: string, config?: IHttpClientConfig): Promise<IHttpResponse<T>>;
-  post<T = any>(url: string, data?: any, config?: IHttpClientConfig): Promise<IHttpResponse<T>>;
-  put<T = any>(url: string, data?: any, config?: IHttpClientConfig): Promise<IHttpResponse<T>>;
-  patch<T = any>(url: string, data?: any, config?: IHttpClientConfig): Promise<IHttpResponse<T>>;
+export interface IHttpReqPerform<Req=IHttpRequest, Res=IHttpResponse> {
+  <D=any>(url: string, body: any, req: Req): IAsyncHttpResponse<D, Res>
+  <D=any>(url: string, req: Req): IAsyncHttpResponse<D, Res>
+}
+
+export interface IHttpClient<Req extends IHttpRequest = IHttpRequest, Res extends IHttpResponse = IHttpResponse> extends IHttpFetcher<Req, Res>{
+  get: IHttpReqPerform<Req, Res>,
+  post: IHttpReqPerform<Req, Res>,
+  put: IHttpReqPerform<Req, Res>,
+  patch: IHttpReqPerform<Req, Res>,
+  head: IHttpReqPerform<Req, Res>,
+  delete: IHttpReqPerform<Req, Res>,
+  options: IHttpReqPerform<Req, Res>,
 }
