@@ -36,8 +36,8 @@ export interface IHttpFetcher<Req extends IHttpRequest = IHttpRequest, Res exten
 }
 
 export interface IHttpReqPerform<Req=IHttpRequest, Res=IHttpResponse> {
-  <D=any>(url: string, body: any, req: Req): IAsyncHttpResponse<D, Res>
-  <D=any>(url: string, req: Req): IAsyncHttpResponse<D, Res>
+  <D=any>(url: string, body?: any, req?: Req): IAsyncHttpResponse<D, Res>
+  <D=any>(url: string, req?: Req): IAsyncHttpResponse<D, Res>
 }
 
 export interface IHttpClient<Req extends IHttpRequest = IHttpRequest, Res extends IHttpResponse = IHttpResponse> extends IHttpFetcher<Req, Res>{
