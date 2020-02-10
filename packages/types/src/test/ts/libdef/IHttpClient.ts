@@ -3,16 +3,14 @@
 import axios from 'axios'
 import crossFetch from 'cross-fetch'
 
-import { IHttpClient, IHttpFetcher } from '.'
+import { IHttpClient, IFetch } from '.'
 
-export const domfetchAsFetcher: IHttpFetcher = fetch
-export const crossFetchAsFetcher: IHttpFetcher = crossFetch
-export const axiosAsFetcher: IHttpFetcher = axios
+export const domfetchAsFetcher: IFetch = fetch
+export const crossFetchAsFetcher: IFetch = crossFetch
 export const axiosAsClient: IHttpClient = axios
 
 async () => {
-  interface Data {}
-  const data: Data = await axiosAsClient.get<Data>('https://example.com')
-
-  return data
+  type Data = { foo: string }
+  const data1 = (await axiosAsClient.get<Data>('https://example.com')).data
+  return { foo: 1 }
 }

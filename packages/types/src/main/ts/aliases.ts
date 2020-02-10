@@ -11,7 +11,7 @@ export { TUtilEach as UtilEach } from './IUtilEach'
 export { TUtilMap as UtilMap } from './IUtilMap'
 export { ICloneable as Cloneable } from './ICloneable'
 export { ICurrency as Currency } from './ICurrency'
-export {  } from './IPromise'
+export { } from './IPromise'
 export { IStorage as Storage } from './IStorage'
 export { IMoney as Money } from './IMoney'
 export { } from './IStack'
@@ -47,6 +47,7 @@ export {
 } from './IPool'
 export {
   IHttpClient as HttpClient,
-  IHttpFetcher as HttpFetcher,
+  IFetch as Fetch,
+  IHttpRequestProvider as HttpRequestProvider,
   HttpMethod
 } from './IHttpClient'
