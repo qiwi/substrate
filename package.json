@@ -25,6 +25,7 @@
     "postupdate": "yarn && yarn bootstrap && yarn build && yarn test"
   },
   "devDependencies": {
+    "@qiwi/license": "^1.1.1",
     "@qiwi/multi-semantic-release": "^2.0.0",
     "@qiwi/semantic-release-gh-pages-plugin": "^1.15.8",
     "@semantic-release/changelog": "^5.0.0",
@@ -60,5 +61,6 @@
       "<rootDir>/packages/types/jest.config.json",
       "<rootDir>/packages/facade/jest.config.json"
     ]
-  }
+  },
+  "dependencies": {}
 }
