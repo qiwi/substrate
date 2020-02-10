@@ -47,6 +47,7 @@ export {
 } from './IPool'
 export {
   IHttpClient,
-  IHttpFetcher,
+  IFetch,
+  IHttpRequestProvider,
   HttpMethod
 } from './IHttpClient'
