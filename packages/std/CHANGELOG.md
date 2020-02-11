@@ -1,3 +1,10 @@
+## @qiwi/substrate-std [1.0.6](https://github.com/qiwi/substrate/compare/@qiwi/substrate-std@1.0.5...@qiwi/substrate-std@1.0.6) (2020-02-11)
+
+
+### Performance Improvements
+
+* **package:** up release-tools deps ([9855b27](https://github.com/qiwi/substrate/commit/9855b27957cbbf26f677247657b3c0110c47abff))
+
 ## @qiwi/substrate-std [1.0.5](https://github.com/qiwi/substrate/compare/@qiwi/substrate-std@1.0.4...@qiwi/substrate-std@1.0.5) (2020-02-11)
 
 
