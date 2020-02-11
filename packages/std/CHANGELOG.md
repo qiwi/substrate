@@ -1,3 +1,18 @@
+## @qiwi/substrate-std [1.0.7](https://github.com/qiwi/substrate/compare/@qiwi/substrate-std@1.0.6...@qiwi/substrate-std@1.0.7) (2020-02-11)
+
+
+### Performance Improvements
+
+* handle docs prefix issue ([195e8ac](https://github.com/qiwi/substrate/commit/195e8acc293821eef4e4585385ec17b4cfa7f4c1))
+
+
+
+
+
+### Dependencies
+
+* **@qiwi/substrate-types:** upgraded to 1.25.1
+
 ## @qiwi/substrate-std [1.0.6](https://github.com/qiwi/substrate/compare/@qiwi/substrate-std@1.0.5...@qiwi/substrate-std@1.0.6) (2020-02-11)
 
 
