@@ -27,7 +27,7 @@
     "flowgen": "flowgen typings/index.d.ts --output-file typings/index.flow.js",
     "test": "yarn jest",
     "jest": "jest --config=jest.config.json",
-    "docs": "typedoc --readme README.md --tsconfig ./tsconfig.json ./src/main || exit 0"
+    "docs": "typedoc --readme README.md --tsconfig ./tsconfig.json ./src/main && touch ./docs/.nojekyll || exit 0"
   },
   "files": [
     "README.md",

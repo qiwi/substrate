@@ -1,5 +1,5 @@
 {
-  "name": "Constcode",
+  "name": "Substrate",
   "mode": "modules",
   "out": "./docs",
   "target": "ES6",

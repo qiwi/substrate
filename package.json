@@ -20,7 +20,7 @@
     "codeclimate:push": "codeclimate-test-reporter < ./coverage/lcov.info",
     "coveralls:push": "cat ./coverage/lcov.info | coveralls",
     "lint": "eslint 'packages/**/src/**/*.ts' --ignore-pattern 'packages/**/*.d.ts' --fix | snazzy",
-    "docs": "typedoc packages/**/src/main --ignoreCompilerErrors || exit 0",
+    "docs": "typedoc packages/**/src/main --ignoreCompilerErrors && touch ./docs/.nojekyll || exit 0",
     "release": "multi-semantic-release --execasync",
     "postupdate": "yarn && yarn bootstrap && yarn build && yarn test"
   },
