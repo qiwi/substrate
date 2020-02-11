@@ -1,3 +1,18 @@
+# @qiwi/substrate-types [1.25.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.24.0...@qiwi/substrate-types@1.25.0) (2020-02-11)
+
+
+### Bug Fixes
+
+* **types:** fix IFetch generics, IHttpClient improvements ([be00410](https://github.com/qiwi/substrate/commit/be004108eaad11e3a252532aeb590258a2bda209))
+* **types:** let HttpReqPerform 2-3 args be optional ([d46ec8a](https://github.com/qiwi/substrate/commit/d46ec8a90ff401c2444ff9d6e176d6627fc37e3b))
+
+
+### Features
+
+* **types:** add IHttpFetcher ([aaa1dcd](https://github.com/qiwi/substrate/commit/aaa1dcd4707895aaf0606b8762747b9f0a8b38e1)), closes [#5](https://github.com/qiwi/substrate/issues/5)
+* **types:** separate IHttpClient and IFetch, add IHttpRequestProvider ([f80dd51](https://github.com/qiwi/substrate/commit/f80dd51ba2128283c18ef544e44c20fb71335939))
+* add IHttpClient and test with axios ([0757e4b](https://github.com/qiwi/substrate/commit/0757e4bbe60266b68711a4e8de6ae45a5b5ced45))
+
 # @qiwi/substrate-types [1.24.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.23.0...@qiwi/substrate-types@1.24.0) (2020-01-20)
 
 
