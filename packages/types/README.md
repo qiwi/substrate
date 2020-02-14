@@ -1,5 +1,5 @@
 # @qiwi/substrate-types
-Basic types and interfaces
+Basic types and interfaces. Typedoc: [https://qiwi.github.io/substrate/types/](https://qiwi.github.io/substrate/types/)
 
 ### Install
 ```bash

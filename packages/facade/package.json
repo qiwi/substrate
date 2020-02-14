@@ -37,15 +37,15 @@
     "target"
   ],
   "dependencies": {
-    "@qiwi/substrate-types": "^1.25.0",
-    "@qiwi/substrate-abstract": "^1.17.18",
+    "@qiwi/substrate-types": "^1.25.1",
+    "@qiwi/substrate-abstract": "^1.17.20",
     "@qiwi/substrate-std": "*"
   },
   "devDependencies": {
     "@types/jest": "^25.1.2",
-    "@types/node": "^13.7.0",
+    "@types/node": "^13.7.1",
     "dts-generator": "^3.0.0",
-    "dtslint": "^2.0.5",
+    "dtslint": "^2.0.6",
     "esm": "^3.2.25",
     "flowgen": "^1.10.0",
     "fs-extra": "^8.1.0",

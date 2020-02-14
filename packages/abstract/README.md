@@ -1,5 +1,6 @@
 # @qiwi/substrate-abstract
-Abstract classes collection
+Abstract classes collection.  
+Typedoc: [https://qiwi.github.io/substrate/abstract/](https://qiwi.github.io/substrate/abstract/)
 
 ### Install
 ```bash
