@@ -1,3 +1,10 @@
+# @qiwi/substrate-types [1.26.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.25.2...@qiwi/substrate-types@1.26.0) (2020-02-27)
+
+
+### Features
+
+* **types:** add LogLevel enum ([a6c0d84](https://github.com/qiwi/substrate/commit/a6c0d8443209d139aab16a23307b2331d3e97bfc))
+
 ## @qiwi/substrate-types [1.25.2](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.25.1...@qiwi/substrate-types@1.25.2) (2020-02-14)
 
 
