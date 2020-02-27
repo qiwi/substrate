@@ -1,7 +1,9 @@
-import { ILoggerMethod, ILogger, TLogLevel } from '.'
+import { ILoggerMethod, ILogger, LogLevel } from '.'
 
-const brokenLogLevel: TLogLevel = 'info' // $ExpectError
-const traceLogLevel: TLogLevel = 5e3
+const brokenLogLevel: LogLevel = 'unknown' // $ExpectError
+const traceLogLevel: LogLevel = LogLevel.TRACE
+const debugLogLevel: LogLevel = 'debug'
+const infoLogLevel: LogLevel = 'INFO' // $ExpectError
 
 const brokenLogMethod: ILoggerMethod = null // $ExpectError
 const logMethod: ILoggerMethod = () => undefined

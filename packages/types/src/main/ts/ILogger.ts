@@ -1,11 +1,19 @@
 /** @module @qiwi/substrate-types */
 /** */
 
-// Inherits log4j logging levels contract and Logback values
+import { mkenum, enumType } from './helpers'
 
 export type ILoggerMethod = (...args: any[]) => void
 
-export type TLogLevel = number
+export const LogLevel = mkenum({
+  ERROR: 'error',
+  WARN: 'warn',
+  INFO: 'info',
+  DEBUG: 'debug',
+  TRACE: 'trace'
+})
+
+export type LogLevel = enumType<typeof LogLevel>
 
 export interface ILogger {
   trace: ILoggerMethod,
