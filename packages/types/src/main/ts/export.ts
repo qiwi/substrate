@@ -4,7 +4,7 @@
 export { IStringMap } from './IStringMap'
 export { IAnyMap } from './IAnyMap'
 export { IEventEmitter } from './IEventEmitter'
-export { ILogger, TLogLevel, ILoggerMethod } from './ILogger'
+export { ILogger, LogLevel, ILoggerMethod } from './ILogger'
 export { TUtilGet } from './IUtilGet'
 export { TUtilSet } from './IUtilSet'
 export { TUtilEach } from './IUtilEach'
