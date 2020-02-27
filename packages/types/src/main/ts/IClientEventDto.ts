@@ -1,26 +1,34 @@
-
 /** @module @qiwi/substrate-types */
 /** */
 
-export type ClientEventLevel = 'trace' | 'debug' | 'info' | 'warn' | 'error'
+import { mkenum, enumType } from './helpers'
+import { LogLevel } from './ILogger'
 
-export type EnvironmentProfile = 'prod' | 'staging' | 'ci' | 'testing' | 'development'
+export const EnvironmentProfile = mkenum({
+  PROD: 'prod',
+  STAGING: 'staging',
+  CI: 'ci',
+  TESTING: 'testing',
+  DEVELOPMENT: 'development'
+})
+
+export type EnvironmentProfile = enumType<typeof EnvironmentProfile>
 
 export interface IClientEventMeta {
   appName: string
   appHost: string
   appVersion: string
   appNamespace: string,
+  appConfig?: Record<string, any>,
   envProfile: EnvironmentProfile,
   deviceInfo?: Record<string, any>,
-  appConfig?: Record<string, any>,
 }
 
 export interface IClientEventDto {
   message: string
   tags?: Array<string>
   code?: string
-  level?: ClientEventLevel
+  level?: LogLevel,
   meta?: IClientEventMeta
   details?: Record<string, any>
 }

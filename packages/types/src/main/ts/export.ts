@@ -54,5 +54,5 @@ export {
 export {
   IClientEventDto,
   IClientEventMeta,
-  ClientEventLevel
+  EnvironmentProfile
 } from './IClientEventDto'

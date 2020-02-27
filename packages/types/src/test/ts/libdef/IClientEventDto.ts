@@ -1,8 +1,8 @@
-import { ClientEventLevel, IClientEventMeta, IClientEventDto } from '.'
+import { EnvironmentProfile, IClientEventMeta, IClientEventDto } from '.'
 
-// ClientEventLevel
-const brokenLevel: ClientEventLevel = 'foo' // $ExpectError
-const level: ClientEventLevel = 'error'
+// EnvironmentProfile
+const brokenProfile: EnvironmentProfile = 'foo' // $ExpectError
+const profile: EnvironmentProfile = 'prod'
 
 // IClientEventMeta
 const brokenMeta: IClientEventMeta = {
