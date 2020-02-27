@@ -5,11 +5,11 @@ import { mkenum, enumType } from './helpers'
 import { LogLevel } from './ILogger'
 
 export const EnvironmentProfile = mkenum({
-  PROD: 'prod',
-  STAGING: 'staging',
   CI: 'ci',
-  TESTING: 'testing',
-  DEVELOPMENT: 'development'
+  DEV: 'development',
+  TEST: 'testing',
+  PROD: 'prod',
+  STAGE: 'staging'
 })
 
 export type EnvironmentProfile = enumType<typeof EnvironmentProfile>
