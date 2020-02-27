@@ -51,3 +51,8 @@ export {
   IHttpRequestProvider,
   HttpMethod
 } from './IHttpClient'
+export {
+  IClientEventDto,
+  IClientEventMeta,
+  EnvironmentProfile
+} from './IClientEventDto'
