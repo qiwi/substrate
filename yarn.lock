@@ -3429,15 +3429,7 @@ define-property@^2.0.2:
     is-descriptor "^1.0.2"
     isobject "^3.0.1"
 
-definitelytyped-header-parser@3.8.2:
-  version "3.8.2"
-  resolved "https://registry.yarnpkg.com/definitelytyped-header-parser/-/definitelytyped-header-parser-3.8.2.tgz#ac9b5710da976c6258997c15376d2180b6bd0e5c"
-  integrity sha512-kQePPP/cqQX3H6DrX5nCo2vMjJeboPsjEG8OOl43TZbTOr9zLlapWJ/oRCLnMCiyERsBRZXyLMtBXGM+1zmtgQ==
-  dependencies:
-    "@types/parsimmon" "^1.3.0"
-    parsimmon "^1.2.0"
-
-definitelytyped-header-parser@^3.8.2:
+definitelytyped-header-parser@3.9.0, definitelytyped-header-parser@^3.8.2:
   version "3.9.0"
   resolved "https://registry.yarnpkg.com/definitelytyped-header-parser/-/definitelytyped-header-parser-3.9.0.tgz#f992abb8e62f697ca25e1adbfd5f69ef11621644"
   integrity sha512-slbwZ5h5lasB12t+9EAGYr060aCMqEXp6cwD7CoTriK40HNDYU56/XQ6S4sbjBK8ReGRMnB/uDx0elKkb4kuQA==
@@ -3596,12 +3588,12 @@ dts-generator@^3.0.0:
     glob "^7.1.3"
     mkdirp "^0.5.1"
 
-dtslint@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/dtslint/-/dtslint-3.1.0.tgz#8a974c75ca1193d53f26cce8ec791aba38c3d405"
-  integrity sha512-L1j0+keWRAMPYTk0986UVhCnvwLvgnpSU/ECKzY7UCwiirqJLi3v2KpSlPbqW7Xl8G3D5/64oICNp5EZuvfTvg==
+dtslint@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/dtslint/-/dtslint-3.2.0.tgz#b2c17935aaf243a1346c903c60bd8cbaea1fa5e2"
+  integrity sha512-c+fOZRCLu/U0DXjcbYJc0tY+f/ucYzwk93XhYO5807/TqB5l2Zdk/26ngpzjJYeXPWtfufLprdoIuBPEjaoEig==
   dependencies:
-    definitelytyped-header-parser "3.8.2"
+    definitelytyped-header-parser "3.9.0"
     dts-critic "^3.0.0"
     fs-extra "^6.0.1"
     json-stable-stringify "^1.0.1"
@@ -10056,10 +10048,10 @@ typedoc-plugin-external-module-name@3.0.0:
     lodash "^4.1.2"
     semver "^7.1.1"
 
-typedoc@0.16.10:
-  version "0.16.10"
-  resolved "https://registry.yarnpkg.com/typedoc/-/typedoc-0.16.10.tgz#217cd4243c9b4d85f49b94323c178f6d279bfb9c"
-  integrity sha512-Eo1+K+XTiqSi4lz5cPrV4RncLv6abjCd/jfL5tTueNZGO2p8x2yDIrXkxL9C+SoLjJm2xpMs3CXYmTnilxk1cA==
+typedoc@0.16.11:
+  version "0.16.11"
+  resolved "https://registry.yarnpkg.com/typedoc/-/typedoc-0.16.11.tgz#95f862c6eba78533edc9af7096d2295b718eddc1"
+  integrity sha512-YEa5i0/n0yYmLJISJ5+po6seYfJQJ5lQYcHCPF9ffTF92DB/TAZO/QrazX5skPHNPtmlIht5FdTXCM2kC7jQFQ==
   dependencies:
     "@types/minimatch" "3.0.3"
     fs-extra "^8.1.0"
