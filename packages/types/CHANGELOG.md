@@ -1,3 +1,15 @@
+# @qiwi/substrate-types [1.27.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.26.0...@qiwi/substrate-types@1.27.0) (2020-02-28)
+
+
+### Features
+
+* add IClientEventDto ([d5013b9](https://github.com/qiwi/substrate/commit/d5013b945cb7dbfd4f1237e205d263570f2322bf))
+
+
+### Performance Improvements
+
+* up deps & repack ([8beeca7](https://github.com/qiwi/substrate/commit/8beeca70ba850332a07042e74269340a4bf93d86))
+
 # @qiwi/substrate-types [1.27.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.26.0...@qiwi/substrate-types@1.27.0) (2020-02-27)
 
 
