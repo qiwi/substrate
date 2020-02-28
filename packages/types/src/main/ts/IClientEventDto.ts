@@ -1,18 +1,15 @@
 /** @module @qiwi/substrate-types */
 /** */
 
-import { mkenum, enumType } from './helpers'
 import { LogLevel } from './ILogger'
 
-export const EnvironmentProfile = mkenum({
-  CI: 'ci',
-  DEV: 'development',
-  TEST: 'testing',
-  PROD: 'prod',
-  STAGE: 'staging'
-})
-
-export type EnvironmentProfile = enumType<typeof EnvironmentProfile>
+export enum EnvironmentProfile {
+  CI = 'ci',
+  DEV = 'development',
+  TEST = 'testing',
+  PROD = 'prod',
+  STAGE = 'staging'
+}
 
 export interface IClientEventMeta {
   appName: string

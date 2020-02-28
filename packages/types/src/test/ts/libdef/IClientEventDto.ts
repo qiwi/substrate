@@ -1,8 +1,9 @@
-import { EnvironmentProfile, IClientEventMeta, IClientEventDto } from '.'
+import { EnvironmentProfile, IClientEventMeta, IClientEventDto, LogLevel } from '.'
 
 // EnvironmentProfile
-const brokenProfile: EnvironmentProfile = 'foo' // $ExpectError
-const profile: EnvironmentProfile = 'prod'
+const brokenProfile1: EnvironmentProfile = 'foo' // $ExpectError
+const brokenProfile2: EnvironmentProfile = 'prod' // $ExpectError
+const profile: EnvironmentProfile = EnvironmentProfile.PROD
 
 // IClientEventMeta
 const brokenMeta: IClientEventMeta = {
@@ -19,7 +20,7 @@ const clientEventMeta: IClientEventMeta = {
   appHost: 'www.host',
   appVersion: 'v1',
   appNamespace: 'ci',
-  envProfile: 'prod',
+  envProfile: EnvironmentProfile.PROD,
   deviceInfo: {
     device: '1'
   }
@@ -43,7 +44,7 @@ const clientEventDto2: IClientEventDto = {
   message: 'foo',
   tags: ['foo'],
   code: '200',
-  level: 'error',
+  level: LogLevel.ERROR,
   meta: clientEventMeta,
   details: {
     foo: 'bar'
