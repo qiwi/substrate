@@ -1,3 +1,10 @@
+## @qiwi/substrate-types [1.27.1](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.27.0...@qiwi/substrate-types@1.27.1) (2020-02-28)
+
+
+### Bug Fixes
+
+* replace synthetic enum with native ([ebe9cbf](https://github.com/qiwi/substrate/commit/ebe9cbf08d53ad23abd1bb81d322816c1d963d40))
+
 # @qiwi/substrate-types [1.27.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.26.0...@qiwi/substrate-types@1.27.0) (2020-02-28)
 
 
