@@ -1,3 +1,10 @@
+# @qiwi/substrate-types [1.28.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.27.1...@qiwi/substrate-types@1.28.0) (2020-03-04)
+
+
+### Features
+
+* **types:** let all IClientEventMeta fields be optional ([f8ad0ad](https://github.com/qiwi/substrate/commit/f8ad0ad95f62ad781f977ffb97fa8236935aaeda))
+
 ## @qiwi/substrate-types [1.27.1](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.27.0...@qiwi/substrate-types@1.27.1) (2020-02-28)
 
 
