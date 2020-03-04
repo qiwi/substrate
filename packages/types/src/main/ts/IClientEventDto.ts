@@ -12,12 +12,12 @@ export enum EnvironmentProfile {
 }
 
 export interface IClientEventMeta {
-  appName: string
-  appHost: string
-  appVersion: string
-  appNamespace: string,
+  appName?: string
+  appHost?: string
+  appVersion?: string
+  appNamespace?: string,
   appConfig?: Record<string, any>,
-  envProfile: EnvironmentProfile,
+  envProfile?: EnvironmentProfile,
   deviceInfo?: Record<string, any>,
 }
 
