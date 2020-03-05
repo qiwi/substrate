@@ -28,4 +28,5 @@ export interface IClientEventDto {
   level?: LogLevel,
   meta?: IClientEventMeta
   details?: Record<string, any>
+  stacktrace?: any
 }
