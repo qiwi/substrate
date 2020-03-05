@@ -1,3 +1,10 @@
+# @qiwi/substrate-types [1.29.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.28.1...@qiwi/substrate-types@1.29.0) (2020-03-05)
+
+
+### Features
+
+* **types:** reserve stacktrace field for IClientEventDto ([d73aed3](https://github.com/qiwi/substrate/commit/d73aed3c6d3371f6be7587a234fa07cc094d8b27))
+
 ## @qiwi/substrate-types [1.28.1](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.28.0...@qiwi/substrate-types@1.28.1) (2020-03-05)
 
 
