@@ -1,3 +1,10 @@
+# @qiwi/substrate-types [1.30.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.29.0...@qiwi/substrate-types@1.30.0) (2020-03-18)
+
+
+### Features
+
+* **types:** add INormalValue ([3547651](https://github.com/qiwi/substrate/commit/35476514ff88b6c36e9222f356f044cd04da365d))
+
 # @qiwi/substrate-types [1.29.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.28.1...@qiwi/substrate-types@1.29.0) (2020-03-05)
 
 
