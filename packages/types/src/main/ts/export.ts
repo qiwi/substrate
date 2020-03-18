@@ -56,3 +56,10 @@ export {
   IClientEventMeta,
   EnvironmentProfile
 } from './IClientEventDto'
+export {
+  INormalValue,
+  IIdentified,
+  IMetaTyped,
+  IMetaTypedValue,
+  IWrappedValue
+} from './INormalValue'
