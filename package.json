@@ -36,7 +36,7 @@
     "@semantic-release/release-notes-generator": "9.0.1",
     "@types/jest": "^25.1.4",
     "@types/lodash": "^4.14.149",
-    "@types/node": "^13.9.1",
+    "@types/node": "^13.9.2",
     "@typescript-eslint/parser": "^2.24.0",
     "codeclimate-test-reporter": "^0.5.1",
     "coveralls": "^3.0.9",
