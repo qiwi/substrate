@@ -61,7 +61,7 @@
     "ts-to-flow": "^0.0.3",
     "typescript": "3.8.3",
     "underscore": "^1.9.2",
-    "typedoc": "0.17.1",
+    "typedoc": "0.17.3",
     "typedoc-plugin-external-module-name": "3.0.0"
   },
   "dependencies": {
