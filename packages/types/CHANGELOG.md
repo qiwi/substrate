@@ -1,3 +1,13 @@
+# @qiwi/substrate-types [1.31.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.30.1...@qiwi/substrate-types@1.31.0) (2020-03-30)
+
+
+### Features
+
+* **types:** add Callable alias for Fn ([95be9d1](https://github.com/qiwi/substrate/commit/95be9d10f89fbd71361af09b2e3ea30b3715e2d5))
+* **types:** add Extends condition helper ([25c66d4](https://github.com/qiwi/substrate/commit/25c66d4a04539e733a5fe2d440e5160b0f2cd3ed))
+* **types:** add IFunction and UnaryFn ([7f71cd8](https://github.com/qiwi/substrate/commit/7f71cd8cfa778d4982655b0b9404ac0a6ec5eaef))
+* **types:** add PrependTuple helper ([b4c9370](https://github.com/qiwi/substrate/commit/b4c93702ecbecbbc08fb9638b7ea99931884759d))
+
 ## @qiwi/substrate-types [1.30.1](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.30.0...@qiwi/substrate-types@1.30.1) (2020-03-19)
 
 
