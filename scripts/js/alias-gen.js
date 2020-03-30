@@ -12,7 +12,8 @@ copySync(SRC, DST)
 const reserved = [
   'Stack',
   'Promise',
-  'PromiseConstructor'
+  'PromiseConstructor',
+  'Function'
 ].map(v => new RegExp(`^${v}(?:,|\\n|\\s)`))
 
 replaceSync({

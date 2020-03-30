@@ -63,3 +63,9 @@ export {
   IMetaTypedValue,
   IWrappedValue
 } from './INormalValue'
+export {
+  IFunction,
+  IFn,
+  IUnaryFunction,
+  IUnaryFn
+} from './IFunction'
