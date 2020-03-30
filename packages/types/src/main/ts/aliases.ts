@@ -11,7 +11,7 @@ export { TUtilEach as UtilEach } from './IUtilEach'
 export { TUtilMap as UtilMap } from './IUtilMap'
 export { ICloneable as Cloneable } from './ICloneable'
 export { ICurrency as Currency } from './ICurrency'
-export {  } from './IPromise'
+export { } from './IPromise'
 export { IStorage as Storage } from './IStorage'
 export { IMoney as Money } from './IMoney'
 export { } from './IStack'
@@ -64,8 +64,9 @@ export {
   IWrappedValue as WrappedValue
 } from './INormalValue'
 export {
-  
+
   IFn as Fn,
   IUnaryFunction as UnaryFunction,
-  IUnaryFn as UnaryFn
+  IUnaryFn as UnaryFn,
+  ICallable as Callable
 } from './IFunction'

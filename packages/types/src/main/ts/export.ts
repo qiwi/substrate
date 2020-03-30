@@ -67,5 +67,6 @@ export {
   IFunction,
   IFn,
   IUnaryFunction,
-  IUnaryFn
+  IUnaryFn,
+  ICallable
 } from './IFunction'
