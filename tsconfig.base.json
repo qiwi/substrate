@@ -7,7 +7,6 @@
     "importHelpers": true,
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": false,
-    "resolveJsonModule": true,
     "strictNullChecks": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
