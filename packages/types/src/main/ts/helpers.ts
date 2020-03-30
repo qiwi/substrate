@@ -9,3 +9,9 @@ export type EnumType<T> = T[keyof T]
 // Util to prepend a value to a Tuple from: https://stackoverflow.com/a/54607819/5308589
 export type PrependTuple<A, T extends Array<any>> =
   (((a: A, ...b: T) => void) extends (...a: infer I) => void ? I : [])
+
+export type Extends<T, E, R1, R2> = T extends E
+  ? R1
+  : R2
+
+export type ExtendsOrNever<T, E> = Extends<T, E, T, never>

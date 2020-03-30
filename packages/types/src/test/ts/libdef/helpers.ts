@@ -1,6 +1,8 @@
 import {
   UnionToIntersection,
-  PrependTuple
+  PrependTuple,
+  Extends,
+  ExtendsOrNever
 } from '../../../main/ts'
 
 interface A {
@@ -26,3 +28,8 @@ type NullablePrim = PrependTuple<null, Prim>
 const p1: Prim = [1, 'a']
 const p2: NullablePrim = [null, 1, 'a']
 const p3: NullablePrim = [1, 1, 'a'] // $ExpectError
+
+const e1: Extends<number, any, number, string> = 1
+const e2: Extends<number, any, number, string> = 'string' // $ExpectError
+const e3: ExtendsOrNever<{a: string}, {a: any}> = { a: 'foo' }
+const e4: ExtendsOrNever<{a: string}, {a: number}> = { a: 'foo' } // $ExpectError
