@@ -1,3 +1,10 @@
+# @qiwi/substrate-types [1.32.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.31.1...@qiwi/substrate-types@1.32.0) (2020-03-31)
+
+
+### Features
+
+* **types:** add IMetadataProvider ([8b13d28](https://github.com/qiwi/substrate/commit/8b13d2836be414a5b719f746e7b5011c2b3963f7))
+
 ## @qiwi/substrate-types [1.31.1](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.31.0...@qiwi/substrate-types@1.31.1) (2020-03-31)
 
 
