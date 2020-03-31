@@ -70,3 +70,6 @@ export {
   IUnaryFn as UnaryFn,
   ICallable as Callable
 } from './IFunction'
+export {
+  IMetadataProvider as MetadataProvider
+} from './IMetadata'

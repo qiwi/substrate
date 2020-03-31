@@ -63,7 +63,8 @@
     "typedoc-plugin-external-module-name": "3.0.0",
     "typescript": "3.8.3",
     "underscore": "^1.10.2",
-    "cross-fetch": "^3.0.4"
+    "cross-fetch": "^3.0.4",
+    "reflect-metadata": "^0.1.13"
   },
   "dependencies": {},
   "peerDependencies": {},
