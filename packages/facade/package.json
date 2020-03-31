@@ -1,6 +1,6 @@
 {
   "name": "@qiwi/substrate",
-  "version": "1.18.18",
+  "version": "1.18.19",
   "main": "target/es5/index.js",
   "source": "target/ts/index.ts",
   "types": "target/es5/index.d.ts",
