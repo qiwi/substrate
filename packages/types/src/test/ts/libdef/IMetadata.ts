@@ -13,7 +13,7 @@ const customProvider: IMetadataProvider = {
   getMetadata (metadataKey: any, target: any): any {
     console.log(metadataKey, target)
   },
-  getOwnMetadata(metadataKey: any, target: any, propertyKey: symbol): any {
+  getOwnMetadata (metadataKey: any, target: any, propertyKey: symbol): any {
     console.log(metadataKey, target, propertyKey)
   }
 }
@@ -21,5 +21,5 @@ const brokenProvider: IMetadataProvider = {
   defineMetadata () {},
   hasMetadata () {}, // $ExpectError
   getMetadata () {},
-  getOwnMetadata () {},
+  getOwnMetadata () {}
 }
