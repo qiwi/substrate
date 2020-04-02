@@ -1,3 +1,10 @@
+# @qiwi/substrate-types [1.33.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.32.0...@qiwi/substrate-types@1.33.0) (2020-04-02)
+
+
+### Features
+
+* **types:** add getOwnMetadata method to IMetadataProvider ([ab0fce8](https://github.com/qiwi/substrate/commit/ab0fce849569ded420b10317b0f123d25cb3bb8b))
+
 # @qiwi/substrate-types [1.32.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.31.1...@qiwi/substrate-types@1.32.0) (2020-03-31)
 
 
