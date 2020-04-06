@@ -1,3 +1,10 @@
+# @qiwi/substrate-types [1.34.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.33.0...@qiwi/substrate-types@1.34.0) (2020-04-06)
+
+
+### Features
+
+* **types:** add IEnableable ([6446d05](https://github.com/qiwi/substrate/commit/6446d05997050c2dbb07f0183dece2644fea846a))
+
 # @qiwi/substrate-types [1.33.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.32.0...@qiwi/substrate-types@1.33.0) (2020-04-02)
 
 
