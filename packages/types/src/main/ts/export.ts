@@ -70,6 +70,5 @@ export {
   IUnaryFn,
   ICallable
 } from './IFunction'
-export {
-  IMetadataProvider
-} from './IMetadata'
+export { IMetadataProvider } from './IMetadata'
+export { IEnableable } from './IEnableable'
