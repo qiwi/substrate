@@ -2,7 +2,7 @@ import {
   UnionToIntersection,
   PrependTuple,
   Extends,
-  ExtendsOrNever
+  ExtendsOrNever,
 } from '../../../main/ts'
 
 interface A {

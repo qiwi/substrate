@@ -3,7 +3,7 @@ import {
   IFn,
   IUnaryFunction,
   IUnaryFn,
-  ICallable
+  ICallable,
 } from '.'
 
 const fn1: IFn = () => {}

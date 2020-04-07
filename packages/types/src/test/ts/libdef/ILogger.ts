@@ -14,7 +14,7 @@ const brokenLogger: ILogger = {
   info: logMethod,
   log: logMethod,
   warn: logMethod,
-  error: null // $ExpectError
+  error: null, // $ExpectError
 }
 
 const logger: ILogger = {
@@ -24,7 +24,7 @@ const logger: ILogger = {
   log: logMethod,
   warn: logMethod,
   error: logMethod,
-  custom: () => 'foo'
+  custom: () => 'foo',
 }
 
 const legacyLogger: ILogger = console

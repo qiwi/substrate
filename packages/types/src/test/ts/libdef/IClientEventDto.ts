@@ -12,7 +12,7 @@ const brokenMeta: IClientEventMeta = {
   appVersion: 1234, // $ExpectError
   appNamespace: null, // $ExpectError
   envProfile: 'foo', // $ExpectError
-  deviceInfo: 'foo' // $ExpectError
+  deviceInfo: 'foo', // $ExpectError
 }
 
 const clientEventMeta: IClientEventMeta = {
@@ -22,8 +22,8 @@ const clientEventMeta: IClientEventMeta = {
   appNamespace: 'ci',
   envProfile: EnvironmentProfile.PROD,
   deviceInfo: {
-    device: '1'
-  }
+    device: '1',
+  },
 }
 
 // IClientEventDto
@@ -33,11 +33,11 @@ const brokenEventDto: IClientEventDto = {
   code: 1234, // $ExpectError
   level: 'foo', // $ExpectError
   meta: 'foo', // $ExpectError
-  details: 1234 // $ExpectError
+  details: 1234, // $ExpectError
 }
 
 const clientEventDto1: IClientEventDto = {
-  message: 'foo'
+  message: 'foo',
 }
 
 const clientEventDto2: IClientEventDto = {
@@ -47,6 +47,6 @@ const clientEventDto2: IClientEventDto = {
   level: LogLevel.ERROR,
   meta: clientEventMeta,
   details: {
-    foo: 'bar'
-  }
+    foo: 'bar',
+  },
 }
