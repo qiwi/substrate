@@ -1,3 +1,10 @@
+# @qiwi/substrate-types [1.35.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.34.0...@qiwi/substrate-types@1.35.0) (2020-04-07)
+
+
+### Features
+
+* **types:** add IPipeline ([3c786e4](https://github.com/qiwi/substrate/commit/3c786e407845b0092f3a699ece331df31d36ffa3))
+
 # @qiwi/substrate-types [1.34.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.33.0...@qiwi/substrate-types@1.34.0) (2020-04-06)
 
 
