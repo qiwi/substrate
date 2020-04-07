@@ -72,3 +72,9 @@ export {
 } from './IFunction'
 export { IMetadataProvider } from './IMetadata'
 export { IEnableable } from './IEnableable'
+export {
+  IPipe,
+  IPipeline,
+  INormalPipe,
+  INormalPipeline
+} from './IPipeline'
