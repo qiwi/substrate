@@ -78,3 +78,4 @@ export {
   INormalPipe,
   INormalPipeline,
 } from './IPipeline'
+export { IExtra } from './IExtra'
