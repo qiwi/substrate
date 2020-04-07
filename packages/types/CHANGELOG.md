@@ -1,3 +1,10 @@
+# @qiwi/substrate-types [1.37.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.36.0...@qiwi/substrate-types@1.37.0) (2020-04-07)
+
+
+### Features
+
+* **types:** add IStoreExtra ([0dce3ff](https://github.com/qiwi/substrate/commit/0dce3ff2d6f32ef89d095f2fc07603485cdd16cd))
+
 # @qiwi/substrate-types [1.36.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.35.0...@qiwi/substrate-types@1.36.0) (2020-04-07)
 
 
