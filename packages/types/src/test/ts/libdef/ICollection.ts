@@ -6,7 +6,7 @@ const brokenCollection: ICollection<number> = {
   remove: index => 'foo', // $ExpectError
   add: (index: string, item: string) => ({}), // $ExpectError
   get: (item: boolean) => item, // $ExpectError
-  clear: (item: string) => item // $ExpectError
+  clear: (item: string) => item, // $ExpectError
 }
 
 const collection: ICollection<number> = {
@@ -15,5 +15,5 @@ const collection: ICollection<number> = {
   remove: (index: number | string) => +index,
   add: (index: number | string, item) => +index + item,
   get: (index: number | string) => +index,
-  clear: () => {}
+  clear: () => {},
 }

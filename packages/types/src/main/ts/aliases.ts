@@ -11,7 +11,7 @@ export { TUtilEach as UtilEach } from './IUtilEach'
 export { TUtilMap as UtilMap } from './IUtilMap'
 export { ICloneable as Cloneable } from './ICloneable'
 export { ICurrency as Currency } from './ICurrency'
-export {  } from './IPromise'
+export { } from './IPromise'
 export { IStorage as Storage } from './IStorage'
 export { IMoney as Money } from './IMoney'
 export { } from './IStack'
@@ -23,12 +23,12 @@ export {
   IConstructor as Constructor,
   IConstructable as Constructable,
   Abstract,
-  IClass as Class
+  IClass as Class,
 } from './IConstructor'
 export {
   IIterable as Iterable,
   IIterator as Iterator,
-  IIteratorResult as IteratorResult
+  IIteratorResult as IteratorResult,
 } from './IIterable'
 export {
   IMiddleware as Middleware,
@@ -37,38 +37,38 @@ export {
   IRequestMiddleware as RequestMiddleware,
   IRequest as Request,
   IResponse as Response,
-  INext as Next
+  INext as Next,
 } from './IMiddleware'
 export {
   IPool as Pool,
   IPooledObject as PooledObject,
   IPooledObjectFactory as PooledObjectFactory,
-  IPooledObjectStatus as PooledObjectStatus
+  IPooledObjectStatus as PooledObjectStatus,
 } from './IPool'
 export {
   IHttpClient as HttpClient,
   IFetch as Fetch,
   IHttpRequestProvider as HttpRequestProvider,
-  HttpMethod
+  HttpMethod,
 } from './IHttpClient'
 export {
   IClientEventDto as ClientEventDto,
   IClientEventMeta as ClientEventMeta,
-  EnvironmentProfile
+  EnvironmentProfile,
 } from './IClientEventDto'
 export {
   INormalValue as NormalValue,
   IIdentified as Identified,
   IMetaTyped as MetaTyped,
   IMetaTypedValue as MetaTypedValue,
-  IWrappedValue as WrappedValue
+  IWrappedValue as WrappedValue,
 } from './INormalValue'
 export {
-  
+
   IFn as Fn,
   IUnaryFunction as UnaryFunction,
   IUnaryFn as UnaryFn,
-  ICallable as Callable
+  ICallable as Callable,
 } from './IFunction'
 export { IMetadataProvider as MetadataProvider } from './IMetadata'
 export { IEnableable as Enableable } from './IEnableable'
@@ -76,5 +76,5 @@ export {
   IPipe as Pipe,
   IPipeline as Pipeline,
   INormalPipe as NormalPipe,
-  INormalPipeline as NormalPipeline
+  INormalPipeline as NormalPipeline,
 } from './IPipeline'

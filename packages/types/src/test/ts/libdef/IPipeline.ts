@@ -4,14 +4,14 @@ import {
   IPipe,
   IPipeline,
   INormalPipe,
-  INormalPipeline
+  INormalPipeline,
 } from '.'
 
 const pipe: IPipe = e => e
 const pipeline: IPipeline = [pipe]
 
 const brokenPipe: IPipe = (a: string, b: string): string => a + b // $ExpectError
-const brokenPipeline1: IPipeline = [pipe, {} ] // $ExpectError
+const brokenPipeline1: IPipeline = [pipe, {}] // $ExpectError
 const brokenPipeline2: IPipeline<IPipe<string>> = [(a: number): number => a] // $ExpectError
 
 const nv = { value: '', type: 'foo', meta: { foo: 'bar' }, id: 1 }

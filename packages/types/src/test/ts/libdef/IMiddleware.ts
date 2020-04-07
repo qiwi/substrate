@@ -47,14 +47,14 @@ const brokenRequest1: IRequest = 'foo' // $ExpectError
 const brokenRequest2: IRequest = true // $ExpectError
 
 const request: IRequest = {
-  foo: 'bar'
+  foo: 'bar',
 }
 
 // IResponse
 const brokenResponse1: IResponse = 'foo' // $ExpectError
 const brokenResponse2: IResponse = () => {} // $ExpectError
 const brokenResponse3: IResponse = {
-  status: 'bar' // $ExpectError
+  status: 'bar', // $ExpectError
 }
 
 const response: IResponse = {
@@ -67,7 +67,7 @@ const response: IResponse = {
   json () {
     return this
   },
-  req: {}
+  req: {},
 }
 
 // INext

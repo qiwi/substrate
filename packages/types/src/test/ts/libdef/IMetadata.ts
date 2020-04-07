@@ -15,11 +15,11 @@ const customProvider: IMetadataProvider = {
   },
   getOwnMetadata (metadataKey: any, target: any, propertyKey: symbol): any {
     console.log(metadataKey, target, propertyKey)
-  }
+  },
 }
 const brokenProvider: IMetadataProvider = {
   defineMetadata () {},
   hasMetadata () {}, // $ExpectError
   getMetadata () {},
-  getOwnMetadata () {}
+  getOwnMetadata () {},
 }

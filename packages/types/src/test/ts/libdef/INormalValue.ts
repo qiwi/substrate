@@ -3,7 +3,7 @@ import {
   IIdentified,
   IMetaTyped,
   IMetaTypedValue,
-  IWrappedValue
+  IWrappedValue,
 } from '.'
 
 export const identified: IIdentified = { id: 'foo' }

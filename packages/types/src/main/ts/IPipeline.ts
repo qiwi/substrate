@@ -1,5 +1,5 @@
-import {IUnaryFn} from './IFunction'
-import {INormalValue} from './INormalValue'
+import { IUnaryFn } from './IFunction'
+import { INormalValue } from './INormalValue'
 
 export type IPipe<E=any> = IUnaryFn<E, E>
 export type IPipeline<P extends IPipe=IPipe> = Array<P>

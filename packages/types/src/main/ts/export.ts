@@ -23,12 +23,12 @@ export {
   IConstructor,
   IConstructable,
   Abstract,
-  IClass
+  IClass,
 } from './IConstructor'
 export {
   IIterable,
   IIterator,
-  IIteratorResult
+  IIteratorResult,
 } from './IIterable'
 export {
   IMiddleware,
@@ -37,38 +37,38 @@ export {
   IRequestMiddleware,
   IRequest,
   IResponse,
-  INext
+  INext,
 } from './IMiddleware'
 export {
   IPool,
   IPooledObject,
   IPooledObjectFactory,
-  IPooledObjectStatus
+  IPooledObjectStatus,
 } from './IPool'
 export {
   IHttpClient,
   IFetch,
   IHttpRequestProvider,
-  HttpMethod
+  HttpMethod,
 } from './IHttpClient'
 export {
   IClientEventDto,
   IClientEventMeta,
-  EnvironmentProfile
+  EnvironmentProfile,
 } from './IClientEventDto'
 export {
   INormalValue,
   IIdentified,
   IMetaTyped,
   IMetaTypedValue,
-  IWrappedValue
+  IWrappedValue,
 } from './INormalValue'
 export {
   IFunction,
   IFn,
   IUnaryFunction,
   IUnaryFn,
-  ICallable
+  ICallable,
 } from './IFunction'
 export { IMetadataProvider } from './IMetadata'
 export { IEnableable } from './IEnableable'
@@ -76,5 +76,5 @@ export {
   IPipe,
   IPipeline,
   INormalPipe,
-  INormalPipeline
+  INormalPipeline,
 } from './IPipeline'

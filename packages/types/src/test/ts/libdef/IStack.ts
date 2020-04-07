@@ -14,7 +14,7 @@ const brokenStack: IStack<number> = {
   add: (index: string, item: string) => ({}), // $ExpectError
   get: (index: boolean) => index, // $ExpectError
   clear: (item: string) => item, // $ExpectError
-  toArray: () => null // $ExpectError
+  toArray: () => null, // $ExpectError
 }
 
 const stack: IStack<number> = {
@@ -31,5 +31,5 @@ const stack: IStack<number> = {
   add: (index: number | string, item) => +index + item,
   get: (item: number | string) => +item,
   clear: () => {},
-  toArray: () => ([1, 2, 3])
+  toArray: () => ([1, 2, 3]),
 }

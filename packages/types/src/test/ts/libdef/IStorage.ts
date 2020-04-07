@@ -11,7 +11,7 @@ const storage: IStorage = {
     key
   },
   size: () => 42,
-  reset: () => {}
+  reset: () => {},
 }
 
 const brokenStorage: IStorage = {
@@ -25,5 +25,5 @@ const brokenStorage: IStorage = {
     key
   },
   size: () => 42,
-  reset: () => {}
+  reset: () => {},
 }
