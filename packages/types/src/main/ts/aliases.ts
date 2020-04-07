@@ -78,4 +78,4 @@ export {
   INormalPipe as NormalPipe,
   INormalPipeline as NormalPipeline,
 } from './IPipeline'
-export { IExtra } from './IExtra'
+export { IExtra as Extra } from './IExtra'
