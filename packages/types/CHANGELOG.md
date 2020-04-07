@@ -1,3 +1,10 @@
+# @qiwi/substrate-types [1.36.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.35.0...@qiwi/substrate-types@1.36.0) (2020-04-07)
+
+
+### Features
+
+* **types:** add IExtra mixer ([5ea83f6](https://github.com/qiwi/substrate/commit/5ea83f6b47f3c9631f844894b373bbeb21253806))
+
 # @qiwi/substrate-types [1.35.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.34.0...@qiwi/substrate-types@1.35.0) (2020-04-07)
 
 
