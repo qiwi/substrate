@@ -1,3 +1,13 @@
+## @qiwi/substrate-abstract [1.17.39](https://github.com/qiwi/substrate/compare/@qiwi/substrate-abstract@1.17.38...@qiwi/substrate-abstract@1.17.39) (2020-04-08)
+
+
+
+
+
+### Dependencies
+
+* **@qiwi/substrate-types:** upgraded to 1.38.0
+
 ## @qiwi/substrate-abstract [1.17.38](https://github.com/qiwi/substrate/compare/@qiwi/substrate-abstract@1.17.37...@qiwi/substrate-abstract@1.17.38) (2020-04-07)
 
 
