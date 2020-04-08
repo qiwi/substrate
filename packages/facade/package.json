@@ -37,8 +37,8 @@
     "target"
   ],
   "dependencies": {
-    "@qiwi/substrate-types": "^1.34.0",
-    "@qiwi/substrate-abstract": "^1.17.35",
+    "@qiwi/substrate-types": "^1.37.0",
+    "@qiwi/substrate-abstract": "^1.17.38",
     "@qiwi/substrate-std": "*"
   },
   "devDependencies": {
