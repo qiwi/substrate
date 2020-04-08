@@ -1,3 +1,10 @@
+# @qiwi/substrate-types [1.38.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.37.0...@qiwi/substrate-types@1.38.0) (2020-04-08)
+
+
+### Features
+
+* **types:** add IStorageExtra as IStoreExtra alias ([4ccfe18](https://github.com/qiwi/substrate/commit/4ccfe18eff9189811702c524f7c5c81ff238f441))
+
 # @qiwi/substrate-types [1.37.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.36.0...@qiwi/substrate-types@1.37.0) (2020-04-07)
 
 
