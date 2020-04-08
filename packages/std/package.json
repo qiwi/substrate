@@ -1,6 +1,6 @@
 {
   "name": "@qiwi/substrate-std",
-  "version": "1.0.26",
+  "version": "1.0.27",
   "main": "target/es5/index.js",
   "source": "target/ts/index.ts",
   "types": "target/es5/index.d.ts",
