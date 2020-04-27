@@ -58,7 +58,7 @@
     "typescript": "3.8.3",
     "underscore": "1.10.2",
     "typedoc": "0.17.4",
-    "typedoc-plugin-external-module-name": "3.0.0"
+    "typedoc-plugin-external-module-name": "3.1.0"
   },
   "dependencies": {
     "@qiwi/substrate-types": "^1.37.0"
