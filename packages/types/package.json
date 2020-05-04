@@ -38,7 +38,7 @@
     "target"
   ],
   "devDependencies": {
-    "@qiwi/uniconfig": "3.3.0",
+    "@qiwi/uniconfig": "3.3.1",
     "@types/axios": "0.14.0",
     "@types/bluebird": "3.5.30",
     "@types/config": "0.0.36",
