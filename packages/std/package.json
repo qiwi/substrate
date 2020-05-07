@@ -48,7 +48,7 @@
     "conf": "6.2.3",
     "config": "3.3.1",
     "dts-generator": "3.0.0",
-    "dtslint": "3.4.1",
+    "dtslint": "3.5.2",
     "flowgen": "1.10.0",
     "lodash": "4.17.15",
     "replace-in-file": "5.0.2",
