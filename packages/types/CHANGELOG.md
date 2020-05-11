@@ -1,3 +1,10 @@
+# @qiwi/substrate-types [1.39.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.38.0...@qiwi/substrate-types@1.39.0) (2020-05-11)
+
+
+### Features
+
+* **types:** add ITyped and ITypedValue ([e913ae8](https://github.com/qiwi/substrate/commit/e913ae8b72ba8b1cc09a0d4df39823d18783752f))
+
 # @qiwi/substrate-types [1.38.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.37.0...@qiwi/substrate-types@1.38.0) (2020-04-08)
 
 
