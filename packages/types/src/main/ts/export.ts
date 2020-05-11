@@ -62,6 +62,8 @@ export {
   IMetaTyped,
   IMetaTypedValue,
   IWrappedValue,
+  ITyped,
+  ITypedValue,
 } from './INormalValue'
 export {
   IFunction,

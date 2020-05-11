@@ -13,6 +13,12 @@ export type IWrappedValue<V=any, W={}> =
       : {}
   ) & {value: V}
 
+export type ITyped<T=any> = {
+  type: T
+}
+
+export type ITypedValue<V=any, T=any> = IWrappedValue<V, ITyped<T>>
+
 export interface IMetaTyped<T=any, M extends IAnyMap = IAnyMap> {
   type: T
   meta: M

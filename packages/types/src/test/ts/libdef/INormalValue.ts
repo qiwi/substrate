@@ -4,10 +4,16 @@ import {
   IMetaTyped,
   IMetaTypedValue,
   IWrappedValue,
+  ITyped,
+  ITypedValue
 } from '.'
 
 export const identified: IIdentified = { id: 'foo' }
 export const brokenIdentified: IIdentified = { id: undefined } // $ExpectError
+
+export const typed: ITyped<string> = { type: 'foo' }
+export const typedValue: ITypedValue<number, string> = { value: 1, type: 'foo' }
+export const brokenTypedValue: ITypedValue<number, string> = { value: null, type: undefined } // $ExpectError
 
 export const meta: IMetaTyped = { meta: {}, type: 'bar' }
 export const brokenMeta: IMetaTyped = { meta: 'foo' } // $ExpectError
