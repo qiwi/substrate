@@ -19,10 +19,13 @@ export type ITyped<T=any> = {
 
 export type ITypedValue<V=any, T=any> = IWrappedValue<V, ITyped<T>>
 
-export interface IMetaTyped<T=any, M extends IAnyMap = IAnyMap> {
-  type: T
+export type IMeted<M extends IAnyMap = IAnyMap> = {
   meta: M
 }
+
+export type IMetedValue<V=any, M extends IAnyMap = IAnyMap> = IWrappedValue<V, IMeted<M>>
+
+export type IMetaTyped<T=any, M extends IAnyMap = IAnyMap> = ITyped<T> & IMeted<M>
 
 export type IMetaTypedValue<
   V=any,

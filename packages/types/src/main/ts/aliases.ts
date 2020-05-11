@@ -64,6 +64,8 @@ export {
   IWrappedValue as WrappedValue,
   ITyped as Typed,
   ITypedValue as TypedValue,
+  IMeted as Meted,
+  IMetedValue as MetedValue,
 } from './INormalValue'
 export {
   
