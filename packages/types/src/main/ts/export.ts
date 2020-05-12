@@ -85,5 +85,5 @@ export {
 export { IExtra } from './IExtra'
 export {
   INil,
-  INullOrUndefined
+  INullOrUndefined,
 } from './INil'
