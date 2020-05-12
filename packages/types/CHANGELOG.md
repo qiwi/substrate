@@ -1,3 +1,10 @@
+# @qiwi/substrate-types [1.40.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.39.0...@qiwi/substrate-types@1.40.0) (2020-05-12)
+
+
+### Features
+
+* **types:** add INil type ([6fb69d9](https://github.com/qiwi/substrate/commit/6fb69d9402f4cedb49469b8b580246d709fd07e6))
+
 # @qiwi/substrate-types [1.39.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.38.0...@qiwi/substrate-types@1.39.0) (2020-05-11)
 
 
