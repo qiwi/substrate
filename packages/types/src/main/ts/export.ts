@@ -83,3 +83,7 @@ export {
   INormalPipeline,
 } from './IPipeline'
 export { IExtra } from './IExtra'
+export {
+  INil,
+  INullOrUndefined
+} from './INil'
