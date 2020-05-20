@@ -1,3 +1,20 @@
+## @qiwi/substrate [1.18.29](https://github.com/qiwi/substrate/compare/@qiwi/substrate@1.18.28...@qiwi/substrate@1.18.29) (2020-05-20)
+
+
+### Performance Improvements
+
+* **package:** up deps ([e427c19](https://github.com/qiwi/substrate/commit/e427c196bb9c9ff75d22f966c82b18a86583ae61))
+
+
+
+
+
+### Dependencies
+
+* **@qiwi/substrate-types:** upgraded to 1.40.1
+* **@qiwi/substrate-abstract:** upgraded to 1.17.42
+* **@qiwi/substrate-std:** upgraded to 1.0.30
+
 ## @qiwi/substrate [1.18.28](https://github.com/qiwi/substrate/compare/@qiwi/substrate@1.18.27...@qiwi/substrate@1.18.28) (2020-05-12)
 
 
