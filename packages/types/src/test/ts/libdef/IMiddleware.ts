@@ -59,7 +59,7 @@ const brokenResponse3: IResponse = {
 
 const response: IResponse = {
   status (status: number) {
-    return { status, ...this }
+    return { _status: status, ...this }
   },
   send (arg: string | object) {
     return { arg, ...this }

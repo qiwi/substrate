@@ -35,22 +35,22 @@
     "target"
   ],
   "dependencies": {
-    "@qiwi/substrate-types": "^1.39.0",
-    "@qiwi/substrate-abstract": "^1.17.40",
+    "@qiwi/substrate-types": "^1.40.0",
+    "@qiwi/substrate-abstract": "^1.17.41",
     "@qiwi/substrate-std": "*"
   },
   "devDependencies": {
-    "@qiwi/libdefkit": "^1.0.1",
-    "@types/jest": "25.2.1",
-    "@types/node": "13.13.5",
-    "dtslint": "3.5.2",
+    "@qiwi/libdefkit": "^1.0.2",
+    "@types/jest": "25.2.3",
+    "@types/node": "14.0.4",
+    "dtslint": "3.6.3",
     "esm": "3.2.25",
     "fs-extra": "9.0.0",
     "replace-in-file": "6.0.0",
     "ts-loader": "7.0.4",
     "ts-node": "8.10.1",
     "ts-to-flow": "0.0.3",
-    "typescript": "3.8.3"
+    "typescript": "3.9.3"
   },
   "esm": {
     "mode": "all",
