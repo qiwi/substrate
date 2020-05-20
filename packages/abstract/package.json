@@ -40,7 +40,7 @@
   "devDependencies": {
     "@qiwi/uniconfig": "3.3.1",
     "@qiwi/libdefkit": "^1.0.2",
-    "@types/bluebird": "3.5.31",
+    "@types/bluebird": "3.5.32",
     "@types/config": "0.0.36",
     "@types/jest": "25.2.3",
     "@types/lodash": "4.14.152",
