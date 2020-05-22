@@ -1480,10 +1480,10 @@
     read-pkg "^5.2.0"
     tslib "^1.11.1"
 
-"@qiwi/multi-semantic-release@2.6.0":
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/@qiwi/multi-semantic-release/-/multi-semantic-release-2.6.0.tgz#2a80f835463e437117802abb721bddd9f75b81ba"
-  integrity sha512-5QbROOqkKDubiFqTkWVicMazaf1aYVu5kc95A6HfpxUo4N194CMq4uXCeCnpnp9ls413QT7RY+giH+LokREEZw==
+"@qiwi/multi-semantic-release@2.6.2":
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/@qiwi/multi-semantic-release/-/multi-semantic-release-2.6.2.tgz#6c45c4510744b71533ee890c7bb2a5ecb94d99a0"
+  integrity sha512-itA6YtiBRv65WffMJodh9ACKSga5HPNPD1SEwQ3/0TdR2VrNPEXCdExki3FL2MX/89Scer8HBeg2x+RMb7HfHg==
   dependencies:
     bash-glob "^2.0.0"
     blork "^9.2.2"
