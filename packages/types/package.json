@@ -37,7 +37,7 @@
   ],
   "devDependencies": {
     "@qiwi/uniconfig": "3.3.1",
-    "@qiwi/libdefkit": "^1.0.2",
+    "@qiwi/libdefkit": "1.0.2",
     "@types/axios": "0.14.0",
     "@types/bluebird": "3.5.32",
     "@types/config": "0.0.36",

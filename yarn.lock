@@ -1450,7 +1450,7 @@
   dependencies:
     "@types/node" ">= 8"
 
-"@qiwi/libdefkit@^1.0.2":
+"@qiwi/libdefkit@1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@qiwi/libdefkit/-/libdefkit-1.0.2.tgz#d63700ae07d991cacab91d15afbf5363a4138084"
   integrity sha512-W0oG8vmTAcJQz+6mR5YQxM3HCQEJzCkgCcKsbHUtYLVXePTViXGPGrQxnEQUKzjubxMbBKBiP9DrZ7qKpxVt3g==
