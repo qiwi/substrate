@@ -66,7 +66,7 @@ export class Stack<T> implements IStack<T> {
     this._storage.length = 0
   }
 
-  indexOf (item: any): number {
+  indexOf (item: T): number {
     return this._storage.indexOf(item)
   }
 

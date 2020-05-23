@@ -18,12 +18,12 @@ export const typedValue: ITypedValue<number, string> = { value: 1, type: 'foo' }
 export const brokenTypedValue: ITypedValue<number, string> = { value: null, type: undefined } // $ExpectError
 
 export const meted: IMeted = { meta: {} }
-export const metedValue: IMetedValue<number, {}> = { value: 1, meta: {} }
+export const metedValue: IMetedValue<number, Object> = { value: 1, meta: {} }
 
 export const metaTyped: IMetaTyped = { meta: {}, type: 'bar' }
 export const brokenMetaTyped: IMetaTyped = { meta: 'foo' } // $ExpectError
 
-export const metaTypedValue: IMetaTypedValue<string, string, {}> = { value: 'foo', type: 'bar', meta: {} }
+export const metaTypedValue: IMetaTypedValue<string, string, Object> = { value: 'foo', type: 'bar', meta: {} }
 export const brokenMetaTypedValue: IMetaTypedValue = { meta: {} } // $ExpectError
 
 export const wrapped1: IWrappedValue<string, {foo: string}> = { value: 'v', foo: 'foo' }

@@ -2,7 +2,7 @@ export type UnionToIntersection<U> = ((U extends any ? (k: U) => void : never) e
 
 // https://github.com/microsoft/TypeScript/issues/3192#issuecomment-261720275
 // https://github.com/microsoft/TypeScript/issues/3192#issuecomment-265568398
-export function mkenum<T extends {[index: string]: U}, U extends string> (x: T) { return x }
+export function mkenum<T extends {[index: string]: U}, U extends string> (x: T): T { return x }
 
 export type EnumType<T> = T[keyof T]
 

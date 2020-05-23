@@ -5,12 +5,12 @@ export interface IIdentified {
   id: string | number | symbol
 }
 
-export type IWrappedValue<V=any, W={}> =
-  (W extends {}[]
+export type IWrappedValue<V=any, W=Object> =
+  (W extends object[]
     ? UnionToIntersection<W[number]>
-    : W extends {}
+    : W extends object
       ? W
-      : {}
+      : object
   ) & {value: V}
 
 export type ITyped<T=any> = {
