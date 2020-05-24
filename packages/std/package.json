@@ -48,7 +48,6 @@
     "config": "3.3.1",
     "dtslint": "3.6.4",
     "lodash": "4.17.15",
-    "replace-in-file": "6.0.0",
     "ts-loader": "7.0.4",
     "ts-node": "8.10.1",
     "ts-to-flow": "0.0.3",

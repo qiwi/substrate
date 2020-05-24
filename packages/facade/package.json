@@ -46,7 +46,6 @@
     "dtslint": "3.6.4",
     "esm": "3.2.25",
     "fs-extra": "9.0.0",
-    "replace-in-file": "6.0.0",
     "ts-loader": "7.0.4",
     "ts-node": "8.10.1",
     "ts-to-flow": "0.0.3",
