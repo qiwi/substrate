@@ -47,7 +47,7 @@
     "jest": "26.0.1",
     "lerna": "3.21.0",
     "lodash": "4.17.15",
-    "semantic-release": "17.0.7",
+    "semantic-release": "17.0.8",
     "snazzy": "8.0.0",
     "ts-jest": "26.0.0",
     "typescript": "3.9.3",
