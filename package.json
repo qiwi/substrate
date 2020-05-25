@@ -45,7 +45,7 @@
     "esm": "3.2.25",
     "find-git-root": "1.0.4",
     "jest": "26.0.1",
-    "lerna": "3.21.0",
+    "lerna": "3.22.0",
     "lodash": "4.17.15",
     "semantic-release": "17.0.7",
     "snazzy": "8.0.0",
