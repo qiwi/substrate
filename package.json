@@ -50,7 +50,7 @@
     "semantic-release": "17.0.7",
     "snazzy": "8.0.0",
     "ts-jest": "26.0.0",
-    "typescript": "3.9.3",
+    "typescript": "3.9.5",
     "yargs": "15.3.1"
   },
   "jest": {
