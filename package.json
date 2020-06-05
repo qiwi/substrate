@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@qiwi/license": "1.1.2",
-    "@qiwi/multi-semantic-release": "2.6.2",
+    "@qiwi/multi-semantic-release": "3.0.1",
     "@qiwi/semantic-release-gh-pages-plugin": "2.0.0",
     "@semantic-release/changelog": "5.0.1",
     "@semantic-release/commit-analyzer": "8.0.1",
