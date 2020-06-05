@@ -1,7 +1,7 @@
 {
   "name": "@qiwi/substrate-abstract",
   "description": "Abstract classes",
-  "version": "1.17.44",
+  "version": "1.17.45",
   "main": "target/es5/index.js",
   "source": "target/ts/index.ts",
   "types": "target/es5/index.d.ts",
@@ -61,7 +61,7 @@
     "typedoc-plugin-external-module-name": "4.0.0"
   },
   "dependencies": {
-    "@qiwi/substrate-types": "1.40.3"
+    "@qiwi/substrate-types": "1.40.4"
   },
   "peerDependencies": {},
   "license": "MIT",
