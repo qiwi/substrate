@@ -1,3 +1,10 @@
+# @qiwi/substrate-types [1.41.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.40.4...@qiwi/substrate-types@1.41.0) (2020-06-11)
+
+
+### Features
+
+* **types:** add IExecutionMode ([002ba3c](https://github.com/qiwi/substrate/commit/002ba3cb8551c564d2a2f555aa4dd2fce662722a))
+
 ## @qiwi/substrate-types [1.40.4](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.40.3...@qiwi/substrate-types@1.40.4) (2020-06-05)
 
 
