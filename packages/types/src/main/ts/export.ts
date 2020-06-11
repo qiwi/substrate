@@ -87,3 +87,4 @@ export {
   INil,
   INullOrUndefined,
 } from './INil'
+export { IExecutionMode } from './IExecutionMode'
