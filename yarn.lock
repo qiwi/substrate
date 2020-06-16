@@ -1494,10 +1494,10 @@
     read-pkg "^5.2.0"
     tslib "^1.11.1"
 
-"@qiwi/multi-semantic-release@3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@qiwi/multi-semantic-release/-/multi-semantic-release-3.0.1.tgz#e1f2a571ef455ec6e5b4a26840ba4d4bd397507a"
-  integrity sha512-cnSTj3jv8Sg40Cux+9xyvCvWPUnTX+1pgC3+tUZlHuDDyisRmqGUDCPzRj9l/4PkOCqZfEeRnTNV0qa90vnqJg==
+"@qiwi/multi-semantic-release@3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@qiwi/multi-semantic-release/-/multi-semantic-release-3.0.2.tgz#20219a061c140729a1a2e6f969c28b1084ede575"
+  integrity sha512-juDDiG7wExHBuRRiSrUIlZTePhGZAq08ovEIwo96aJ2/+NZItvevMLDlT8aa3rxhK/42mHdMd1mlKo+FjmlbDQ==
   dependencies:
     bash-glob "^2.0.0"
     blork "^9.2.2"
@@ -2185,7 +2185,7 @@ acorn-walk@^7.1.1:
   resolved "https://registry.yarnpkg.com/acorn-walk/-/acorn-walk-7.1.1.tgz#345f0dffad5c735e7373d2fec9a1023e6a44b83e"
   integrity sha512-wdlPY2tm/9XBr7QkKlq0WQVgiuGTX6YWPyRyBviSoScBuLfTVQhvwg6wJ369GJ/1nPfTLMfnrFIfjqVg6d+jQQ==
 
-acorn@^7.1.1, acorn@^7.2.0:
+acorn@^7.1.1:
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-7.2.0.tgz#17ea7e40d7c8640ff54a694c889c26f31704effe"
   integrity sha512-apwXVmYVpQ34m/i71vrApRrRKCWQnZZF1+npOD0WV5xZFfwWOmKGQ2RWlfdy9vWITsenisM8M0Qeq8agcFHNiQ==
