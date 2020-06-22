@@ -49,7 +49,7 @@
     "lodash": "4.17.15",
     "semantic-release": "17.0.8",
     "snazzy": "8.0.0",
-    "ts-jest": "26.1.0",
+    "ts-jest": "26.1.1",
     "typescript": "3.9.5",
     "yargs": "15.3.1"
   },
