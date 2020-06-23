@@ -44,7 +44,7 @@
     "eslint-config-qiwi": "1.4.0",
     "esm": "3.2.25",
     "find-git-root": "1.0.4",
-    "jest": "26.0.1",
+    "jest": "26.1.0",
     "lerna": "3.22.1",
     "lodash": "4.17.15",
     "semantic-release": "17.0.8",
