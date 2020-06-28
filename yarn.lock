@@ -1479,20 +1479,20 @@
     replace-in-file "^6.0.0"
     tslib "^2.0.0"
 
-"@qiwi/license@1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@qiwi/license/-/license-1.1.2.tgz#c736ec00f02c9559f176976efe7b4021b77d3e6c"
-  integrity sha512-BcwMInsoGw5fRj0BExpTc2+BlnDBbJID22B4GzY9w542KI6FJ2DYVFwfG9KJN4QGZKX9Fk+v/hBntbBHwnBqrg==
+"@qiwi/license@1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@qiwi/license/-/license-1.1.3.tgz#386d16aa2046b60c4b95a52dd1972d09f80e791d"
+  integrity sha512-HKb8AQxL2liyZwDV11KXASDn7jxtoYzoC+sBC5eLmu/VdkseJIGb+azSfIQGPRbwk5tbOwEoinVBNFyV3KH2ZA==
   dependencies:
-    "@qiwi/substrate" "^1.18.12"
-    "@types/lodash" "^4.14.149"
+    "@qiwi/substrate" "^1.18.33"
+    "@types/lodash" "^4.14.157"
     "@types/meow" "^5.0.0"
     "@types/read-pkg" "^5.1.0"
     find-git-root "^1.0.4"
     lodash "^4.17.15"
-    meow "^6.0.1"
+    meow "^7.0.1"
     read-pkg "^5.2.0"
-    tslib "^1.11.1"
+    tslib "^2.0.0"
 
 "@qiwi/multi-semantic-release@3.0.2":
   version "3.0.2"
@@ -1961,10 +1961,15 @@
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.155.tgz#e2b4514f46a261fd11542e47519c20ebce7bc23a"
   integrity sha512-vEcX7S7aPhsBCivxMwAANQburHBtfN9RdyXFk84IJmu2Z4Hkg1tOFgaslRiEqqvoLtbCBi6ika1EMspE+NZ9Lg==
 
-"@types/lodash@^4.14.149", "@types/lodash@^4.14.150", "@types/lodash@^4.14.151":
+"@types/lodash@^4.14.150", "@types/lodash@^4.14.151":
   version "4.14.152"
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.152.tgz#7e7679250adce14e749304cdb570969f77ec997c"
   integrity sha512-Vwf9YF2x1GE3WNeUMjT5bTHa2DqgUo87ocdgTScupY2JclZ5Nn7W2RLM/N0+oreexUk8uaVugR81NnTY/jNNXg==
+
+"@types/lodash@^4.14.157":
+  version "4.14.157"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.157.tgz#fdac1c52448861dfde1a2e1515dbc46e54926dc8"
+  integrity sha512-Ft5BNFmv2pHDgxV5JDsndOWTRJ+56zte0ZpYLowp03tW+K+t8u8YMOzAnpuqPgzX6WO1XpDIUm7u04M8vdDiVQ==
 
 "@types/meow@^5.0.0":
   version "5.0.0"
@@ -7206,23 +7211,6 @@ meow@^4.0.0:
     read-pkg-up "^3.0.0"
     redent "^2.0.0"
     trim-newlines "^2.0.0"
-
-meow@^6.0.1:
-  version "6.1.1"
-  resolved "https://registry.yarnpkg.com/meow/-/meow-6.1.1.tgz#1ad64c4b76b2a24dfb2f635fddcadf320d251467"
-  integrity sha512-3YffViIt2QWgTy6Pale5QpopX/IvU3LPL03jOTqp6pGj3VjesdO/U8CuHMKpnQr4shCNCM5fd5XFFvIIl6JBHg==
-  dependencies:
-    "@types/minimist" "^1.2.0"
-    camelcase-keys "^6.2.2"
-    decamelize-keys "^1.1.0"
-    hard-rejection "^2.1.0"
-    minimist-options "^4.0.2"
-    normalize-package-data "^2.5.0"
-    read-pkg-up "^7.0.1"
-    redent "^3.0.0"
-    trim-newlines "^3.0.0"
-    type-fest "^0.13.1"
-    yargs-parser "^18.1.3"
 
 meow@^7.0.0, meow@^7.0.1:
   version "7.0.1"
