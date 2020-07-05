@@ -46,7 +46,7 @@
     "@types/lodash": "4.14.157",
     "@types/node": "14.0.14",
     "@types/parsimmon": "1.10.2",
-    "@types/underscore": "1.10.2",
+    "@types/underscore": "1.10.4",
     "bluebird": "3.7.2",
     "conf": "6.2.4",
     "config": "3.3.1",
