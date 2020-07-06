@@ -88,3 +88,8 @@ export {
   INullOrUndefined,
 } from './INil'
 export { IExecutionMode } from './IExecutionMode'
+export {
+  IDeviceInfo,
+  IBrowserInfo,
+  IOperationalSystemInfo,
+} from './IDeviceInfo'
