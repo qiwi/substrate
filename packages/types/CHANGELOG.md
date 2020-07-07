@@ -1,3 +1,10 @@
+# @qiwi/substrate-types [1.43.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.42.0...@qiwi/substrate-types@1.43.0) (2020-07-07)
+
+
+### Features
+
+* **types:** add recursive partial helper ([1f947e3](https://github.com/qiwi/substrate/commit/1f947e358576a5e6c15a26a890ce714e8d5124d7))
+
 # @qiwi/substrate-types [1.42.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.41.0...@qiwi/substrate-types@1.42.0) (2020-07-07)
 
 
