@@ -1,6 +1,6 @@
 {
   "name": "@qiwi/substrate",
-  "version": "1.18.33",
+  "version": "1.18.34",
   "main": "target/es5/index.js",
   "source": "target/ts/index.ts",
   "types": "target/es5/index.d.ts",
@@ -35,9 +35,9 @@
     "target"
   ],
   "dependencies": {
-    "@qiwi/substrate-types": "1.41.0",
-    "@qiwi/substrate-abstract": "1.17.46",
-    "@qiwi/substrate-std": "1.0.34"
+    "@qiwi/substrate-types": "1.42.0",
+    "@qiwi/substrate-abstract": "1.17.47",
+    "@qiwi/substrate-std": "1.0.35"
   },
   "devDependencies": {
     "@qiwi/libdefkit": "^1.0.2",
