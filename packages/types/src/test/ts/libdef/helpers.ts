@@ -3,6 +3,7 @@ import {
   PrependTuple,
   Extends,
   ExtendsOrNever,
+  RecursivePartial,
 } from '../../../main/ts'
 
 interface A {
@@ -33,3 +34,14 @@ const e1: Extends<number, any, number, string> = 1
 const e2: Extends<number, any, number, string> = 'string' // $ExpectError
 const e3: ExtendsOrNever<{a: string}, {a: any}> = { a: 'foo' }
 const e4: ExtendsOrNever<{a: string}, {a: number}> = { a: 'foo' } // $ExpectError
+
+type TSomeType = {
+  foo: {
+    bar: string
+  }
+}
+
+const rp0: RecursivePartial<TSomeType> = {}
+const rp1: RecursivePartial<TSomeType> = { foo: {} }
+const rp2: RecursivePartial<TSomeType> = { foo: { bar: 'baz' } }
+const rp3: RecursivePartial<TSomeType> = { foo: { bar: 1 } } // $ExpectError

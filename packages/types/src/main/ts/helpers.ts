@@ -15,3 +15,11 @@ export type Extends<T, E, R1, R2> = T extends E
   : R2
 
 export type ExtendsOrNever<T, E> = Extends<T, E, T, never>
+
+// https://stackoverflow.com/a/51365037
+export type RecursivePartial<T> = {
+  [P in keyof T]?:
+  T[P] extends (infer U)[] ? RecursivePartial<U>[] :
+    T[P] extends object ? RecursivePartial<T[P]> :
+      T[P];
+};
