@@ -11,6 +11,7 @@ const deviceInfo: IDeviceInfo = {
     manufacturer: null,
   },
   os: {
+    name: 'MS-DOS',
     architecture: undefined,
     family: 'qaz',
     version: undefined,
@@ -28,6 +29,7 @@ const wrongDeviceInfo: IDeviceInfo = {
     manufacturer: null,
   },
   os: {
+    name: 123, // $ExpectError
     architecture: 12,
     family: 'qaz',
     version: undefined,

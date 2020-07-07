@@ -5,6 +5,7 @@ export interface IBrowserInfo {
 }
 
 export interface IOperationalSystemInfo {
+  name?: string | null
   architecture?: number | null
   family?: string | null
   version?: string | null
