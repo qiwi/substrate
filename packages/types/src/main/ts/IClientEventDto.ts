@@ -2,6 +2,7 @@
 /** */
 
 import { LogLevel } from './ILogger'
+import { IDeviceInfo } from './IDeviceInfo'
 
 export enum EnvironmentProfile {
   CI = 'ci',
@@ -18,7 +19,7 @@ export interface IClientEventMeta {
   appNamespace?: string,
   appConfig?: Record<string, any>,
   envProfile?: EnvironmentProfile,
-  deviceInfo?: Record<string, any>,
+  deviceInfo?: IDeviceInfo & Record<string, any>,
 }
 
 export interface IClientEventDto {
