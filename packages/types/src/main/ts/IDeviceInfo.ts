@@ -1,19 +1,19 @@
 export interface IBrowserInfo {
-  name?: string
+  name?: string | null
   version?: string | null
   layout?: string | null
 }
 
 export interface IOperationalSystemInfo {
-  architecture?: number
+  architecture?: number | null
   family?: string | null
   version?: string | null
 }
 
 export interface IDeviceInfo {
-  browser: IBrowserInfo
-  model: {
-    product?: string | null,
+  browser?: IBrowserInfo
+  model?: {
+    name?: string | null,
     manufacturer?: string | null
   },
   os?: IOperationalSystemInfo

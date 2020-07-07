@@ -19,7 +19,7 @@ export interface IClientEventMeta {
   appNamespace?: string,
   appConfig?: Record<string, any>,
   envProfile?: EnvironmentProfile,
-  deviceInfo?: Partial<IDeviceInfo> & Record<string, any>,
+  deviceInfo?: IDeviceInfo & Record<string, any>,
 }
 
 export interface IClientEventDto {
