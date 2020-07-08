@@ -3,7 +3,7 @@
   "workspaces": [
     "packages/*"
   ],
-  "version": "1.17.0",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "clean": "lerna clean --yes && lerna run clean && yarn clean:target && yarn clean:buildcache && yarn clean:docs",
@@ -22,11 +22,11 @@
     "lint": "eslint 'packages/**/src/**/*.ts' --ignore-pattern 'packages/**/*.d.ts' --fix | snazzy",
     "docs": "typedoc packages/**/src/main --ignoreCompilerErrors && touch ./docs/.nojekyll || exit 0",
     "release": "multi-semantic-release",
-    "postupdate": "yarn && yarn bootstrap && yarn build && yarn-audit-fix && yarn test"
+    "postupdate": "yarn && yarn bootstrap && yarn-audit-fix && yarn build && yarn test"
   },
   "devDependencies": {
     "@qiwi/license": "1.1.3",
-    "@qiwi/multi-semantic-release": "3.0.3",
+    "@qiwi/multi-semantic-release": "3.1.0",
     "@qiwi/semantic-release-gh-pages-plugin": "4.0.0",
     "@semantic-release/changelog": "5.0.1",
     "@semantic-release/commit-analyzer": "8.0.1",
@@ -36,23 +36,24 @@
     "@semantic-release/release-notes-generator": "9.0.1",
     "@types/jest": "26.0.4",
     "@types/lodash": "4.14.157",
-    "@types/node": "14.0.18",
+    "@types/node": "14.0.20",
     "@typescript-eslint/parser": "3.6.0",
     "codeclimate-test-reporter": "0.5.1",
     "coveralls": "3.1.0",
     "eslint": "7.4.0",
-    "eslint-config-qiwi": "1.4.0",
+    "eslint-config-qiwi": "1.6.0",
     "esm": "3.2.25",
     "find-git-root": "1.0.4",
     "jest": "26.1.0",
     "lerna": "3.22.1",
-    "lodash": "4.17.15",
+    "lodash": "4.17.19",
+    "replace-in-file": "^6.1.0",
     "semantic-release": "17.1.1",
     "snazzy": "8.0.0",
     "ts-jest": "26.1.1",
     "typescript": "3.9.6",
     "yargs": "15.4.0",
-    "yarn-audit-fix": "^1.0.0"
+    "yarn-audit-fix": "^1.1.1"
   },
   "jest": {
     "collectCoverage": true,
@@ -63,7 +64,9 @@
       "<rootDir>/packages/facade/jest.config.json"
     ]
   },
-  "dependencies": {},
+  "dependencies": {
+    "synp": "^1.7.0"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
