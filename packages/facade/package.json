@@ -42,7 +42,7 @@
   "devDependencies": {
     "@qiwi/libdefkit": "^1.0.2",
     "@types/jest": "26.0.4",
-    "@types/node": "14.0.18",
+    "@types/node": "14.0.20",
     "dtslint": "3.6.12",
     "fs-extra": "^9.0.1",
     "ts-loader": "7.0.5",
