@@ -46,7 +46,7 @@
     "find-git-root": "1.0.4",
     "jest": "26.1.0",
     "lerna": "3.22.1",
-    "lodash": "4.17.15",
+    "lodash": "4.17.19",
     "semantic-release": "17.1.1",
     "snazzy": "8.0.0",
     "ts-jest": "26.1.1",
