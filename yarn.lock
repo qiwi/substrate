@@ -11180,6 +11180,14 @@ yargs@^8.0.2:
     y18n "^3.2.1"
     yargs-parser "^7.0.0"
 
+yarn-audit-fix@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/yarn-audit-fix/-/yarn-audit-fix-1.0.0.tgz#3de65053bdad4d66a263d2ae8e33e0a8f5f9b062"
+  integrity sha512-W/yTD4WI5JQilOEQUgjYs7r0v3gLmv+EFVGamEc9Y0H5u1tS8xo4T4yF6cJxrZ+5e+HBsAJVgXRV2NP6MGLtWQ==
+  dependencies:
+    rimraf "^3.0.2"
+    tslib "^2.0.0"
+
 yn@3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/yn/-/yn-3.1.1.tgz#1e87401a09d767c1d5eab26a6e4c185182d2eb50"
