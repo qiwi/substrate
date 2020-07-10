@@ -52,7 +52,7 @@
     "snazzy": "8.0.0",
     "ts-jest": "26.1.1",
     "typescript": "3.9.6",
-    "yargs": "15.4.0",
+    "yargs": "15.4.1",
     "yarn-audit-fix": "^1.2.2"
   },
   "jest": {
