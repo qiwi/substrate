@@ -44,7 +44,7 @@
     "@types/config": "0.0.36",
     "@types/jest": "26.0.4",
     "@types/lodash": "4.14.157",
-    "@types/node": "14.0.20",
+    "@types/node": "14.0.23",
     "@types/parsimmon": "1.10.2",
     "@types/underscore": "1.10.6",
     "bluebird": "3.7.2",
