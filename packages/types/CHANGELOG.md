@@ -1,3 +1,10 @@
+## @qiwi/substrate-types [1.43.1](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.43.0...@qiwi/substrate-types@1.43.1) (2020-07-20)
+
+
+### Performance Improvements
+
+* **types:** apply RecursivePartial to IDeviceInfo and its inners ([eb577bc](https://github.com/qiwi/substrate/commit/eb577bc6599680e6a2e22878f14391c82314f84d))
+
 # @qiwi/substrate-types [1.43.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.42.0...@qiwi/substrate-types@1.43.0) (2020-07-07)
 
 
