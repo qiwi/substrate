@@ -3,6 +3,7 @@
 
 import { LogLevel } from './ILogger'
 import { IDeviceInfo } from './IDeviceInfo'
+import { RecursivePartial } from './helpers'
 
 export enum EnvironmentProfile {
   CI = 'ci',
@@ -12,15 +13,17 @@ export enum EnvironmentProfile {
   STAGE = 'staging'
 }
 
-export interface IClientEventMeta {
-  appName?: string
-  appHost?: string
-  appVersion?: string
-  appNamespace?: string,
-  appConfig?: Record<string, any>,
-  envProfile?: EnvironmentProfile,
-  deviceInfo?: IDeviceInfo & Record<string, any>,
-}
+type TClientEventMeta = RecursivePartial<{
+  appName: string
+  appHost: string
+  appVersion: string
+  appNamespace: string,
+  appConfig: Record<string, any>,
+  envProfile: EnvironmentProfile,
+  deviceInfo: IDeviceInfo & Record<string, any>,
+}>
+
+export type IClientEventMeta = TClientEventMeta
 
 export interface IClientEventDto {
   message: string
