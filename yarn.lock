@@ -2056,10 +2056,10 @@
   resolved "https://registry.yarnpkg.com/@types/stack-utils/-/stack-utils-1.0.1.tgz#0a851d3bd96498fa25c33ab7278ed3bd65f06c3e"
   integrity sha512-l42BggppR6zLmpfU6fq9HEa2oGPEI8yrSPL3GITjfRInppYFahObbIQOQK3UGxEnyQpltZLaPe75046NOZQikw==
 
-"@types/underscore@1.10.6":
-  version "1.10.6"
-  resolved "https://registry.yarnpkg.com/@types/underscore/-/underscore-1.10.6.tgz#f876e9f731e3c3cc7d1d6ccbdbd118343d24ec1a"
-  integrity sha512-kEEmuAxiebFZrkL/si1BaP5/86sHCz491oDeSzRqB7kNokcbxDHKPTuiopj8F8xLl4p09lpiXYkxWZrBZDt41Q==
+"@types/underscore@1.10.11":
+  version "1.10.11"
+  resolved "https://registry.yarnpkg.com/@types/underscore/-/underscore-1.10.11.tgz#f5a1902d461c55b7513ec01b9ebcd81a53335b18"
+  integrity sha512-BXMlP0qTcdR9I8cATvOwocEHbNOkMiWKO0qJAxl0ijRpuGmfZ6Et3AkudPcgjg4OTWk4Z+XcNR1RZRiAkG27gQ==
 
 "@types/yargs-parser@*":
   version "15.0.0"
