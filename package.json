@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@qiwi/license": "1.1.3",
-    "@qiwi/multi-semantic-release": "3.1.0",
+    "@qiwi/multi-semantic-release": "3.5.0",
     "@qiwi/semantic-release-gh-pages-plugin": "4.0.0",
     "@semantic-release/changelog": "5.0.1",
     "@semantic-release/commit-analyzer": "8.0.1",
@@ -34,14 +34,14 @@
     "@semantic-release/github": "7.0.7",
     "@semantic-release/npm": "7.0.5",
     "@semantic-release/release-notes-generator": "9.0.1",
-    "@types/jest": "26.0.4",
+    "@types/jest": "26.0.5",
     "@types/lodash": "4.14.157",
-    "@types/node": "14.0.20",
-    "@typescript-eslint/parser": "3.6.0",
+    "@types/node": "14.0.23",
+    "@typescript-eslint/parser": "3.6.1",
     "codeclimate-test-reporter": "0.5.1",
     "coveralls": "3.1.0",
-    "eslint": "7.4.0",
-    "eslint-config-qiwi": "1.4.0",
+    "eslint": "7.5.0",
+    "eslint-config-qiwi": "1.7.0",
     "esm": "3.2.25",
     "find-git-root": "1.0.4",
     "jest": "26.1.0",
@@ -50,10 +50,10 @@
     "replace-in-file": "^6.1.0",
     "semantic-release": "17.1.1",
     "snazzy": "8.0.0",
-    "ts-jest": "26.1.1",
-    "typescript": "3.9.6",
-    "yargs": "15.4.0",
-    "yarn-audit-fix": "^1.2.2"
+    "ts-jest": "26.1.3",
+    "typescript": "3.9.7",
+    "yargs": "15.4.1",
+    "yarn-audit-fix": "^1.3.0"
   },
   "jest": {
     "collectCoverage": true,
@@ -63,9 +63,6 @@
       "<rootDir>/packages/std/jest.config.json",
       "<rootDir>/packages/facade/jest.config.json"
     ]
-  },
-  "dependencies": {
-    "synp": "^1.7.0"
   },
   "license": "MIT",
   "repository": {
