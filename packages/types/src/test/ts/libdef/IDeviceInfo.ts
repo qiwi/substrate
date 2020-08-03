@@ -1,4 +1,4 @@
-import { IDeviceInfo, IBrowserInfo } from '.'
+import { IDeviceInfo } from '.'
 
 const deviceInfo: IDeviceInfo = {
   browser: {
@@ -9,6 +9,7 @@ const deviceInfo: IDeviceInfo = {
   model: {
     name: null,
     manufacturer: null,
+    isMobile: false,
   },
   os: {
     name: 'MS-DOS',
@@ -27,6 +28,7 @@ const wrongDeviceInfo: IDeviceInfo = {
   model: {
     product: {}, // $ExpectError
     manufacturer: null,
+    isMobile: true,
   },
   os: {
     name: 123, // $ExpectError
