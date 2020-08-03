@@ -1,3 +1,10 @@
+# @qiwi/substrate-types [1.44.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.43.1...@qiwi/substrate-types@1.44.0) (2020-08-03)
+
+
+### Features
+
+* **types:** added isMobile flag to IDeviceInfo ([e9d2806](https://github.com/qiwi/substrate/commit/e9d280698b5f94274ba1a5f2d5c2cd91c16699dc))
+
 ## @qiwi/substrate-types [1.43.1](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.43.0...@qiwi/substrate-types@1.43.1) (2020-07-20)
 
 
