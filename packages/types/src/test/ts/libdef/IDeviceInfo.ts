@@ -9,8 +9,8 @@ const deviceInfo: IDeviceInfo = {
   model: {
     name: null,
     manufacturer: null,
-    isMobile: false,
   },
+  isMobile: false,
   os: {
     name: 'MS-DOS',
     architecture: undefined,
@@ -28,8 +28,8 @@ const wrongDeviceInfo: IDeviceInfo = {
   model: {
     product: {}, // $ExpectError
     manufacturer: null,
-    isMobile: true,
   },
+  isMobile: true,
   os: {
     name: 123, // $ExpectError
     architecture: 12,
