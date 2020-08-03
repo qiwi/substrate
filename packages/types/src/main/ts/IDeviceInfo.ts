@@ -21,5 +21,6 @@ export type IDeviceInfo = RecursivePartial<{
     name: string | null,
     manufacturer: string | null
   },
+  isMobile: boolean,
   os: IOperationalSystemInfo
 }>
