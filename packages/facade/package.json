@@ -43,7 +43,7 @@
     "@qiwi/libdefkit": "^1.0.2",
     "@types/jest": "26.0.5",
     "@types/node": "14.0.23",
-    "dtslint": "3.6.12",
+    "dtslint": "3.7.0",
     "fs-extra": "^9.0.1",
     "ts-loader": "8.0.1",
     "ts-node": "8.10.2",
