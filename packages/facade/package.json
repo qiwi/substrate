@@ -46,7 +46,7 @@
     "dtslint": "3.6.12",
     "fs-extra": "^9.0.1",
     "ts-loader": "8.0.1",
-    "ts-node": "8.10.2",
+    "ts-node": "9.0.0",
     "ts-to-flow": "0.0.3",
     "typescript": "3.9.7"
   },
