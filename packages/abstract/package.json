@@ -52,7 +52,7 @@
     "config": "3.3.1",
     "dtslint": "3.6.12",
     "lodash": "4.17.19",
-    "ts-loader": "8.0.1",
+    "ts-loader": "8.0.3",
     "ts-node": "8.10.2",
     "ts-to-flow": "0.0.3",
     "typescript": "3.9.7",
