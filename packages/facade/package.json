@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@qiwi/libdefkit": "^1.0.2",
-    "@types/jest": "26.0.5",
+    "@types/jest": "26.0.13",
     "@types/node": "14.0.23",
     "dtslint": "3.6.12",
     "fs-extra": "^9.0.1",
