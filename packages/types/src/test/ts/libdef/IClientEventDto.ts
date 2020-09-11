@@ -34,10 +34,12 @@ const brokenEventDto: IClientEventDto = {
   level: 'foo', // $ExpectError
   meta: 'foo', // $ExpectError
   details: 1234, // $ExpectError
+  timestamp: true, // $ExpectError
 }
 
 const clientEventDto1: IClientEventDto = {
   message: 'foo',
+  timestamp: 1599808450263,
 }
 
 const clientEventDto2: IClientEventDto = {

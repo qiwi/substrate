@@ -33,4 +33,5 @@ export interface IClientEventDto {
   meta?: IClientEventMeta
   details?: Record<string, any>
   stacktrace?: any
+  timestamp?: number | string
 }
