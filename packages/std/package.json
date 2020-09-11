@@ -1,6 +1,6 @@
 {
   "name": "@qiwi/substrate-std",
-  "version": "1.0.38",
+  "version": "1.0.39",
   "main": "target/es5/index.js",
   "source": "target/ts/index.ts",
   "types": "target/es5/index.d.ts",
@@ -57,7 +57,7 @@
     "typedoc-plugin-external-module-name": "4.0.3"
   },
   "dependencies": {
-    "@qiwi/substrate-types": "1.44.0"
+    "@qiwi/substrate-types": "1.45.0"
   },
   "peerDependencies": {},
   "license": "MIT",
