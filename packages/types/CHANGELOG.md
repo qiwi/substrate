@@ -1,3 +1,10 @@
+# @qiwi/substrate-types [1.45.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.44.0...@qiwi/substrate-types@1.45.0) (2020-09-11)
+
+
+### Features
+
+* **types:** add timestamp field to IClientEventDto ([#243](https://github.com/qiwi/substrate/issues/243)) ([1e09275](https://github.com/qiwi/substrate/commit/1e0927593a3753569ada2d69cf5f8a89aa956219))
+
 # @qiwi/substrate-types [1.44.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.43.1...@qiwi/substrate-types@1.44.0) (2020-08-03)
 
 
