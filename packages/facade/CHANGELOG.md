@@ -1,3 +1,21 @@
+# @qiwi/substrate [1.19.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate@1.18.38...@qiwi/substrate@1.19.0) (2020-09-12)
+
+
+### Features
+
+* introduce infra package ([2b2343b](https://github.com/qiwi/substrate/commit/2b2343b2d64bd4e69b1eac04ec46f22775118f05)), closes [#244](https://github.com/qiwi/substrate/issues/244)
+
+
+
+
+
+### Dependencies
+
+* **@qiwi/substrate-types:** upgraded to 1.46.0
+* **@qiwi/substrate-abstract:** upgraded to 1.18.0
+* **@qiwi/substrate-std:** upgraded to 1.1.0
+* **@qiwi/substrate-infra:** upgraded to 1.0.0
+
 ## @qiwi/substrate [1.18.38](https://github.com/qiwi/substrate/compare/@qiwi/substrate@1.18.37...@qiwi/substrate@1.18.38) (2020-09-11)
 
 
