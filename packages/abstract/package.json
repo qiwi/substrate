@@ -1,7 +1,7 @@
 {
   "name": "@qiwi/substrate-abstract",
   "description": "Abstract classes",
-  "version": "1.17.51",
+  "version": "1.18.0",
   "main": "target/es5/index.js",
   "source": "target/ts/index.ts",
   "types": "target/es5/index.d.ts",
@@ -53,8 +53,8 @@
     "underscore": "1.11.0"
   },
   "dependencies": {
-    "@qiwi/substrate-types": "1.45.0",
-    "@qiwi/substrate-infra": "*"
+    "@qiwi/substrate-types": "1.46.0",
+    "@qiwi/substrate-infra": "1.0.0"
   },
   "peerDependencies": {},
   "license": "MIT",
