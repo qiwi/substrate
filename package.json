@@ -22,7 +22,7 @@
     "lint": "eslint 'packages/**/src/**/*.ts' --ignore-pattern 'packages/**/*.d.ts' --fix | snazzy",
     "docs": "typedoc packages/**/src/main --ignoreCompilerErrors && touch ./docs/.nojekyll || exit 0",
     "release": "multi-semantic-release",
-    "postupdate": "yarn && yarn bootstrap && yarn-audit-fix && yarn build && yarn test"
+    "postupdate": "yarn && yarn bootstrap && npx yarn-audit-fix && yarn build && yarn test"
   },
   "devDependencies": {
     "@qiwi/license": "1.1.3",
@@ -52,8 +52,7 @@
     "snazzy": "8.0.0",
     "ts-jest": "26.1.3",
     "typescript": "3.9.7",
-    "yargs": "15.4.1",
-    "yarn-audit-fix": "^1.3.0"
+    "yargs": "15.4.1"
   },
   "jest": {
     "collectCoverage": true,
