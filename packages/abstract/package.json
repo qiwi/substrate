@@ -39,7 +39,6 @@
   ],
   "devDependencies": {
     "@qiwi/uniconfig": "3.3.1",
-    "@qiwi/libdefkit": "^1.0.2",
     "@types/bluebird": "3.5.32",
     "@types/config": "0.0.36",
     "@types/jest": "26.0.5",
@@ -52,16 +51,11 @@
     "config": "3.3.1",
     "dtslint": "3.6.12",
     "lodash": "4.17.19",
-    "ts-loader": "8.0.1",
-    "ts-node": "8.10.2",
-    "ts-to-flow": "0.0.3",
-    "typescript": "3.9.7",
-    "underscore": "1.10.2",
-    "typedoc": "0.17.8",
-    "typedoc-plugin-external-module-name": "4.0.3"
+    "underscore": "1.10.2"
   },
   "dependencies": {
-    "@qiwi/substrate-types": "1.45.0"
+    "@qiwi/substrate-types": "1.45.0",
+    "@qiwi/substrate-infra": "*"
   },
   "peerDependencies": {},
   "license": "MIT",
