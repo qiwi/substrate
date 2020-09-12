@@ -1,3 +1,18 @@
+# @qiwi/substrate-types [1.46.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.45.0...@qiwi/substrate-types@1.46.0) (2020-09-12)
+
+
+### Features
+
+* introduce infra package ([2b2343b](https://github.com/qiwi/substrate/commit/2b2343b2d64bd4e69b1eac04ec46f22775118f05)), closes [#244](https://github.com/qiwi/substrate/issues/244)
+
+
+
+
+
+### Dependencies
+
+* **@qiwi/substrate-infra:** upgraded to 1.0.0
+
 # @qiwi/substrate-types [1.45.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.44.0...@qiwi/substrate-types@1.45.0) (2020-09-11)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@qiwi/substrate-types",
-  "version": "1.45.0",
+  "version": "1.46.0",
   "main": "target/es5/index.js",
   "source": "target/ts/index.ts",
   "types": "target/es5/index.d.ts",
@@ -55,7 +55,7 @@
     "reflect-metadata": "0.1.13"
   },
   "dependencies": {
-    "@qiwi/substrate-infra": "*"
+    "@qiwi/substrate-infra": "1.0.0"
   },
   "peerDependencies": {},
   "license": "MIT",
