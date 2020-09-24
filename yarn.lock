@@ -1605,24 +1605,23 @@
     stream-buffers "^3.0.2"
     tempy "^0.6.0"
 
-"@qiwi/semantic-release-gh-pages-plugin@4.0.3", "@qiwi/semantic-release-gh-pages-plugin@^4.0.3":
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/@qiwi/semantic-release-gh-pages-plugin/-/semantic-release-gh-pages-plugin-4.0.3.tgz#eb9bf8e3215594e71b76d806db3b483272ffe0ee"
-  integrity sha512-yS2zvH1aPC4TqYowJrcLFhpYZmq+XEEy427G4QbtjEgQ7iblAhiGQ+hsF+Bdj+1WlDNovNy4IdfqMDbj3x6o/Q==
+"@qiwi/semantic-release-gh-pages-plugin@5.0.0", "@qiwi/semantic-release-gh-pages-plugin@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@qiwi/semantic-release-gh-pages-plugin/-/semantic-release-gh-pages-plugin-5.0.0.tgz#4dc68bda301c22f79423018a52bcc1f1827f3a83"
+  integrity sha512-BOPb71El9UQxE932M4dCVD6PAdcEAKz+cX/YC5bNlexGKY1jYQThRrU87Uaao119h8JJnM4zDcSEYC11tnrkZw==
   dependencies:
     "@types/debug" "^4.1.5"
     "@types/git-url-parse" "^9.0.0"
-    aggregate-error "^3.0.1"
-    debug "^4.1.1"
-    dot "^1.1.3"
+    aggregate-error "^3.1.0"
+    debug "^4.2.0"
     execa "^4.0.3"
     gh-pages "^3.1.0"
-    git-url-parse "^11.1.2"
-    lodash "^4.17.19"
-    queuefy "^1.1.1"
+    git-url-parse "^11.2.0"
+    lodash "^4.17.20"
+    queuefy "^1.1.2"
     read-pkg "^5.2.0"
     sync-request "^6.1.0"
-    tslib "^2.0.0"
+    tslib "^2.0.1"
 
 "@qiwi/uniconfig-core@^3.5.0":
   version "3.5.1"
@@ -2411,7 +2410,7 @@ agentkeepalive@^3.4.1:
   dependencies:
     humanize-ms "^1.2.1"
 
-aggregate-error@^3.0.0, aggregate-error@^3.0.1:
+aggregate-error@^3.0.0, aggregate-error@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/aggregate-error/-/aggregate-error-3.1.0.tgz#92670ff50f5359bdb7a3e0d40d0ec30c5737687a"
   integrity sha512-4I7Td01quW/RpocfNayFdFVk1qSuoh0E7JrbRJ16nH01HhKFQ88INq9Sd+nd72zqRySlr9BmDA8xlEJ6vJMrYA==
@@ -3867,6 +3866,13 @@ debug@^3.1.0:
   dependencies:
     ms "^2.1.1"
 
+debug@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.2.0.tgz#7f150f93920e94c58f5574c2fd01a3110effe7f1"
+  integrity sha512-IX2ncY78vDTjZMFUdmsvIRFY2Cf4FnD0wRs+nQwJU8Lu99/tPFdb0VybiiMTPe3I6rQmwsqQqRBvxU+bZ/I8sg==
+  dependencies:
+    ms "2.1.2"
+
 debuglog@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/debuglog/-/debuglog-1.0.1.tgz#aa24ffb9ac3df9a2351837cfb2d279360cd78492"
@@ -4074,7 +4080,7 @@ dot-prop@^5.1.0, dot-prop@^5.2.0:
   dependencies:
     is-obj "^2.0.0"
 
-dot@1.1.3, dot@^1.1.3:
+dot@1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/dot/-/dot-1.1.3.tgz#351360e00a748bce9a1f8f27c00c394a7e4e1e9f"
   integrity sha512-/nt74Rm+PcfnirXGEdhZleTwGC2LMnuKTeeTIlI82xb5loBBoXNYzr2ezCroPSMtilK8EZIfcNZwOcHN+ib1Lg==
@@ -5300,7 +5306,7 @@ git-up@^4.0.0:
     is-ssh "^1.3.0"
     parse-url "^5.0.0"
 
-git-url-parse@^11.1.2:
+git-url-parse@^11.1.2, git-url-parse@^11.2.0:
   version "11.2.0"
   resolved "https://registry.yarnpkg.com/git-url-parse/-/git-url-parse-11.2.0.tgz#2955fd51befd6d96ea1389bbe2ef57e8e6042b04"
   integrity sha512-KPoHZg8v+plarZvto4ruIzzJLFQoRx+sUs5DQSr07By9IBKguVd+e6jwrFR6/TP6xrCJlNV1tPqLO1aREc7O2g==
@@ -7667,7 +7673,7 @@ ms@2.0.0:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
   integrity sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g=
 
-ms@^2.0.0, ms@^2.1.1:
+ms@2.1.2, ms@^2.0.0, ms@^2.1.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
@@ -8922,12 +8928,12 @@ query-string@^6.8.2:
     split-on-first "^1.0.0"
     strict-uri-encode "^2.0.0"
 
-queuefy@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/queuefy/-/queuefy-1.1.1.tgz#3a45c339ccf203a4b8f12780288cadd66aa8366e"
-  integrity sha512-ArpYpS5PA2uKTRzHYr+tAI/5pX96cmVuFYELEo51u6W6ZO1XSSAKhCvlzOH7nMuCj1xxnwno3cX75ZpAG4+UJQ==
+queuefy@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/queuefy/-/queuefy-1.1.2.tgz#eff80b0f0d8b4d2a17b24b33cba4180a3e1d1c42"
+  integrity sha512-88jS8t0yUeCxIqJEW9R9au069QiHhqGf3y/p2CqY0Tgbmy0pZnyq3g9nhqvuLxtm9hO69w0ySXSX+Vj40j+sKw==
   dependencies:
-    tslib "^2.0.0"
+    tslib "^2.0.1"
 
 quick-lru@^1.0.0:
   version "1.1.0"
