@@ -21,7 +21,7 @@
     "build:es5": "mkdir -p target/es5 && tsc -p ./tsconfig.json --target ES5 --outDir target/es5",
     "build:es6": "mkdir -p target/es6 && tsc -p ./tsconfig.json --target ES6 --outDir target/es6",
     "build:ts": "cp -r src/main/ts/ target/ts/",
-    "build:libdef": "dts-generator --project ./ --out typings/index.d.ts --prefix @qiwi/substrate/target/es5 --name @qiwi/substrate --main @qiwi/substrate/target/es5/index && libdeffix --dts=./typings/index.d.ts --prefix=@qiwi/substrate/target/es5 && flowgen typings/index.d.ts --output-file flow-typed/index.flow.js",
+    "build:libdef": "libdefkit --tsconfig=tsconfig.json",
     "testgen": "cp typings/index.d.ts src/test/ts/libdef/index.d.ts && rsync -a ../types/src/test/ts/libdef/I*.ts ./src/test/ts/libdef/ && rsync -a ../abstract/src/test/ts/unit/*.ts ./src/test/ts/unit/ && rsync -a ../std/src/test/ts/unit/*.ts ./src/test/ts/unit/",
     "test": "yarn testgen && yarn dtslint && yarn jest",
     "jest": "jest --config=jest.config.json",
@@ -37,12 +37,12 @@
   "dependencies": {
     "@qiwi/substrate-types": "1.46.0",
     "@qiwi/substrate-abstract": "1.18.0",
-    "@qiwi/substrate-std": "1.1.0",
-    "@qiwi/substrate-infra": "1.0.0"
+    "@qiwi/substrate-std": "1.1.0"
   },
   "devDependencies": {
-    "@types/jest": "26.0.13",
-    "@types/node": "14.10.1",
+    "@qiwi/substrate-infra": "1.0.0",
+    "@types/jest": "26.0.14",
+    "@types/node": "14.11.2",
     "fs-extra": "^9.0.1"
   },
   "peerDependencies": {},
