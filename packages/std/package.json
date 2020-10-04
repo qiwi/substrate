@@ -1,6 +1,6 @@
 {
   "name": "@qiwi/substrate-std",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "target/es5/index.js",
   "source": "target/ts/index.ts",
   "types": "target/es5/index.d.ts",
@@ -35,7 +35,7 @@
   ],
   "devDependencies": {
     "@qiwi/uniconfig": "3.5.1",
-    "@qiwi/substrate-infra": "1.0.0",
+    "@qiwi/substrate-infra": "1.0.1",
     "@types/bluebird": "3.5.32",
     "@types/config": "0.0.36",
     "@types/jest": "26.0.14",
@@ -50,7 +50,7 @@
     "underscore": "1.11.0"
   },
   "dependencies": {
-    "@qiwi/substrate-types": "1.46.0"
+    "@qiwi/substrate-types": "1.46.1"
   },
   "peerDependencies": {},
   "license": "MIT",
