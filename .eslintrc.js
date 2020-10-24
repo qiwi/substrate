@@ -5,6 +5,7 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/ban-types': 'off',
     'no-unused-expressions': 'off',
-    'no-void': 'off'
+    'no-void': 'off',
+    'unicorn/no-null': 'off'
   }
 }

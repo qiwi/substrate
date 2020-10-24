@@ -1,5 +1,6 @@
 import { forEach as lodashEach } from 'lodash'
 import { each as underscoreEach } from 'underscore'
+
 import { TUtilEach } from '.'
 
 const brokenUtilEach: TUtilEach = (collection: object, handler: (value: string, key: boolean, collection: object) => void) => { handler || collection } // $ExpectError

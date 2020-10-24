@@ -2,7 +2,7 @@
 /** */
 
 export interface IRequest {
-  res?: IResponse
+  res?: IResponse // eslint-disable-line no-use-before-define
   [key: string]: any
 }
 

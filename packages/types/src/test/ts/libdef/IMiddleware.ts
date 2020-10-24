@@ -1,4 +1,4 @@
-import { IMiddleware, IAsyncMiddleware, IErrorMiddleware, IRequestMiddleware, IRequest, IResponse, INext } from '.'
+import { IAsyncMiddleware, IErrorMiddleware, IMiddleware, INext, IRequest, IRequestMiddleware, IResponse } from '.'
 
 // IMiddleware
 const brokenMiddleware1: IMiddleware = {} // $ExpectError

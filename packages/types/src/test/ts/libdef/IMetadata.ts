@@ -1,5 +1,6 @@
-import { IMetadataProvider } from '.'
 import 'reflect-metadata'
+
+import { IMetadataProvider } from '.'
 
 const reflectMetadata: IMetadataProvider = Reflect
 const customProvider: IMetadataProvider = {

@@ -1,4 +1,4 @@
-import { IIterable, IIteratorResult, IIterator } from '.'
+import { IIterable, IIterator, IIteratorResult } from '.'
 
 const iteratorResult: IIteratorResult = {
   done: false,

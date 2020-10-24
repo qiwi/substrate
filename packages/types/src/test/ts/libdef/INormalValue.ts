@@ -1,13 +1,13 @@
 import {
-  INormalValue,
   IIdentified,
   IMetaTyped,
   IMetaTypedValue,
-  IWrappedValue,
-  ITyped,
-  ITypedValue,
   IMeted,
   IMetedValue,
+  INormalValue,
+  ITyped,
+  ITypedValue,
+  IWrappedValue,
 } from '.'
 
 export const identified: IIdentified = { id: 'foo' }

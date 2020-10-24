@@ -1,9 +1,9 @@
 /** @module @qiwi/substrate-types */
 /** */
 
-import { LogLevel } from './ILogger'
-import { IDeviceInfo } from './IDeviceInfo'
 import { RecursivePartial } from './helpers'
+import { IDeviceInfo } from './IDeviceInfo'
+import { LogLevel } from './ILogger'
 
 export enum EnvironmentProfile {
   CI = 'ci',
