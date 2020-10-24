@@ -1,5 +1,5 @@
-import { IAnyMap } from './IAnyMap'
 import { UnionToIntersection } from './helpers'
+import { IAnyMap } from './IAnyMap'
 
 export interface IIdentified {
   id: string | number | symbol

@@ -1,4 +1,5 @@
 import { get as lodashSet } from 'lodash'
+
 import { TUtilSet } from '.'
 
 const brokenUtilSet: TUtilSet = (obj: object, path: any[], value: boolean) => { obj || path || value } // $ExpectError

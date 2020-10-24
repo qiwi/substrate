@@ -1,6 +1,6 @@
 import {
-  IStoreExtra,
   IStorageExtra,
+  IStoreExtra,
 } from '.'
 
 const storage = {

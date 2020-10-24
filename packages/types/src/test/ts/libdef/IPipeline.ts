@@ -1,10 +1,10 @@
 import {
   IAnyMap,
+  INormalPipe,
+  INormalPipeline,
   INormalValue,
   IPipe,
   IPipeline,
-  INormalPipe,
-  INormalPipeline,
 } from '.'
 
 const pipe: IPipe = e => e

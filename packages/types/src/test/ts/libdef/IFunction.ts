@@ -1,9 +1,9 @@
 import {
-  IFunction,
-  IFn,
-  IUnaryFunction,
-  IUnaryFn,
   ICallable,
+  IFn,
+  IFunction,
+  IUnaryFn,
+  IUnaryFunction,
 } from '.'
 
 const fn1: IFn = () => {}

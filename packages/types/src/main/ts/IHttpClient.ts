@@ -10,8 +10,6 @@ export const enum HttpMethod {
   PATCH = 'PATCH'
 }
 
-export type IHttpRequestProvider = IFetch | IHttpClient
-
 export type IHttpHeaders = Record<string, any>
 
 export interface IHttpResponse<D=any> {
@@ -58,3 +56,5 @@ export interface IHttpClient<Req extends IHttpRequest = IHttpRequest, Res extend
   delete: IHttpReqPerform<Req, Res>,
   options: IHttpReqPerform<Req, Res>,
 }
+
+export type IHttpRequestProvider = IFetch | IHttpClient

@@ -1,4 +1,5 @@
 import { get as lodashGet } from 'lodash'
+
 import { TUtilGet } from '.'
 
 const brokenUtilGet: TUtilGet = (obj: object, path: any[], defaultValue?: any) => { obj || path || defaultValue } // $ExpectError

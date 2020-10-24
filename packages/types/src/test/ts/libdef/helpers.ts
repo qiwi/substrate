@@ -1,9 +1,9 @@
 import {
-  UnionToIntersection,
-  PrependTuple,
   Extends,
   ExtendsOrNever,
+  PrependTuple,
   RecursivePartial,
+  UnionToIntersection,
 } from '../../../main/ts'
 
 interface A {
@@ -27,7 +27,7 @@ type Prim = [number, string]
 type NullablePrim = PrependTuple<null, Prim>
 
 const p1: Prim = [1, 'a']
-const p2: NullablePrim = [null, 1, 'a']
+const p2: NullablePrim = [null, 1, 'a'] // eslint-disable-line
 const p3: NullablePrim = [1, 1, 'a'] // $ExpectError
 
 const e1: Extends<number, any, number, string> = 1

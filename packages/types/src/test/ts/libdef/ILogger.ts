@@ -1,4 +1,4 @@
-import { ILoggerMethod, ILogger, LogLevel } from '.'
+import { ILogger, ILoggerMethod, LogLevel } from '.'
 
 const brokenLogLevel: LogLevel = 'unknown' // $ExpectError
 const traceLogLevel: LogLevel = LogLevel.TRACE
@@ -6,7 +6,7 @@ const debugLogLevel: LogLevel = 'debug' // $ExpectError
 const infoLogLevel: LogLevel = 'INFO' // $ExpectError
 
 const brokenLogMethod: ILoggerMethod = null // $ExpectError
-const logMethod: ILoggerMethod = () => undefined
+const logMethod: ILoggerMethod = () => {}
 
 const brokenLogger: ILogger = {
   trace: logMethod,

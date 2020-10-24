@@ -1,4 +1,4 @@
-import { IConstructor, IConstructable } from '.'
+import { IConstructable, IConstructor } from '.'
 
 export interface FooIface {
   foo(): any
