@@ -2282,7 +2282,12 @@
   resolved "https://registry.yarnpkg.com/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
   integrity sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==
 
-"@types/parsimmon@1.10.3", "@types/parsimmon@^1.10.1":
+"@types/parsimmon@1.10.4":
+  version "1.10.4"
+  resolved "https://registry.yarnpkg.com/@types/parsimmon/-/parsimmon-1.10.4.tgz#7639e16015440d9baf622f83c12dae47787226b7"
+  integrity sha512-M56NfQHfaWuaj6daSgCVs7jh8fXLI3LmxjRoQxmOvYesgIkI+9HPsDLO0vd7wX7cwA0D0ZWFEJdp0VPwLdS+bQ==
+
+"@types/parsimmon@^1.10.1":
   version "1.10.3"
   resolved "https://registry.yarnpkg.com/@types/parsimmon/-/parsimmon-1.10.3.tgz#a8fbbf75a622628f555a10c47bd5c75c1eaf3ab7"
   integrity sha512-BbCYdfYC/XFsVkjWJCeCaUaeYlMHNJ2HmZYaCbsZ14k6qO/mX6n3u2sgtJxSeJLiDPaxb1LESgGA/qGP+AHSCQ==
