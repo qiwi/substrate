@@ -17,8 +17,8 @@
       "@qiwi/semantic-release-gh-pages-plugin",
       {
         "branch": "gh-pages",
-        "msg": "updated {{=it.nextRelease.gitTag}}",
-        "src": "./packages/std/docs",
+        "msg": "docs updated <%= nextRelease.gitTag %>",
+        "src": "packages/std/docs",
         "dst": "./std",
         "pullTagsBranch": ""
       }
