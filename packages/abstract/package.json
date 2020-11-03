@@ -1,7 +1,7 @@
 {
   "name": "@qiwi/substrate-abstract",
   "description": "Abstract classes",
-  "version": "1.18.2",
+  "version": "1.18.3",
   "main": "target/es5/index.js",
   "source": "target/ts/index.ts",
   "types": "target/es5/index.d.ts",
@@ -39,7 +39,7 @@
   ],
   "devDependencies": {
     "@qiwi/uniconfig": "3.5.1",
-    "@qiwi/substrate-infra": "1.0.2",
+    "@qiwi/substrate-infra": "1.0.3",
     "@types/bluebird": "3.5.33",
     "@types/config": "0.0.36",
     "@types/jest": "26.0.15",
@@ -54,7 +54,7 @@
     "underscore": "1.11.0"
   },
   "dependencies": {
-    "@qiwi/substrate-types": "1.46.2"
+    "@qiwi/substrate-types": "1.46.3"
   },
   "peerDependencies": {},
   "license": "MIT",
