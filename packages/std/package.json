@@ -23,7 +23,7 @@
     "build:ts": "cp -r src/main/ts/ target/ts/",
     "build:libdef": "libdefkit --tsconfig=tsconfig.json",
     "test": "yarn jest",
-    "jest": "jest --config=jest.config.json",
+    "jest": "jest --config=jest.config.json --detectOpenHandles --forceExit",
     "docs": "typedoc --readme README.md --tsconfig ./tsconfig.json ./src/main && touch ./docs/.nojekyll || exit 0"
   },
   "files": [
