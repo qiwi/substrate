@@ -23,7 +23,7 @@
     "build:ts": "cp -r src/main/ts/ target/ts/",
     "build:libdef": "libdefkit --tsconfig=tsconfig.json",
     "test": "yarn jest",
-    "jest": "jest --config=jest.config.json",
+    "jest": "jest --config=jest.config.json --detectOpenHandles --forceExit",
     "docs": "typedoc --readme README.md --tsconfig ./tsconfig.json ./src/main && touch ./docs/.nojekyll || exit 0"
   },
   "files": [
@@ -39,7 +39,7 @@
     "@types/bluebird": "3.5.33",
     "@types/config": "0.0.36",
     "@types/jest": "26.0.15",
-    "@types/lodash": "4.14.163",
+    "@types/lodash": "4.14.164",
     "@types/node": "14.14.6",
     "@types/parsimmon": "1.10.4",
     "@types/underscore": "1.10.24",

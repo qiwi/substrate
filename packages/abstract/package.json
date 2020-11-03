@@ -25,7 +25,7 @@
     "build:libdef": "libdefkit --tsconfig=tsconfig.json",
     "test": "yarn test:libdefs && yarn jest",
     "test:libdefs": "cp typings/index.d.ts src/test/ts/libdef/index.d.ts && yarn dtslint",
-    "jest": "jest --config=jest.config.json",
+    "jest": "jest --config=jest.config.json --detectOpenHandles --forceExit",
     "dtslint": "dtslint src/test/ts/libdef --localTs ../../node_modules/typescript/lib --expectOnly",
     "aliasgen": "node -r esm ../../scripts/js/alias-gen.js",
     "docs": "typedoc --readme README.md --tsconfig ./tsconfig.json ./src/main --ignoreCompilerErrors && touch ./docs/.nojekyll || exit 0"
@@ -43,7 +43,7 @@
     "@types/bluebird": "3.5.33",
     "@types/config": "0.0.36",
     "@types/jest": "26.0.15",
-    "@types/lodash": "4.14.163",
+    "@types/lodash": "4.14.164",
     "@types/node": "14.14.6",
     "@types/parsimmon": "1.10.4",
     "@types/underscore": "1.10.24",
