@@ -23,7 +23,7 @@
     "build:ts": "cp -r src/main/ts/ target/ts/",
     "build:libdef": "libdefkit --tsconfig=tsconfig.json",
     "test": "cp typings/index.d.ts src/test/ts/libdef/index.d.ts && yarn dtslint",
-    "jest": "jest --config=jest.config.json",
+    "jest": "jest --config=jest.config.json --detectOpenHandles --forceExit",
     "dtslint": "dtslint src/test/ts/libdef --localTs ../../node_modules/typescript/lib --expectOnly",
     "aliasgen": "node -r esm ../../scripts/js/alias-gen.js",
     "docs": "typedoc --readme README.md --tsconfig ./tsconfig.json ./src/main && touch ./docs/.nojekyll || exit 0"
