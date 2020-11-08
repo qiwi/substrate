@@ -1,4 +1,9 @@
-import { EnvironmentProfile, IClientEventDto, IClientEventMeta, LogLevel } from '.'
+import {
+  EnvironmentProfile,
+  IClientEventDto,
+  IClientEventMeta,
+  LogLevel,
+} from '.'
 
 // EnvironmentProfile
 const brokenProfile1: EnvironmentProfile = 'foo' // $ExpectError

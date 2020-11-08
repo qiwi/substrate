@@ -10,17 +10,17 @@ export enum EnvironmentProfile {
   DEV = 'development',
   TEST = 'testing',
   PROD = 'prod',
-  STAGE = 'staging'
+  STAGE = 'staging',
 }
 
 type TClientEventMeta = RecursivePartial<{
   appName: string
   appHost: string
   appVersion: string
-  appNamespace: string,
-  appConfig: Record<string, any>,
-  envProfile: EnvironmentProfile,
-  deviceInfo: IDeviceInfo & Record<string, any>,
+  appNamespace: string
+  appConfig: Record<string, any>
+  envProfile: EnvironmentProfile
+  deviceInfo: IDeviceInfo & Record<string, any>
 }>
 
 export type IClientEventMeta = TClientEventMeta
@@ -29,7 +29,7 @@ export interface IClientEventDto {
   message: string
   tags?: Array<string>
   code?: string
-  level?: LogLevel,
+  level?: LogLevel
   meta?: IClientEventMeta
   details?: Record<string, any>
   stacktrace?: any

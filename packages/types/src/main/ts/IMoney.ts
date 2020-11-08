@@ -6,7 +6,7 @@ import { ICurrency } from './ICurrency'
 export type IValue = number
 
 export interface IMoney {
-  value: IValue,
-  currency: ICurrency,
+  value: IValue
+  currency: ICurrency
   toString: () => string
 }

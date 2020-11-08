@@ -1,6 +1,6 @@
 import { IExtra } from '.'
 
-interface Some extends IExtra<'some', any>{
+interface Some extends IExtra<'some', any> {
   other: number
 }
 

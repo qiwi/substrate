@@ -12,5 +12,5 @@ export type TUtilGetResponse = any
 export type TUtilGet = (
   obj: TUtilGetObject,
   path: TUtilGetPath,
-  defaultValue?: TUtilGetDefaultValue
+  defaultValue?: TUtilGetDefaultValue,
 ) => TUtilGetResponse

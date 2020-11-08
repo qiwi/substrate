@@ -23,7 +23,9 @@ const brokenIteratorResult: IIteratorResult = {
 }
 
 const brokenIterator: IIterator = {
-  next () { return 'foo' }, // $ExpectError
+  next () { // $ExpectError
+    return 'foo'
+  },
 }
 
 const brokenIterable: IIterable = { // $ExpectError

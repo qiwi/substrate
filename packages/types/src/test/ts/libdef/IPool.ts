@@ -14,7 +14,9 @@ const pooled: IPooledObject<string> = {
   status,
   activate () {},
   passivate () {},
-  validate (): boolean { return true },
+  validate (): boolean {
+    return true
+  },
   destroy () {},
 }
 
@@ -22,9 +24,15 @@ const pooledObjFactory: IPooledObjectFactory<string> = () => pooled
 
 const pool: IPool<string> = {
   factory: pooledObjFactory,
-  release (instance: string): void { void instance },
-  invalidate (instance: string): void { void instance },
-  borrow () { return Promise.resolve(instance) },
+  release (instance: string): void {
+    void instance
+  },
+  invalidate (instance: string): void {
+    void instance
+  },
+  borrow () {
+    return Promise.resolve(instance)
+  },
 }
 
 const brokenStatus: IPooledObjectStatus = 'foo' // $ExpectError
@@ -38,6 +46,10 @@ const brokenPooledObjFactory: IPooledObjectFactory<string> = () => instance // $
 
 const brokenPool: IPool<string> = { // $ExpectError
   factory: pooledObjFactory,
-  release (instance: string): void { void instance },
-  invalidate (instance: string): void { void instance },
+  release (instance: string): void {
+    void instance
+  },
+  invalidate (instance: string): void {
+    void instance
+  },
 }

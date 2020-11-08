@@ -1,16 +1,37 @@
-import { IAsyncMiddleware, IErrorMiddleware, IMiddleware, INext, IRequest, IRequestMiddleware, IResponse } from '.'
+import {
+  IAsyncMiddleware,
+  IErrorMiddleware,
+  IMiddleware,
+  INext,
+  IRequest,
+  IRequestMiddleware,
+  IResponse,
+} from '.'
 
 // IMiddleware
 const brokenMiddleware1: IMiddleware = {} // $ExpectError
 const brokenMiddleware2: IMiddleware = (res: string, req: object) => 123 // $ExpectError
-const brokenMiddleware3: IMiddleware = (res: boolean, req: boolean, next: boolean) => ({}) // $ExpectError
+const brokenMiddleware3: IMiddleware = ( // $ExpectError
+  res: boolean, // $ExpectError
+  req: boolean, // $ExpectError
+  next: boolean, // $ExpectError
+) => ({})
 const brokenMiddleware4: IMiddleware = 123 // $ExpectError
 
-const middleware1: IMiddleware = (req: IRequest, res: IResponse, next?: INext) => {
+const middleware1: IMiddleware = (
+  req: IRequest,
+  res: IResponse,
+  next?: INext,
+) => {
   next && next(res, req)
 }
 
-const middleware2: IMiddleware = (err: Error, req: IRequest, res: IResponse, next?: INext) => {
+const middleware2: IMiddleware = (
+  err: Error,
+  req: IRequest,
+  res: IResponse,
+  next?: INext,
+) => {
   next && next(err, res, req)
 }
 
@@ -19,28 +40,46 @@ const brokenAsyncMiddleware1: IAsyncMiddleware = () => {} // $ExpectError
 const brokenAsyncMiddleware2: IAsyncMiddleware = {} // $ExpectError
 const brokenAsyncMiddleware3: IAsyncMiddleware = async () => 123 // $ExpectError
 
-const asyncMiddleware1: IAsyncMiddleware = (err: Error, req: IRequest, res: IResponse, next?: INext) => {
+const asyncMiddleware1: IAsyncMiddleware = (
+  err: Error,
+  req: IRequest,
+  res: IResponse,
+  next?: INext,
+) => {
   next && next(err, res, req)
   return Promise.resolve()
 }
 
-const asyncMiddleware2: IAsyncMiddleware = async (req: IRequest, res: IResponse, next?: INext) => {
+const asyncMiddleware2: IAsyncMiddleware = async (
+  req: IRequest,
+  res: IResponse,
+  next?: INext,
+) => {
   next && next(res, req)
 }
 
 // IErrorMiddleware
 const brokenErrorMiddleware1: IErrorMiddleware = (err: number) => err // $ExpectError
-const brokenErrorMiddleware2: IErrorMiddleware = (req: boolean, res: string) => req + res // $ExpectError
+const brokenErrorMiddleware2: IErrorMiddleware = (req: boolean, res: string) => // $ExpectError
+  req + res
 const brokenErrorMiddleware3: IErrorMiddleware = 'foo' // $ExpectError
 
-const errorMiddleware: IErrorMiddleware = (err: Error, req: object, res: object) => void { err, res, req }
+const errorMiddleware: IErrorMiddleware = (
+  err: Error,
+  req: object,
+  res: object,
+) => void { err, res, req }
 
 // IRequestMiddleware
 const brokenRequestMiddleware1: IRequestMiddleware = (err: number) => err // $ExpectError
-const brokenRequestMiddleware2: IRequestMiddleware = (req: boolean, res: string) => req + res // $ExpectError
+const brokenRequestMiddleware2: IRequestMiddleware = ( // $ExpectError
+  req: boolean,
+  res: string,
+) => req + res
 const brokenRequestMiddleware2: IRequestMiddleware = 'bar' // $ExpectError
 
-const requestMiddleware: IRequestMiddleware = (req: object, res: object) => void { req, res }
+const requestMiddleware: IRequestMiddleware = (req: object, res: object) =>
+  void { req, res }
 
 // IRequest
 const brokenRequest1: IRequest = 'foo' // $ExpectError

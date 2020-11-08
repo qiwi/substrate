@@ -1,7 +1,4 @@
-import {
-  IStorageExtra,
-  IStoreExtra,
-} from '.'
+import { IStorageExtra, IStoreExtra } from '.'
 
 const storage = {
   get: (key: string): any => key,

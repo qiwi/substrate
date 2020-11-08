@@ -1,7 +1,7 @@
 import { IConfigurable } from '.'
 
 class WrongConfigurable implements IConfigurable { // $ExpectError
-  someStringField: string;
+  someStringField: string
 
   constructor (value: string) {
     this.someStringField = value
@@ -13,7 +13,7 @@ class WrongConfigurable implements IConfigurable { // $ExpectError
 }
 
 class Configurable implements IConfigurable {
-  someStringField: string;
+  someStringField: string
 
   constructor (value: string) {
     this.someStringField = value
