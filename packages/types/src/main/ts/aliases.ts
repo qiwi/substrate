@@ -4,17 +4,21 @@
 export { IStringMap as StringMap } from './IStringMap'
 export { IAnyMap as AnyMap } from './IAnyMap'
 export { IEventEmitter as EventEmitter } from './IEventEmitter'
-export { ILogger as Logger, LogLevel, ILoggerMethod as LoggerMethod } from './ILogger'
+export {
+  ILogger as Logger,
+  LogLevel,
+  ILoggerMethod as LoggerMethod,
+} from './ILogger'
 export { TUtilGet as UtilGet } from './IUtilGet'
 export { TUtilSet as UtilSet } from './IUtilSet'
 export { TUtilEach as UtilEach } from './IUtilEach'
 export { TUtilMap as UtilMap } from './IUtilMap'
 export { ICloneable as Cloneable } from './ICloneable'
 export { ICurrency as Currency } from './ICurrency'
-export { } from './IPromise'
+export {} from './IPromise'
 export { IStorage as Storage } from './IStorage'
 export { IMoney as Money } from './IMoney'
-export { } from './IStack'
+export {} from './IStack'
 export { ICollection as Collection } from './ICollection'
 export { TPredicate as Predicate } from './TPredicate'
 export { IConfigurable as Configurable } from './IConfigurable'
@@ -68,7 +72,6 @@ export {
   IMetedValue as MetedValue,
 } from './INormalValue'
 export {
-
   IFn as Fn,
   IUnaryFunction as UnaryFunction,
   IUnaryFn as UnaryFn,
@@ -83,10 +86,7 @@ export {
   INormalPipeline as NormalPipeline,
 } from './IPipeline'
 export { IExtra as Extra } from './IExtra'
-export {
-  INil as Nil,
-  INullOrUndefined as NullOrUndefined,
-} from './INil'
+export { INil as Nil, INullOrUndefined as NullOrUndefined } from './INil'
 export { IExecutionMode as ExecutionMode } from './IExecutionMode'
 export {
   IDeviceInfo as DeviceInfo,

@@ -1,7 +1,9 @@
 import { ICloneable } from '.'
 
 const cloneable: ICloneable<string> = {
-  clone (): string { return 'clone' },
+  clone (): string {
+    return 'clone'
+  },
 }
 
 cloneable.clone('qwe') // $ExpectError

@@ -31,5 +31,5 @@ const stack: IStack<number> = {
   add: (index: number | string, item) => +index + item,
   get: (item: number | string) => +item,
   clear: () => {},
-  toArray: () => ([1, 2, 3]),
+  toArray: () => [1, 2, 3],
 }

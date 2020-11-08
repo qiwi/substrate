@@ -2,5 +2,5 @@
 /** */
 
 export interface ICloneable<T> {
-  clone (): T
+  clone(): T
 }

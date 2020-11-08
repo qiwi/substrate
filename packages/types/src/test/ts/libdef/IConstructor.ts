@@ -12,7 +12,10 @@ export class Foo {
   foo (): void {}
 }
 
-export type FooCtor = IConstructable<FooIface, ConstructorParameters<typeof Foo>>
+export type FooCtor = IConstructable<
+  FooIface,
+  ConstructorParameters<typeof Foo>
+>
 
 export class Bar {
   constructor (param: number) {
@@ -22,7 +25,8 @@ export class Bar {
   foo (): void {}
 }
 
-export const factory = <T extends FooCtor>(Ctor: T, param: string): FooIface => new Ctor(param)
+export const factory = <T extends FooCtor>(Ctor: T, param: string): FooIface =>
+  new Ctor(param)
 
 export const foo = factory(Foo, 'foo')
 export const bar = factory(Bar, 'foo') // $ExpectError

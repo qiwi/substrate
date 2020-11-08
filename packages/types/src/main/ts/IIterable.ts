@@ -2,13 +2,13 @@
 /** */
 
 export interface IIteratorResult {
-  value: any,
+  value: any
   done: boolean
 }
 
 export interface IIterator {
   next(): {
-    value: any,
+    value: any
     done: boolean
   }
 }

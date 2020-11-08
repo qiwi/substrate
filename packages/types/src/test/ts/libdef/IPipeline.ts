@@ -7,7 +7,7 @@ import {
   IPipeline,
 } from '.'
 
-const pipe: IPipe = e => e
+const pipe: IPipe = (e) => e
 const pipeline: IPipeline = [pipe]
 
 const brokenPipe: IPipe = (a: string, b: string): string => a + b // $ExpectError
@@ -21,14 +21,16 @@ const normalPipeline: INormalPipeline = [normalPipe]
 const brokenNormalPipe1: INormalPipe = (n: string) => n // $ExpectError
 const brokenNormalPipe2: INormalPipe<INormalValue<string>> = (n: { // $ExpectError
   id: any
-  type: any,
-  meta: IAnyMap,
+  type: any
+  meta: IAnyMap
   value: number
 }) => n
 
-const brokenNormalPipeline1: INormalPipeline<INormalPipe<INormalValue<string>>> = [(n: { // $ExpectError
+const brokenNormalPipeline1: INormalPipeline<INormalPipe<INormalValue<string>>> = [
+  (n: { // $ExpectError
     id: any
-    type: any,
-    meta: IAnyMap,
+    type: any
+    meta: IAnyMap
     value: number
-  }) => n]
+  }) => n,
+]

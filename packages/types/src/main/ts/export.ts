@@ -19,17 +19,8 @@ export { ICollection } from './ICollection'
 export { TPredicate } from './TPredicate'
 export { IConfigurable } from './IConfigurable'
 export { IConfig } from './IConfig'
-export {
-  IConstructor,
-  IConstructable,
-  Abstract,
-  IClass,
-} from './IConstructor'
-export {
-  IIterable,
-  IIterator,
-  IIteratorResult,
-} from './IIterable'
+export { IConstructor, IConstructable, Abstract, IClass } from './IConstructor'
+export { IIterable, IIterator, IIteratorResult } from './IIterable'
 export {
   IMiddleware,
   IAsyncMiddleware,
@@ -76,17 +67,9 @@ export {
 } from './IFunction'
 export { IMetadataProvider } from './IMetadata'
 export { IEnableable } from './IEnableable'
-export {
-  IPipe,
-  IPipeline,
-  INormalPipe,
-  INormalPipeline,
-} from './IPipeline'
+export { IPipe, IPipeline, INormalPipe, INormalPipeline } from './IPipeline'
 export { IExtra } from './IExtra'
-export {
-  INil,
-  INullOrUndefined,
-} from './INil'
+export { INil, INullOrUndefined } from './INil'
 export { IExecutionMode } from './IExecutionMode'
 export {
   IDeviceInfo,

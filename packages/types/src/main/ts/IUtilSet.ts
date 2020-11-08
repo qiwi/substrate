@@ -10,5 +10,5 @@ export type TUtilSetValue = any
 export type TUtilSet = (
   obj: TUtilSetObject,
   path: TUtilSetPath,
-  value: TUtilSetValue
+  value: TUtilSetValue,
 ) => void

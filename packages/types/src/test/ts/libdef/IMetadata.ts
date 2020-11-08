@@ -4,10 +4,19 @@ import { IMetadataProvider } from '.'
 
 const reflectMetadata: IMetadataProvider = Reflect
 const customProvider: IMetadataProvider = {
-  defineMetadata (metadataKey: any, metadataValue: any, target: any, propertyKey?: string | symbol): void {
+  defineMetadata (
+    metadataKey: any,
+    metadataValue: any,
+    target: any,
+    propertyKey?: string | symbol,
+  ): void {
     console.log(metadataKey, metadataValue, target, propertyKey)
   },
-  hasMetadata (metadataKey: any, target: any, propertyKey?: string | symbol): boolean {
+  hasMetadata (
+    metadataKey: any,
+    target: any,
+    propertyKey?: string | symbol,
+  ): boolean {
     console.log(metadataKey, target, propertyKey)
     return true
   },

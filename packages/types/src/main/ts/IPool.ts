@@ -6,15 +6,15 @@ import { IPromise } from './export'
 export const enum IPooledObjectStatus {
   READY = 'ready',
   ACTIVE = 'active',
-  INVALID = 'invalid'
+  INVALID = 'invalid',
 }
 
 export interface IPooledObject<T> {
-  ref: T,
+  ref: T
   status: IPooledObjectStatus
   activate(): void
   passivate(): void
-  destroy(): void,
+  destroy(): void
   validate(): boolean
   [key: string]: any
 }

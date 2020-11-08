@@ -6,6 +6,6 @@ module.exports = {
     '@typescript-eslint/ban-types': 'off',
     'no-unused-expressions': 'off',
     'no-void': 'off',
-    'unicorn/no-null': 'off'
-  }
+    'unicorn/no-null': 'off',
+  },
 }
