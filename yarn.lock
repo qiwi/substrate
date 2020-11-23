@@ -1513,6 +1513,11 @@
     tslib "^2.0.3"
     yargs-parser "^20.2.3"
 
+"@qiwi/substrate-infra@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@qiwi/substrate-infra/-/substrate-infra-1.0.0.tgz#3e2e41e3c714c17f86b70f23c67127a4afa68e8a"
+  integrity sha512-aisKB+bQir3CXpim6aRAses/DEmnufjRGDGFQ2MLXrmzCHiwUPGausr9IDwd0TEzvGhZAg/0Xklk6FUzFagssg==
+
 "@qiwi/uniconfig-core@^3.5.0":
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-core/-/uniconfig-core-3.5.1.tgz#d412ced4e1af072812d4ecd83f076807b612967b"
@@ -1753,10 +1758,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/config@0.0.36":
-  version "0.0.36"
-  resolved "https://registry.yarnpkg.com/@types/config/-/config-0.0.36.tgz#bf53ca640f3a1a6a2072a9f33e02a44def07a40b"
-  integrity sha512-EoAeT1MyFWh2BJvBDEFInY714bQBbHOAucqxqqhprhbBFqr+B7fuN5T9CJqUIGDzvwubnKKRqmSo6yPo0aSpNw==
+"@types/config@0.0.37":
+  version "0.0.37"
+  resolved "https://registry.yarnpkg.com/@types/config/-/config-0.0.37.tgz#95b91c7db1d940981f772da33378beb071fd29eb"
+  integrity sha512-mi2uI9O09hc2J1AoyGz92Apm5N4UkGlNTvjaRgUYHy/G/rCKbwR0fd0b51k5E/PKHIUBCuTAZJgeluh+hHqu/Q==
 
 "@types/detect-indent@6.0.0":
   version "6.0.0"
