@@ -1493,9 +1493,9 @@
     mkdirp "^1.0.4"
 
 "@qiwi/libdefkit@^2.1.4":
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/@qiwi/libdefkit/-/libdefkit-2.1.4.tgz#25ee9176a2090bfc1d41afdd9c650bf6e05156fe"
-  integrity sha512-DIG1WX++r+fkKSZNMOryYfVWxLt/TcKG6/Ci+AVVg6ZCDp/r7QaF5TxJGpOabZRsnJmzTK+4IWT7kW15Jejjgw==
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/@qiwi/libdefkit/-/libdefkit-2.1.5.tgz#3cfb95026b5b37b6056d0a739c5102f8de7858ec"
+  integrity sha512-GcJ+8TYAadJ+0qvtxtBgUFzyOEz244ufybXNgfFsxeXcrpEefI4AigStTvmgyscS9Uv1WA3/VHmk50kptDlT4g==
   dependencies:
     "@qiwi/dts-bundle" "^0.7.4"
     "@types/find-cache-dir" "^3.2.0"
@@ -8944,9 +8944,9 @@ typescript@^4.0.2:
   integrity sha512-thGloWsGH3SOxv1SoY7QojKi0tc+8FnOmiarEGMbd/lar7QOEd3hvlx3Fp5y6FlDUGl9L+pd4n2e+oToGMmhRQ==
 
 uglify-js@^3.1.4:
-  version "3.11.6"
-  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.11.6.tgz#144b50d3e05eadd3ad4dd047c60ca541a8cd4e9c"
-  integrity sha512-oASI1FOJ7BBFkSCNDZ446EgkSuHkOZBuqRFrwXIKWCoXw8ZXQETooTQjkAcBS03Acab7ubCKsXnwuV2svy061g==
+  version "3.12.0"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.12.0.tgz#b943f129275c41d435eb54b643bbffee71dccf57"
+  integrity sha512-8lBMSkFZuAK7gGF8LswsXmir8eX8d2AAMOnxSDWjKBx/fBR6MypQjs78m6ML9zQVp1/hD4TBdfeMZMC7nW1TAA==
 
 uid-number@0.0.6:
   version "0.0.6"

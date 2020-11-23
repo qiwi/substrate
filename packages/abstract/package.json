@@ -28,7 +28,7 @@
     "jest": "jest --config=jest.config.json --detectOpenHandles --forceExit",
     "dtslint": "dtslint src/test/ts/libdef --localTs ../../node_modules/typescript/lib --expectOnly",
     "aliasgen": "node -r esm ../../scripts/js/alias-gen.js",
-    "docs": "typedoc --readme README.md --tsconfig ./tsconfig.json ./src/main --ignoreCompilerErrors || exit 0"
+    "docs": "typedoc --readme README.md --tsconfig ./tsconfig.json ./src/main"
   },
   "files": [
     "README.md",
