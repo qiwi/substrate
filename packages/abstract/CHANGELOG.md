@@ -1,3 +1,18 @@
+## @qiwi/substrate-abstract [1.18.5](https://github.com/qiwi/substrate/compare/@qiwi/substrate-abstract@1.18.4...@qiwi/substrate-abstract@1.18.5) (2020-11-23)
+
+
+### Performance Improvements
+
+* refactor docs script ([#309](https://github.com/qiwi/substrate/issues/309)) ([59957bd](https://github.com/qiwi/substrate/commit/59957bda37937a866b60d82f2db431b48ef39ef9))
+
+
+
+
+
+### Dependencies
+
+* **@qiwi/substrate-types:** upgraded to 1.46.5
+
 ## @qiwi/substrate-abstract [1.18.4](https://github.com/qiwi/substrate/compare/@qiwi/substrate-abstract@1.18.3...@qiwi/substrate-abstract@1.18.4) (2020-11-03)
 
 
