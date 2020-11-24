@@ -1513,6 +1513,11 @@
     tslib "^2.0.3"
     yargs-parser "^20.2.3"
 
+"@qiwi/substrate-infra@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@qiwi/substrate-infra/-/substrate-infra-1.0.0.tgz#3e2e41e3c714c17f86b70f23c67127a4afa68e8a"
+  integrity sha512-aisKB+bQir3CXpim6aRAses/DEmnufjRGDGFQ2MLXrmzCHiwUPGausr9IDwd0TEzvGhZAg/0Xklk6FUzFagssg==
+
 "@qiwi/uniconfig-core@^3.5.0":
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-core/-/uniconfig-core-3.5.1.tgz#d412ced4e1af072812d4ecd83f076807b612967b"
@@ -8958,10 +8963,10 @@ umask@^1.1.0:
   resolved "https://registry.yarnpkg.com/umask/-/umask-1.1.0.tgz#f29cebf01df517912bb58ff9c4e50fde8e33320d"
   integrity sha1-8pzr8B31F5ErtY/5xOUP3o4zMg0=
 
-underscore@1.11.0:
-  version "1.11.0"
-  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.11.0.tgz#dd7c23a195db34267186044649870ff1bab5929e"
-  integrity sha512-xY96SsN3NA461qIRKZ/+qox37YXPtSBswMGfiNptr+wrt6ds4HaMw23TP612fEyGekRE6LNRiLYr/aqbHXNedw==
+underscore@1.12.0:
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.12.0.tgz#4814940551fc80587cef7840d1ebb0f16453be97"
+  integrity sha512-21rQzss/XPMjolTiIezSu3JAjgagXKROtNrYFEOWK109qY1Uv2tVjPTZ1ci2HgvQDA16gHYSthQIJfB+XId/rQ==
 
 union-value@^1.0.0:
   version "1.0.1"
