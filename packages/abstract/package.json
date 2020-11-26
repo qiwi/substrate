@@ -47,7 +47,7 @@
     "@types/underscore": "1.10.24",
     "bluebird": "3.7.2",
     "conf": "7.1.2",
-    "config": "3.3.2",
+    "config": "3.3.3",
     "lodash": "4.17.20",
     "underscore": "1.11.0"
   },
