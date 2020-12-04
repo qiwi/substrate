@@ -41,7 +41,7 @@
     "@types/axios": "0.14.0",
     "@types/bluebird": "3.5.33",
     "@types/config": "0.0.37",
-    "@types/jest": "26.0.15",
+    "@types/jest": "26.0.16",
     "@types/lodash": "4.14.165",
     "@types/node": "14.14.10",
     "@types/parsimmon": "1.10.5",
