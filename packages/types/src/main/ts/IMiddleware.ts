@@ -1,6 +1,3 @@
-/** @module @qiwi/substrate-types */
-/** */
-
 export interface IRequest {
   res?: IResponse // eslint-disable-line no-use-before-define
   [key: string]: any

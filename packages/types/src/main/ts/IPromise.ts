@@ -1,6 +1,3 @@
-/** @module @qiwi/substrate-types */
-/** */
-
 import { IConstructor } from './IConstructor'
 
 export type TPromiseExecutor<TValue = any, TReason = any> = (

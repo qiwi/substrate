@@ -16,7 +16,7 @@
     }
   },
   "scripts": {
-    "clean": "rm -rf target",
+    "clean": "rm -rf target buildcache flow-typed typings docs coverage",
     "build": "yarn build:es5 && yarn build:es6 && yarn build:ts && yarn build:libdef",
     "build:es5": "mkdir -p target/es5 && tsc -p ./tsconfig.json --target ES5 --outDir target/es5",
     "build:es6": "mkdir -p target/es6 && tsc -p ./tsconfig.json --target ES6 --outDir target/es6",
@@ -40,8 +40,8 @@
     "@qiwi/substrate-std": "1.1.5"
   },
   "devDependencies": {
-    "@qiwi/substrate-infra": "1.0.0",
-    "@types/jest": "26.0.16",
+    "@qiwi/substrate-infra": "1.0.3",
+    "@types/jest": "26.0.18",
     "@types/node": "14.14.11",
     "fs-extra": "^9.0.1"
   },

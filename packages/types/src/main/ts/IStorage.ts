@@ -1,6 +1,3 @@
-/** @module @qiwi/substrate-types */
-/** */
-
 export type TStorageKey = string
 export type TStorageValue = any
 export type TStorageTTL = number

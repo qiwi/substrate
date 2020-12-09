@@ -1,6 +1,3 @@
-/** @module @qiwi/substrate-types */
-/** */
-
 // https://github.com/microsoft/TypeScript/issues/17572
 export type Abstract<T = object> = Function & { prototype: T }
 

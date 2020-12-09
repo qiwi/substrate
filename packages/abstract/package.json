@@ -17,7 +17,7 @@
     }
   },
   "scripts": {
-    "clean": "rm -rf target",
+    "clean": "rm -rf target buildcache flow-typed typings docs coverage",
     "build": "yarn aliasgen && yarn build:es5 && yarn build:es6 && yarn build:ts && yarn build:libdef && yarn docs",
     "build:es5": "mkdir -p target/es5 && tsc -p tsconfig.json --target ES5 --outDir target/es5",
     "build:es6": "mkdir -p target/es6 && tsc -p tsconfig.json --target ES6 --outDir target/es6",
@@ -28,7 +28,7 @@
     "jest": "jest --config=jest.config.json --detectOpenHandles --forceExit",
     "dtslint": "dtslint src/test/ts/libdef --localTs ../../node_modules/typescript/lib --expectOnly",
     "aliasgen": "node -r esm ../../scripts/js/alias-gen.js",
-    "docs": "typedoc --readme README.md --tsconfig ./tsconfig.json ./src/main"
+    "docs": "typedoc ./src/main"
   },
   "files": [
     "README.md",
@@ -39,11 +39,11 @@
   ],
   "devDependencies": {
     "@qiwi/uniconfig": "3.5.1",
-    "@qiwi/substrate-infra": "1.0.0",
+    "@qiwi/substrate-infra": "1.0.3",
     "@types/bluebird": "3.5.33",
     "@types/config": "0.0.37",
     "@types/lodash": "4.14.165",
-    "@types/parsimmon": "1.10.5",
+    "@types/parsimmon": "1.10.6",
     "@types/underscore": "1.10.24",
     "bluebird": "3.7.2",
     "conf": "7.1.2",
