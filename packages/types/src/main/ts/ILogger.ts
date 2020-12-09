@@ -1,6 +1,3 @@
-/** @module @qiwi/substrate-types */
-/** */
-
 export type ILoggerMethod = (...args: any[]) => void
 
 export enum LogLevel {

@@ -1,6 +1,3 @@
-/** @module @qiwi/substrate-types */
-/** */
-
 export type TConfigKey = string
 
 export interface IConfig<T = any> {

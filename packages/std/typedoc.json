@@ -1,15 +1,11 @@
 {
   "name": "@qiwi/substrate-std",
-  "mode": "modules",
   "out": "./docs",
-  "target": "ES6",
-  "exclude": ["test", "node_modules"],
+  "exclude": ["test", "**/node_modules/**"],
   "externalPattern": "**/node_modules/**",
-  "excludePrivate": true,
-  "excludeNotExported": true,
-  "moduleResolution": "node",
-  "module": "commonjs",
+  "excludePrivate": false,
   "hideGenerator": true,
-  "readme": "none",
-  "ignoreCompilerErrors": true
+  "readme": "README.md",
+  "theme": "minimal",
+  "tsconfig": "./tsconfig.json"
 }

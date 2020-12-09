@@ -1,6 +1,3 @@
-/** @module @qiwi/substrate-types */
-/** */
-
 import { IPromise } from './export'
 
 export const enum IPooledObjectStatus {

@@ -1,6 +1,3 @@
-/** @module @qiwi/substrate-types */
-/** */
-
 export type TUtilMapCollection = any[] | object
 
 export type TUtilMapHandler = (

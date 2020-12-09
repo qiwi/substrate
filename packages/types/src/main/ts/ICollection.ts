@@ -1,6 +1,3 @@
-/** @module @qiwi/substrate-types */
-/** */
-
 export type ICollectionItem = any
 
 export interface ICollection<T> {

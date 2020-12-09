@@ -1,6 +1,3 @@
-/** @module @qiwi/substrate-types */
-/** */
-
 export type TUtilGetPath = Array<string | number> | string
 
 export type TUtilGetObject = object

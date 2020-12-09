@@ -1,6 +1,3 @@
-/** @module @qiwi/substrate-types */
-/** */
-
 import { RecursivePartial } from './helpers'
 import { IDeviceInfo } from './IDeviceInfo'
 import { LogLevel } from './ILogger'

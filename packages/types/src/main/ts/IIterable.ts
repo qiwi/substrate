@@ -1,6 +1,3 @@
-/** @module @qiwi/substrate-types */
-/** */
-
 export interface IIteratorResult {
   value: any
   done: boolean

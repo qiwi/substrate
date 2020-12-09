@@ -1,6 +1,3 @@
-/** @module @qiwi/substrate-types */
-/** */
-
 import { ICollection } from './ICollection'
 
 export type IStackItem = any

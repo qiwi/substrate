@@ -1,6 +1,3 @@
-/** @module @qiwi/substrate-types */
-/** */
-
 export type TUtilEachCollection = any[] | object
 
 export type TUtilEachHandler = (
