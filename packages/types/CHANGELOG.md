@@ -1,3 +1,18 @@
+## @qiwi/substrate-types [1.46.6](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.46.5...@qiwi/substrate-types@1.46.6) (2020-12-10)
+
+
+### Performance Improvements
+
+* **package:** up deps, fix vuls ([e604a24](https://github.com/qiwi/substrate/commit/e604a24a29adcd6b6f638dec5ee07959a24ede62))
+
+
+
+
+
+### Dependencies
+
+* **@qiwi/substrate-infra:** upgraded to 1.0.4
+
 ## @qiwi/substrate-types [1.46.5](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.46.4...@qiwi/substrate-types@1.46.5) (2020-11-23)
 
 
