@@ -1,3 +1,21 @@
+## @qiwi/substrate [1.19.6](https://github.com/qiwi/substrate/compare/@qiwi/substrate@1.19.5...@qiwi/substrate@1.19.6) (2020-12-10)
+
+
+### Performance Improvements
+
+* **package:** up deps, fix vuls ([e604a24](https://github.com/qiwi/substrate/commit/e604a24a29adcd6b6f638dec5ee07959a24ede62))
+
+
+
+
+
+### Dependencies
+
+* **@qiwi/substrate-types:** upgraded to 1.46.6
+* **@qiwi/substrate-abstract:** upgraded to 1.18.6
+* **@qiwi/substrate-std:** upgraded to 1.1.6
+* **@qiwi/substrate-infra:** upgraded to 1.0.4
+
 ## @qiwi/substrate [1.19.5](https://github.com/qiwi/substrate/compare/@qiwi/substrate@1.19.4...@qiwi/substrate@1.19.5) (2020-11-23)
 
 
