@@ -21,7 +21,7 @@
     "ts-jest": "^26.4.4",
     "dtslint": "4.0.6",
     "eslint-config-qiwi": "^1.10.0",
-    "typedoc": "^0.20.0-beta.27",
+    "typedoc": "^0.20.0-beta",
     "typescript": "4.1.x",
     "ts-loader": "8.0.12",
     "ts-node": "9.1.1",
