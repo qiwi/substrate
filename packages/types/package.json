@@ -1,6 +1,6 @@
 {
   "name": "@qiwi/substrate-types",
-  "version": "1.46.6",
+  "version": "1.46.7",
   "main": "target/es5/index.js",
   "source": "target/ts/index.ts",
   "types": "target/es5/index.d.ts",
@@ -37,7 +37,7 @@
   ],
   "devDependencies": {
     "@qiwi/uniconfig": "3.5.1",
-    "@qiwi/substrate-infra": "1.0.4",
+    "@qiwi/substrate-infra": "1.0.5",
     "@types/axios": "0.14.0",
     "@types/bluebird": "3.5.33",
     "@types/config": "0.0.37",
