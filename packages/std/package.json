@@ -1,6 +1,6 @@
 {
   "name": "@qiwi/substrate-std",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "main": "target/es5/index.js",
   "source": "target/ts/index.ts",
   "types": "target/es5/index.d.ts",
@@ -35,7 +35,7 @@
   ],
   "devDependencies": {
     "@qiwi/uniconfig": "3.5.1",
-    "@qiwi/substrate-infra": "1.0.4",
+    "@qiwi/substrate-infra": "1.0.5",
     "@types/bluebird": "3.5.33",
     "@types/config": "0.0.37",
     "@types/lodash": "4.14.166",
