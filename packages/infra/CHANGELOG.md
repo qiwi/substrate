@@ -1,3 +1,10 @@
+## @qiwi/substrate-infra [1.0.5](https://github.com/qiwi/substrate/compare/@qiwi/substrate-infra@1.0.4...@qiwi/substrate-infra@1.0.5) (2020-12-30)
+
+
+### Bug Fixes
+
+* **package:** up deps, fix vuls ([4440e1a](https://github.com/qiwi/substrate/commit/4440e1a921fa9dbc3066623700073cb566bcebcc))
+
 ## @qiwi/substrate-infra [1.0.4](https://github.com/qiwi/substrate/compare/@qiwi/substrate-infra@1.0.3...@qiwi/substrate-infra@1.0.4) (2020-12-10)
 
 
