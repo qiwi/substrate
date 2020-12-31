@@ -1519,6 +1519,18 @@
     tslib "^2.0.3"
     yargs-parser "^20.2.3"
 
+"@qiwi/substrate-abstract@1.18.6":
+  version "1.18.6"
+  resolved "https://registry.yarnpkg.com/@qiwi/substrate-abstract/-/substrate-abstract-1.18.6.tgz#6628def661438250b3a8e7afb3ace452037621df"
+  integrity sha512-a0rKTSJM7AWl3d8qAWqzhI/8ZGkrdBmL+Lr7APt7ewgMD40aKvTYHQgw/7/iQRz3pi4hdMhi8XkPpr2A/wlzyw==
+  dependencies:
+    "@qiwi/substrate-types" "1.46.6"
+
+"@qiwi/substrate-types@1.46.6":
+  version "1.46.6"
+  resolved "https://registry.yarnpkg.com/@qiwi/substrate-types/-/substrate-types-1.46.6.tgz#807d02241ab4b57d4815493903abf063363bbfb4"
+  integrity sha512-f1xcLjOibLtF3XkxtDrrXA9KMofJ3R8S2oaG+7flhlL70srCuCa+o3NsCPDiJVXIjJS7Nl+6enu5sHt+AW8jZA==
+
 "@qiwi/uniconfig-core@^3.5.0":
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-core/-/uniconfig-core-3.5.1.tgz#d412ced4e1af072812d4ecd83f076807b612967b"
@@ -8819,10 +8831,10 @@ ts-jest@^26.4.4:
     semver "7.x"
     yargs-parser "20.x"
 
-ts-loader@8.0.12:
-  version "8.0.12"
-  resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-8.0.12.tgz#1de9f1de65176318c1e6d187bfc496182f8dc2a0"
-  integrity sha512-UIivVfGVJDdwwjgSrbtcL9Nf10c1BWnL1mxAQUVcnhNIn/P9W3nP5v60Z0aBMtc7ZrE11lMmU6+5jSgAXmGaYw==
+ts-loader@8.0.13:
+  version "8.0.13"
+  resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-8.0.13.tgz#2bebeb833570ca46bb9338322a9a29900e988535"
+  integrity sha512-1o1nO6aqouA23d2nlcMSEyPMAWRhnYUU0EQUJSc60E0TUyBNX792RHFYUN1ZM29vhMUNayrsbj2UVdZwKhXCDA==
   dependencies:
     chalk "^2.3.0"
     enhanced-resolve "^4.0.0"
