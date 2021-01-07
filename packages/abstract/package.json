@@ -41,7 +41,7 @@
     "@qiwi/uniconfig": "3.5.1",
     "@qiwi/substrate-infra": "1.0.5",
     "@types/bluebird": "3.5.33",
-    "@types/config": "0.0.37",
+    "@types/config": "0.0.38",
     "@types/lodash": "4.14.167",
     "@types/parsimmon": "1.10.6",
     "@types/underscore": "1.10.24",
