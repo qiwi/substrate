@@ -40,7 +40,7 @@
     "@qiwi/substrate-infra": "1.0.5",
     "@types/axios": "0.14.0",
     "@types/bluebird": "3.5.33",
-    "@types/config": "0.0.37",
+    "@types/config": "0.0.38",
     "@types/jest": "26.0.20",
     "@types/lodash": "4.14.167",
     "@types/node": "14.14.20",
