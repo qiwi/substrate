@@ -16,22 +16,24 @@
     }
   },
   "scripts": {
-    "clean": "rm -rf target buildcache flow-typed typings docs coverage",
-    "build": "yarn build:es5 && yarn build:es6 && yarn build:ts && yarn build:libdef && yarn docs",
+    "clean": "rm -rf target buildcache flow-typed typings docs coverage buildstamp.json",
+    "build": "npm-run-all -p -l build:es5 build:es6 build:ts build:libdef docs build:stamp",
     "build:es5": "mkdir -p target/es5 && tsc -p tsconfig.json --target ES5 --outDir target/es5",
     "build:es6": "mkdir -p target/es6 && tsc -p tsconfig.json --target ES6 --outDir target/es6",
     "build:ts": "cp -r src/main/ts/ target/ts/",
     "build:libdef": "libdefkit --tsconfig=tsconfig.json",
     "test": "yarn jest",
     "jest": "jest --config=jest.config.json --detectOpenHandles --forceExit",
-    "docs": "typedoc ./src/main"
+    "docs": "typedoc ./src/main",
+    "build:stamp": "buildstamp --git --out.path buildstamp.json"
   },
   "files": [
     "README.md",
     "CHANGELOG.md",
     "typings",
     "flow-typed",
-    "target"
+    "target",
+    "buildstamp.json"
   ],
   "devDependencies": {
     "@qiwi/uniconfig": "3.5.1",
