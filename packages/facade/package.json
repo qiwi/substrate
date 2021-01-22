@@ -16,8 +16,8 @@
     }
   },
   "scripts": {
-    "clean": "rm -rf target buildcache flow-typed typings docs coverage",
-    "build": "yarn build:es5 && yarn build:es6 && yarn build:ts && yarn build:libdef",
+    "clean": "rm -rf target buildcache flow-typed typings docs coverage buildstamp.json",
+    "build": "npm-run-all -p -l build:es5 build:es6 build:ts build:libdef build:stamp",
     "build:es5": "mkdir -p target/es5 && tsc -p ./tsconfig.json --target ES5 --outDir target/es5",
     "build:es6": "mkdir -p target/es6 && tsc -p ./tsconfig.json --target ES6 --outDir target/es6",
     "build:ts": "cp -r src/main/ts/ target/ts/",
@@ -25,14 +25,16 @@
     "testgen": "cp typings/index.d.ts src/test/ts/libdef/index.d.ts && rsync -a ../types/src/test/ts/libdef/I*.ts ./src/test/ts/libdef/ && rsync -a ../abstract/src/test/ts/unit/*.ts ./src/test/ts/unit/ && rsync -a ../std/src/test/ts/unit/*.ts ./src/test/ts/unit/",
     "test": "yarn testgen && yarn dtslint && yarn jest",
     "jest": "jest --config=jest.config.json --detectOpenHandles --forceExit",
-    "dtslint": "dtslint src/test/ts/libdef --localTs ../../node_modules/typescript/lib --expectOnly"
+    "dtslint": "dtslint src/test/ts/libdef --localTs ../../node_modules/typescript/lib --expectOnly",
+    "build:stamp": "buildstamp --git --out.path buildstamp.json"
   },
   "files": [
     "README.md",
     "CHANGELOG.md",
     "typings",
     "flow-typed",
-    "target"
+    "target",
+    "buildstamp.json"
   ],
   "dependencies": {
     "@qiwi/substrate-types": "1.46.6",
