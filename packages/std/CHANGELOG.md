@@ -1,3 +1,19 @@
+# @qiwi/substrate-std [1.2.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-std@1.1.7...@qiwi/substrate-std@1.2.0) (2021-01-22)
+
+
+### Features
+
+* add buildstamp ([#354](https://github.com/qiwi/substrate/issues/354)) ([867eda6](https://github.com/qiwi/substrate/commit/867eda68c0c1db879bb37d55a953ac30082393ac))
+
+
+
+
+
+### Dependencies
+
+* **@qiwi/substrate-types:** upgraded to 1.47.0
+* **@qiwi/substrate-infra:** upgraded to 1.1.0
+
 ## @qiwi/substrate-std [1.1.7](https://github.com/qiwi/substrate/compare/@qiwi/substrate-std@1.1.6...@qiwi/substrate-std@1.1.7) (2020-12-30)
 
 
