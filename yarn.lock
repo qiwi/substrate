@@ -1534,18 +1534,6 @@
     shell-quote "^1.7.2"
     string.prototype.padend "^3.1.1"
 
-"@qiwi/substrate-abstract@1.18.6":
-  version "1.18.6"
-  resolved "https://registry.yarnpkg.com/@qiwi/substrate-abstract/-/substrate-abstract-1.18.6.tgz#6628def661438250b3a8e7afb3ace452037621df"
-  integrity sha512-a0rKTSJM7AWl3d8qAWqzhI/8ZGkrdBmL+Lr7APt7ewgMD40aKvTYHQgw/7/iQRz3pi4hdMhi8XkPpr2A/wlzyw==
-  dependencies:
-    "@qiwi/substrate-types" "1.46.6"
-
-"@qiwi/substrate-types@1.46.6":
-  version "1.46.6"
-  resolved "https://registry.yarnpkg.com/@qiwi/substrate-types/-/substrate-types-1.46.6.tgz#807d02241ab4b57d4815493903abf063363bbfb4"
-  integrity sha512-f1xcLjOibLtF3XkxtDrrXA9KMofJ3R8S2oaG+7flhlL70srCuCa+o3NsCPDiJVXIjJS7Nl+6enu5sHt+AW8jZA==
-
 "@qiwi/uniconfig-core@^3.5.0":
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-core/-/uniconfig-core-3.5.1.tgz#d412ced4e1af072812d4ecd83f076807b612967b"
@@ -3074,10 +3062,10 @@ concat-stream@^2.0.0:
     readable-stream "^3.0.2"
     typedarray "^0.0.6"
 
-conf@8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/conf/-/conf-8.0.0.tgz#cf99eb9e56b1bf287c2e8a90f7cf7d73704950e5"
-  integrity sha512-2dGJNRnHMR62CMCbevzBac1VNcEyxG0SEymKAzD2av5FZTzoPOhps+28E7nsJocNDJWHvBK16FfGiqJ2wqUBqA==
+conf@9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/conf/-/conf-9.0.0.tgz#86fd1a8e58da81a8fae2a8a9feeb3a45ef68d303"
+  integrity sha512-TGrWTD/tviifvdeoOZIYBmlceYJ0wq2lCzqbv7bT4KgostaCyyYe9uYWZdzPdhl4mROQXwMcc/iuAUsMTzf7pQ==
   dependencies:
     ajv "^7.0.3"
     atomically "^1.7.0"
