@@ -1,3 +1,10 @@
+# @qiwi/substrate-infra [1.1.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-infra@1.0.5...@qiwi/substrate-infra@1.1.0) (2021-01-22)
+
+
+### Features
+
+* add buildstamp ([#354](https://github.com/qiwi/substrate/issues/354)) ([867eda6](https://github.com/qiwi/substrate/commit/867eda68c0c1db879bb37d55a953ac30082393ac))
+
 ## @qiwi/substrate-infra [1.0.5](https://github.com/qiwi/substrate/compare/@qiwi/substrate-infra@1.0.4...@qiwi/substrate-infra@1.0.5) (2020-12-30)
 
 
