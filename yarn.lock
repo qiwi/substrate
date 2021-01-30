@@ -1534,18 +1534,6 @@
     shell-quote "^1.7.2"
     string.prototype.padend "^3.1.1"
 
-"@qiwi/substrate-abstract@1.18.6":
-  version "1.18.6"
-  resolved "https://registry.yarnpkg.com/@qiwi/substrate-abstract/-/substrate-abstract-1.18.6.tgz#6628def661438250b3a8e7afb3ace452037621df"
-  integrity sha512-a0rKTSJM7AWl3d8qAWqzhI/8ZGkrdBmL+Lr7APt7ewgMD40aKvTYHQgw/7/iQRz3pi4hdMhi8XkPpr2A/wlzyw==
-  dependencies:
-    "@qiwi/substrate-types" "1.46.6"
-
-"@qiwi/substrate-types@1.46.6":
-  version "1.46.6"
-  resolved "https://registry.yarnpkg.com/@qiwi/substrate-types/-/substrate-types-1.46.6.tgz#807d02241ab4b57d4815493903abf063363bbfb4"
-  integrity sha512-f1xcLjOibLtF3XkxtDrrXA9KMofJ3R8S2oaG+7flhlL70srCuCa+o3NsCPDiJVXIjJS7Nl+6enu5sHt+AW8jZA==
-
 "@qiwi/uniconfig-core@^3.5.0":
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-core/-/uniconfig-core-3.5.1.tgz#d412ced4e1af072812d4ecd83f076807b612967b"
@@ -3803,7 +3791,27 @@ eslint-config-prettier@^7.1.0:
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-7.1.0.tgz#5402eb559aa94b894effd6bddfa0b1ca051c858f"
   integrity sha512-9sm5/PxaFG7qNJvJzTROMM1Bk1ozXVTKI0buKOyb0Bsr1hrwi0H/TzxF/COtf1uxikIK8SwhX7K6zg78jAzbeA==
 
-eslint-config-qiwi@1.10.3, eslint-config-qiwi@^1.10.1:
+eslint-config-qiwi@1.10.4:
+  version "1.10.4"
+  resolved "https://registry.yarnpkg.com/eslint-config-qiwi/-/eslint-config-qiwi-1.10.4.tgz#9ea9f50980de8925c9e3d96a104653e6625a3924"
+  integrity sha512-nh8o+0AC6rQpNHcIb5UP3pSzSZivZmOgmSAuWLRqqZEaSF7Eam2PIONdMCkrvGJtmME+343hJi7zLidoswNsrQ==
+  dependencies:
+    "@typescript-eslint/eslint-plugin" "^4.12.0"
+    "@typescript-eslint/parser" "^4.12.0"
+    eslint-config-standard "^16.0.2"
+    eslint-plugin-array-func "^3.1.7"
+    eslint-plugin-import "^2.22.1"
+    eslint-plugin-node "^11.1.0"
+    eslint-plugin-optimize-regex "^1.2.0"
+    eslint-plugin-promise "^4.2.1"
+    eslint-plugin-react "^7.22.0"
+    eslint-plugin-react-hooks "^4.2.0"
+    eslint-plugin-simple-import-sort "^7.0.0"
+    eslint-plugin-sonarjs "^0.5.0"
+    eslint-plugin-standard "^5.0.0"
+    eslint-plugin-unicorn "^27.0.0"
+
+eslint-config-qiwi@^1.10.1:
   version "1.10.3"
   resolved "https://registry.yarnpkg.com/eslint-config-qiwi/-/eslint-config-qiwi-1.10.3.tgz#e328b25e5f91fdf54d90c679345635f36fee4e4c"
   integrity sha512-k0g9b8SEvKO0Y5Pw+xHjr9BFcvV8RZbm2Oxwh//KkMPn8ysb2CTx5IxMVfRj6LKdsue/ZCcE1eMAxKjczx4T2g==
@@ -3956,6 +3964,24 @@ eslint-plugin-unicorn@^25.0.1:
     safe-regex "^2.1.1"
     semver "^7.3.4"
 
+eslint-plugin-unicorn@^27.0.0:
+  version "27.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-unicorn/-/eslint-plugin-unicorn-27.0.0.tgz#d12436409e399ab75c826bbb17b202846a276e5a"
+  integrity sha512-uUvlueTa4SpkvLjbkqx08JbB0tY6XxOAa8vlfwbTzITfVNy3go3QzPCus49fO5M/mfooOuraIDVkaqan/pLAHg==
+  dependencies:
+    ci-info "^2.0.0"
+    clean-regexp "^1.0.0"
+    eslint-template-visitor "^2.2.2"
+    eslint-utils "^2.1.0"
+    import-modules "^2.1.0"
+    lodash "^4.17.20"
+    pluralize "^8.0.0"
+    read-pkg-up "^7.0.1"
+    regexp-tree "^0.1.22"
+    reserved-words "^0.1.2"
+    safe-regex "^2.1.1"
+    semver "^7.3.4"
+
 eslint-scope@^5.0.0, eslint-scope@^5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/eslint-scope/-/eslint-scope-5.1.1.tgz#e786e59a66cb92b3f6c1fb0d508aab174848f48c"
@@ -3971,6 +3997,16 @@ eslint-template-visitor@^2.2.1:
   dependencies:
     babel-eslint "^10.1.0"
     eslint-visitor-keys "^1.3.0"
+    esquery "^1.3.1"
+    multimap "^1.1.0"
+
+eslint-template-visitor@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/eslint-template-visitor/-/eslint-template-visitor-2.2.2.tgz#46cd2b06eca5c1d97369aadd96e131df88fdd59c"
+  integrity sha512-SkcLjzKw3JjKTWHacRDeLBa2gxb600zbCKTkXj/V97QnZ9yxkknoPL8vc8PFueqbFXP7mYNTQzjCjcMpTRdRaA==
+  dependencies:
+    babel-eslint "^10.1.0"
+    eslint-visitor-keys "^2.0.0"
     esquery "^1.3.1"
     multimap "^1.1.0"
 
@@ -4986,6 +5022,11 @@ import-modules@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/import-modules/-/import-modules-2.0.0.tgz#9c1e13b4e7a15682f70a6e3fa29534e4540cfc5d"
   integrity sha512-iczM/v9drffdNnABOKwj0f9G3cFDon99VcG1mxeBsdqnbd+vnQ5c2uAiCHNQITqFTOPaEvwg3VjoWCur0uHLEw==
+
+import-modules@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/import-modules/-/import-modules-2.1.0.tgz#abe7df297cb6c1f19b57246eb8b8bd9664b6d8c2"
+  integrity sha512-8HEWcnkbGpovH9yInoisxaSoIg9Brbul+Ju3Kqe2UsYDUBJD/iQjSgEj0zPcTDPKfPp2fs5xlv1i+JSye/m1/A==
 
 imurmurhash@^0.1.4:
   version "0.1.4"
@@ -7733,6 +7774,11 @@ regexp-tree@^0.1.20, regexp-tree@^0.1.21, regexp-tree@~0.1.1:
   version "0.1.21"
   resolved "https://registry.yarnpkg.com/regexp-tree/-/regexp-tree-0.1.21.tgz#55e2246b7f7d36f1b461490942fa780299c400d7"
   integrity sha512-kUUXjX4AnqnR8KRTCrayAo9PzYMRKmVoGgaz2tBuz0MF3g1ZbGebmtW0yFHfFK9CmBjQKeYIgoL22pFLBJY7sw==
+
+regexp-tree@^0.1.22:
+  version "0.1.23"
+  resolved "https://registry.yarnpkg.com/regexp-tree/-/regexp-tree-0.1.23.tgz#8a8ce1cc5e971acef62213a7ecdb1f6e18a1f1b2"
+  integrity sha512-+7HWfb4Bvu8Rs2eQTUIpX9I/PlQkYOuTNbRpKLJlQpSgwSkzFYh+pUj0gtvglnOZLKB6YgnIgRuJ2/IlpL48qw==
 
 regexp.prototype.flags@^1.3.0:
   version "1.3.0"
