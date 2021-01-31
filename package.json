@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "coveralls": "3.1.0",
-    "eslint": "7.18.0",
+    "eslint": "7.19.0",
     "eslint-config-qiwi": "1.10.4",
     "eslint-config-prettier": "^7.1.0",
     "prettier": "^2.2.1",
