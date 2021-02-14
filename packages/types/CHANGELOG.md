@@ -1,3 +1,13 @@
+## @qiwi/substrate-types [1.47.1](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.47.0...@qiwi/substrate-types@1.47.1) (2021-02-14)
+
+
+
+
+
+### Dependencies
+
+* **@qiwi/substrate-infra:** upgraded to 1.1.1
+
 # @qiwi/substrate-types [1.47.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.46.7...@qiwi/substrate-types@1.47.0) (2021-01-22)
 
 
