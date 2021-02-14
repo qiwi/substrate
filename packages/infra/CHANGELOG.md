@@ -1,3 +1,10 @@
+## @qiwi/substrate-infra [1.1.1](https://github.com/qiwi/substrate/compare/@qiwi/substrate-infra@1.1.0...@qiwi/substrate-infra@1.1.1) (2021-02-14)
+
+
+### Performance Improvements
+
+* **package:** up deps ([df67fe9](https://github.com/qiwi/substrate/commit/df67fe91b8af95e1eff92b8f5793620f935bb834))
+
 # @qiwi/substrate-infra [1.1.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-infra@1.0.5...@qiwi/substrate-infra@1.1.0) (2021-01-22)
 
 
