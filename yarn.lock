@@ -3808,7 +3808,27 @@ eslint-config-prettier@^7.2.0:
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-7.2.0.tgz#f4a4bd2832e810e8cc7c1411ec85b3e85c0c53f9"
   integrity sha512-rV4Qu0C3nfJKPOAhFujFxB7RMP+URFyQqqOZW9DMRD7ZDTFyjaIlETU3xzHELt++4ugC0+Jm084HQYkkJe+Ivg==
 
-eslint-config-qiwi@1.10.4, eslint-config-qiwi@^1.10.4:
+eslint-config-qiwi@1.10.6:
+  version "1.10.6"
+  resolved "https://registry.yarnpkg.com/eslint-config-qiwi/-/eslint-config-qiwi-1.10.6.tgz#5ff41b7ab55e90b1c228c7c813bda1594c74ee1c"
+  integrity sha512-Um3FRAnKLGwR0UhGOj6ppcHQrNTO6qOoOOkPyiKWveJTIK/yGNrGy9TUblc6vZrUPsI0amcTbbO8M68DZBlLsA==
+  dependencies:
+    "@typescript-eslint/eslint-plugin" "^4.12.0"
+    "@typescript-eslint/parser" "^4.12.0"
+    eslint-config-standard "^16.0.2"
+    eslint-plugin-array-func "^3.1.7"
+    eslint-plugin-import "^2.22.1"
+    eslint-plugin-node "^11.1.0"
+    eslint-plugin-optimize-regex "^1.2.0"
+    eslint-plugin-promise "^4.2.1"
+    eslint-plugin-react "^7.22.0"
+    eslint-plugin-react-hooks "^4.2.0"
+    eslint-plugin-simple-import-sort "^7.0.0"
+    eslint-plugin-sonarjs "^0.6.0"
+    eslint-plugin-standard "^5.0.0"
+    eslint-plugin-unicorn "^28.0.0"
+
+eslint-config-qiwi@^1.10.4:
   version "1.10.4"
   resolved "https://registry.yarnpkg.com/eslint-config-qiwi/-/eslint-config-qiwi-1.10.4.tgz#9ea9f50980de8925c9e3d96a104653e6625a3924"
   integrity sha512-nh8o+0AC6rQpNHcIb5UP3pSzSZivZmOgmSAuWLRqqZEaSF7Eam2PIONdMCkrvGJtmME+343hJi7zLidoswNsrQ==
@@ -3937,6 +3957,11 @@ eslint-plugin-sonarjs@^0.5.0:
   resolved "https://registry.yarnpkg.com/eslint-plugin-sonarjs/-/eslint-plugin-sonarjs-0.5.0.tgz#ce17b2daba65a874c2862213a9e38e8986ad7d7d"
   integrity sha512-XW5MnzlRjhXpIdbULC/qAdJYHWw3rRLws/DyawdlPU/IdVr9AmRK1r2LaCvabwKOAW2XYYSo3kDX58E4MrB7PQ==
 
+eslint-plugin-sonarjs@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-sonarjs/-/eslint-plugin-sonarjs-0.6.0.tgz#3ee3b04f1f9587ef02b255a5d2f96e500c4789bb"
+  integrity sha512-y+sXXWsYVW2kNEjmZI87laFspwC/hic7wyMjsPFoST8aQ2hESUVavkZjnTeVdHMOmlmcloKkyX/GJJetmfBY4Q==
+
 eslint-plugin-standard@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-standard/-/eslint-plugin-standard-5.0.0.tgz#c43f6925d669f177db46f095ea30be95476b1ee4"
@@ -3951,6 +3976,25 @@ eslint-plugin-unicorn@^27.0.0:
     clean-regexp "^1.0.0"
     eslint-template-visitor "^2.2.2"
     eslint-utils "^2.1.0"
+    import-modules "^2.1.0"
+    lodash "^4.17.20"
+    pluralize "^8.0.0"
+    read-pkg-up "^7.0.1"
+    regexp-tree "^0.1.22"
+    reserved-words "^0.1.2"
+    safe-regex "^2.1.1"
+    semver "^7.3.4"
+
+eslint-plugin-unicorn@^28.0.0:
+  version "28.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-unicorn/-/eslint-plugin-unicorn-28.0.1.tgz#a412c2f5ef707444e0147e2994b10ab35f4d812d"
+  integrity sha512-VuohWRKJuVhuClqZcq+DREAFNDEUDqU7E95SY6Ql3BmH8je5yVqZ6AE7dHQWEa6mDm3aUmo/eT3fXg1jCk17ZA==
+  dependencies:
+    ci-info "^2.0.0"
+    clean-regexp "^1.0.0"
+    eslint-template-visitor "^2.2.2"
+    eslint-utils "^2.1.0"
+    eslint-visitor-keys "^2.0.0"
     import-modules "^2.1.0"
     lodash "^4.17.20"
     pluralize "^8.0.0"
