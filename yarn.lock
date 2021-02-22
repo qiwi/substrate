@@ -1537,13 +1537,6 @@
     shell-quote "^1.7.2"
     string.prototype.padend "^3.1.1"
 
-"@qiwi/substrate-abstract@1.19.0":
-  version "1.19.0"
-  resolved "https://registry.yarnpkg.com/@qiwi/substrate-abstract/-/substrate-abstract-1.19.0.tgz#294aa1f30d50abcd8c7244d5fc49724c5ee68ce9"
-  integrity sha512-uX+U7FRmR/I3E37fnb0QFiNhx0C2sj2YSnMo7tD4QaiVXYg0H9/g9lRAqI2ImivisQmpc/X08K+8OT+CAW81ag==
-  dependencies:
-    "@qiwi/substrate-types" "1.47.0"
-
 "@qiwi/substrate-std@1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@qiwi/substrate-std/-/substrate-std-1.2.0.tgz#42963166b4919934c78a9ee1fbffe94f281bb61f"
