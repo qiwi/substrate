@@ -1544,13 +1544,6 @@
   dependencies:
     "@qiwi/substrate-types" "1.47.0"
 
-"@qiwi/substrate-std@1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@qiwi/substrate-std/-/substrate-std-1.2.0.tgz#42963166b4919934c78a9ee1fbffe94f281bb61f"
-  integrity sha512-SyMNIfLBfbmYiTq5sn/8P2RlA+JuEC3JpladrUw/4bEMbo0Zf6WZ0AnPf8PVGotqTaM+BEF05zFfF4fRzSGg4w==
-  dependencies:
-    "@qiwi/substrate-types" "1.47.0"
-
 "@qiwi/substrate-types@1.47.0":
   version "1.47.0"
   resolved "https://registry.yarnpkg.com/@qiwi/substrate-types/-/substrate-types-1.47.0.tgz#088798e492d8e457071a72a71207feb7cb1cac4d"
