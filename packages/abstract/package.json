@@ -54,7 +54,7 @@
     "underscore": "1.12.0"
   },
   "dependencies": {
-    "@qiwi/substrate-types": "1.47.0"
+    "@qiwi/substrate-types": "1.47.1"
   },
   "peerDependencies": {},
   "license": "MIT",
