@@ -1,3 +1,10 @@
+## @qiwi/substrate-infra [1.1.2](https://github.com/qiwi/substrate/compare/@qiwi/substrate-infra@1.1.1...@qiwi/substrate-infra@1.1.2) (2021-02-23)
+
+
+### Performance Improvements
+
+* up deps, fix vuls ([e070616](https://github.com/qiwi/substrate/commit/e0706160cb7939dd25f3eda5305948924fe659c6))
+
 ## @qiwi/substrate-infra [1.1.1](https://github.com/qiwi/substrate/compare/@qiwi/substrate-infra@1.1.0...@qiwi/substrate-infra@1.1.1) (2021-02-14)
 
 
