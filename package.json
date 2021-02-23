@@ -21,6 +21,7 @@
     "lint": "eslint 'packages/**/src/**/*.ts' --ignore-pattern 'packages/**/*.d.ts' --fix | snazzy",
     "format": "prettier --write \"packages/**/src/**/*.ts\"",
     "docs": "typedoc packages/**/src/main && touch ./docs/.nojekyll || exit 0",
+    "deps:upgrade": "npx npm-upgrade-monorepo",
     "postupdate": "yarn && yarn bootstrap && npx yarn-audit-fix --audit-level=moderate --npm-v7 && yarn build && yarn test"
   },
   "devDependencies": {
