@@ -1,3 +1,19 @@
+## @qiwi/substrate-abstract [1.19.3](https://github.com/qiwi/substrate/compare/@qiwi/substrate-abstract@1.19.2...@qiwi/substrate-abstract@1.19.3) (2021-02-25)
+
+
+### Bug Fixes
+
+* **package:** add missed tslib dep ([029dc83](https://github.com/qiwi/substrate/commit/029dc83fadd10c6a710c969be85b8a40d3f27fc1))
+
+
+
+
+
+### Dependencies
+
+* **@qiwi/substrate-types:** upgraded to 1.47.3
+* **@qiwi/substrate-infra:** upgraded to 1.1.3
+
 ## @qiwi/substrate-abstract [1.19.2](https://github.com/qiwi/substrate/compare/@qiwi/substrate-abstract@1.19.1...@qiwi/substrate-abstract@1.19.2) (2021-02-23)
 
 
