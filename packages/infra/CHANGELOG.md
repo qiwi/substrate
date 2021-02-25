@@ -1,3 +1,10 @@
+## @qiwi/substrate-infra [1.1.3](https://github.com/qiwi/substrate/compare/@qiwi/substrate-infra@1.1.2...@qiwi/substrate-infra@1.1.3) (2021-02-25)
+
+
+### Bug Fixes
+
+* **package:** add missed tslib dep ([029dc83](https://github.com/qiwi/substrate/commit/029dc83fadd10c6a710c969be85b8a40d3f27fc1))
+
 ## @qiwi/substrate-infra [1.1.2](https://github.com/qiwi/substrate/compare/@qiwi/substrate-infra@1.1.1...@qiwi/substrate-infra@1.1.2) (2021-02-23)
 
 
