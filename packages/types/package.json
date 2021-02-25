@@ -39,7 +39,7 @@
   ],
   "devDependencies": {
     "@qiwi/uniconfig": "3.5.1",
-    "@qiwi/substrate-infra": "1.1.3",
+    "@qiwi/substrate-infra": "1.1.2",
     "@types/axios": "0.14.0",
     "@types/bluebird": "3.5.33",
     "@types/config": "0.0.38",
