@@ -2,6 +2,7 @@
   "extends": "./packages/infra/tsconfig.compiler.json",
   "compilerOptions": {
     "baseUrl": "./packages",
+    "moduleResolution": "node",
     "paths": {
       "@qiwi/substrate": ["./facade/src/main/ts"],
       "@qiwi/substrate-types": ["./types/src/main/ts"],
