@@ -1565,6 +1565,11 @@
     shell-quote "^1.7.2"
     string.prototype.padend "^3.1.1"
 
+"@qiwi/substrate-types@1.47.2":
+  version "1.47.2"
+  resolved "https://registry.yarnpkg.com/@qiwi/substrate-types/-/substrate-types-1.47.2.tgz#7b4ab4be53d77d3a6c3ed1bab1adf6081e0686d3"
+  integrity sha512-tsjpTDsbyRoNhejohrtV2w6vgbn++qM1GPdaUFPgkF0ogVOta9K4W9AIbG4hWjcqNPF6xoTifp0VoLB9Z+QW1Q==
+
 "@qiwi/uniconfig-core@^3.5.0":
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-core/-/uniconfig-core-3.5.1.tgz#d412ced4e1af072812d4ecd83f076807b612967b"
@@ -3095,10 +3100,10 @@ config-chain@^1.1.11:
     ini "^1.3.4"
     proto-list "~1.2.1"
 
-config@3.3.3:
-  version "3.3.3"
-  resolved "https://registry.yarnpkg.com/config/-/config-3.3.3.tgz#d3c110fce543022c2fde28712e4f1b8440dee101"
-  integrity sha512-T3RmZQEAji5KYqUQpziWtyGJFli6Khz7h0rpxDwYNjSkr5ynyTWwO7WpfjHzTXclNCDfSWQRcwMb+NwxJesCKw==
+config@3.3.4:
+  version "3.3.4"
+  resolved "https://registry.yarnpkg.com/config/-/config-3.3.4.tgz#55811abc2752b38a7b806cbdbc2da79c428312b7"
+  integrity sha512-URO0m6z+rtENGHqtzO7W7C35iF+H9KVe7JJFps+3TIqZEOHl83NqTAgp5h8ah96m4NPQnx08nPBfbtDU+PgjVA==
   dependencies:
     json5 "^2.1.1"
 
