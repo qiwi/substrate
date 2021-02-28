@@ -1,3 +1,11 @@
+# @qiwi/substrate-types [1.48.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.47.3...@qiwi/substrate-types@1.48.0) (2021-02-28)
+
+
+### Features
+
+* **types:** add GetLength helper ([75ca022](https://github.com/qiwi/substrate/commit/75ca0220324d544af7deade7e196cdb3c61d9b30))
+* **types:** add Prev helper ([07ad9e7](https://github.com/qiwi/substrate/commit/07ad9e79077449ad1c79820b65434e49638b7133))
+
 ## @qiwi/substrate-types [1.47.3](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.47.2...@qiwi/substrate-types@1.47.3) (2021-02-25)
 
 
