@@ -7,6 +7,7 @@
     "outDir": "target/es5",
     "tsBuildInfoFile": "./buildcache/.tsbuildinfo",
     "lib": [
+      "es5",
       "dom"
     ]
   },
