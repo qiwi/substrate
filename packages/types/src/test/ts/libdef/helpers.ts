@@ -1,11 +1,11 @@
 import {
   Extends,
   ExtendsOrNever,
+  GetLength,
   PrependTuple,
+  Prev,
   RecursivePartial,
   UnionToIntersection,
-  Prev,
-  GetLength,
 } from '../../../main/ts'
 
 interface A {
