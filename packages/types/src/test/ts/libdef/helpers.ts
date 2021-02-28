@@ -4,7 +4,8 @@ import {
   PrependTuple,
   RecursivePartial,
   UnionToIntersection,
-  Prev
+  Prev,
+  GetLength,
 } from '../../../main/ts'
 
 interface A {
@@ -49,3 +50,6 @@ const rp3: RecursivePartial<TSomeType> = { foo: { bar: 1 } } // $ExpectError
 
 const prev0: [string, number][Prev<1>] = '1'
 const prev1: [string, number][Prev<2>] = '1' // $ExpectError
+
+const gl0: [string, number, null][GetLength<['foo', 'bar']>] = null
+const gl1: [string, number, null][GetLength<['foo', 'bar']>] = 1 // $ExpectError
