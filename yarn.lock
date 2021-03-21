@@ -2787,6 +2787,11 @@ ci-info@^2.0.0:
   resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-2.0.0.tgz#67a9e964be31a51e15e5010d58e6f12834002f46"
   integrity sha512-5tK7EtrZ0N+OLFMthtqOj4fI2Jeb88C4CAZPu25LDVUgXJ0A3Js4PMGqrn0JU1W0Mh1/Z8wZzYPxqUrXeBboCQ==
 
+ci-info@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-3.1.1.tgz#9a32fcefdf7bcdb6f0a7e1c0f8098ec57897b80a"
+  integrity sha512-kdRWLBIJwdsYJWYJFtAFFYxybguqeF91qpZaggjG5Nf8QKdizFG2hjqvaTXbxFIcYbSaD74KpAXv6BSm17DHEQ==
+
 cjs-module-lexer@^0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/cjs-module-lexer/-/cjs-module-lexer-0.6.0.tgz#4186fcca0eae175970aee870b9fe2d6cf8d5655f"
@@ -3642,7 +3647,27 @@ eslint-config-prettier@^8.1.0:
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.1.0.tgz#4ef1eaf97afe5176e6a75ddfb57c335121abc5a6"
   integrity sha512-oKMhGv3ihGbCIimCAjqkdzx2Q+jthoqnXSP+d86M9tptwugycmTFdVR4IpLgq2c4SHifbwO90z2fQ8/Aio73yw==
 
-eslint-config-qiwi@1.10.7, eslint-config-qiwi@^1.10.7:
+eslint-config-qiwi@1.10.8:
+  version "1.10.8"
+  resolved "https://registry.yarnpkg.com/eslint-config-qiwi/-/eslint-config-qiwi-1.10.8.tgz#4761ae0d668c04503bdd1523f0b702627c57fe6c"
+  integrity sha512-kKqqWdzdUxvLXbSrVVDWk1vRSsMldp4hCs4eVEmtuRjG9JiRb0cdBUg5282b4OWqPeVDtx7dILLqB7h5FkFjNQ==
+  dependencies:
+    "@typescript-eslint/eslint-plugin" "^4.15.1"
+    "@typescript-eslint/parser" "^4.15.1"
+    eslint-config-standard "^16.0.2"
+    eslint-plugin-array-func "^3.1.7"
+    eslint-plugin-import "^2.22.1"
+    eslint-plugin-node "^11.1.0"
+    eslint-plugin-optimize-regex "^1.2.0"
+    eslint-plugin-promise "^4.3.1"
+    eslint-plugin-react "^7.22.0"
+    eslint-plugin-react-hooks "^4.2.0"
+    eslint-plugin-simple-import-sort "^7.0.0"
+    eslint-plugin-sonarjs "^0.6.0"
+    eslint-plugin-standard "^5.0.0"
+    eslint-plugin-unicorn "^29.0.0"
+
+eslint-config-qiwi@^1.10.7:
   version "1.10.7"
   resolved "https://registry.yarnpkg.com/eslint-config-qiwi/-/eslint-config-qiwi-1.10.7.tgz#12957d5ed09c8a3ec5f89187fbd6a5e1255b7400"
   integrity sha512-cKks7wtFwi7SkRhDerGgK5ge7GYSJn5shd2BYXm+Di3iu7eOhWNl+2cdIKPpxhRPKSrPXcnkQQ+fAAmzGTNKLA==
@@ -3795,6 +3820,25 @@ eslint-plugin-unicorn@^28.0.2:
     safe-regex "^2.1.1"
     semver "^7.3.4"
 
+eslint-plugin-unicorn@^29.0.0:
+  version "29.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-unicorn/-/eslint-plugin-unicorn-29.0.0.tgz#7c97cdb5afe932e9f8dc34108e4a5a2a2fbb1906"
+  integrity sha512-R9jGLKb2p6LuOixviByGlH2mkfY72EBELXAPeUufveebN0M2Woa7B7dUO3gN2xPn/+eGjrIm4I2u7dDtr9G4iA==
+  dependencies:
+    ci-info "^3.1.1"
+    clean-regexp "^1.0.0"
+    eslint-template-visitor "^2.3.2"
+    eslint-utils "^2.1.0"
+    eslint-visitor-keys "^2.0.0"
+    import-modules "^2.1.0"
+    lodash "^4.17.20"
+    pluralize "^8.0.0"
+    read-pkg-up "^7.0.1"
+    regexp-tree "^0.1.23"
+    reserved-words "^0.1.2"
+    safe-regex "^2.1.1"
+    semver "^7.3.4"
+
 eslint-scope@5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/eslint-scope/-/eslint-scope-5.1.0.tgz#d0f971dfe59c69e0cada684b23d49dbf82600ce5"
@@ -3811,7 +3855,7 @@ eslint-scope@^5.0.0, eslint-scope@^5.1.1:
     esrecurse "^4.3.0"
     estraverse "^4.1.1"
 
-eslint-template-visitor@^2.2.2:
+eslint-template-visitor@^2.2.2, eslint-template-visitor@^2.3.2:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/eslint-template-visitor/-/eslint-template-visitor-2.3.2.tgz#b52f96ff311e773a345d79053ccc78275bbc463d"
   integrity sha512-3ydhqFpuV7x1M9EK52BPNj6V0Kwu0KKkcIAfpUhwHbR8ocRln/oUHgfxQupY8O1h4Qv/POHDumb/BwwNfxbtnA==
@@ -7567,7 +7611,7 @@ regex-not@^1.0.0, regex-not@^1.0.2:
     extend-shallow "^3.0.2"
     safe-regex "^1.1.0"
 
-regexp-tree@^0.1.20, regexp-tree@^0.1.22, regexp-tree@~0.1.1:
+regexp-tree@^0.1.20, regexp-tree@^0.1.22, regexp-tree@^0.1.23, regexp-tree@~0.1.1:
   version "0.1.23"
   resolved "https://registry.yarnpkg.com/regexp-tree/-/regexp-tree-0.1.23.tgz#8a8ce1cc5e971acef62213a7ecdb1f6e18a1f1b2"
   integrity sha512-+7HWfb4Bvu8Rs2eQTUIpX9I/PlQkYOuTNbRpKLJlQpSgwSkzFYh+pUj0gtvglnOZLKB6YgnIgRuJ2/IlpL48qw==
