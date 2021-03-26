@@ -22,7 +22,7 @@
     "format": "prettier --write \"packages/**/src/**/*.ts\"",
     "docs": "typedoc packages/**/src/main && touch ./docs/.nojekyll || exit 0",
     "deps:upgrade": "npx npm-upgrade-monorepo",
-    "postupdate": "yarn && yarn bootstrap && npx yarn-audit-fix --audit-level=moderate --npm-v7 && yarn build && yarn test"
+    "postupdate": "yarn && yarn bootstrap && npx yarn-audit-fix && yarn build && yarn test"
   },
   "devDependencies": {
     "coveralls": "3.1.0",
