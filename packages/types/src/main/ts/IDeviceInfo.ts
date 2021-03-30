@@ -15,6 +15,8 @@ export type IOperationalSystemInfo = RecursivePartial<{
   version: string | null
 }>
 
+export type IUserInfo = string
+
 export type IDeviceInfo = RecursivePartial<{
   browser: IBrowserInfo
   model: {
@@ -23,4 +25,4 @@ export type IDeviceInfo = RecursivePartial<{
   }
   isMobile: boolean
   os: IOperationalSystemInfo
-}>
+}> | IUserInfo
