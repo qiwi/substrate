@@ -1,3 +1,10 @@
+# @qiwi/substrate-types [1.49.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.48.0...@qiwi/substrate-types@1.49.0) (2021-03-30)
+
+
+### Features
+
+* update IDeviceInfo ([#414](https://github.com/qiwi/substrate/issues/414)) ([d47ab59](https://github.com/qiwi/substrate/commit/d47ab598f0be4f853f56aa5d9feaf583be38a539))
+
 # @qiwi/substrate-types [1.48.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.47.3...@qiwi/substrate-types@1.48.0) (2021-02-28)
 
 
