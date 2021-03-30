@@ -17,7 +17,8 @@ type TClientEventMeta = RecursivePartial<{
   appNamespace: string
   appConfig: Record<string, any>
   envProfile: EnvironmentProfile
-  deviceInfo: IDeviceInfo & Record<string, any>
+  deviceInfo: IDeviceInfo
+  userAgent: string
 }>
 
 export type IClientEventMeta = TClientEventMeta
