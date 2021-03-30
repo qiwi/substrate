@@ -1,5 +1,8 @@
 module.exports = {
-  extends: 'eslint-config-qiwi',
+  extends: [
+    'eslint-config-qiwi',
+    'prettier',
+  ],
   rules: {
     '@typescript-eslint/no-empty-function': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
