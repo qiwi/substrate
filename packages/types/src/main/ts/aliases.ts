@@ -85,5 +85,7 @@ export {
 export { IExtra as Extra } from './IExtra'
 export { INil as Nil, INullOrUndefined as NullOrUndefined } from './INil'
 export { IExecutionMode as ExecutionMode } from './IExecutionMode'
-export { IDeviceInfo as DeviceInfo } from './IDeviceInfo'
-export { IDeviceInfoStrict as DeviceInfoStrict } from './IDeviceInfoStrict'
+export {
+  IDeviceInfo as DeviceInfo,
+  IDeviceInfoStrict as DeviceInfoStrict,
+} from './IDeviceInfo'
