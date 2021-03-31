@@ -1,5 +1,4 @@
 import { RecursivePartial } from './helpers'
-
 // Legacy fallback: "I" instead of "T" prefix
 
 export type IBrowserInfo = RecursivePartial<{
@@ -15,16 +14,14 @@ export type IOperationalSystemInfo = RecursivePartial<{
   version: string | null
 }>
 
-export type IUserAgent = string
-
 export type IDeviceInfoStrict = RecursivePartial<{
-    browser: IBrowserInfo
-    model: {
-        name: string | null
-        manufacturer: string | null
-    }
-    isMobile: boolean
-    os: IOperationalSystemInfo
+  browser: IBrowserInfo
+  model: {
+    name: string | null
+    manufacturer: string | null
+  }
+  isMobile: boolean
+  os: IOperationalSystemInfo
 }>
 
 export type IDeviceInfo = IDeviceInfoStrict | Record<string, any>

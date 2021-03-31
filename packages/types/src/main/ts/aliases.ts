@@ -87,6 +87,5 @@ export { INil as Nil, INullOrUndefined as NullOrUndefined } from './INil'
 export { IExecutionMode as ExecutionMode } from './IExecutionMode'
 export {
   IDeviceInfo as DeviceInfo,
-  IBrowserInfo as BrowserInfo,
-  IOperationalSystemInfo as OperationalSystemInfo,
+  IDeviceInfoStrict as DeviceInfoStrict,
 } from './IDeviceInfo'

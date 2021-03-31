@@ -68,8 +68,4 @@ export { IPipe, IPipeline, INormalPipe, INormalPipeline } from './IPipeline'
 export { IExtra } from './IExtra'
 export { INil, INullOrUndefined } from './INil'
 export { IExecutionMode } from './IExecutionMode'
-export {
-  IDeviceInfo,
-  IBrowserInfo,
-  IOperationalSystemInfo,
-} from './IDeviceInfo'
+export { IDeviceInfo, IDeviceInfoStrict } from './IDeviceInfo'

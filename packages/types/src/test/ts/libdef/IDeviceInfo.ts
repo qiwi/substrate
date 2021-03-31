@@ -1,4 +1,4 @@
-import { IDeviceInfo } from '.'
+import { IDeviceInfo, IDeviceInfoStrict } from '.'
 
 const deviceInfo: IDeviceInfo = {
   browser: {
@@ -19,20 +19,42 @@ const deviceInfo: IDeviceInfo = {
   },
 }
 
-const wrongDeviceInfo: IDeviceInfo = {
+const wrongDeviceInfo: IDeviceInfo = 'foo' // $ExpectError
+const wrongDeviceInfo1: IDeviceInfo = 123 // $ExpectError
+
+const deviceInfoStrict: IDeviceInfoStrict = {
   browser: {
-    name: 123, // $ExpectError
+    name: 'foo',
     version: 'bar',
     layout: 'baz',
   },
   model: {
-    product: {}, // $ExpectError
+    name: null,
     manufacturer: null,
   },
-  isMobile: true,
+  isMobile: false,
   os: {
+    name: 'MS-DOS',
+    architecture: undefined,
+    family: 'qaz',
+    version: undefined,
+  },
+}
+
+const wrongDeviceInfoStrict: IDeviceInfoStrict = {
+  browser: {
+    name: 1234, // $ExpectError
+    version: 'bar',
+    layout: 'baz',
+  },
+  model: {
     name: 123, // $ExpectError
-    architecture: 12,
+    manufacturer: null,
+  },
+  isMobile: false,
+  os: {
+    name: 'MS-DOS',
+    architecture: {}, // $ExpectError
     family: 'qaz',
     version: undefined,
   },
