@@ -19,21 +19,5 @@ const deviceInfo: IDeviceInfo = {
   },
 }
 
-const wrongDeviceInfo: IDeviceInfo = {
-  browser: {
-    name: 123, // $ExpectError
-    version: 'bar',
-    layout: 'baz',
-  },
-  model: {
-    product: {}, // $ExpectError
-    manufacturer: null,
-  },
-  isMobile: true,
-  os: {
-    name: 123, // $ExpectError
-    architecture: 12,
-    family: 'qaz',
-    version: undefined,
-  },
-}
+const wrongDeviceInfo: IDeviceInfo = 'foo' // $ExpectError
+const wrongDeviceInfo1: IDeviceInfo = 123 // $ExpectError
