@@ -1,3 +1,11 @@
+# @qiwi/substrate-types [1.50.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.49.0...@qiwi/substrate-types@1.50.0) (2021-03-31)
+
+
+### Features
+
+* add userAgent to TClientEventMeta ([70df225](https://github.com/qiwi/substrate/commit/70df225cc3e809364ee38a9cd114314fa2b031d6))
+* update IDeviceInfo ([#417](https://github.com/qiwi/substrate/issues/417)) ([f227cc0](https://github.com/qiwi/substrate/commit/f227cc03e78e550f718beb6fc3bdb04b1de74158))
+
 # @qiwi/substrate-types [1.49.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.48.0...@qiwi/substrate-types@1.49.0) (2021-03-30)
 
 
