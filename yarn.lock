@@ -3627,7 +3627,27 @@ eslint-config-prettier@^8.1.0:
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.1.0.tgz#4ef1eaf97afe5176e6a75ddfb57c335121abc5a6"
   integrity sha512-oKMhGv3ihGbCIimCAjqkdzx2Q+jthoqnXSP+d86M9tptwugycmTFdVR4IpLgq2c4SHifbwO90z2fQ8/Aio73yw==
 
-eslint-config-qiwi@1.10.8, eslint-config-qiwi@^1.10.8:
+eslint-config-qiwi@1.10.9:
+  version "1.10.9"
+  resolved "https://registry.yarnpkg.com/eslint-config-qiwi/-/eslint-config-qiwi-1.10.9.tgz#c46e24fdcfc71fdde449e07e642d9f1a23cb0289"
+  integrity sha512-TuAAqKQVj1VjXfLXsXXgwxXEM7wkN+NEKa7puwKKwUyGQFtwNaVGz5tp5j9F3XhFbgrq7YMYWgc+x9ZZv7D1/g==
+  dependencies:
+    "@typescript-eslint/eslint-plugin" "^4.15.1"
+    "@typescript-eslint/parser" "^4.15.1"
+    eslint-config-standard "^16.0.2"
+    eslint-plugin-array-func "^3.1.7"
+    eslint-plugin-import "^2.22.1"
+    eslint-plugin-node "^11.1.0"
+    eslint-plugin-optimize-regex "^1.2.0"
+    eslint-plugin-promise "^5.0.0"
+    eslint-plugin-react "^7.22.0"
+    eslint-plugin-react-hooks "^4.2.0"
+    eslint-plugin-simple-import-sort "^7.0.0"
+    eslint-plugin-sonarjs "^0.6.0"
+    eslint-plugin-standard "^5.0.0"
+    eslint-plugin-unicorn "^29.0.0"
+
+eslint-config-qiwi@^1.10.8:
   version "1.10.8"
   resolved "https://registry.yarnpkg.com/eslint-config-qiwi/-/eslint-config-qiwi-1.10.8.tgz#4761ae0d668c04503bdd1523f0b702627c57fe6c"
   integrity sha512-kKqqWdzdUxvLXbSrVVDWk1vRSsMldp4hCs4eVEmtuRjG9JiRb0cdBUg5282b4OWqPeVDtx7dILLqB7h5FkFjNQ==
@@ -3723,6 +3743,11 @@ eslint-plugin-promise@^4.3.1:
   version "4.3.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-promise/-/eslint-plugin-promise-4.3.1.tgz#61485df2a359e03149fdafc0a68b0e030ad2ac45"
   integrity sha512-bY2sGqyptzFBDLh/GMbAxfdJC+b0f23ME63FOE4+Jao0oZ3E1LEwFtWJX/1pGMJLiTtrSSern2CRM/g+dfc0eQ==
+
+eslint-plugin-promise@^5.0.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-promise/-/eslint-plugin-promise-5.1.0.tgz#fb2188fb734e4557993733b41aa1a688f46c6f24"
+  integrity sha512-NGmI6BH5L12pl7ScQHbg7tvtk4wPxxj8yPHH47NvSmMtFneC077PSeY3huFj06ZWZvtbfxSPt3RuOQD5XcR4ng==
 
 eslint-plugin-react-hooks@^4.2.0:
   version "4.2.0"
