@@ -50,7 +50,7 @@
     "@types/underscore": "1.11.1",
     "axios": "0.21.1",
     "bluebird": "3.7.2",
-    "conf": "9.0.2",
+    "conf": "10.0.0",
     "config": "3.3.6",
     "lodash": "4.17.21",
     "underscore": "1.13.1",
