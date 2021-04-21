@@ -1,3 +1,10 @@
+# @qiwi/substrate-types [1.51.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.50.0...@qiwi/substrate-types@1.51.0) (2021-04-21)
+
+
+### Features
+
+* **types:** add INullable generic ([70585ce](https://github.com/qiwi/substrate/commit/70585ce0985e565f7fbaf6af87857273400aa39a)), closes [#422](https://github.com/qiwi/substrate/issues/422)
+
 # @qiwi/substrate-types [1.50.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.49.0...@qiwi/substrate-types@1.50.0) (2021-03-31)
 
 
