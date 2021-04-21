@@ -44,13 +44,13 @@
     "@types/parsimmon": "1.10.6",
     "@types/underscore": "1.11.1",
     "bluebird": "3.7.2",
-    "conf": "10.0.0",
+    "conf": "10.0.1",
     "config": "3.3.6",
     "lodash": "4.17.21",
     "underscore": "1.13.1"
   },
   "dependencies": {
-    "tslib": "^2.1.0",
+    "tslib": "^2.2.0",
     "@qiwi/substrate-types": "1.50.0"
   },
   "peerDependencies": {},
