@@ -2985,10 +2985,10 @@ concat-stream@^2.0.0:
     readable-stream "^3.0.2"
     typedarray "^0.0.6"
 
-conf@10.0.0:
-  version "10.0.0"
-  resolved "https://registry.yarnpkg.com/conf/-/conf-10.0.0.tgz#972e2a7b6171ad6e4eb9a071fecc2e1161aa87fb"
-  integrity sha512-oFpzKpAT7kHAL+wBW5cqeBUwcsetk662xF6966p0w2+lGjYzfnRvSZILYkYeBkdQjWfH4OjvTHr11jmz+Z9d5Q==
+conf@10.0.1:
+  version "10.0.1"
+  resolved "https://registry.yarnpkg.com/conf/-/conf-10.0.1.tgz#038093e5cbddc0e59bc14f63382c4ce732a4781d"
+  integrity sha512-QClEoNcruwBL84QgMEPHibL3ERxWIrRKhbjJKG1VsFBadm5QpS0jsu4QjY/maxUvhyAKXeyrs+ws+lC6PajnEg==
   dependencies:
     ajv "^8.1.0"
     ajv-formats "^2.0.2"
