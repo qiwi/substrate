@@ -51,6 +51,8 @@ export {
   IFetch as Fetch,
   IHttpRequestProvider as HttpRequestProvider,
   HttpMethod,
+  IHttpResponse as HttpResponse,
+  IHttpRequest as HttpRequest,
 } from './IHttpClient'
 export {
   IClientEventDto as ClientEventDto,

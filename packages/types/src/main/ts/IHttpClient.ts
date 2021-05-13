@@ -27,7 +27,7 @@ export interface IFetchResponse<D = any> {
   body: any
 }
 
-interface IHttpRequest {
+export interface IHttpRequest {
   url?: string
   method?: HttpMethod
   headers?: IHttpHeaders
