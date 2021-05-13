@@ -1,3 +1,10 @@
+# @qiwi/substrate-types [1.52.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.51.0...@qiwi/substrate-types@1.52.0) (2021-05-13)
+
+
+### Features
+
+* export http request & response ([#450](https://github.com/qiwi/substrate/issues/450)) ([5162a85](https://github.com/qiwi/substrate/commit/5162a858907d057000384f22992f933cc5980fba))
+
 # @qiwi/substrate-types [1.51.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.50.0...@qiwi/substrate-types@1.51.0) (2021-04-21)
 
 
