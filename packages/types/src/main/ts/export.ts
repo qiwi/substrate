@@ -38,6 +38,8 @@ export {
   IFetch,
   IHttpRequestProvider,
   HttpMethod,
+  IHttpResponse,
+  IHttpRequest,
 } from './IHttpClient'
 export {
   IClientEventDto,
