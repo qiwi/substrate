@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IEnableable | @qiwi/substrate-types</title>
+	<title>IHttpRequest | @qiwi/substrate-types</title>
 	<meta name="description" content="Documentation for @qiwi/substrate-types">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">:root {
@@ -2704,16 +2704,52 @@ img {
 </header>
 <nav class="tsd-navigation secondary">
 	<ul>
+		<li class=" tsd-kind-enum tsd-parent-kind-module">
+			<a href="../enums/ihttpclient.httpmethod.html" class="tsd-kind-icon">Http<wbr>Method</a>
+		</li>
+		<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
+			<a href="ihttpclient.ifetch.html" class="tsd-kind-icon">IFetch</a>
+		</li>
+		<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
+			<a href="ihttpclient.ifetchresponse.html" class="tsd-kind-icon">IFetch<wbr>Response</a>
+		</li>
+		<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
+			<a href="ihttpclient.ihttpclient-1.html" class="tsd-kind-icon">IHttp<wbr>Client</a>
+		</li>
+		<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
+			<a href="ihttpclient.ihttpreqperform.html" class="tsd-kind-icon">IHttp<wbr>Req<wbr>Perform</a>
+		</li>
 		<li class="current tsd-kind-interface tsd-parent-kind-module">
-			<a href="ienableable.ienableable-1.html" class="tsd-kind-icon">IEnableable</a>
+			<a href="ihttpclient.ihttprequest.html" class="tsd-kind-icon">IHttp<wbr>Request</a>
 			<ul>
-				<li class=" tsd-kind-method tsd-parent-kind-interface">
-					<a href="ienableable.ienableable-1.html#disable" class="tsd-kind-icon">disable</a>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="ihttpclient.ihttprequest.html#body" class="tsd-kind-icon">body</a>
 				</li>
-				<li class=" tsd-kind-method tsd-parent-kind-interface">
-					<a href="ienableable.ienableable-1.html#enable" class="tsd-kind-icon">enable</a>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="ihttpclient.ihttprequest.html#data" class="tsd-kind-icon">data</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="ihttpclient.ihttprequest.html#headers" class="tsd-kind-icon">headers</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="ihttpclient.ihttprequest.html#method" class="tsd-kind-icon">method</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="ihttpclient.ihttprequest.html#params" class="tsd-kind-icon">params</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="ihttpclient.ihttprequest.html#url" class="tsd-kind-icon">url</a>
 				</li>
 			</ul>
+		</li>
+		<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
+			<a href="ihttpclient.ihttpresponse.html" class="tsd-kind-icon">IHttp<wbr>Response</a>
+		</li>
+		<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+			<a href="../modules/ihttpclient.html#ihttpheaders" class="tsd-kind-icon">IHttp<wbr>Headers</a>
+		</li>
+		<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+			<a href="../modules/ihttpclient.html#ihttprequestprovider" class="tsd-kind-icon">IHttp<wbr>Request<wbr>Provider</a>
 		</li>
 	</ul>
 </nav>
@@ -2723,7 +2759,7 @@ img {
 			<h3>Hierarchy</h3>
 			<ul class="tsd-hierarchy">
 				<li>
-					<span class="target">IEnableable</span>
+					<span class="target">IHttpRequest</span>
 				</li>
 			</ul>
 		</section>
@@ -2732,50 +2768,80 @@ img {
 			<section class="tsd-panel tsd-index-panel">
 				<div class="tsd-index-content">
 					<section class="tsd-index-section ">
-						<h3>Methods</h3>
+						<h3>Properties</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-method tsd-parent-kind-interface"><a href="ienableable.ienableable-1.html#disable" class="tsd-kind-icon">disable</a></li>
-							<li class="tsd-kind-method tsd-parent-kind-interface"><a href="ienableable.ienableable-1.html#enable" class="tsd-kind-icon">enable</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ihttpclient.ihttprequest.html#body" class="tsd-kind-icon">body</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ihttpclient.ihttprequest.html#data" class="tsd-kind-icon">data</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ihttpclient.ihttprequest.html#headers" class="tsd-kind-icon">headers</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ihttpclient.ihttprequest.html#method" class="tsd-kind-icon">method</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ihttpclient.ihttprequest.html#params" class="tsd-kind-icon">params</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ihttpclient.ihttprequest.html#url" class="tsd-kind-icon">url</a></li>
 						</ul>
 					</section>
 				</div>
 			</section>
 		</section>
 		<section class="tsd-panel-group tsd-member-group ">
-			<h2>Methods</h2>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-				<a name="disable" class="tsd-anchor"></a>
-				<h3>disable</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-					<li class="tsd-signature tsd-kind-icon">disable<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/qiwi/substrate/blob/5162a85/packages/types/src/main/ts/IEnableable.ts#L3">IEnableable.ts:3</a></li>
-							</ul>
-						</aside>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-					</li>
-				</ul>
+			<h2>Properties</h2>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="body" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> body</h3>
+				<div class="tsd-signature tsd-kind-icon">body<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/qiwi/substrate/blob/5162a85/packages/types/src/main/ts/IHttpClient.ts#L35">IHttpClient.ts:35</a></li>
+					</ul>
+				</aside>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-				<a name="enable" class="tsd-anchor"></a>
-				<h3>enable</h3>
-				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-					<li class="tsd-signature tsd-kind-icon">enable<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/qiwi/substrate/blob/5162a85/packages/types/src/main/ts/IEnableable.ts#L2">IEnableable.ts:2</a></li>
-							</ul>
-						</aside>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-					</li>
-				</ul>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="data" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> data</h3>
+				<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/qiwi/substrate/blob/5162a85/packages/types/src/main/ts/IHttpClient.ts#L36">IHttpClient.ts:36</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="headers" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> headers</h3>
+				<div class="tsd-signature tsd-kind-icon">headers<span class="tsd-signature-symbol">:</span> <a href="../modules/ihttpclient.html#ihttpheaders" class="tsd-signature-type" data-tsd-kind="Type alias">IHttpHeaders</a></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/qiwi/substrate/blob/5162a85/packages/types/src/main/ts/IHttpClient.ts#L33">IHttpClient.ts:33</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="method" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> method</h3>
+				<div class="tsd-signature tsd-kind-icon">method<span class="tsd-signature-symbol">:</span> <a href="../enums/ihttpclient.httpmethod.html" class="tsd-signature-type" data-tsd-kind="Enumeration">HttpMethod</a></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/qiwi/substrate/blob/5162a85/packages/types/src/main/ts/IHttpClient.ts#L32">IHttpClient.ts:32</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="params" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> params</h3>
+				<div class="tsd-signature tsd-kind-icon">params<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/qiwi/substrate/blob/5162a85/packages/types/src/main/ts/IHttpClient.ts#L34">IHttpClient.ts:34</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="url" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> url</h3>
+				<div class="tsd-signature tsd-kind-icon">url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/qiwi/substrate/blob/5162a85/packages/types/src/main/ts/IHttpClient.ts#L31">IHttpClient.ts:31</a></li>
+					</ul>
+				</aside>
 			</section>
 		</section>
 		<footer>
@@ -2791,7 +2857,7 @@ img {
 					<ul class="tsd-legend">
 						<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 						<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
-						<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+						<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
 					</ul>
 					<ul class="tsd-legend">
 						<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
