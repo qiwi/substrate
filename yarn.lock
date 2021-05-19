@@ -3651,10 +3651,10 @@ eslint-config-prettier@^8.2.0:
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.2.0.tgz#78de77d63bca8e9e59dae75a614b5299925bb7b3"
   integrity sha512-dWV9EVeSo2qodOPi1iBYU/x6F6diHv8uujxbxr77xExs3zTAlNXvVZKiyLsQGNz7yPV2K49JY5WjPzNIuDc2Bw==
 
-eslint-config-qiwi@1.12.1:
-  version "1.12.1"
-  resolved "https://registry.yarnpkg.com/eslint-config-qiwi/-/eslint-config-qiwi-1.12.1.tgz#ee318a470c30ba77d348ffc2dd72fb4291c0ea0a"
-  integrity sha512-0kiWn4yvtY8V+8spGTW1oFoCdXFqUNOzP+bLgz9G8+k2D7sWrLxgfDbcXu1+TVlA+4d+5esKHMC0gsc8TBv9Pw==
+eslint-config-qiwi@1.13.0:
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-qiwi/-/eslint-config-qiwi-1.13.0.tgz#d783ca18822af6d6ffb46a07c7785f10ae64390f"
+  integrity sha512-VMHXw/Q2Q++LcOaISPC2WzewIbKVYBdj2MsByEzIGhtY5VLCU5tG4z2Nr9O7dQocKuXWbKeRDVO3g4JJh5HjeA==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^4.22.1"
     "@typescript-eslint/parser" "^4.22.1"
