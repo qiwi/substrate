@@ -1,6 +1,7 @@
 {
   "name": "@qiwi/substrate-types",
   "out": "./docs",
+  "entryPoints": ["src/main/ts/index.ts"],
   "exclude": ["test", "**/node_modules/**"],
   "externalPattern": "**/node_modules/**",
   "excludePrivate": false,

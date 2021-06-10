@@ -28,8 +28,8 @@ const brokenIterator: IIterator = {
   },
 }
 
-const brokenIterable: IIterable = { // $ExpectError
-  [Symbol.iterator] () {
+const brokenIterable: IIterable = {
+  [Symbol.iterator] () { // $ExpectError
     return 'foo'
   },
 }

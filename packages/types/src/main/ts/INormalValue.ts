@@ -32,11 +32,11 @@ export type IMetaTyped<T = any, M extends IAnyMap = IAnyMap> = ITyped<T> &
 export type IMetaTypedValue<
   V = any,
   T = any,
-  M extends IAnyMap = IAnyMap
+  M extends IAnyMap = IAnyMap,
 > = IWrappedValue<V, IMetaTyped<T, M>>
 
 export type INormalValue<
   V = any,
   T = any,
-  M extends IAnyMap = IAnyMap
+  M extends IAnyMap = IAnyMap,
 > = IWrappedValue<V, [IMetaTyped<T, M>, IIdentified]>
