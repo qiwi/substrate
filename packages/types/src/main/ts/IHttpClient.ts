@@ -38,7 +38,7 @@ export interface IHttpRequest {
 
 export interface IFetch<
   Req extends IHttpRequest = IHttpRequest,
-  Res extends IFetchResponse = IFetchResponse
+  Res extends IFetchResponse = IFetchResponse,
 > {
   <D = any>(url: string, req?: Req): IPromise<
     Omit<Res, 'json'> & IFetchResponse<D>
@@ -56,7 +56,7 @@ export interface IHttpReqPerform<Req = IHttpRequest, Res = IHttpResponse> {
 
 export interface IHttpClient<
   Req extends IHttpRequest = IHttpRequest,
-  Res extends IHttpResponse = IHttpResponse
+  Res extends IHttpResponse = IHttpResponse,
 > {
   <D = any>(req: Req): IPromise<Omit<Res, 'data'> & IHttpResponse<D>>
   <D = any>(url: string, req?: Req): IPromise<

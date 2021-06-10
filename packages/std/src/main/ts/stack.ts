@@ -77,6 +77,6 @@ export class Stack<T> implements IStack<T> {
   }
 
   isEmpty(): boolean {
-    return this.size !== 0
+    return this.size > 0
   }
 }

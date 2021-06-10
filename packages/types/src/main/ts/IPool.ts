@@ -1,4 +1,4 @@
-import { IPromise } from './export'
+import { IPromise } from './IPromise'
 
 export const enum IPooledObjectStatus {
   READY = 'ready',
