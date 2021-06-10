@@ -1,3 +1,19 @@
+## @qiwi/substrate-abstract [1.20.4](https://github.com/qiwi/substrate/compare/@qiwi/substrate-abstract@1.20.3...@qiwi/substrate-abstract@1.20.4) (2021-06-10)
+
+
+### Bug Fixes
+
+* update deps, fix vuls ([30b0152](https://github.com/qiwi/substrate/commit/30b0152f47aca0b1e93d799ac34c38eaf5aa4bc2))
+
+
+
+
+
+### Dependencies
+
+* **@qiwi/substrate-types:** upgraded to 1.52.1
+* **@qiwi/substrate-infra:** upgraded to 1.1.4
+
 ## @qiwi/substrate-abstract [1.20.3](https://github.com/qiwi/substrate/compare/@qiwi/substrate-abstract@1.20.2...@qiwi/substrate-abstract@1.20.3) (2021-05-13)
 
 
