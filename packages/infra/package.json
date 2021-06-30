@@ -18,7 +18,7 @@
     "@types/jest": "^26.0.23",
     "@types/node": "^15.12.2",
     "buildstamp": "^1.4.3",
-    "dtslint": "4.1.0",
+    "dtslint": "4.1.1",
     "eslint-config-qiwi": "^1.13.0",
     "jest": "^27.0.4",
     "rimraf": "^3.0.2",
