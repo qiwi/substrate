@@ -44,7 +44,7 @@
     "@qiwi/substrate-infra": "1.1.4",
     "@types/bluebird": "3.5.36",
     "@types/config": "0.0.38",
-    "@types/lodash": "4.14.170",
+    "@types/lodash": "4.14.171",
     "@types/parsimmon": "1.10.6",
     "@types/underscore": "1.11.3",
     "bluebird": "3.7.2",
