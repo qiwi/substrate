@@ -27,7 +27,7 @@
   "prettier": "prettier-config-qiwi",
   "devDependencies": {
     "coveralls": "3.1.1",
-    "eslint": "7.30.0",
+    "eslint": "7.31.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-qiwi": "1.13.2",
     "esm": "3.2.25",
