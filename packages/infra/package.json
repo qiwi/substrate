@@ -12,22 +12,22 @@
     "postupdate": "yarn"
   },
   "devDependencies": {
-    "@qiwi/libdefkit": "^3.0.0",
+    "@qiwi/libdefkit": "^3.1.1",
     "@qiwi/npm-run-all": "^4.1.7",
     "@swissquote/crafty-preset-jest": "^1.15.0",
-    "@types/jest": "^27.0.0",
-    "@types/node": "^16.3.2",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.2",
     "buildstamp": "^1.4.3",
     "dtslint": "4.1.6",
-    "eslint-config-qiwi": "^1.13.2",
+    "eslint-config-qiwi": "^1.13.5",
     "jest": "^27.0.6",
     "rimraf": "^3.0.2",
-    "terser": "^5.7.1",
-    "ts-jest": "^27.0.3",
+    "terser": "^5.7.2",
+    "ts-jest": "^27.0.5",
     "ts-loader": "9.2.5",
     "ts-node": "10.2.1",
-    "typedoc": "^0.21.4",
-    "typescript": "4.3.x"
+    "typedoc": "^0.21.6",
+    "typescript": "4.4.x"
   },
   "license": "MIT",
   "repository": {
