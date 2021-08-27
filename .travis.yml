@@ -1,5 +1,5 @@
 language: node_js
-node_js: 14
+node_js: 16
 install: skip
 cache: yarn
 
@@ -58,6 +58,9 @@ jobs:
 
     - <<: *test
       node_js: 12
+
+    - <<: *test
+      node_js: 14
 
     - <<: *test
       if: branch = master AND type != pull_request AND env(CI_TEST) != false
