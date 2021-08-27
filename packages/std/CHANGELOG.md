@@ -1,3 +1,19 @@
+## @qiwi/substrate-std [1.3.5](https://github.com/qiwi/substrate/compare/@qiwi/substrate-std@1.3.4...@qiwi/substrate-std@1.3.5) (2021-08-27)
+
+
+### Performance Improvements
+
+* **deps:** update TS to v4.4.x, tslib to v2.3.1 ([c412850](https://github.com/qiwi/substrate/commit/c412850fcd095c196b71a6c7d7aab245a9d11671))
+
+
+
+
+
+### Dependencies
+
+* **@qiwi/substrate-types:** upgraded to 1.52.2
+* **@qiwi/substrate-infra:** upgraded to 1.1.5
+
 ## @qiwi/substrate-std [1.3.4](https://github.com/qiwi/substrate/compare/@qiwi/substrate-std@1.3.3...@qiwi/substrate-std@1.3.4) (2021-06-10)
 
 
