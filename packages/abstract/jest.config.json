@@ -9,12 +9,9 @@
     "<rootDir>/packages/abstract/src/main/**/*.ts"
   ],
   "testMatch": [
-    "<rootDir>/packages/abstract/src/test/**/A*.ts"
+    "<rootDir>/packages/abstract/src/test/ts/unit/**/A*.ts"
   ],
-  "testPathIgnorePatterns": [
-    "<rootDir>/packages/abstract/src/test/ts/index.ts",
-    "<rootDir>/packages/abstract/src/test/ts/index.d.ts"
-  ],
+  "testPathIgnorePatterns": [],
   "transformIgnorePatterns": [
     "/!node_modules\\/lodash-es/",
     "<roodDir>/node_modules/(?!lodash-es)"
@@ -26,5 +23,10 @@
     "jsx",
     "json",
     "node"
-  ]
+  ],
+  "globals": {
+    "ts-jest": {
+      "tsconfig": "<rootDir>/tsconfig.json"
+    }
+  }
 }
