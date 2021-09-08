@@ -24,7 +24,7 @@
     "build:libdef": "libdefkit --tsconfig=tsconfig.json",
     "testgen": "cp typings/index.d.ts src/test/ts/libdef/index.d.ts && rsync -a ../types/src/test/ts/libdef/I*.ts ./src/test/ts/libdef/ && rsync -a ../abstract/src/test/ts/unit/*.ts ./src/test/ts/unit/ && rsync -a ../std/src/test/ts/unit/*.ts ./src/test/ts/unit/",
     "test": "yarn testgen && yarn dtslint && yarn jest",
-    "jest": "jest --config=jest.config.json --detectOpenHandles --forceExit",
+    "jest": "jest --config=jest.config.json --detectOpenHandles --forceExit --passWithNoTests",
     "dtslint": "dtslint src/test/ts/libdef --localTs ../../node_modules/typescript/lib --expectOnly",
     "build:stamp": "buildstamp --git --out.path buildstamp.json"
   },
@@ -45,7 +45,7 @@
   "devDependencies": {
     "@qiwi/substrate-infra": "1.1.5",
     "@types/jest": "27.0.1",
-    "@types/node": "16.7.4",
+    "@types/node": "16.7.13",
     "fs-extra": "^10.0.0"
   },
   "peerDependencies": {},

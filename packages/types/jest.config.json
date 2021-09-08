@@ -1,9 +1,7 @@
 {
   "testEnvironment": "node",
   "collectCoverage": true,
-  "coveragePathIgnorePatterns": [
-    "**/I[A-Z]*.{ts}"
-  ],
+  "coveragePathIgnorePatterns": [],
   "rootDir": "../../",
   "transform": {
     "^.+\\.tsx?$": "ts-jest"
@@ -12,7 +10,7 @@
     "<rootDir>/packages/types/src/main/**/*.ts"
   ],
   "testMatch": [
-    "<rootDir>/packages/types/src/test/**/*.ts"
+    "<rootDir>/packages/types/src/test/ts/unit/**/*.ts"
   ],
   "transformIgnorePatterns": [
     "/!node_modules\\/lodash-es/",
@@ -25,5 +23,10 @@
     "jsx",
     "json",
     "node"
-  ]
+  ],
+  "globals": {
+    "ts-jest": {
+      "tsconfig": "<rootDir>/tsconfig.json"
+    }
+  }
 }

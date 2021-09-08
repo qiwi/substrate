@@ -1,7 +1,7 @@
 {
   "testEnvironment": "node",
   "collectCoverage": false,
-  "rootDir": "../",
+  "rootDir": "../../",
   "transform": {
     "^.+\\.tsx?$": "ts-jest"
   },
@@ -25,5 +25,10 @@
     "jsx",
     "json",
     "node"
-  ]
+  ],
+  "globals": {
+    "ts-jest": {
+      "tsconfig": "<rootDir>/tsconfig.json"
+    }
+  }
 }

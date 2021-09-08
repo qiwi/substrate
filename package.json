@@ -32,7 +32,7 @@
     "eslint-config-qiwi": "1.13.5",
     "esm": "3.2.25",
     "find-git-root": "1.0.4",
-    "jest": "27.1.0",
+    "jest": "27.1.1",
     "lerna": "4.0.0",
     "lodash": "4.17.21",
     "prettier": "^2.3.2",
@@ -44,15 +44,6 @@
   },
   "resolutions": {
     "npm-registry-client/**/dtslint": "^4.0.9"
-  },
-  "jest": {
-    "collectCoverage": true,
-    "projects": [
-      "<rootDir>/packages/types/jest.config.json",
-      "<rootDir>/packages/abstract/jest.config.json",
-      "<rootDir>/packages/std/jest.config.json",
-      "<rootDir>/packages/facade/jest.config.json"
-    ]
   },
   "license": "MIT",
   "repository": {
