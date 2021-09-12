@@ -24,7 +24,7 @@
     "build:libdef": "libdefkit --tsconfig=tsconfig.json",
     "test": "yarn jest",
     "jest": "jest --config=jest.config.json --detectOpenHandles --forceExit",
-    "docs": "typedoc ./src/main",
+    "docs": "typedoc",
     "build:stamp": "buildstamp --git --out.path buildstamp.json"
   },
   "files": [

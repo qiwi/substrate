@@ -28,7 +28,7 @@
     "jest": "jest --config=jest.config.json --detectOpenHandles --forceExit",
     "dtslint": "dtslint src/test/ts/libdef --localTs ../../node_modules/typescript/lib --expectOnly",
     "aliasgen": "node -r esm ../../scripts/js/alias-gen.js",
-    "docs": "typedoc ./src/main",
+    "docs": "typedoc",
     "build:stamp": "buildstamp --git --out.path buildstamp.json"
   },
   "files": [
