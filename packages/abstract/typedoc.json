@@ -1,11 +1,12 @@
 {
   "name": "@qiwi/substrate-abstract",
   "out": "./docs",
+  "entryPoints": ["./src/main/ts"],
   "exclude": ["test", "**/node_modules/**"],
   "externalPattern": "**/node_modules/**",
   "excludePrivate": false,
   "hideGenerator": true,
   "readme": "README.md",
-  "theme": "minimal",
+  "theme": "default",
   "tsconfig": "./tsconfig.json"
 }
