@@ -3661,10 +3661,10 @@ eslint-config-prettier@^8.3.0:
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.3.0.tgz#f7471b20b6fe8a9a9254cc684454202886a2dd7a"
   integrity sha512-BgZuLUSeKzvlL/VUjx/Yb787VQ26RU3gGjA3iiFvdsp/2bMfVIWUVP7tjxtjS0e+HP409cPlPvNkQloz8C91ew==
 
-eslint-config-qiwi@1.15.0:
-  version "1.15.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-qiwi/-/eslint-config-qiwi-1.15.0.tgz#efb68c0759b9a08999bbdc3b1b453674fec0385e"
-  integrity sha512-Xl3rs4cD+vWUZdS8ez2XtxpzmZwE+8uZhf6+tPKqTSL8ErlC2dGqBcgB1ZQVvCkL45JX1f0hSG6SSGZoXVLUsw==
+eslint-config-qiwi@1.15.1:
+  version "1.15.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-qiwi/-/eslint-config-qiwi-1.15.1.tgz#5c53e397ed93e4c392ba8015f5c37233e02fd72b"
+  integrity sha512-giqIm1wj8+X+FE1f8ZTlTWb5p8sJMt0WjdUgGz1+D72zH3vGyc++UhdJlQCrjzYUbTaX06yj71KaINi5xh/2jw==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^5.2.0"
     "@typescript-eslint/parser" "^5.2.0"
@@ -3678,7 +3678,7 @@ eslint-config-qiwi@1.15.0:
     eslint-plugin-react-hooks "^4.2.0"
     eslint-plugin-simple-import-sort "^7.0.0"
     eslint-plugin-sonarjs "^0.10.0"
-    eslint-plugin-unicorn "^37.0.1"
+    eslint-plugin-unicorn "^38.0.0"
     typescript "*"
 
 eslint-config-qiwi@^1.13.6:
@@ -3886,10 +3886,10 @@ eslint-plugin-unicorn@^36.0.0:
     safe-regex "^2.1.1"
     semver "^7.3.5"
 
-eslint-plugin-unicorn@^37.0.1:
-  version "37.0.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-unicorn/-/eslint-plugin-unicorn-37.0.1.tgz#a2292dc302ffc0be1791e6ebbb4ae93242833f11"
-  integrity sha512-E1jq5u9ojnadisJcPi+hMXTGSiIzkIUMDvWsBudsCGXvKUB2aNSU2TcfyW2/jAS5A4ryBXfzxLykMxX1EdluSQ==
+eslint-plugin-unicorn@^38.0.0:
+  version "38.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-unicorn/-/eslint-plugin-unicorn-38.0.0.tgz#10b2a1a9d1ec6b168a9e70ca2235b1124a8a2dcc"
+  integrity sha512-8Ut3S0RTkk+9T90RmIi1NqiJ4AVCreaMjHaIXxO/IgYCNp+zxixj8Q3eXikf8RZi4vwytxefVqx6mU5LSEEx2w==
   dependencies:
     "@babel/helper-validator-identifier" "^7.14.9"
     ci-info "^3.2.0"
