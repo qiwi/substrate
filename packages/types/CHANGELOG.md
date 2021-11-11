@@ -1,3 +1,18 @@
+# @qiwi/substrate-types [1.53.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.52.2...@qiwi/substrate-types@1.53.0) (2021-11-11)
+
+
+### Features
+
+* **types:** add custom K type for UnionToIntersection helper ([4986368](https://github.com/qiwi/substrate/commit/498636878ccaf7d4e3444942e079e3f6117ec5ef))
+
+
+
+
+
+### Dependencies
+
+* **@qiwi/substrate-infra:** upgraded to 1.2.0
+
 ## @qiwi/substrate-types [1.52.2](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.52.1...@qiwi/substrate-types@1.52.2) (2021-08-27)
 
 
