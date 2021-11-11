@@ -1,5 +1,5 @@
-export type UnionToIntersection<U> = (
-  U extends any ? (k: U) => void : never
+export type UnionToIntersection<U, K = any> = (
+  U extends K ? (k: U) => void : never
 ) extends (k: infer I) => void
   ? I
   : never

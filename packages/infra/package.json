@@ -16,7 +16,7 @@
     "@qiwi/npm-run-all": "^4.1.7",
     "@swissquote/crafty-preset-jest": "^1.17.2",
     "@types/jest": "^27.0.2",
-    "@types/node": "^16.11.6",
+    "@types/node": "^16.11.7",
     "buildstamp": "^1.4.3",
     "dtslint": "4.2.0",
     "eslint-config-qiwi": "^1.15.1",
