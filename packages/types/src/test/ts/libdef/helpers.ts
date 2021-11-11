@@ -25,6 +25,11 @@ void c.a
 void c.b
 void c.c // $ExpectError
 
+const d: UnionToIntersection<A | B, A> = Object.assign({}, a, b)
+
+void d.a
+void d.b // $ExpectError
+
 type Prim = [number, string]
 type NullablePrim = PrependTuple<null, Prim>
 
