@@ -1713,12 +1713,41 @@
     shell-quote "^1.7.2"
     string.prototype.padend "^3.1.2"
 
+"@qiwi/substrate-abstract@1.20.5":
+  version "1.20.5"
+  resolved "https://registry.yarnpkg.com/@qiwi/substrate-abstract/-/substrate-abstract-1.20.5.tgz#4fd6d69a9c21e905d628f28777f74b038c759068"
+  integrity sha512-onB52p1yO2nUV44VCB67TT0X+1UyV6t+PnmPpVLkxq6nOzn0NiV2Q63uX6cMnRJUVZgO1OeGKHWL6/XG1jcQwg==
+  dependencies:
+    "@qiwi/substrate-types" "1.52.2"
+
+"@qiwi/substrate-std@1.3.5":
+  version "1.3.5"
+  resolved "https://registry.yarnpkg.com/@qiwi/substrate-std/-/substrate-std-1.3.5.tgz#051487a9cd234a934921ed1204b09f7f11530fac"
+  integrity sha512-4uwWZdirs71uThoc49pzOrw1qFRfsdYuZej/H8Hkug7nm7wRFa6hsBSkS2uXFbT8DH0G+fWgx1YcgyzTb1VCGg==
+  dependencies:
+    "@qiwi/substrate-types" "1.52.2"
+    tslib "^2.3.1"
+
+"@qiwi/substrate-types@1.52.2":
+  version "1.52.2"
+  resolved "https://registry.yarnpkg.com/@qiwi/substrate-types/-/substrate-types-1.52.2.tgz#39197ec1e55e66107ee1b180898281dbe2cd704b"
+  integrity sha512-bHCYbGZrTRu7aKow4foBQauiEGwOz+bXcBVpLApLdK+cf4JYMKUZOhHm36bnzx2DdUtNv3DkZVXhzp5cXzZ3JA==
+
 "@qiwi/uniconfig-core@3.5.2":
   version "3.5.2"
   resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-core/-/uniconfig-core-3.5.2.tgz#702273207ba6fc4be481817fd4c8396bb552bd92"
   integrity sha512-SS4hYzV55b0weg5zd2x3gGdTPVdoZEck9GnebVI/AGvxhuO3z6IJADNCu1eThfb8d3LjkyVU6QHp74/hkRtbqw==
   dependencies:
     browser-or-node "^1.3.0"
+    lodash "^4.17.21"
+    tslib "^2.3.1"
+
+"@qiwi/uniconfig-core@3.5.3":
+  version "3.5.3"
+  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-core/-/uniconfig-core-3.5.3.tgz#6fb698f7e8a833afc97fb8758ea8e4cb17b74cdb"
+  integrity sha512-MYG8qfIzz4ZfcuEnJm4LOovfjJ60rUz2WxOdB2sVumb+L84LLrs+PxfQnE3SO3g161QYo4kjiMQXjAbAYFeg/Q==
+  dependencies:
+    browser-or-node "^2.0.0"
     lodash "^4.17.21"
     tslib "^2.3.1"
 
@@ -1855,12 +1884,12 @@
     js-yaml "^4.1.0"
     tslib "^2.3.1"
 
-"@qiwi/uniconfig@3.5.2":
-  version "3.5.2"
-  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig/-/uniconfig-3.5.2.tgz#0d5d51247a235a5ea3ca1d7fe324f597f2230e44"
-  integrity sha512-rkz/g05oESUj9VJkKeJGQ3gSCMRF12NaKwhpZamQ0Cu4FHRjJD5N/B/1kHcNZCRK49vQK/Sna1GJJgJhC+jeHw==
+"@qiwi/uniconfig@3.5.3":
+  version "3.5.3"
+  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig/-/uniconfig-3.5.3.tgz#f93e165dc099a973c1463f8fbb50f903f94a8fc8"
+  integrity sha512-bzaCcSS3AVcFY8LEz9OrDuVzhYjKee4BCvJA2PbIZIXn0WJEzsvyh9T2c7v/yFpNlxXVupBhAN1z+2OdG48crg==
   dependencies:
-    "@qiwi/uniconfig-core" "3.5.2"
+    "@qiwi/uniconfig-core" "3.5.3"
     "@qiwi/uniconfig-plugin-ajv" "3.5.2"
     "@qiwi/uniconfig-plugin-api-file" "3.5.2"
     "@qiwi/uniconfig-plugin-api-http" "3.5.2"
@@ -2682,6 +2711,11 @@ browser-or-node@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/browser-or-node/-/browser-or-node-1.3.0.tgz#f2a4e8568f60263050a6714b2cc236bb976647a7"
   integrity sha512-0F2z/VSnLbmEeBcUrSuDH5l0HxTXdQQzLjkmBR4cYfvg1zJrKSlmIZFqyFR8oX0NrwPhy3c3HQ6i3OxMbew4Tg==
+
+browser-or-node@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/browser-or-node/-/browser-or-node-2.0.0.tgz#808ea90282a670931cdc0ea98166538a50dd0d89"
+  integrity sha512-3Lrks/Okgof+/cRguUNG+qRXSeq79SO3hY4QrXJayJofwJwHiGC0qi99uDjsfTwULUFSr1OGVsBkdIkygKjTUA==
 
 browser-process-hrtime@^1.0.0:
   version "1.0.0"
