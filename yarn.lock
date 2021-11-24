@@ -3778,7 +3778,27 @@ eslint-config-prettier@^8.3.0:
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.3.0.tgz#f7471b20b6fe8a9a9254cc684454202886a2dd7a"
   integrity sha512-BgZuLUSeKzvlL/VUjx/Yb787VQ26RU3gGjA3iiFvdsp/2bMfVIWUVP7tjxtjS0e+HP409cPlPvNkQloz8C91ew==
 
-eslint-config-qiwi@1.15.1, eslint-config-qiwi@^1.15.1:
+eslint-config-qiwi@1.15.2:
+  version "1.15.2"
+  resolved "https://registry.yarnpkg.com/eslint-config-qiwi/-/eslint-config-qiwi-1.15.2.tgz#d7d3afc4854455bebf15cb45dd5207e4550e1836"
+  integrity sha512-C+IMpcuDe/APrFp8N17ZAUflaKiK3S97KEPKazitoewwUJoGoNO/da6mh0UX7JuOKq2IFPm434MVVZfXG27EzQ==
+  dependencies:
+    "@typescript-eslint/eslint-plugin" "^5.2.0"
+    "@typescript-eslint/parser" "^5.2.0"
+    eslint-config-standard-qiwi "^16.0.3"
+    eslint-plugin-array-func "^3.1.7"
+    eslint-plugin-import "^2.25.2"
+    eslint-plugin-node "^11.1.0"
+    eslint-plugin-optimize-regex "^1.2.1"
+    eslint-plugin-promise "^5.1.1"
+    eslint-plugin-react "^7.26.1"
+    eslint-plugin-react-hooks "^4.2.0"
+    eslint-plugin-simple-import-sort "^7.0.0"
+    eslint-plugin-sonarjs "^0.10.0"
+    eslint-plugin-unicorn "^39.0.0"
+    typescript "*"
+
+eslint-config-qiwi@^1.15.1:
   version "1.15.1"
   resolved "https://registry.yarnpkg.com/eslint-config-qiwi/-/eslint-config-qiwi-1.15.1.tgz#5c53e397ed93e4c392ba8015f5c37233e02fd72b"
   integrity sha512-giqIm1wj8+X+FE1f8ZTlTWb5p8sJMt0WjdUgGz1+D72zH3vGyc++UhdJlQCrjzYUbTaX06yj71KaINi5xh/2jw==
@@ -3915,6 +3935,27 @@ eslint-plugin-unicorn@^38.0.0:
   version "38.0.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-unicorn/-/eslint-plugin-unicorn-38.0.0.tgz#10b2a1a9d1ec6b168a9e70ca2235b1124a8a2dcc"
   integrity sha512-8Ut3S0RTkk+9T90RmIi1NqiJ4AVCreaMjHaIXxO/IgYCNp+zxixj8Q3eXikf8RZi4vwytxefVqx6mU5LSEEx2w==
+  dependencies:
+    "@babel/helper-validator-identifier" "^7.14.9"
+    ci-info "^3.2.0"
+    clean-regexp "^1.0.0"
+    eslint-template-visitor "^2.3.2"
+    eslint-utils "^3.0.0"
+    esquery "^1.4.0"
+    indent-string "4"
+    is-builtin-module "^3.1.0"
+    lodash "^4.17.21"
+    pluralize "^8.0.0"
+    read-pkg-up "^7.0.1"
+    regexp-tree "^0.1.23"
+    safe-regex "^2.1.1"
+    semver "^7.3.5"
+    strip-indent "^3.0.0"
+
+eslint-plugin-unicorn@^39.0.0:
+  version "39.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-unicorn/-/eslint-plugin-unicorn-39.0.0.tgz#ee76d4f3bf37c605d89fa449d5e7c0c44c54b0cc"
+  integrity sha512-fd5RK2FtYjGcIx3wra7csIE/wkkmBo22T1gZtRTsLr1Mb+KsFKJ+JOdSqhHXQUrI/JTs/Mon64cEYzTgSCbltw==
   dependencies:
     "@babel/helper-validator-identifier" "^7.14.9"
     ci-info "^3.2.0"
