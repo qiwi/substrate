@@ -44,7 +44,7 @@
     "@types/config": "0.0.41",
     "@types/jest": "27.0.3",
     "@types/lodash": "4.14.178",
-    "@types/node": "16.11.18",
+    "@types/node": "16.11.19",
     "@types/parsimmon": "1.10.6",
     "@types/underscore": "1.11.4",
     "axios": "0.24.0",
