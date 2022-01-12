@@ -2074,119 +2074,119 @@
     lodash "^4.17.21"
     tslib "^2.3.1"
 
-"@qiwi/uniconfig-plugin-ajv@3.5.2":
-  version "3.5.2"
-  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-plugin-ajv/-/uniconfig-plugin-ajv-3.5.2.tgz#27983cfd7d7e24848d616c7dc84af3db941d7b96"
-  integrity sha512-NEZgfL0Rhat94p7KdyoUFXhSQqhrPUG17ujvKLsk9IpnBDG7OTdN2tt7dvN+aoasSbWMbVVUdEhgRKlccM6XQQ==
+"@qiwi/uniconfig-plugin-ajv@3.5.3":
+  version "3.5.3"
+  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-plugin-ajv/-/uniconfig-plugin-ajv-3.5.3.tgz#b2efbfed163847d805f13105985bc349b71a0ed6"
+  integrity sha512-IIqxeHUuSfxW9CnAjNJiNXw2uUdKA8QXuKx/ZAlJoVBYKAlrhhZH8X2qIW1pLzEjJt/tu80sy5L4pBQPkLZbNw==
   dependencies:
-    "@qiwi/uniconfig-core" "3.5.2"
+    "@qiwi/uniconfig-core" "3.5.3"
     ajv "^8.6.3"
     ajv-formats "^2.1.1"
     tslib "^2.3.1"
 
-"@qiwi/uniconfig-plugin-api-file@3.5.2":
-  version "3.5.2"
-  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-plugin-api-file/-/uniconfig-plugin-api-file-3.5.2.tgz#7a6d36a0957f38cbefd1bd0633ab9461fedd0444"
-  integrity sha512-8QfM9P/WksoSFvUErbSO4q+w+NTx+RIt1C7IOPRlKfJ+21L9on/I3pNmtBZsz5PV0zpBmWRB+cuA8xFM2WOwsw==
+"@qiwi/uniconfig-plugin-api-file@3.5.3":
+  version "3.5.3"
+  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-plugin-api-file/-/uniconfig-plugin-api-file-3.5.3.tgz#151c14ea76073537589dbf9a0d174eed51e4a6c1"
+  integrity sha512-ujQRy2aL9t8uHeqNBj5jlZj+Rq0zlH7PL8sw98P1aGQhl4MBuMMpVTRlbP58bY/ItJgn3eMM7fQY/d4iPO1O4w==
   dependencies:
-    "@qiwi/uniconfig-core" "3.5.2"
+    "@qiwi/uniconfig-core" "3.5.3"
     tslib "^2.3.1"
 
-"@qiwi/uniconfig-plugin-api-http@3.5.2":
-  version "3.5.2"
-  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-plugin-api-http/-/uniconfig-plugin-api-http-3.5.2.tgz#33052155170f9cd51961b6a9cec60e4372d547f4"
-  integrity sha512-SsML1dKl137hLx3UOXfQxVMAaKN9v5c27RQSPMr8uknlPMJcmeDyZGh/3tD32SUzWXF7uMWJyFzsCKkdBsBaAg==
+"@qiwi/uniconfig-plugin-api-http@3.5.3":
+  version "3.5.3"
+  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-plugin-api-http/-/uniconfig-plugin-api-http-3.5.3.tgz#4dbd18a580cff0529f6e0443db046070f3f121e2"
+  integrity sha512-v7ZHvGCj2WfMQaE+mrkjVkKUxKzW2wdtBBmEmCAkwvQfplxtZKaqCKa3KP+uR4pTPlsZYSTY65UKNhwpyrH1/g==
   dependencies:
-    "@qiwi/uniconfig-core" "3.5.2"
+    "@qiwi/uniconfig-core" "3.5.3"
     sync-request "^6.1.0"
     then-request "^6.0.2"
     tslib "^2.3.1"
 
-"@qiwi/uniconfig-plugin-argv@3.5.2":
-  version "3.5.2"
-  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-plugin-argv/-/uniconfig-plugin-argv-3.5.2.tgz#107d3c6aa3b8d40250970ae035b4d614f24792eb"
-  integrity sha512-w6PQ8aBvu54w1cp2iNrSU5USDnfv4+FgpPDClKwlavy2e7HJABUKYjGIUk1lQ2mOfsAe3+mpupe0KVCbV1Fj4w==
+"@qiwi/uniconfig-plugin-argv@3.5.3":
+  version "3.5.3"
+  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-plugin-argv/-/uniconfig-plugin-argv-3.5.3.tgz#047ab61350aac4356f3c27d9dec6a1ba9d413208"
+  integrity sha512-8MbC8Z7DsE9gCCfyhXszeZXdF9+Uur+aClIXiG1GmtlAQjuS8Y8m0SLSmKnG9Gg0XS7H+Qv6RXNdglFv3o5ngA==
   dependencies:
-    "@qiwi/uniconfig-core" "3.5.2"
+    "@qiwi/uniconfig-core" "3.5.3"
     tslib "^2.3.1"
     yargs "^17.2.0"
 
-"@qiwi/uniconfig-plugin-datatree@3.5.2":
-  version "3.5.2"
-  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-plugin-datatree/-/uniconfig-plugin-datatree-3.5.2.tgz#71f0ddfcdf7126279bba571625ef3318805d9efd"
-  integrity sha512-poAHcCGR84jykOGt4gJJcOA0KKNFqxSuze4EAbQujOYorjgxV5BH+tmHP8iG7qR5czagQvHozLmJfrIiB4nROw==
+"@qiwi/uniconfig-plugin-datatree@3.5.3":
+  version "3.5.3"
+  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-plugin-datatree/-/uniconfig-plugin-datatree-3.5.3.tgz#692323ca50b8344751ddd86dad8b91a3d50e8571"
+  integrity sha512-7xu0EksVp+b8xSMj0KnboAMtY1IdE2avI9B/ZNlAiX2VKGfhW/95VjwNpt+8JTKNorgxlqbcU5YS/Tm0xemEhg==
   dependencies:
-    "@qiwi/uniconfig-core" "3.5.2"
+    "@qiwi/uniconfig-core" "3.5.3"
     "@types/lodash" "^4.14.173"
     lodash "^4.17.21"
     tslib "^2.3.1"
 
-"@qiwi/uniconfig-plugin-dot@3.5.2":
-  version "3.5.2"
-  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-plugin-dot/-/uniconfig-plugin-dot-3.5.2.tgz#3739af21340aaeedb4775967e8abfbb11bfc5326"
-  integrity sha512-3/vcHSc5j32YBu3kkp4oIOB4fH2rVN1Cyna9RdsQsI94NX14qwWBvQu4iRu03j5YItRorufJkwNI/FPEAuTBgA==
+"@qiwi/uniconfig-plugin-dot@3.5.3":
+  version "3.5.3"
+  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-plugin-dot/-/uniconfig-plugin-dot-3.5.3.tgz#1d54059989ebefd87d189a3c83ee11da30c2d27f"
+  integrity sha512-xql6e/K7GnTooaiWF3BThy/nBOAFZPEi//Zx0IdG1NEHNHlETx6eF8QJI2p48Ddxj6wx4Jv8mCVEUodcOp7WEA==
   dependencies:
-    "@qiwi/uniconfig-core" "3.5.2"
+    "@qiwi/uniconfig-core" "3.5.3"
     dot "1.1.3"
     tslib "^2.3.1"
 
-"@qiwi/uniconfig-plugin-dotenv@3.5.2":
-  version "3.5.2"
-  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-plugin-dotenv/-/uniconfig-plugin-dotenv-3.5.2.tgz#0cac7329f33d6975d9dc7b25d354227ba779a3dd"
-  integrity sha512-CFrCi8IuHtzkAnVMdOnanXpff+5lSFSfmh4Sz6Zq82kR6EIW6vpVI9a9iHCToOeUAavqV79Ni9Onxdt7fmkI4g==
+"@qiwi/uniconfig-plugin-dotenv@3.5.4":
+  version "3.5.4"
+  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-plugin-dotenv/-/uniconfig-plugin-dotenv-3.5.4.tgz#5c5d3a3fddc380f002325dfd1f84d3e376d1ef7d"
+  integrity sha512-fh6Hi6A1vEUL5VIqLxmRp470u0tS5Cc3g1Li1Ptw+HEmWZKGOZM+Bm2FNHb7e5hAwZxGWdpSKp8LV034f0H/sw==
   dependencies:
-    "@qiwi/uniconfig-core" "3.5.2"
-    dotenv "^10.0.0"
+    "@qiwi/uniconfig-core" "3.5.3"
+    dotenv "^11.0.0"
     tslib "^2.3.1"
 
-"@qiwi/uniconfig-plugin-env@3.5.2":
-  version "3.5.2"
-  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-plugin-env/-/uniconfig-plugin-env-3.5.2.tgz#5ba9a7f78dca634b76d2a608862cb3b884703a5e"
-  integrity sha512-Bmh98P6ZvbcJM9NTzoQoAjlSz16uJaAoW5PqkVLTLmB6N68G7oJnhQMqNnh4nJdOxPcJ9FvMNaZgiQJqhJwznQ==
+"@qiwi/uniconfig-plugin-env@3.5.3":
+  version "3.5.3"
+  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-plugin-env/-/uniconfig-plugin-env-3.5.3.tgz#f8ab1bddeb1ca0dc7650de420a1b54e2c78601f8"
+  integrity sha512-XxDoH41dR9Yh24dO72F72AtXX7+OYB9OGH4GyXsDy33kR5q3ZkpiBa5PitVMgiEsuo2lYWYRWUU6AkYGBJOUeQ==
   dependencies:
-    "@qiwi/uniconfig-core" "3.5.2"
+    "@qiwi/uniconfig-core" "3.5.3"
     tslib "^2.3.1"
 
-"@qiwi/uniconfig-plugin-global@3.5.2":
-  version "3.5.2"
-  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-plugin-global/-/uniconfig-plugin-global-3.5.2.tgz#e06d66c4701919d43a38f6016955781e1715d344"
-  integrity sha512-/PSK7leE/70QnJuWouZ6wknI5H5MDuBzaV1YpKM937zhTUXqsDVL2Cji+TcbKQjJltZjDGkh8vv/X73N501dAA==
+"@qiwi/uniconfig-plugin-global@3.5.3":
+  version "3.5.3"
+  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-plugin-global/-/uniconfig-plugin-global-3.5.3.tgz#cfcf24c319d541d2ca08936ac425567ee3914594"
+  integrity sha512-hW7u8/vFuS9OKHF7q2HbNT/g2dr5FkGE+0uvmpBKtoBkDZREGJjEhMyiJyKy/IgJd4hVWVccuCpK06aXDU030g==
   dependencies:
-    "@qiwi/uniconfig-core" "3.5.2"
+    "@qiwi/uniconfig-core" "3.5.3"
     tslib "^2.3.1"
 
-"@qiwi/uniconfig-plugin-ip@3.5.2":
-  version "3.5.2"
-  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-plugin-ip/-/uniconfig-plugin-ip-3.5.2.tgz#62259d040ba89237f6a1bef77725f0db0672dc70"
-  integrity sha512-OeLBV4cl2n5a3BtcO9hqtCybKt1FY2oWAKFkutUp4dTSU7opnSJPEtU1QDORJ8q1G6vhgJG23H0AK/sAJVnT7A==
+"@qiwi/uniconfig-plugin-ip@3.5.3":
+  version "3.5.3"
+  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-plugin-ip/-/uniconfig-plugin-ip-3.5.3.tgz#e6231501383cfbd642529b477fa15b733ae4c2af"
+  integrity sha512-8KYntmKzDKysgf5GzKUP12+d+QQlcz9zlRUJNerk+kMEwkrWhVsz2LWlZiJp4p7khFjwVcjwVZpjyjvGMD8f+A==
   dependencies:
-    "@qiwi/uniconfig-core" "3.5.2"
+    "@qiwi/uniconfig-core" "3.5.3"
     ip "^1.1.5"
     tslib "^2.3.1"
 
-"@qiwi/uniconfig-plugin-json@3.5.2":
-  version "3.5.2"
-  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-plugin-json/-/uniconfig-plugin-json-3.5.2.tgz#562295171ac77285f27293bbf6ce7331a7fba92c"
-  integrity sha512-EKtp3LlguV5FwbMYoX/iuQUPOEM8Sgc9bYL30wGTCInC86rxkQhiaeZq8945YXjSSiT/xI2OPhnRO2zMbrUigg==
+"@qiwi/uniconfig-plugin-json@3.5.3":
+  version "3.5.3"
+  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-plugin-json/-/uniconfig-plugin-json-3.5.3.tgz#9a4b344ff26adc10502c764a29c246bb33a02353"
+  integrity sha512-7Oz6+c6n/+oVjjescsU+5WZdVB54DviUGYReGdogwIYlLUMU7PfnANHa6vXCyd7c99hitwws6CrzlciQAPmVUA==
   dependencies:
-    "@qiwi/uniconfig-core" "3.5.2"
+    "@qiwi/uniconfig-core" "3.5.3"
     tslib "^2.3.1"
 
-"@qiwi/uniconfig-plugin-path@3.5.2":
-  version "3.5.2"
-  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-plugin-path/-/uniconfig-plugin-path-3.5.2.tgz#74ffba5e05806c02d29ebe751eaa6aa98f2ee56a"
-  integrity sha512-sKJYTQBgS1WKKNYE9mPNutKqkhtWcQ3DGMUBsa5XJpuE07mQGh++LLD81MtnUXudSkuNeOpt23joW1OoFjtmeQ==
+"@qiwi/uniconfig-plugin-path@3.5.3":
+  version "3.5.3"
+  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-plugin-path/-/uniconfig-plugin-path-3.5.3.tgz#ca36c2021ebc78e001baf6b31c68f2a42ea3ec03"
+  integrity sha512-mrmg2XFyFjy+7N+HEivnOsBD9MKd0QgOm8d5M+AzSnlsPqx3UjoCX9X/glxANxempCdbjw+r2eHKMvz7qIhuDg==
   dependencies:
-    "@qiwi/uniconfig-core" "3.5.2"
+    "@qiwi/uniconfig-core" "3.5.3"
     "@qiwi/uniconfig-plugin-root" "3.5.2"
     tslib "^2.3.1"
 
-"@qiwi/uniconfig-plugin-pkg@3.5.2":
-  version "3.5.2"
-  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-plugin-pkg/-/uniconfig-plugin-pkg-3.5.2.tgz#9f828ebb29ea8f27b338ebb15a64e5a007aa9a38"
-  integrity sha512-bPVmwGdxCt2j3BUgqvrfhl/a/30yDO5Xq6/SGXmM+kYAAoAXZihpBET5OeBhEjodBCGoKjP2rvKl3B63Ytq+UQ==
+"@qiwi/uniconfig-plugin-pkg@3.5.3":
+  version "3.5.3"
+  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-plugin-pkg/-/uniconfig-plugin-pkg-3.5.3.tgz#60d8d0d92c6b05dce423939e70f3bc73536346bc"
+  integrity sha512-YCEeF8kdjR3Mbe0DybO6jzwC8p2RkdF+SzC0htNG4n4vcJBD5qfBaJZz0Llp8x8FzUVG1+zReqyMpBHk0N5Xxw==
   dependencies:
-    "@qiwi/uniconfig-core" "3.5.2"
+    "@qiwi/uniconfig-core" "3.5.3"
     read-pkg "^5.2.0"
 
 "@qiwi/uniconfig-plugin-root@3.5.2":
@@ -2198,36 +2198,45 @@
     app-root-path "^3.0.0"
     tslib "^2.3.1"
 
-"@qiwi/uniconfig-plugin-yaml@3.5.2":
-  version "3.5.2"
-  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-plugin-yaml/-/uniconfig-plugin-yaml-3.5.2.tgz#90480e6b22354b6a009def0d7de81c884302bac1"
-  integrity sha512-WuevNG1xmnHmNWyBu1HnRdroAZGJzvZLZbjWNY/EVEFpH7zXBKfqgYacSBGVMMUhsUR7Z1k7hqVywE2Ig04P2Q==
+"@qiwi/uniconfig-plugin-root@3.5.3":
+  version "3.5.3"
+  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-plugin-root/-/uniconfig-plugin-root-3.5.3.tgz#257b91894ad5e8835bee99ce4400324ea4dc493e"
+  integrity sha512-2bMworRtUSSwXvgJuhqJYgzJIHchBxc4T2Wmr9S5jaw4XP91kjHbR9m0Ge2375sAoDLqztV+EQ67ORLhrSeFcA==
   dependencies:
-    "@qiwi/uniconfig-core" "3.5.2"
+    "@qiwi/uniconfig-core" "3.5.3"
+    app-root-path "^3.0.0"
+    tslib "^2.3.1"
+
+"@qiwi/uniconfig-plugin-yaml@3.5.3":
+  version "3.5.3"
+  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-plugin-yaml/-/uniconfig-plugin-yaml-3.5.3.tgz#a2694f78572ff5c7cb8353ce7e61f0c94e03e1cc"
+  integrity sha512-R7HN/9Q3QG1Rw2UgONGP79nWd1VpWHot4ixCma6k/bpx+8GQI8B2X4Jn26mc0eNjvdTGSjj7aG875lNubpGcjg==
+  dependencies:
+    "@qiwi/uniconfig-core" "3.5.3"
     js-yaml "^4.1.0"
     tslib "^2.3.1"
 
-"@qiwi/uniconfig@3.5.3":
-  version "3.5.3"
-  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig/-/uniconfig-3.5.3.tgz#f93e165dc099a973c1463f8fbb50f903f94a8fc8"
-  integrity sha512-bzaCcSS3AVcFY8LEz9OrDuVzhYjKee4BCvJA2PbIZIXn0WJEzsvyh9T2c7v/yFpNlxXVupBhAN1z+2OdG48crg==
+"@qiwi/uniconfig@3.5.4":
+  version "3.5.4"
+  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig/-/uniconfig-3.5.4.tgz#c046265a7d8aaf7e82ce2cc179448ed1cbd40435"
+  integrity sha512-euyRBBPiJQfiW8jGmI1QH1HYns23Z4H4oFRTIn0fCOlr4aD2sJFVn1xV7e+4pVuyC41NOmOy9/yZDp928KVfmw==
   dependencies:
     "@qiwi/uniconfig-core" "3.5.3"
-    "@qiwi/uniconfig-plugin-ajv" "3.5.2"
-    "@qiwi/uniconfig-plugin-api-file" "3.5.2"
-    "@qiwi/uniconfig-plugin-api-http" "3.5.2"
-    "@qiwi/uniconfig-plugin-argv" "3.5.2"
-    "@qiwi/uniconfig-plugin-datatree" "3.5.2"
-    "@qiwi/uniconfig-plugin-dot" "3.5.2"
-    "@qiwi/uniconfig-plugin-dotenv" "3.5.2"
-    "@qiwi/uniconfig-plugin-env" "3.5.2"
-    "@qiwi/uniconfig-plugin-global" "3.5.2"
-    "@qiwi/uniconfig-plugin-ip" "3.5.2"
-    "@qiwi/uniconfig-plugin-json" "3.5.2"
-    "@qiwi/uniconfig-plugin-path" "3.5.2"
-    "@qiwi/uniconfig-plugin-pkg" "3.5.2"
-    "@qiwi/uniconfig-plugin-root" "3.5.2"
-    "@qiwi/uniconfig-plugin-yaml" "3.5.2"
+    "@qiwi/uniconfig-plugin-ajv" "3.5.3"
+    "@qiwi/uniconfig-plugin-api-file" "3.5.3"
+    "@qiwi/uniconfig-plugin-api-http" "3.5.3"
+    "@qiwi/uniconfig-plugin-argv" "3.5.3"
+    "@qiwi/uniconfig-plugin-datatree" "3.5.3"
+    "@qiwi/uniconfig-plugin-dot" "3.5.3"
+    "@qiwi/uniconfig-plugin-dotenv" "3.5.4"
+    "@qiwi/uniconfig-plugin-env" "3.5.3"
+    "@qiwi/uniconfig-plugin-global" "3.5.3"
+    "@qiwi/uniconfig-plugin-ip" "3.5.3"
+    "@qiwi/uniconfig-plugin-json" "3.5.3"
+    "@qiwi/uniconfig-plugin-path" "3.5.3"
+    "@qiwi/uniconfig-plugin-pkg" "3.5.3"
+    "@qiwi/uniconfig-plugin-root" "3.5.3"
+    "@qiwi/uniconfig-plugin-yaml" "3.5.3"
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.3"
@@ -3938,10 +3947,10 @@ dot@1.1.3:
   resolved "https://registry.yarnpkg.com/dot/-/dot-1.1.3.tgz#351360e00a748bce9a1f8f27c00c394a7e4e1e9f"
   integrity sha512-/nt74Rm+PcfnirXGEdhZleTwGC2LMnuKTeeTIlI82xb5loBBoXNYzr2ezCroPSMtilK8EZIfcNZwOcHN+ib1Lg==
 
-dotenv@^10.0.0:
-  version "10.0.0"
-  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-10.0.0.tgz#3d4227b8fb95f81096cdd2b66653fb2c7085ba81"
-  integrity sha512-rlBi9d8jpv9Sf1klPjNfFAuWDjKLwTIJJ/VxtoTwIR6hnZxcEOQCZg2oIL3MWBYw5GpUDKOEnND7LXTbIpQ03Q==
+dotenv@^11.0.0:
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-11.0.0.tgz#ee37feddf8ada6d348a79e198312d4a8abfd1c1e"
+  integrity sha512-Fp/b504Y5W+e+FpCxTFMUZ7ZEQkQYF0rx+KZtmwixJxGQbLHrhCwo3FjZgNC8vIfrSi29PABNbMoCGD9YoiXbQ==
 
 dts-critic@latest:
   version "3.3.10"
