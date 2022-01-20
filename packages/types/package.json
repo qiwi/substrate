@@ -53,7 +53,7 @@
     "config": "3.3.7",
     "lodash": "4.17.21",
     "underscore": "1.13.2",
-    "cross-fetch": "3.1.4",
+    "cross-fetch": "3.1.5",
     "reflect-metadata": "0.1.13"
   },
   "dependencies": {},
