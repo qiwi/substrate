@@ -17,7 +17,7 @@
     "@swissquote/crafty-preset-jest": "^1.17.2",
     "@types/jest": "^27.4.0",
     "@types/node": "^17.0.8",
-    "buildstamp": "^1.4.3",
+    "buildstamp": "^2.0.0",
     "dtslint": "4.2.1",
     "eslint-config-qiwi": "^1.15.4",
     "jest": "^27.4.7",
