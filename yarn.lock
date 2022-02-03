@@ -2129,13 +2129,13 @@
     dot "1.1.3"
     tslib "^2.3.1"
 
-"@qiwi/uniconfig-plugin-dotenv@3.5.8":
-  version "3.5.8"
-  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-plugin-dotenv/-/uniconfig-plugin-dotenv-3.5.8.tgz#82f46b28e3f7149f2bdb46158a2040c2737866e2"
-  integrity sha512-hw6ywGe1evNgAB5EqKwM9rv6xJm+1+ygwizQjHyqZK8ncIdPLPVORe/AAuCLhn2L8Nc6fthX1TIaJDZc/HyL+A==
+"@qiwi/uniconfig-plugin-dotenv@3.5.9":
+  version "3.5.9"
+  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig-plugin-dotenv/-/uniconfig-plugin-dotenv-3.5.9.tgz#41b1cca55d23657a45d2ca3fd630eba703d85054"
+  integrity sha512-LhA1gswE26ZsPbh/FyQJgV1eZa98BcIQ9ya7vreI8P9/J6J6QwGwYJpJwCsD1++v/HIrqhEri7gvbgu+f/GbmA==
   dependencies:
     "@qiwi/uniconfig-core" "3.5.3"
-    dotenv "^15.0.0"
+    dotenv "^16.0.0"
     tslib "^2.3.1"
 
 "@qiwi/uniconfig-plugin-env@3.5.3":
@@ -2215,10 +2215,10 @@
     js-yaml "^4.1.0"
     tslib "^2.3.1"
 
-"@qiwi/uniconfig@3.5.8":
-  version "3.5.8"
-  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig/-/uniconfig-3.5.8.tgz#8952bbef1f702bfa341fb04be198609144bd6c93"
-  integrity sha512-p644VcSk8fg223gSV8KTlANg6afYaX1JgyTqup9z19xr1goEXeWWghodh7YWuKwUmjRiB6mo5em780ClpT7VAg==
+"@qiwi/uniconfig@3.5.9":
+  version "3.5.9"
+  resolved "https://registry.yarnpkg.com/@qiwi/uniconfig/-/uniconfig-3.5.9.tgz#5e9c6a1736f1fc09a49c4e978222541a750c002b"
+  integrity sha512-EPpmCdnESvg/iEvwJ7vDKQocT5XIMyPT3fi77GpjTIM7mkBtlZlIrYeyvuA4FPZU+OQfQsJK5W4tzsnuDBssqQ==
   dependencies:
     "@qiwi/uniconfig-core" "3.5.3"
     "@qiwi/uniconfig-plugin-ajv" "3.5.3"
@@ -2227,7 +2227,7 @@
     "@qiwi/uniconfig-plugin-argv" "3.5.3"
     "@qiwi/uniconfig-plugin-datatree" "3.5.3"
     "@qiwi/uniconfig-plugin-dot" "3.5.3"
-    "@qiwi/uniconfig-plugin-dotenv" "3.5.8"
+    "@qiwi/uniconfig-plugin-dotenv" "3.5.9"
     "@qiwi/uniconfig-plugin-env" "3.5.3"
     "@qiwi/uniconfig-plugin-global" "3.5.3"
     "@qiwi/uniconfig-plugin-ip" "3.5.3"
@@ -3959,10 +3959,10 @@ dot@1.1.3:
   resolved "https://registry.yarnpkg.com/dot/-/dot-1.1.3.tgz#351360e00a748bce9a1f8f27c00c394a7e4e1e9f"
   integrity sha512-/nt74Rm+PcfnirXGEdhZleTwGC2LMnuKTeeTIlI82xb5loBBoXNYzr2ezCroPSMtilK8EZIfcNZwOcHN+ib1Lg==
 
-dotenv@^15.0.0:
-  version "15.0.0"
-  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-15.0.0.tgz#2a585639429bf2c2c62f387f0fffde9c75aafde0"
-  integrity sha512-/l1sXXm79ry34KwwS0y4oVZjB468iw/6u9g1W26dtexKcIJAnVL2pMF+hxQwzZ7LutxOwEgtym9eIxvX33CMKg==
+dotenv@^16.0.0:
+  version "16.0.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.0.0.tgz#c619001253be89ebb638d027b609c75c26e47411"
+  integrity sha512-qD9WU0MPM4SWLPJy/r2Be+2WgQj8plChsyrCNQzW/0WjvcJQiKQJ9mH3ZgB3fxbUUxgc/11ZJ0Fi5KiimWGz2Q==
 
 dts-critic@latest:
   version "3.3.10"
