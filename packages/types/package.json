@@ -22,12 +22,12 @@
     "build:es6": "mkdirp target/es6 && tsc -p tsconfig.json --target ES6 --outDir target/es6",
     "build:ts": "cpy src/main/ts/ target/ts/",
     "build:libdef": "libdefkit --tsconfig=tsconfig.json",
-    "test": "cp typings/index.d.ts src/test/ts/libdef/index.d.ts && yarn dtslint",
+    "build:stamp": "buildstamp --git --out.path buildstamp.json",
+    "test": "cpy typings/index.d.ts src/test/ts/libdef/index.d.ts && yarn dtslint",
     "jest": "jest --config=jest.config.json --detectOpenHandles --forceExit",
     "dtslint": "dtslint src/test/ts/libdef --localTs ../../node_modules/typescript/lib --expectOnly",
     "aliasgen": "node -r @qiwi/esm ../../scripts/js/alias-gen.js",
-    "docs": "typedoc",
-    "build:stamp": "buildstamp --git --out.path buildstamp.json"
+    "docs": "typedoc"
   },
   "files": [
     "README.md",
