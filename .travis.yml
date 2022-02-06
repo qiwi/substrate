@@ -1,6 +1,5 @@
 language: node_js
 node_js: 16
-install: skip
 cache: yarn
 
 os: linux
@@ -31,7 +30,6 @@ jobs:
         create:
           name: linux-shared
           paths:
-            - node_modules
             - packages
 
     - <<: *build
@@ -44,7 +42,6 @@ jobs:
         create:
           name: win-shared
           paths:
-            - node_modules
             - packages/**/target
 
     - &test
