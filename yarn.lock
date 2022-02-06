@@ -1900,16 +1900,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@qiwi/libdefkit@npm:^4.0.1":
-  version: 4.0.1
-  resolution: "@qiwi/libdefkit@npm:4.0.1"
+"@qiwi/libdefkit@npm:^4.0.2":
+  version: 4.0.2
+  resolution: "@qiwi/libdefkit@npm:4.0.2"
   dependencies:
     "@qiwi/dts-bundle": ^0.7.5
     chalk: ^5.0.0
     find-up: ^6.2.0
     flowgen: 1.17.0
     fs-extra: ^10.0.0
-    globby: ^13.1.0
+    globby: ^13.1.1
     meow: ^10.1.2
     nanoid: ^3.2.0
     pkg-dir: ^6.0.1
@@ -1917,7 +1917,7 @@ __metadata:
     tslib: ^2.3.1
   bin:
     libdefkit: target/es6/cli.js
-  checksum: 92a9bd8a4604a438f6ad96ace255c662af66d1100efe1c88a95f42be0cb5c418b9d0002f5fd5a5f3e16564f810db85b0e69f86f9484e2d86b2c6acebd007f838
+  checksum: 80359e0bba017b5ccdc20f402070fa0e27ba2f714d44b7d96feae4fb57198178b756786ea12394a9727e5a259b9a5eab91a83a650d709ac1d222d7a1ad0c98a0
   languageName: node
   linkType: hard
 
@@ -1990,7 +1990,7 @@ __metadata:
   resolution: "@qiwi/substrate-infra@workspace:packages/infra"
   dependencies:
     "@qiwi/esm": ^1.1.1
-    "@qiwi/libdefkit": ^4.0.1
+    "@qiwi/libdefkit": ^4.0.2
     "@qiwi/npm-run-all": ^4.1.7
     "@swissquote/crafty-preset-jest": ^1.17.2
     "@types/jest": ^27.4.0
@@ -2014,6 +2014,7 @@ __metadata:
     concurrently: ../../node_modules/.bin/concurrently
     cpy: ../../node_modules/.bin/cpy
     cross-env: ../../node_modules/.bin/cross-env
+    dtslint: ../../node_modules/.bin/dtslint
     eslint: ../../node_modules/.bin/eslint
     jest: ../../node_modules/.bin/jest
     mkdirp: ../../node_modules/.bin/mkdirp
@@ -6122,7 +6123,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globby@npm:^13.1.0":
+"globby@npm:^13.1.1":
   version: 13.1.1
   resolution: "globby@npm:13.1.1"
   dependencies:
