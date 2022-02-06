@@ -26,7 +26,6 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-qiwi": "1.16.0",
     "find-git-root": "1.0.4",
-    "lerna": "4.0.0",
     "lodash": "4.17.21",
     "prettier": "^2.5.1",
     "prettier-config-qiwi": "^1.6.0",
