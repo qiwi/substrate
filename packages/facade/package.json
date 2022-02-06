@@ -21,7 +21,7 @@
     "build:es5": "mkdirp target/es5 && tsc -p ./tsconfig.json --target ES5 --outDir target/es5",
     "build:es6": "mkdirp target/es6 && tsc -p ./tsconfig.json --target ES6 --outDir target/es6",
     "build:ts": "cpy src/main/ts/ target/ts/",
-    "build:libdef": "../../node_modules/.bin/libdefkit --tsconfig=tsconfig.json",
+    "build:libdef": "npx @qiwi/libdefkit -p libdefkit --tsconfig=tsconfig.json",
     "testgen": "cp typings/index.d.ts src/test/ts/libdef/index.d.ts && rsync -a ../types/src/test/ts/libdef/I*.ts ./src/test/ts/libdef/ && rsync -a ../abstract/src/test/ts/unit/*.ts ./src/test/ts/unit/ && rsync -a ../std/src/test/ts/unit/*.ts ./src/test/ts/unit/",
     "test": "yarn testgen && yarn dtslint && yarn jest",
     "jest": "jest --config=jest.config.json --detectOpenHandles --forceExit --passWithNoTests",
