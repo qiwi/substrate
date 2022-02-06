@@ -5,6 +5,9 @@ cache: yarn
 os: linux
 dist: focal
 
+env:
+  - YARN_ENABLE_IMMUTABLE_INSTALLS=false
+
 jobs:
   fast_finish: true
   include:
