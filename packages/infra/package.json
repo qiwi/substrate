@@ -18,6 +18,7 @@
     "concurrently": "../../node_modules/.bin/concurrently",
     "cpy": "../../node_modules/.bin/cpy",
     "cross-env": "../../node_modules/.bin/cross-env",
+    "dtslint": "../../node_modules/.bin/dtslint",
     "eslint": "../../node_modules/.bin/eslint",
     "jest": "../../node_modules/.bin/jest",
     "mkdirp": "../../node_modules/.bin/mkdirp",
@@ -26,12 +27,11 @@
     "terser": "../../node_modules/.bin/terser",
     "tsc": "../../node_modules/.bin/tsc",
     "tsc-esm-fix": "../../node_modules/.bin/tsc-esm-fix",
-    "typedoc": "../../node_modules/.bin/typedoc",
-    "dtslint": "../../node_modules/.bin/dtslint"
+    "typedoc": "../../node_modules/.bin/typedoc"
   },
   "devDependencies": {
     "@qiwi/esm": "^1.1.1",
-    "@qiwi/libdefkit": "^4.0.1",
+    "@qiwi/libdefkit": "^4.0.2",
     "@qiwi/npm-run-all": "^4.1.7",
     "@swissquote/crafty-preset-jest": "^1.17.2",
     "@types/jest": "^27.4.0",
