@@ -18,11 +18,11 @@
   },
   "scripts": {
     "clean": "rimraf target buildcache flow-typed typings docs coverage buildstamp.json",
-    "build": "yarn aliasgen && npm-run-all -p -l build:es5 build:es6 build:ts build:libdef docs build:stamp",
+    "build": "yarn aliasgen && concurrently -n yarn:build:es5 yarn:build:es6 yarn:build:ts yarn:build:libdef yarn:docs yarn:build:stamp",
     "build:es5": "mkdirp target/es5 && tsc -p tsconfig.json --target ES5 --outDir target/es5",
     "build:es6": "mkdirp target/es6 && tsc -p tsconfig.json --target ES6 --outDir target/es6",
     "build:ts": "cpy src/main/ts/ target/ts/",
-    "build:libdef": "libdefkit --tsconfig=tsconfig.json",
+    "build:libdef": "../../node_modules/.bin/libdefkit --tsconfig=tsconfig.json",
     "test": "yarn test:libdefs && yarn jest",
     "test:libdefs": "cp typings/index.d.ts src/test/ts/libdef/index.d.ts && yarn dtslint",
     "jest": "jest --config=jest.config.json --detectOpenHandles --forceExit",
