@@ -16,11 +16,11 @@
     }
   },
   "scripts": {
-    "clean": "rm -rf target buildcache flow-typed typings docs coverage buildstamp.json",
+    "clean": "rimraf target buildcache flow-typed typings docs coverage buildstamp.json",
     "build": "npm-run-all -p -l build:es5 build:es6 build:ts build:libdef docs build:stamp",
-    "build:es5": "mkdir -p target/es5 && tsc -p tsconfig.json --target ES5 --outDir target/es5",
-    "build:es6": "mkdir -p target/es6 && tsc -p tsconfig.json --target ES6 --outDir target/es6",
-    "build:ts": "cp -r src/main/ts/ target/ts/",
+    "build:es5": "mkdirp target/es5 && tsc -p tsconfig.json --target ES5 --outDir target/es5",
+    "build:es6": "mkdirp target/es6 && tsc -p tsconfig.json --target ES6 --outDir target/es6",
+    "build:ts": "cpy src/main/ts/ target/ts/",
     "build:libdef": "libdefkit --tsconfig=tsconfig.json",
     "test": "yarn jest",
     "jest": "jest --config=jest.config.json --detectOpenHandles --forceExit",
@@ -36,8 +36,8 @@
     "buildstamp.json"
   ],
   "devDependencies": {
-    "@qiwi/uniconfig": "3.5.9",
     "@qiwi/substrate-infra": "1.2.0",
+    "@qiwi/uniconfig": "3.5.9",
     "@types/bluebird": "3.5.36",
     "@types/config": "0.0.41",
     "@types/lodash": "4.14.178",
@@ -50,10 +50,9 @@
     "underscore": "1.13.2"
   },
   "dependencies": {
-    "tslib": "^2.3.1",
-    "@qiwi/substrate-types": "1.53.0"
+    "@qiwi/substrate-types": "1.53.0",
+    "tslib": "^2.3.1"
   },
-  "peerDependencies": {},
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -62,6 +61,5 @@
   "keywords": [],
   "bugs": {
     "url": "https://github.com/qiwi/substrate/issues"
-  },
-  "optionalDependencies": {}
+  }
 }
