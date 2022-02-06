@@ -22,7 +22,7 @@
     "build:es5": "mkdirp target/es5 && tsc -p tsconfig.json --target ES5 --outDir target/es5",
     "build:es6": "mkdirp target/es6 && tsc -p tsconfig.json --target ES6 --outDir target/es6",
     "build:ts": "cpy src/main/ts/ target/ts/",
-    "build:libdef": "../../node_modules/.bin/libdefkit --tsconfig=tsconfig.json",
+    "build:libdef": "npx @qiwi/libdefkit -p libdefkit --tsconfig=tsconfig.json",
     "test": "yarn test:libdefs && yarn jest",
     "test:libdefs": "cp typings/index.d.ts src/test/ts/libdef/index.d.ts && yarn dtslint",
     "jest": "jest --config=jest.config.json --detectOpenHandles --forceExit",
