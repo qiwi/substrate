@@ -17,12 +17,12 @@
   },
   "scripts": {
     "clean": "rimraf target buildcache flow-typed typings docs coverage buildstamp.json",
-    "build": "npm-run-all -p -l build:es5 build:es6 build:ts build:libdef docs build:stamp",
+    "build": "concurrently -n yarn:build:es5 yarn:build:es6 yarn:build:ts yarn:build:libdef yarn:docs yarn:build:stamp",
     "build:es5": "mkdirp target/es5 && tsc -p tsconfig.json --target ES5 --outDir target/es5",
     "build:es6": "mkdirp target/es6 && tsc -p tsconfig.json --target ES6 --outDir target/es6",
     "build:ts": "cpy src/main/ts/ target/ts/",
-    "build:libdef": "libdefkit --tsconfig=tsconfig.json",
-    "test": "yarn jest",
+    "build:libdef": "../../node_modules/.bin/libdefkit --tsconfig=tsconfig.json",
+    "test": "jest",
     "jest": "jest --config=jest.config.json --detectOpenHandles --forceExit",
     "docs": "typedoc",
     "build:stamp": "buildstamp --git --out.path buildstamp.json"

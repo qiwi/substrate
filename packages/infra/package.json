@@ -27,7 +27,7 @@
     "tsc": "../../node_modules/.bin/tsc",
     "tsc-esm-fix": "../../node_modules/.bin/tsc-esm-fix",
     "typedoc": "../../node_modules/.bin/typedoc",
-    "libdefkit": "../../node_modules/.bin/libdefkit"
+    "dtslint": "../../node_modules/.bin/dtslint"
   },
   "devDependencies": {
     "@qiwi/esm": "^1.1.1",
