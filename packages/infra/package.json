@@ -1,7 +1,6 @@
 {
   "name": "@qiwi/substrate-infra",
   "version": "1.2.0",
-  "private": false,
   "publishConfig": {
     "access": "public"
   },
@@ -11,16 +10,34 @@
   "scripts": {
     "postupdate": "yarn"
   },
+  "bin": {
+    "buildstamp": "../../node_modules/.bin/buildstamp",
+    "concurrently": "../../node_modules/.bin/concurrently",
+    "cpy": "../../node_modules/.bin/cpy",
+    "cross-env": "../../node_modules/.bin/cross-env",
+    "eslint": "../../node_modules/.bin/eslint",
+    "jest": "../../node_modules/.bin/jest",
+    "mkdirp": "../../node_modules/.bin/mkdirp",
+    "rimraf": "../../node_modules/.bin/rimraf",
+    "terser": "../../node_modules/.bin/terser",
+    "tsc": "../../node_modules/.bin/tsc",
+    "tsc-esm-fix": "../../node_modules/.bin/tsc-esm-fix",
+    "typedoc": "../../node_modules/.bin/typedoc"
+  },
   "devDependencies": {
+    "@qiwi/esm": "^1.1.1",
     "@qiwi/libdefkit": "^4.0.1",
     "@qiwi/npm-run-all": "^4.1.7",
     "@swissquote/crafty-preset-jest": "^1.17.2",
     "@types/jest": "^27.4.0",
-    "@types/node": "^17.0.14",
+    "@types/node": "^17.0.15",
     "buildstamp": "^2.0.0",
+    "concurrently": "^7.0.0",
+    "cpy-cli": "^3.1.1",
     "dtslint": "4.2.1",
     "eslint-config-qiwi": "^1.16.0",
-    "jest": "^27.4.7",
+    "jest": "^27.5.0",
+    "mkdirp": "^1.0.4",
     "rimraf": "^3.0.2",
     "terser": "^5.10.0",
     "ts-jest": "^27.1.3",
