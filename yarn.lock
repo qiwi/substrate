@@ -903,9 +903,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@qiwi/libdefkit@npm:^4.0.2":
-  version: 4.0.2
-  resolution: "@qiwi/libdefkit@npm:4.0.2"
+"@qiwi/libdefkit@npm:^4.0.4":
+  version: 4.0.4
+  resolution: "@qiwi/libdefkit@npm:4.0.4"
   dependencies:
     "@qiwi/dts-bundle": ^0.7.5
     chalk: ^5.0.0
@@ -920,7 +920,7 @@ __metadata:
     tslib: ^2.3.1
   bin:
     libdefkit: target/es6/cli.js
-  checksum: 80359e0bba017b5ccdc20f402070fa0e27ba2f714d44b7d96feae4fb57198178b756786ea12394a9727e5a259b9a5eab91a83a650d709ac1d222d7a1ad0c98a0
+  checksum: 43016ff062c1e1af85a1ccf70aab9a6b2fa6da2afb7abf5fbdbe74475376e7f58e7aea58f61075541b6f4bb13faedb3f7aec0de006610030605a21755829ee8c
   languageName: node
   linkType: hard
 
@@ -993,7 +993,7 @@ __metadata:
   resolution: "@qiwi/substrate-infra@workspace:packages/infra"
   dependencies:
     "@qiwi/esm": ^1.1.1
-    "@qiwi/libdefkit": ^4.0.2
+    "@qiwi/libdefkit": ^4.0.4
     "@qiwi/npm-run-all": ^4.1.7
     "@swissquote/crafty-preset-jest": ^1.17.2
     "@types/jest": ^27.4.0
