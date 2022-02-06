@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "@qiwi/esm": "^1.1.1",
-    "@qiwi/libdefkit": "^4.0.2",
+    "@qiwi/libdefkit": "^4.0.4",
     "@qiwi/npm-run-all": "^4.1.7",
     "@swissquote/crafty-preset-jest": "^1.17.2",
     "@types/jest": "^27.4.0",
