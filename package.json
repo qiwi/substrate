@@ -18,7 +18,7 @@
     "docs": "typedoc packages/**/src/main && touch ./docs/.nojekyll || exit 0",
     "deps:upgrade": "npm_config_yes=true npx npm-upgrade-monorepo",
     "deps:auditfix": "npm_config_yes=true npx yarn-audit-fix",
-    "postupdate": "yarn && yarn deps:auditfix && yarn build && yarn test"
+    "postupdate": "yarn install && yarn deps:auditfix && yarn build && yarn test"
   },
   "prettier": "prettier-config-qiwi",
   "devDependencies": {

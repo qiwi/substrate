@@ -18,6 +18,7 @@
     "eslint": "../../node_modules/.bin/eslint",
     "jest": "../../node_modules/.bin/jest",
     "mkdirp": "../../node_modules/.bin/mkdirp",
+    "npm-run-all": "../../node_modules/.bin/npm-run-all",
     "rimraf": "../../node_modules/.bin/rimraf",
     "terser": "../../node_modules/.bin/terser",
     "tsc": "../../node_modules/.bin/tsc",
