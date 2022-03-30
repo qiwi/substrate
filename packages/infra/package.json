@@ -49,7 +49,7 @@
     "ts-loader": "9.2.8",
     "ts-node": "10.7.0",
     "typedoc": "^0.22.11",
-    "typescript": "4.5.x"
+    "typescript": "4.6.x"
   },
   "license": "MIT",
   "repository": {
