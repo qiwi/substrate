@@ -930,7 +930,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@qiwi/substrate-infra@1.2.0, @qiwi/substrate-infra@workspace:packages/infra":
+"@qiwi/substrate-infra@npm:1.2.0":
+  version: 1.2.0
+  resolution: "@qiwi/substrate-infra@npm:1.2.0"
+  checksum: 8c94b616e383f9f95014d419f401c3e1c12a33924632a57b04d777cbdd56aa1b7f98983d5857a7cb3514ad6a9fb90b04ed8ce5769254c815bc3ffc638028d777
+  languageName: node
+  linkType: hard
+
+"@qiwi/substrate-infra@workspace:packages/infra":
   version: 0.0.0-use.local
   resolution: "@qiwi/substrate-infra@workspace:packages/infra"
   dependencies:
