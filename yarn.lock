@@ -993,7 +993,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@qiwi/substrate-types@1.53.0, @qiwi/substrate-types@workspace:packages/types":
+"@qiwi/substrate-types@npm:1.53.0":
+  version: 1.53.0
+  resolution: "@qiwi/substrate-types@npm:1.53.0"
+  checksum: 2436cd1c39ef65b3fc5b93ce3b707fbd764bf94665b4d7327be0f5265a26a617922e3506d57f21c9b68d5f0da97bf4c4ce9c43ebc2aae8da069950d01b98727f
+  languageName: node
+  linkType: hard
+
+"@qiwi/substrate-types@workspace:packages/types":
   version: 0.0.0-use.local
   resolution: "@qiwi/substrate-types@workspace:packages/types"
   dependencies:
