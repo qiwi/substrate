@@ -20,7 +20,7 @@
     "build": "concurrently -n yarn:build:es5 yarn:build:es6 yarn:build:ts yarn:build:libdef yarn:docs yarn:build:stamp",
     "build:es5": "mkdirp target/es5 && tsc -p tsconfig.json --target ES5 --outDir target/es5",
     "build:es6": "mkdirp target/es6 && tsc -p tsconfig.json --target ES6 --outDir target/es6",
-    "build:ts": "cpy src/main/ts/ target/ts/",
+    "build:ts": "cpy src/main/ts/ target/ts/ --flat",
     "build:libdef": "npx @qiwi/libdefkit -p libdefkit --tsconfig=tsconfig.json",
     "test": "jest",
     "jest": "jest --config=jest.config.json --detectOpenHandles --forceExit",
