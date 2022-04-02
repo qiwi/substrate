@@ -20,7 +20,7 @@
     "build": "concurrently -n yarn:build:es5 yarn:build:es6 yarn:build:ts yarn:build:libdef yarn:build:stamp",
     "build:es5": "mkdirp target/es5 && tsc -p ./tsconfig.json --target ES5 --outDir target/es5",
     "build:es6": "mkdirp target/es6 && tsc -p ./tsconfig.json --target ES6 --outDir target/es6",
-    "build:ts": "cpy src/main/ts/ target/ts/",
+    "build:ts": "cpy src/main/ts/ target/ts/ --flat",
     "build:libdef": "npx @qiwi/libdefkit -p libdefkit --tsconfig=tsconfig.json",
     "testgen": "cp typings/index.d.ts src/test/ts/libdef/index.d.ts && rsync -a ../types/src/test/ts/libdef/I*.ts ./src/test/ts/libdef/ && rsync -a ../abstract/src/test/ts/unit/*.ts ./src/test/ts/unit/ && rsync -a ../std/src/test/ts/unit/*.ts ./src/test/ts/unit/",
     "test": "yarn testgen && yarn dtslint && yarn jest",
@@ -45,8 +45,8 @@
   "devDependencies": {
     "@qiwi/substrate-infra": "1.2.0",
     "@types/jest": "27.4.1",
-    "@types/node": "17.0.15",
-    "fs-extra": "^10.0.0"
+    "@types/node": "17.0.23",
+    "fs-extra": "^10.0.1"
   },
   "license": "MIT",
   "repository": {
