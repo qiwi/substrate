@@ -81,7 +81,7 @@ jobs:
           yarn
 
       - name: Unit test only
-        run: yarn test:unit
+        run: yarn test
 
       - name: Push coverage
         if: github.ref == 'refs/heads/master'
@@ -117,10 +117,10 @@ jobs:
           yarn
       - name: Unit test only
         if: matrix.node-version != '16' || matrix.os != 'ubuntu-20.04'
-        run: yarn test:unit
-      - name: Full test
-        if: matrix.node-version == '16' && matrix.os == 'ubuntu-20.04'
         run: yarn test
+      - name: Full test with report
+        if: matrix.node-version == '16' && matrix.os == 'ubuntu-20.04'
+        run: yarn test:report
 
   release:
     name: Release
