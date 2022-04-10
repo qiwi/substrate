@@ -22,7 +22,7 @@
   },
   "prettier": "prettier-config-qiwi",
   "devDependencies": {
-    "eslint": "8.12.0",
+    "eslint": "8.13.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-qiwi": "1.16.1",
     "find-git-root": "1.0.4",
