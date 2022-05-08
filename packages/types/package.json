@@ -38,7 +38,7 @@
     "buildstamp.json"
   ],
   "devDependencies": {
-    "@qiwi/substrate-infra": "1.2.1",
+    "@qiwi/substrate-infra": "1.2.2",
     "@qiwi/uniconfig": "3.5.9",
     "@types/bluebird": "3.5.36",
     "@types/config": "0.0.41",

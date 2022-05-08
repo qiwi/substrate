@@ -6,6 +6,12 @@
     "@semantic-release/changelog",
     "@semantic-release/npm",
     [
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "YARN_ENABLE_IMMUTABLE_INSTALLS=false yarn install && git add ../../yarn.lock"
+      }
+    ],
+    [
       "@semantic-release/github",
       {
         "successComment": false,

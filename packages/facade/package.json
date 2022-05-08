@@ -43,7 +43,7 @@
     "tslib": "^2.4.0"
   },
   "devDependencies": {
-    "@qiwi/substrate-infra": "1.2.1",
+    "@qiwi/substrate-infra": "1.2.2",
     "@types/jest": "27.5.0",
     "@types/node": "17.0.31",
     "fs-extra": "^10.1.0"
