@@ -51,7 +51,7 @@
   },
   "dependencies": {
     "@qiwi/substrate-types": "1.53.1",
-    "tslib": "^2.3.1"
+    "tslib": "^2.4.0"
   },
   "license": "MIT",
   "repository": {
