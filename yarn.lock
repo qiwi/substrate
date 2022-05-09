@@ -2,7 +2,7 @@
 # Manual changes might be lost - proceed with caution!
 
 __metadata:
-  version: 5
+  version: 6
   cacheKey: 8
 
 "@ampproject/remapping@npm:^2.1.0":
@@ -3894,7 +3894,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-qiwi@npm:1.17.0, eslint-config-qiwi@npm:^1.17.0":
+"eslint-config-qiwi@npm:1.17.1":
+  version: 1.17.1
+  resolution: "eslint-config-qiwi@npm:1.17.1"
+  dependencies:
+    "@typescript-eslint/eslint-plugin": ^5.22.0
+    "@typescript-eslint/parser": ^5.22.0
+    eslint-config-standard-qiwi: ^16.0.5
+    eslint-plugin-array-func: ^3.1.7
+    eslint-plugin-import: ^2.26.0
+    eslint-plugin-n: ^15.2.0
+    eslint-plugin-optimize-regex: ^1.2.1
+    eslint-plugin-promise: ^6.0.0
+    eslint-plugin-react: ^7.29.4
+    eslint-plugin-react-hooks: ^4.5.0
+    eslint-plugin-simple-import-sort: ^7.0.0
+    eslint-plugin-sonarjs: ^0.13.0
+    eslint-plugin-unicorn: ^42.0.0
+  peerDependencies:
+    eslint: "*"
+  checksum: bfec8e7064249de36071c8c2c260aaad5d1edc5c9c4e0e7cbdc0507cc63dedddd0f3cfb679f6b0743e02dea4155c6f954d74b6f2e6f75b8904578f8bfb4007ae
+  languageName: node
+  linkType: hard
+
+"eslint-config-qiwi@npm:^1.17.0":
   version: 1.17.0
   resolution: "eslint-config-qiwi@npm:1.17.0"
   dependencies:
@@ -7857,7 +7880,7 @@ __metadata:
   dependencies:
     eslint: 8.15.0
     eslint-config-prettier: ^8.5.0
-    eslint-config-qiwi: 1.17.0
+    eslint-config-qiwi: 1.17.1
     find-git-root: 1.0.4
     lodash: 4.17.21
     prettier: ^2.6.2
