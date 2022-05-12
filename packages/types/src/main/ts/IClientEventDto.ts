@@ -32,4 +32,5 @@ export interface IClientEventDto {
   details?: Record<string, any>
   stacktrace?: any
   timestamp?: number | string
+  ttl?: number
 }
