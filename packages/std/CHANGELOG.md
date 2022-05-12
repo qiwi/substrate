@@ -1,3 +1,10 @@
+## @qiwi/substrate-std [1.3.8](https://github.com/qiwi/substrate/compare/@qiwi/substrate-std@1.3.7...@qiwi/substrate-std@1.3.8) (2022-05-12)
+
+
+### Performance Improvements
+
+* up tslib to v2.4.0 ([a6f8caa](https://github.com/qiwi/substrate/commit/a6f8caa2e3f9518fb959edfa2d333c5145369927))
+
 ## @qiwi/substrate-std [1.3.7](https://github.com/qiwi/substrate/compare/@qiwi/substrate-std@1.3.6...@qiwi/substrate-std@1.3.7) (2022-04-02)
 
 
