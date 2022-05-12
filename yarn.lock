@@ -1083,7 +1083,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@qiwi/libdefkit@npm:^4.0.6":
+"@qiwi/libdefkit@npm:^4.0.7":
   version: 4.0.7
   resolution: "@qiwi/libdefkit@npm:4.0.7"
   dependencies:
@@ -1153,7 +1153,7 @@ __metadata:
   resolution: "@qiwi/substrate-abstract@workspace:packages/abstract"
   dependencies:
     "@qiwi/substrate-infra": 1.2.2
-    "@qiwi/substrate-types": 1.53.1
+    "@qiwi/substrate-types": 1.53.2
     "@qiwi/uniconfig": 3.5.9
     "@types/bluebird": 3.5.36
     "@types/config": 0.0.41
@@ -1173,22 +1173,22 @@ __metadata:
   resolution: "@qiwi/substrate-infra@workspace:packages/infra"
   dependencies:
     "@qiwi/esm": ^1.1.1
-    "@qiwi/libdefkit": ^4.0.6
+    "@qiwi/libdefkit": ^4.0.7
     "@qiwi/npm-run-all": ^4.1.7
     "@swissquote/crafty-preset-jest": ^1.19.1
-    "@types/jest": ^27.5.0
-    "@types/node": ^17.0.31
+    "@types/jest": ^27.5.1
+    "@types/node": ^17.0.32
     buildstamp: ^2.0.0
     concurrently: ^7.1.0
     cpy-cli: ^4.1.0
     dtslint: 4.2.1
-    eslint-config-qiwi: ^1.17.0
+    eslint: "*"
+    eslint-config-qiwi: ^1.17.1
     jest: ^28.1.0
     mkdirp: ^1.0.4
     rimraf: ^3.0.2
     terser: ^5.13.1
     ts-jest: ^28.0.2
-    ts-loader: 9.3.0
     ts-node: 10.7.0
     typedoc: ^0.22.15
     typescript: 4.6.x
@@ -1204,7 +1204,6 @@ __metadata:
     npm-run-all: ../../node_modules/.bin/npm-run-all
     rimraf: ../../node_modules/.bin/rimraf
     terser: ../../node_modules/.bin/terser
-    tsc: ../../node_modules/.bin/tsc
     tsc-esm-fix: ../../node_modules/.bin/tsc-esm-fix
     typedoc: ../../node_modules/.bin/typedoc
   languageName: unknown
@@ -1241,7 +1240,7 @@ __metadata:
     "@types/config": 0.0.41
     "@types/jest": 27.5.1
     "@types/lodash": 4.14.182
-    "@types/node": 17.0.31
+    "@types/node": 17.0.32
     "@types/parsimmon": 1.10.6
     "@types/underscore": 1.11.4
     axios: 0.27.2
@@ -1255,13 +1254,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@qiwi/substrate-types@npm:1.53.1":
-  version: 1.53.1
-  resolution: "@qiwi/substrate-types@npm:1.53.1"
-  checksum: 074e45aa91868a42819438e452f6666e257a4018c7f597f10b2f3e5f88124bff6b50eae861e1b3c2bbdee1e7b467d6ac4e2a948b8456e96083e6d242284b62a5
-  languageName: node
-  linkType: hard
-
 "@qiwi/substrate@workspace:packages/facade":
   version: 0.0.0-use.local
   resolution: "@qiwi/substrate@workspace:packages/facade"
@@ -1271,7 +1263,7 @@ __metadata:
     "@qiwi/substrate-std": 1.3.8
     "@qiwi/substrate-types": 1.53.2
     "@types/jest": 27.5.1
-    "@types/node": 17.0.31
+    "@types/node": 17.0.32
     fs-extra: ^10.1.0
     tslib: ^2.4.0
   languageName: unknown
@@ -1701,7 +1693,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:27.5.1, @types/jest@npm:^27.5.0":
+"@types/jest@npm:27.5.1, @types/jest@npm:^27.5.1":
   version: 27.5.1
   resolution: "@types/jest@npm:27.5.1"
   dependencies:
@@ -1755,7 +1747,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^17.0.31":
+"@types/node@npm:*, @types/node@npm:17.0.32, @types/node@npm:^17.0.32":
   version: 17.0.32
   resolution: "@types/node@npm:17.0.32"
   checksum: afb05704b42032566b3da8b2d80a68883cd3b888472d1b8b4dd6c84f8fad371454f083d4e28bd30c10589187296119d92aba255638b30067afe062b5922388a5
@@ -1766,13 +1758,6 @@ __metadata:
   version: 14.14.35
   resolution: "@types/node@npm:14.14.35"
   checksum: 6d6e428b6c504ede62e63dddf83439d3f10b3b283132172f7c3b1ef49b4f499afcfd2e4601e3019074b2dd140ee109a9b63bbd6a18a089c89e45108fa8d5b1ee
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:17.0.31":
-  version: 17.0.31
-  resolution: "@types/node@npm:17.0.31"
-  checksum: 704618350f8420d5c47db0f7778398e821b7724369946f5c441a7e6b9343295553936400eb8309f0b07d5e39c240988ab3456b983712ca86265dabc9aee4ad3d
   languageName: node
   linkType: hard
 
@@ -3560,16 +3545,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"enhanced-resolve@npm:^5.0.0":
-  version: 5.9.3
-  resolution: "enhanced-resolve@npm:5.9.3"
-  dependencies:
-    graceful-fs: ^4.2.4
-    tapable: ^2.2.0
-  checksum: 64c2dbbdd608d1a4df93b6e60786c603a1faf3b2e66dfd051d62cf4cfaeeb5e800166183685587208d62e9f7afff3f78f3d5978e32cd80125ba0c83b59a79d78
-  languageName: node
-  linkType: hard
-
 "env-paths@npm:^2.2.0, env-paths@npm:^2.2.1":
   version: 2.2.1
   resolution: "env-paths@npm:2.2.1"
@@ -3709,7 +3684,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-qiwi@npm:1.17.1, eslint-config-qiwi@npm:^1.17.0":
+"eslint-config-qiwi@npm:1.17.1, eslint-config-qiwi@npm:^1.17.1":
   version: 1.17.1
   resolution: "eslint-config-qiwi@npm:1.17.1"
   dependencies:
@@ -3980,7 +3955,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:8.15.0":
+"eslint@npm:*, eslint@npm:8.15.0":
   version: 8.15.0
   resolution: "eslint@npm:8.15.0"
   dependencies:
@@ -6723,7 +6698,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"micromatch@npm:^4.0.0, micromatch@npm:^4.0.4":
+"micromatch@npm:^4.0.4":
   version: 4.0.5
   resolution: "micromatch@npm:4.0.5"
   dependencies:
@@ -7547,7 +7522,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-config-qiwi@npm:^1.7.0":
+"prettier-config-qiwi@npm:^1.7.1":
   version: 1.7.1
   resolution: "prettier-config-qiwi@npm:1.7.1"
   checksum: f86fa1621ed3a0d25b1138a290fcf6248dc4b5d4e73e4ee51674f6c39242940af9efe237fb38917521b6a07bf01ca16a73f8d5423df7f5c965f7aa1a942b249a
@@ -7664,7 +7639,7 @@ __metadata:
     find-git-root: 1.0.4
     lodash: 4.17.21
     prettier: ^2.6.2
-    prettier-config-qiwi: ^1.7.0
+    prettier-config-qiwi: ^1.7.1
     replace-in-file: ^6.3.2
     snazzy: 9.0.0
     typescript: 4.6.x
@@ -8651,13 +8626,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tapable@npm:^2.2.0":
-  version: 2.2.1
-  resolution: "tapable@npm:2.2.1"
-  checksum: 3b7a1b4d86fa940aad46d9e73d1e8739335efd4c48322cb37d073eb6f80f5281889bf0320c6d8ffcfa1a0dd5bfdbd0f9d037e252ef972aca595330538aac4d51
-  languageName: node
-  linkType: hard
-
 "tar-stream@npm:^2.1.4":
   version: 2.2.0
   resolution: "tar-stream@npm:2.2.0"
@@ -8907,21 +8875,6 @@ __metadata:
   bin:
     ts-jest: cli.js
   checksum: bb244015f947cf9a77c892691a8131116a86f4f1cc7a1ff045cd72f78c16485c07ac582b31117f8d722a0ebb9d51c27468c28e2f8eec8bbae6e2a09ee41066f2
-  languageName: node
-  linkType: hard
-
-"ts-loader@npm:9.3.0":
-  version: 9.3.0
-  resolution: "ts-loader@npm:9.3.0"
-  dependencies:
-    chalk: ^4.1.0
-    enhanced-resolve: ^5.0.0
-    micromatch: ^4.0.0
-    semver: ^7.3.4
-  peerDependencies:
-    typescript: "*"
-    webpack: ^5.0.0
-  checksum: 90755ac5850890ff433f2f8c7186d57ae4e172d389342d874b50ab233675f06c47c69043c517e2a2eeaf2251637ecfac607ac6190c89340f246ceff8c7f4af7a
   languageName: node
   linkType: hard
 
