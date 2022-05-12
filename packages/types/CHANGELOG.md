@@ -1,3 +1,10 @@
+# @qiwi/substrate-types [1.54.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.53.2...@qiwi/substrate-types@1.54.0) (2022-05-12)
+
+
+### Features
+
+* **types:** add `ttl` to IClientEventDto ([d485657](https://github.com/qiwi/substrate/commit/d4856579fe4dbb6bf8958c22d88c58771322796a))
+
 ## @qiwi/substrate-types [1.53.2](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.53.1...@qiwi/substrate-types@1.53.2) (2022-05-09)
 
 
