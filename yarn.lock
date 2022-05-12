@@ -1148,12 +1148,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@qiwi/substrate-abstract@1.20.7, @qiwi/substrate-abstract@workspace:packages/abstract":
+"@qiwi/substrate-abstract@npm:1.20.7":
+  version: 1.20.7
+  resolution: "@qiwi/substrate-abstract@npm:1.20.7"
+  dependencies:
+    "@qiwi/substrate-types": 1.53.1
+  checksum: 1a7fd9436fe8538a41da79fc2ad0f4ff2d4dd76ce0416f793a43e10ee6da3753fb84d94b6e7043553a824fb0001e7826eec0bdf047f413e67f107f5b70a61d63
+  languageName: node
+  linkType: hard
+
+"@qiwi/substrate-abstract@workspace:packages/abstract":
   version: 0.0.0-use.local
   resolution: "@qiwi/substrate-abstract@workspace:packages/abstract"
   dependencies:
     "@qiwi/substrate-infra": 1.2.2
-    "@qiwi/substrate-types": 1.53.2
+    "@qiwi/substrate-types": 1.54.0
     "@qiwi/uniconfig": 3.5.9
     "@types/bluebird": 3.5.36
     "@types/config": 0.0.41
@@ -1230,14 +1239,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@qiwi/substrate-types@npm:1.53.2":
-  version: 1.53.2
-  resolution: "@qiwi/substrate-types@npm:1.53.2"
-  checksum: 730f86cc027f5d14674536133abb79893f2706073d1e84beb024f9e13766a3bfe35cb3e5b876b3fd31ea6422cfe42335fefebe4ad6bf75a65e56c1243b375c7c
-  languageName: node
-  linkType: hard
-
-"@qiwi/substrate-types@workspace:packages/types":
+"@qiwi/substrate-types@1.54.0, @qiwi/substrate-types@workspace:packages/types":
   version: 0.0.0-use.local
   resolution: "@qiwi/substrate-types@workspace:packages/types"
   dependencies:
@@ -1260,6 +1262,20 @@ __metadata:
     underscore: 1.13.3
   languageName: unknown
   linkType: soft
+
+"@qiwi/substrate-types@npm:1.53.1":
+  version: 1.53.1
+  resolution: "@qiwi/substrate-types@npm:1.53.1"
+  checksum: 074e45aa91868a42819438e452f6666e257a4018c7f597f10b2f3e5f88124bff6b50eae861e1b3c2bbdee1e7b467d6ac4e2a948b8456e96083e6d242284b62a5
+  languageName: node
+  linkType: hard
+
+"@qiwi/substrate-types@npm:1.53.2":
+  version: 1.53.2
+  resolution: "@qiwi/substrate-types@npm:1.53.2"
+  checksum: 730f86cc027f5d14674536133abb79893f2706073d1e84beb024f9e13766a3bfe35cb3e5b876b3fd31ea6422cfe42335fefebe4ad6bf75a65e56c1243b375c7c
+  languageName: node
+  linkType: hard
 
 "@qiwi/substrate@workspace:packages/facade":
   version: 0.0.0-use.local
