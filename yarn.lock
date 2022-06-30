@@ -187,6 +187,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/helper-validator-identifier@npm:^7.18.6":
+  version: 7.18.6
+  resolution: "@babel/helper-validator-identifier@npm:7.18.6"
+  checksum: e295254d616bbe26e48c196a198476ab4d42a73b90478c9842536cf910ead887f5af6b5c4df544d3052a25ccb3614866fa808dc1e3a5a4291acd444e243c0648
+  languageName: node
+  linkType: hard
+
 "@babel/helper-validator-option@npm:^7.16.7":
   version: 7.16.7
   resolution: "@babel/helper-validator-option@npm:7.16.7"
@@ -2997,6 +3004,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ci-info@npm:^3.3.2":
+  version: 3.3.2
+  resolution: "ci-info@npm:3.3.2"
+  checksum: fd81f1edd2d3b0f6cb077b2e84365136d87b9db8c055928c1ad69da8a76c2c2f19cba8ea51b90238302157ca927f91f92b653e933f2398dde4867500f08d6e62
+  languageName: node
+  linkType: hard
+
 "cjs-module-lexer@npm:^1.0.0":
   version: 1.2.2
   resolution: "cjs-module-lexer@npm:1.2.2"
@@ -3840,9 +3854,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-qiwi@npm:1.17.2":
-  version: 1.17.2
-  resolution: "eslint-config-qiwi@npm:1.17.2"
+"eslint-config-qiwi@npm:1.17.3":
+  version: 1.17.3
+  resolution: "eslint-config-qiwi@npm:1.17.3"
   dependencies:
     "@typescript-eslint/eslint-plugin": ^5.30.0
     "@typescript-eslint/parser": ^5.30.0
@@ -3856,10 +3870,10 @@ __metadata:
     eslint-plugin-react-hooks: ^4.6.0
     eslint-plugin-simple-import-sort: ^7.0.0
     eslint-plugin-sonarjs: ^0.13.0
-    eslint-plugin-unicorn: ^42.0.0
+    eslint-plugin-unicorn: ^43.0.0
   peerDependencies:
     eslint: "*"
-  checksum: 58824779107f7f96a829e91521b29808ea1ef46637cfd3ccf9d9c496e2f72740c8422e215a6458cb2e11c67120ec78338d437323f7c8b2d8735ee1fe67988b8f
+  checksum: cab236da5ee0e0a7a986a7ea6a1772c6da3d061aabad1e4b54af020bc7d581f7c0ed8c44a5e3579131bc008fd9288032b72f396b8c0d1538075c0d5eb8bbf79c
   languageName: node
   linkType: hard
 
@@ -4121,6 +4135,30 @@ __metadata:
   peerDependencies:
     eslint: ">=8.8.0"
   checksum: 03757cbf417d39691fe04048ac9352585162a4dd68c2f26f5bc0956409625c7c4841487f0fa623e0d6dd5ff9cc3e758b74e4d170e3b0a877bbd0114995310058
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-unicorn@npm:^43.0.0":
+  version: 43.0.0
+  resolution: "eslint-plugin-unicorn@npm:43.0.0"
+  dependencies:
+    "@babel/helper-validator-identifier": ^7.18.6
+    ci-info: ^3.3.2
+    clean-regexp: ^1.0.0
+    eslint-utils: ^3.0.0
+    esquery: ^1.4.0
+    indent-string: ^4.0.0
+    is-builtin-module: ^3.1.0
+    lodash: ^4.17.21
+    pluralize: ^8.0.0
+    read-pkg-up: ^7.0.1
+    regexp-tree: ^0.1.24
+    safe-regex: ^2.1.1
+    semver: ^7.3.7
+    strip-indent: ^3.0.0
+  peerDependencies:
+    eslint: ">=8.18.0"
+  checksum: 5e9da1a37922483f8e945878d870bcc617b2c6a5fd3d1a453ccc327c33a0f56206968bc702dc08b3e3098b9ae0b13a55842c8516f79509bc212eba7256f57438
   languageName: node
   linkType: hard
 
@@ -7918,7 +7956,7 @@ __metadata:
   dependencies:
     eslint: 8.18.0
     eslint-config-prettier: ^8.5.0
-    eslint-config-qiwi: 1.17.2
+    eslint-config-qiwi: 1.17.3
     find-git-root: 1.0.4
     lodash: 4.17.21
     prettier: ^2.6.2
