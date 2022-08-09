@@ -1252,7 +1252,7 @@ __metadata:
   dependencies:
     "@qiwi/substrate-infra": 1.2.2
     "@qiwi/substrate-types": 1.54.0
-    "@qiwi/uniconfig": 3.5.10
+    "@qiwi/uniconfig": 3.5.11
     "@types/bluebird": 3.5.36
     "@types/config": 3.3.0
     "@types/lodash": 4.14.182
@@ -1313,7 +1313,7 @@ __metadata:
   dependencies:
     "@qiwi/substrate-infra": 1.2.2
     "@qiwi/substrate-types": 1.54.0
-    "@qiwi/uniconfig": 3.5.10
+    "@qiwi/uniconfig": 3.5.11
     "@types/bluebird": 3.5.36
     "@types/config": 3.3.0
     "@types/lodash": 4.14.182
@@ -1333,7 +1333,7 @@ __metadata:
   resolution: "@qiwi/substrate-types@workspace:packages/types"
   dependencies:
     "@qiwi/substrate-infra": 1.2.2
-    "@qiwi/uniconfig": 3.5.10
+    "@qiwi/uniconfig": 3.5.11
     "@types/bluebird": 3.5.36
     "@types/config": 3.3.0
     "@types/jest": 28.1.6
@@ -1367,200 +1367,200 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@qiwi/uniconfig-core@npm:3.5.3":
-  version: 3.5.3
-  resolution: "@qiwi/uniconfig-core@npm:3.5.3"
+"@qiwi/uniconfig-core@npm:3.5.4":
+  version: 3.5.4
+  resolution: "@qiwi/uniconfig-core@npm:3.5.4"
   dependencies:
     browser-or-node: ^2.0.0
     lodash: ^4.17.21
-    tslib: ^2.3.1
-  checksum: 75bcfdb38c1f802895e8f303f8dd71f16e5e63ed2cb1fbaaa378cfe3b90f7334148155a5b6df15b770d56cf4751902c861196c47097f8c6151329aaec694ab7e
+    tslib: ^2.4.0
+  checksum: 454432a9281fd657c27829705711179a60a118fe9b513813a4207987a33efb4d3e4e9027e1fba04990da5b794adcd3780128e693b9c5a1012f8a0a720eb6d9dd
   languageName: node
   linkType: hard
 
-"@qiwi/uniconfig-plugin-ajv@npm:3.5.4":
-  version: 3.5.4
-  resolution: "@qiwi/uniconfig-plugin-ajv@npm:3.5.4"
+"@qiwi/uniconfig-plugin-ajv@npm:3.5.5":
+  version: 3.5.5
+  resolution: "@qiwi/uniconfig-plugin-ajv@npm:3.5.5"
   dependencies:
-    "@qiwi/uniconfig-core": 3.5.3
-    ajv: ^8.6.3
+    "@qiwi/uniconfig-core": 3.5.4
+    ajv: ^8.11.0
     ajv-formats: ^2.1.1
     tslib: ^2.4.0
-  checksum: ca027fa7362143287d5e37f1e7a8728906e60886b1cecc27183eaa08620b0a24acc27bcafbe6a369c70d805b46841a9e2c7b329e611e5a08896165fb164a0d1c
+  checksum: eb700a909cda06e2c25fb1c72295449a5e0b7bf91f0336e0946a0d8276fd084c0132b8d60949bc2c569d920a87ead12a5c19dbeca8962cf68f39540e39bd8fc1
   languageName: node
   linkType: hard
 
-"@qiwi/uniconfig-plugin-api-file@npm:3.5.4":
-  version: 3.5.4
-  resolution: "@qiwi/uniconfig-plugin-api-file@npm:3.5.4"
+"@qiwi/uniconfig-plugin-api-file@npm:3.5.5":
+  version: 3.5.5
+  resolution: "@qiwi/uniconfig-plugin-api-file@npm:3.5.5"
   dependencies:
-    "@qiwi/uniconfig-core": 3.5.3
+    "@qiwi/uniconfig-core": 3.5.4
     tslib: ^2.4.0
-  checksum: 986385cb49f7e1d75468e0b18719396cd7bacfcb341a41abca0f1a0534298ea7661512fb71e301515f8ac694e36c8bbc2afbfce3af6ff0672f7c9605f1d613c4
+  checksum: aa73e451074c725b400f65cc22113a67e36029e249c4c769d35b3aec977152798189e2a4da45d39ab34a943b6881c24dd8c4af7e66ee1a41970bec72eb5e2b40
   languageName: node
   linkType: hard
 
-"@qiwi/uniconfig-plugin-api-http@npm:3.5.4":
-  version: 3.5.4
-  resolution: "@qiwi/uniconfig-plugin-api-http@npm:3.5.4"
+"@qiwi/uniconfig-plugin-api-http@npm:3.5.5":
+  version: 3.5.5
+  resolution: "@qiwi/uniconfig-plugin-api-http@npm:3.5.5"
   dependencies:
-    "@qiwi/uniconfig-core": 3.5.3
+    "@qiwi/uniconfig-core": 3.5.4
     sync-request: ^6.1.0
     then-request: ^6.0.2
     tslib: ^2.4.0
-  checksum: aa13e5f251bef4d34099feb590a437f2e84b1855fc45ed4a8308e04b05b2a9471f0f3d59b249a8e8f9804e7da71633cde1aada70695295c137c625074c6259d6
+  checksum: 36c36e4a7474f6a4ef16cb9f729b77aea5b4c5978c4e5bfef8739d1873cc448925f8d5b439be6fe382aff43b442e0882a0f0fc3704f919b75e4a90320a74b735
   languageName: node
   linkType: hard
 
-"@qiwi/uniconfig-plugin-argv@npm:3.5.4":
-  version: 3.5.4
-  resolution: "@qiwi/uniconfig-plugin-argv@npm:3.5.4"
+"@qiwi/uniconfig-plugin-argv@npm:3.5.5":
+  version: 3.5.5
+  resolution: "@qiwi/uniconfig-plugin-argv@npm:3.5.5"
   dependencies:
-    "@qiwi/uniconfig-core": 3.5.3
+    "@qiwi/uniconfig-core": 3.5.4
     tslib: ^2.4.0
-    yargs: ^17.2.0
-  checksum: 527ec930fc4715f3828c4027a8ab2c05bd436ccf68b6d1f84ca4e9ca5486f22ee37030a5630917838cc132e3ea4df5f7f4721e629ef8cf6444880d9a36753bc3
+    yargs: ^17.5.1
+  checksum: f69fde981cd10312042e08d7444bac6dc7d01ff549d5ea29043b80ca758bbf7895e733d729a1b98def8f7906354258f97759911d16ed15c037fdc2be3de61906
   languageName: node
   linkType: hard
 
-"@qiwi/uniconfig-plugin-datatree@npm:3.5.4":
-  version: 3.5.4
-  resolution: "@qiwi/uniconfig-plugin-datatree@npm:3.5.4"
+"@qiwi/uniconfig-plugin-datatree@npm:3.5.5":
+  version: 3.5.5
+  resolution: "@qiwi/uniconfig-plugin-datatree@npm:3.5.5"
   dependencies:
-    "@qiwi/uniconfig-core": 3.5.3
+    "@qiwi/uniconfig-core": 3.5.4
     lodash: ^4.17.21
     tslib: ^2.4.0
-  checksum: 868ad1bc4cbda2ca692fb82542cd378d85709fa73e7143c8b1b120df4da85511f1c1d6ec0daddcaa6f0919aad1ecb3c6ba1c16cd00e34b2712ada901eb5c4c6a
+  checksum: 7e2562d2b47f41ed51b6a2bef91d95b2486d528e6b0a730bee9b9dff1c89eb5c2bea4e7483b32fe91b57ab63d8e9862a2efb4acf3ae593a1c5b923822705a528
   languageName: node
   linkType: hard
 
-"@qiwi/uniconfig-plugin-dot@npm:3.5.4":
-  version: 3.5.4
-  resolution: "@qiwi/uniconfig-plugin-dot@npm:3.5.4"
+"@qiwi/uniconfig-plugin-dot@npm:3.5.5":
+  version: 3.5.5
+  resolution: "@qiwi/uniconfig-plugin-dot@npm:3.5.5"
   dependencies:
-    "@qiwi/uniconfig-core": 3.5.3
+    "@qiwi/uniconfig-core": 3.5.4
     dot: 1.1.3
     tslib: ^2.4.0
-  checksum: 19bb13a62ce42b2a0bc6b9e64c66d88850188018fb6fe7382e28cb1796789f8b1827517e5d098d0bd1df7b047f6fecdbd3ea7646bd5220a7a17ae5ce8bf7c119
+  checksum: 1878b0276a88a6eb7d26d0984a4c65421e95ce2e2b31e370aa20cba8043b14b6b4e50731340f922cd4aae21fc55e9b6a8ec544b55364547c72a1d67dc8945d7c
   languageName: node
   linkType: hard
 
-"@qiwi/uniconfig-plugin-dotenv@npm:3.5.10":
-  version: 3.5.10
-  resolution: "@qiwi/uniconfig-plugin-dotenv@npm:3.5.10"
+"@qiwi/uniconfig-plugin-dotenv@npm:3.5.11":
+  version: 3.5.11
+  resolution: "@qiwi/uniconfig-plugin-dotenv@npm:3.5.11"
   dependencies:
-    "@qiwi/uniconfig-core": 3.5.3
-    dotenv: ^16.0.0
+    "@qiwi/uniconfig-core": 3.5.4
+    dotenv: ^16.0.1
     tslib: ^2.4.0
-  checksum: 91641b512dde0c1c5be131e74444f3897ebc36a9dd1b2acf1eb32422af523c8e6f944dbd27c1e252ec5b2c838fa1578e652e6e0b03ebe29ceb524fddb94bcab0
+  checksum: 22c8b30c2bea5a0dc23dbcff0595953c953b5812391488b2570ab355bfc98fc7a00d017004553a5b1eaa050d249c714f5bdb536e930aec07f07b280cf8adfd29
   languageName: node
   linkType: hard
 
-"@qiwi/uniconfig-plugin-env@npm:3.5.4":
-  version: 3.5.4
-  resolution: "@qiwi/uniconfig-plugin-env@npm:3.5.4"
+"@qiwi/uniconfig-plugin-env@npm:3.5.5":
+  version: 3.5.5
+  resolution: "@qiwi/uniconfig-plugin-env@npm:3.5.5"
   dependencies:
-    "@qiwi/uniconfig-core": 3.5.3
+    "@qiwi/uniconfig-core": 3.5.4
     tslib: ^2.4.0
-  checksum: 88c04f26abeb1db162a6c02e6a443465e73462a4e191d77fbe5734bf27b5c48d814459af84a963ddb4fc5a237a7cf8d8a29c79f9397f1076aa76d62c1a48bcde
+  checksum: ed8bd489ff1f6d1deb6f7ee06d2379ac408437912f668b8d7af8fd1baebcd24e075bfb5cd40a24a414e8ea24cf4b4602cedc419c0de5304d7ce3dba613394412
   languageName: node
   linkType: hard
 
-"@qiwi/uniconfig-plugin-global@npm:3.5.4":
-  version: 3.5.4
-  resolution: "@qiwi/uniconfig-plugin-global@npm:3.5.4"
+"@qiwi/uniconfig-plugin-global@npm:3.5.5":
+  version: 3.5.5
+  resolution: "@qiwi/uniconfig-plugin-global@npm:3.5.5"
   dependencies:
-    "@qiwi/uniconfig-core": 3.5.3
+    "@qiwi/uniconfig-core": 3.5.4
     tslib: ^2.4.0
-  checksum: 11fdf5d48b5562e3538d3c103a75b73ca50106c882f3e7f2c143d0bfee0b9751677a6b49e4c31a1aa76bb715c18d94172f67509bc7533211212233e15826fa7f
+  checksum: 4dfe8a2de49b5242047c8f5a4245ee3373c19a154f834fc92c659737ac70b0d5d9baee39714dae65499c4c06ccdf1b6edd2ca78745452121cdd986c776ec8a1c
   languageName: node
   linkType: hard
 
-"@qiwi/uniconfig-plugin-ip@npm:3.5.4":
-  version: 3.5.4
-  resolution: "@qiwi/uniconfig-plugin-ip@npm:3.5.4"
+"@qiwi/uniconfig-plugin-ip@npm:3.5.5":
+  version: 3.5.5
+  resolution: "@qiwi/uniconfig-plugin-ip@npm:3.5.5"
   dependencies:
-    "@qiwi/uniconfig-core": 3.5.3
+    "@qiwi/uniconfig-core": 3.5.4
     ip: ^2.0.0
     tslib: ^2.4.0
-  checksum: 3800ce99c5187af45a2a49930ef04430db15a08902048f06919a518056f8a241b1611079b5ec32a775a6e1f17cd9f45b2246e53fef9c2e29c1b7e446327c436a
+  checksum: 4f521e54a9a28114696c1245d8fb3c78a7d9b293a5b1f4dfc2b1a1998b6e9878f5cb331bd9cf3576406f79bf035413a2ecc4a673c6320e7e049993894a50ea33
   languageName: node
   linkType: hard
 
-"@qiwi/uniconfig-plugin-json@npm:3.5.4":
-  version: 3.5.4
-  resolution: "@qiwi/uniconfig-plugin-json@npm:3.5.4"
+"@qiwi/uniconfig-plugin-json@npm:3.5.5":
+  version: 3.5.5
+  resolution: "@qiwi/uniconfig-plugin-json@npm:3.5.5"
   dependencies:
-    "@qiwi/uniconfig-core": 3.5.3
+    "@qiwi/uniconfig-core": 3.5.4
     tslib: ^2.4.0
-  checksum: bbcbe6c5fb5362bd4c98bca5ffc24e295a31e6a2afde708ece56c0871dcbf21d2369f24bb8531ed186b1127f0981b9e8419960923680583a59913324a40c07bf
+  checksum: ce4d514388c0b3a6c5e910d11e87ebac38e2b5243e64f77bbea94433a14f539cd52b54f1e31b7e74b9f93e8e7aefe43a8b98151249c3bab9309ea452e4073c8a
   languageName: node
   linkType: hard
 
-"@qiwi/uniconfig-plugin-path@npm:3.5.4":
-  version: 3.5.4
-  resolution: "@qiwi/uniconfig-plugin-path@npm:3.5.4"
+"@qiwi/uniconfig-plugin-path@npm:3.5.5":
+  version: 3.5.5
+  resolution: "@qiwi/uniconfig-plugin-path@npm:3.5.5"
   dependencies:
-    "@qiwi/uniconfig-core": 3.5.3
-    "@qiwi/uniconfig-plugin-root": 3.5.4
+    "@qiwi/uniconfig-core": 3.5.4
+    "@qiwi/uniconfig-plugin-root": 3.5.5
     tslib: ^2.4.0
-  checksum: 8e75a446ff4f675eba8ea33590b84ce15d01bd6b1154604ffefce9ed833069e533d60376ac7a0e82baf03969fa1028b4a04246fbbf3e099246e3a618c8f7273c
+  checksum: c8e9aa157d9fe970e02229bc348d3e7a2611d0b79f906de539be70f3dfd6e96fe7a9312e53ca9f497dc6e4f34758fddd7c6acc32d303902d1d4a09f950dee1b6
   languageName: node
   linkType: hard
 
-"@qiwi/uniconfig-plugin-pkg@npm:3.5.4":
-  version: 3.5.4
-  resolution: "@qiwi/uniconfig-plugin-pkg@npm:3.5.4"
+"@qiwi/uniconfig-plugin-pkg@npm:3.5.5":
+  version: 3.5.5
+  resolution: "@qiwi/uniconfig-plugin-pkg@npm:3.5.5"
   dependencies:
-    "@qiwi/uniconfig-core": 3.5.3
+    "@qiwi/uniconfig-core": 3.5.4
     read-pkg: ^5.2.0
-  checksum: 7ac053c5986dd3cc90ceff83b17b2cedc3cc0120a282694e592ad8079b254b684c5a88600b8c63ee1880347036145487f1fb9baa64ef00662bc9017377fd2869
+  checksum: 6fb1dabf6ec2f32dacb761a77f380ea3e357a0e72b8f956c48c58189d9fcaea222a2efe1218d810aab72a31e59a9ba9548639162eb90e82e3e552f088496b79b
   languageName: node
   linkType: hard
 
-"@qiwi/uniconfig-plugin-root@npm:3.5.4":
-  version: 3.5.4
-  resolution: "@qiwi/uniconfig-plugin-root@npm:3.5.4"
+"@qiwi/uniconfig-plugin-root@npm:3.5.5":
+  version: 3.5.5
+  resolution: "@qiwi/uniconfig-plugin-root@npm:3.5.5"
   dependencies:
-    "@qiwi/uniconfig-core": 3.5.3
+    "@qiwi/uniconfig-core": 3.5.4
     app-root-path: ^3.0.0
     tslib: ^2.4.0
-  checksum: bd6a61ba4a1af2a3da1a4801c106d52da4b9246762acc4289554097c73e02f1437e8d4598c7ac86d478f0416ce45ee19c374cfe237b76f1d84b06c2f9b93f6a1
+  checksum: 65a50d145144e92e9c2f0e070dc6c87689fa37167e40ceaa030bb02a624b5960547a2898ad012856c9167e1464d8a5d82ccb3cbe2b5f03257e4eaa8c2145e9bd
   languageName: node
   linkType: hard
 
-"@qiwi/uniconfig-plugin-yaml@npm:3.5.4":
-  version: 3.5.4
-  resolution: "@qiwi/uniconfig-plugin-yaml@npm:3.5.4"
+"@qiwi/uniconfig-plugin-yaml@npm:3.5.5":
+  version: 3.5.5
+  resolution: "@qiwi/uniconfig-plugin-yaml@npm:3.5.5"
   dependencies:
-    "@qiwi/uniconfig-core": 3.5.3
+    "@qiwi/uniconfig-core": 3.5.4
     js-yaml: ^4.1.0
     tslib: ^2.4.0
-  checksum: 37ff484c0538f8a6c5a8d9c3302810fe253df60d335f5541e4258c1a8beff0d593148901701eec949ca14ff2480578f87d74b34ad5f429fb2f18c468c261e664
+  checksum: c6ccf63d8df2bc8e335c8ca442638bc4569c83da7e3207e506552bf8f64c0f04b2367408935d48f95b99f1b7818f318c34f798d1ec0bb34f7206f965d3d26d95
   languageName: node
   linkType: hard
 
-"@qiwi/uniconfig@npm:3.5.10":
-  version: 3.5.10
-  resolution: "@qiwi/uniconfig@npm:3.5.10"
+"@qiwi/uniconfig@npm:3.5.11":
+  version: 3.5.11
+  resolution: "@qiwi/uniconfig@npm:3.5.11"
   dependencies:
-    "@qiwi/uniconfig-core": 3.5.3
-    "@qiwi/uniconfig-plugin-ajv": 3.5.4
-    "@qiwi/uniconfig-plugin-api-file": 3.5.4
-    "@qiwi/uniconfig-plugin-api-http": 3.5.4
-    "@qiwi/uniconfig-plugin-argv": 3.5.4
-    "@qiwi/uniconfig-plugin-datatree": 3.5.4
-    "@qiwi/uniconfig-plugin-dot": 3.5.4
-    "@qiwi/uniconfig-plugin-dotenv": 3.5.10
-    "@qiwi/uniconfig-plugin-env": 3.5.4
-    "@qiwi/uniconfig-plugin-global": 3.5.4
-    "@qiwi/uniconfig-plugin-ip": 3.5.4
-    "@qiwi/uniconfig-plugin-json": 3.5.4
-    "@qiwi/uniconfig-plugin-path": 3.5.4
-    "@qiwi/uniconfig-plugin-pkg": 3.5.4
-    "@qiwi/uniconfig-plugin-root": 3.5.4
-    "@qiwi/uniconfig-plugin-yaml": 3.5.4
-  checksum: 4e9547cd7952721012689f6293dd5139b2749dfd42c0be0a1146105d64371d068c6a3dfe3ece7b89b341746465399286de7641d3bf225f96df01ee3c93e3b0dd
+    "@qiwi/uniconfig-core": 3.5.4
+    "@qiwi/uniconfig-plugin-ajv": 3.5.5
+    "@qiwi/uniconfig-plugin-api-file": 3.5.5
+    "@qiwi/uniconfig-plugin-api-http": 3.5.5
+    "@qiwi/uniconfig-plugin-argv": 3.5.5
+    "@qiwi/uniconfig-plugin-datatree": 3.5.5
+    "@qiwi/uniconfig-plugin-dot": 3.5.5
+    "@qiwi/uniconfig-plugin-dotenv": 3.5.11
+    "@qiwi/uniconfig-plugin-env": 3.5.5
+    "@qiwi/uniconfig-plugin-global": 3.5.5
+    "@qiwi/uniconfig-plugin-ip": 3.5.5
+    "@qiwi/uniconfig-plugin-json": 3.5.5
+    "@qiwi/uniconfig-plugin-path": 3.5.5
+    "@qiwi/uniconfig-plugin-pkg": 3.5.5
+    "@qiwi/uniconfig-plugin-root": 3.5.5
+    "@qiwi/uniconfig-plugin-yaml": 3.5.5
+  checksum: c7340ebbdac0368fd99b2a002ac992476c6be3c796ce78359a0cbfb0f6e8c5e5251510db22d4a10aea8d3ce47bac11c76185e3662ec6b9c10a82816f49ce7219
   languageName: node
   linkType: hard
 
@@ -2198,7 +2198,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ajv@npm:^8.0.0, ajv@npm:^8.6.3":
+"ajv@npm:^8.0.0, ajv@npm:^8.11.0, ajv@npm:^8.6.3":
   version: 8.11.0
   resolution: "ajv@npm:8.11.0"
   dependencies:
@@ -3546,7 +3546,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotenv@npm:^16.0.0":
+"dotenv@npm:^16.0.1":
   version: 16.0.1
   resolution: "dotenv@npm:16.0.1"
   checksum: f459ffce07b977b7f15d8cc4ee69cdff77d4dd8c5dc8c85d2d485ee84655352c2415f9dd09d42b5b5985ced3be186130871b34e2f3e2569ebc72fbc2e8096792
@@ -9785,7 +9785,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yargs@npm:17.5.1":
+"yargs@npm:17.5.1, yargs@npm:^17.5.1":
   version: 17.5.1
   resolution: "yargs@npm:17.5.1"
   dependencies:
@@ -9834,7 +9834,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yargs@npm:^17.2.0, yargs@npm:^17.2.1, yargs@npm:^17.3.1":
+"yargs@npm:^17.2.1, yargs@npm:^17.3.1":
   version: 17.5.0
   resolution: "yargs@npm:17.5.0"
   dependencies:
