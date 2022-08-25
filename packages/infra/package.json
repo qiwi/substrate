@@ -41,7 +41,7 @@
     "dtslint": "4.2.1",
     "eslint": "*",
     "eslint-config-qiwi": "^1.17.3",
-    "jest": "^28.1.2",
+    "jest": "^29.0.0",
     "mkdirp": "^1.0.4",
     "rimraf": "^3.0.2",
     "terser": "^5.14.1",
