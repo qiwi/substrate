@@ -6,7 +6,7 @@ const traceLogLevel2: LogLevel = LogLevel.trace
 const debugLogLevel: LogLevel = 'debug' // $ExpectError
 const infoLogLevel: LogLevel = 'INFO' // $ExpectError
 
-LogLevel.TRACE === LogLevel.trace
+const aliasmatch = LogLevel.TRACE === LogLevel.trace
 
 const brokenLogMethod: ILoggerMethod = null // $ExpectError
 const logMethod: ILoggerMethod = () => {}
