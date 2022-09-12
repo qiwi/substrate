@@ -6,6 +6,13 @@ export enum LogLevel {
   INFO = 'info',
   DEBUG = 'debug',
   TRACE = 'trace',
+
+  // Lowercased aliases
+  error = 'error',
+  warn = 'warn',
+  info = 'info',
+  debug = 'debug',
+  trace = 'trace',
 }
 
 export interface ILogger {
