@@ -1,3 +1,10 @@
+# @qiwi/substrate-types [1.55.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.54.0...@qiwi/substrate-types@1.55.0) (2022-09-12)
+
+
+### Features
+
+* **types:** add lowercases aliases for LogLevel enum ([a034326](https://github.com/qiwi/substrate/commit/a03432677bc04f4754eb22369e0751917f919336))
+
 # @qiwi/substrate-types [1.54.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.53.2...@qiwi/substrate-types@1.54.0) (2022-05-12)
 
 
