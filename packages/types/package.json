@@ -54,7 +54,7 @@
     "cross-fetch": "3.1.5",
     "lodash": "4.17.21",
     "reflect-metadata": "0.1.13",
-    "underscore": "1.13.4"
+    "underscore": "1.13.6"
   },
   "license": "MIT",
   "repository": {
