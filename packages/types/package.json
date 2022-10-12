@@ -42,7 +42,7 @@
     "@qiwi/uniconfig": "3.5.11",
     "@types/bluebird": "3.5.37",
     "@types/config": "3.3.0",
-    "@types/jest": "29.1.1",
+    "@types/jest": "29.1.2",
     "@types/lodash": "4.14.186",
     "@types/node": "18.7.16",
     "@types/parsimmon": "1.10.6",
