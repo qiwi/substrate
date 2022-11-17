@@ -44,7 +44,7 @@
     "@qiwi/uniconfig": "3.5.11",
     "@types/bluebird": "3.5.37",
     "@types/config": "3.3.0",
-    "@types/lodash": "4.14.188",
+    "@types/lodash": "4.14.189",
     "@types/parsimmon": "1.10.6",
     "@types/underscore": "1.11.4",
     "bluebird": "3.7.2",
