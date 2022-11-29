@@ -1,3 +1,10 @@
+## @qiwi/substrate-infra [1.2.3](https://github.com/qiwi/substrate/compare/@qiwi/substrate-infra@1.2.2...@qiwi/substrate-infra@1.2.3) (2022-11-29)
+
+
+### Performance Improvements
+
+* update deps, fix pkg sources ref ([60895c5](https://github.com/qiwi/substrate/commit/60895c5b274dfae2ac20abf5d2fa6dc1f4b84c60))
+
 ## @qiwi/substrate-infra [1.2.2](https://github.com/qiwi/substrate/compare/@qiwi/substrate-infra@1.2.1...@qiwi/substrate-infra@1.2.2) (2022-05-08)
 
 
