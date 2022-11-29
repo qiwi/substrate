@@ -1,3 +1,18 @@
+## @qiwi/substrate-types [1.55.1](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.55.0...@qiwi/substrate-types@1.55.1) (2022-11-29)
+
+
+### Performance Improvements
+
+* update deps, fix pkg sources ref ([60895c5](https://github.com/qiwi/substrate/commit/60895c5b274dfae2ac20abf5d2fa6dc1f4b84c60))
+
+
+
+
+
+### Dependencies
+
+* **@qiwi/substrate-infra:** upgraded to 1.2.3
+
 # @qiwi/substrate-types [1.55.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.54.0...@qiwi/substrate-types@1.55.0) (2022-09-12)
 
 
