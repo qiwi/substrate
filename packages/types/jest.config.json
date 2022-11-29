@@ -4,7 +4,7 @@
   "coveragePathIgnorePatterns": [],
   "rootDir": "../../",
   "transform": {
-    "^.+\\.tsx?$": "ts-jest"
+    "^.+\\.tsx?$": ["ts-jest", { "tsconfig": "<rootDir>/tsconfig.json" }]
   },
   "collectCoverageFrom": [
     "<rootDir>/packages/types/src/main/**/*.ts"
@@ -23,10 +23,5 @@
     "jsx",
     "json",
     "node"
-  ],
-  "globals": {
-    "ts-jest": {
-      "tsconfig": "<rootDir>/tsconfig.json"
-    }
-  }
+  ]
 }

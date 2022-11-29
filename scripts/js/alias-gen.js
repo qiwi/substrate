@@ -1,13 +1,11 @@
-import { copySync } from 'fs-extra'
-import { sync as replaceSync } from 'replace-in-file'
-import { resolve } from 'path'
-import { argv } from 'yargs'
+const fs = require('node:fs')
+const path = require('node:path')
+const { sync: replaceSync } = require('replace-in-file')
+const {src, dst} = require('yargs')(process.argv.slice(2)).argv
+const SRC = path.resolve(src || './src/main/ts/export.ts')
+const DST = path.resolve(dst || './src/main/ts/aliases.ts')
 
-const {src, dst} = argv
-const SRC = resolve(src || './src/main/ts/export.ts')
-const DST = resolve(dst || './src/main/ts/aliases.ts')
-
-copySync(SRC, DST)
+fs.copyFileSync(SRC, DST)
 
 const reserved = [
   'Stack',

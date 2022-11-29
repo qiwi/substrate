@@ -3,7 +3,6 @@
   "description": "Abstract classes",
   "version": "1.20.9",
   "main": "target/es5/index.js",
-  "source": "target/ts/index.ts",
   "types": "target/es5/index.d.ts",
   "typescript": {
     "definition": "target/es5/index.d.ts"
@@ -27,7 +26,7 @@
     "test:libdefs": "cp typings/index.d.ts src/test/ts/libdef/index.d.ts && yarn dtslint",
     "jest": "jest --config=jest.config.json --detectOpenHandles --forceExit",
     "dtslint": "dtslint src/test/ts/libdef --localTs ../../node_modules/typescript/lib --expectOnly",
-    "aliasgen": "node -r @qiwi/esm ../../scripts/js/alias-gen.js",
+    "aliasgen": "node ../../scripts/js/alias-gen.js",
     "docs": "typedoc",
     "build:stamp": "buildstamp --git --out.path buildstamp.json"
   },

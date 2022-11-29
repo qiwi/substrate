@@ -2,7 +2,6 @@
   "name": "@qiwi/substrate-types",
   "version": "1.55.0",
   "main": "target/es5/index.js",
-  "source": "target/ts/index.ts",
   "types": "target/es5/index.d.ts",
   "typescript": {
     "definition": "target/es5/index.d.ts"
@@ -26,7 +25,7 @@
     "test": "cpy typings/index.d.ts src/test/ts/libdef/index.d.ts && yarn dtslint",
     "jest": "yarn jest --config=jest.config.json --detectOpenHandles --forceExit",
     "dtslint": "yarn dtslint src/test/ts/libdef --localTs ../../node_modules/typescript/lib --expectOnly",
-    "aliasgen": "node -r @qiwi/esm ../../scripts/js/alias-gen.js",
+    "aliasgen": "node ../../scripts/js/alias-gen.js",
     "docs": "typedoc"
   },
   "files": [
