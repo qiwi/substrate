@@ -28,7 +28,7 @@
     "find-git-root": "1.0.4",
     "lodash": "4.17.21",
     "prettier": "^2.8.0",
-    "prettier-config-qiwi": "^1.7.3",
+    "prettier-config-qiwi": "^2.0.0",
     "replace-in-file": "^6.3.5",
     "snazzy": "9.0.0",
     "typescript": "4.9.x",
