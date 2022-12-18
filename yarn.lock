@@ -3570,9 +3570,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-qiwi@npm:2.0.6":
-  version: 2.0.6
-  resolution: "eslint-config-qiwi@npm:2.0.6"
+"eslint-config-qiwi@npm:2.0.7":
+  version: 2.0.7
+  resolution: "eslint-config-qiwi@npm:2.0.7"
   dependencies:
     "@typescript-eslint/eslint-plugin": ^5.46.0
     "@typescript-eslint/parser": ^5.46.0
@@ -3582,7 +3582,7 @@ __metadata:
     eslint-plugin-unicorn: ^45.0.1
   peerDependencies:
     eslint: "*"
-  checksum: 60cfa3d4cc0e061753330b9161ae14a34a436fe8d66b2e70018d23c0c0149c81411ce8185128afe7eba3d46aafe5ceba97115b9f4a83c7499d2cdce2a920abfe
+  checksum: 008dda32bbc90e73bb849b001d931935b4ee7b28d59db015e5f3488497d294b3ea50500147301ea45f87cb9da9e9466cac508035cc523c22287178375cd6af9b
   languageName: node
   linkType: hard
 
@@ -7044,7 +7044,7 @@ __metadata:
   dependencies:
     eslint: 8.30.0
     eslint-config-prettier: ^8.5.0
-    eslint-config-qiwi: 2.0.6
+    eslint-config-qiwi: 2.0.7
     find-git-root: 1.0.4
     lodash: 4.17.21
     prettier: ^2.8.0
