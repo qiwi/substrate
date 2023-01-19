@@ -3590,19 +3590,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-qiwi@npm:2.0.7":
-  version: 2.0.7
-  resolution: "eslint-config-qiwi@npm:2.0.7"
+"eslint-config-qiwi@npm:2.0.8":
+  version: 2.0.8
+  resolution: "eslint-config-qiwi@npm:2.0.8"
   dependencies:
     "@typescript-eslint/eslint-plugin": ^5.46.0
     "@typescript-eslint/parser": ^5.46.0
     eslint-plugin-react: ^7.31.11
     eslint-plugin-react-hooks: ^4.6.0
-    eslint-plugin-sonarjs: ^0.17.0
+    eslint-plugin-sonarjs: ^0.18.0
     eslint-plugin-unicorn: ^45.0.1
   peerDependencies:
     eslint: "*"
-  checksum: 008dda32bbc90e73bb849b001d931935b4ee7b28d59db015e5f3488497d294b3ea50500147301ea45f87cb9da9e9466cac508035cc523c22287178375cd6af9b
+  checksum: 48e35a7cba11b2aaa553204b33bd3f02056cee6fc583bf9295b2588c31f578ad4823a2cfef3f1ab03406053d21897047a790b24f1ef994c6bfa41a5edf292f93
   languageName: node
   linkType: hard
 
@@ -3662,6 +3662,15 @@ __metadata:
   peerDependencies:
     eslint: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
   checksum: f035bb86a601f94f04c427f48e3dcc7977a2b3e1ab8cc8e7097d00be425bf29448b32ab2a38409e4394ef298b00ba30fce051d4feba4b341c0e1f74534716163
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-sonarjs@npm:^0.18.0":
+  version: 0.18.0
+  resolution: "eslint-plugin-sonarjs@npm:0.18.0"
+  peerDependencies:
+    eslint: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
+  checksum: e71f2530fa7bfb80699960805ec89fdf4c3f87d00b8cc302afede84446d804019a2b5e555f440319bd20f0ad4d5e08349c89a2c8ecf3b6086fa6c3789b380afa
   languageName: node
   linkType: hard
 
@@ -7031,7 +7040,7 @@ __metadata:
   dependencies:
     eslint: 8.32.0
     eslint-config-prettier: ^8.5.0
-    eslint-config-qiwi: 2.0.7
+    eslint-config-qiwi: 2.0.8
     find-git-root: 1.0.4
     lodash: 4.17.21
     prettier: ^2.8.0
