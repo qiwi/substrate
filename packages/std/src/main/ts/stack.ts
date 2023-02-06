@@ -1,6 +1,6 @@
 /** @module @qiwi/substrate-std */
-/** */
 
+/** */
 import { IStack } from '@qiwi/substrate-types'
 
 /**

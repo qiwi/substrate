@@ -44,7 +44,7 @@ const brokenEventDto: IClientEventDto = {
 
 const clientEventDto1: IClientEventDto = {
   message: 'foo',
-  timestamp: 1599808450263,
+  timestamp: 1_599_808_450_263,
 }
 
 const clientEventDto2: IClientEventDto = {
