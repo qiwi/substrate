@@ -1,4 +1,5 @@
 import { RecursivePartial } from './helpers'
+
 // Legacy fallback: "I" instead of "T" prefix
 
 export type IBrowserInfo = RecursivePartial<{
