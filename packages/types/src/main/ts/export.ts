@@ -38,6 +38,7 @@ export {
   IFetch,
   IHttpRequestProvider,
   HttpMethod,
+  IHttpMethodV2,
   IHttpResponse,
   IHttpRequest,
 } from './IHttpClient'

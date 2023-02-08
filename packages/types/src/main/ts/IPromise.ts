@@ -11,7 +11,7 @@ export interface IPromise<TValue = any, TReason = any> {
     onReject?: (reason: TReason) => any,
   ) => IPromise
   catch: (onReject: (reason: TReason) => any) => IPromise
-  finally: (onFinally: () => any) => IPromise
+  finally?: (onFinally: () => any) => IPromise
   readonly [Symbol.toStringTag]: string
 }
 

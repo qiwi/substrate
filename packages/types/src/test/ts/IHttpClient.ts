@@ -3,12 +3,14 @@
 import axios from 'axios'
 import crossFetch from 'cross-fetch'
 
-import { IFetch, IHttpClient, IHttpRequestProvider } from '.'
+import { IFetch, IHttpClient, IHttpRequestProvider, IHttpMethodV2 } from '.'
 
 export const fetchAsFetcher: IFetch = fetch
 export const fetchAsProvider: IHttpRequestProvider = fetch
 export const crossFetchAsFetcher: IFetch = crossFetch
 export const axiosAsClient: IHttpClient = axios
+
+const method: IHttpMethodV2 = 'GET'
 
 export const suite = async (): Promise<boolean> => {
   type Data = { foo: string }
