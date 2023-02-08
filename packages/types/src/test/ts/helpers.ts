@@ -6,7 +6,7 @@ import {
   Prev,
   RecursivePartial,
   UnionToIntersection,
-} from '../../../main/ts'
+} from '../../main/ts/helpers'
 
 interface A {
   a: string

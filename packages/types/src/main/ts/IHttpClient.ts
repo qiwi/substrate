@@ -10,6 +10,8 @@ export const enum HttpMethod {
   PATCH = 'PATCH',
 }
 
+export type IHttpMethodV2 = `${HttpMethod}`
+
 export type IHttpHeaders = Record<string, any>
 
 export interface IHttpResponse<D = any> {
@@ -29,7 +31,7 @@ export interface IFetchResponse<D = any> {
 
 export interface IHttpRequest {
   url?: string
-  method?: HttpMethod
+  method?: HttpMethod | IHttpMethodV2
   headers?: IHttpHeaders
   params?: any
   body?: any

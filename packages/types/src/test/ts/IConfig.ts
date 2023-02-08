@@ -1,10 +1,11 @@
 import * as Uniconfig from '@qiwi/uniconfig-core'
-import * as Conf from 'conf'
+
 import * as NodeConfig from 'config'
 
 import { Config, IConfig } from '.'
 
 // FIXME
+// import * as Conf from 'conf'
 // const conf: IConfig = new Conf();
 
 // const numberConf: IConfig<number> = new Conf<number>();
