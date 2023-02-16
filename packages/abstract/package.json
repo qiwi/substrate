@@ -19,7 +19,7 @@
     "build:ts": "mkdirp target/ts && cp -R ./src/main/ts/. ./target/ts/.",
     "build:stamp": "buildstamp --git --out.path buildstamp.json",
     "test": "yarn test:libdef && yarn test:unit",
-    "test:libdef": "dtslint src/test/dts --localTs ../../node_modules/typescript/lib --expectOnly",
+    "test:libdef": "dtslint src/test/dts --localTs ../../node_modules/typescript/lib --expectOnly && echo 'dts is fine'",
     "test:unit": "jest --config=jest.config.json --detectOpenHandles --forceExit",
     "aliasgen": "node ../../scripts/js/alias-gen.js",
     "docs": "typedoc"
