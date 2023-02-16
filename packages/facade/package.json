@@ -11,7 +11,7 @@
   "types": "./target/esm/index.d.ts",
   "scripts": {
     "clean": "rimraf target buildcache docs coverage buildstamp.json",
-    "build": "concurrently -n yarn:build:cjs yarn:build:ts yarn:docs yarn:build:stamp && yarn build:esm && yarn build:esmfix",
+    "build": "concurrently -n yarn:build:cjs yarn:build:ts yarn:build:stamp && yarn build:esm && yarn build:esmfix",
     "build:cjs": "mkdirp target/cjs && tsc -p tsconfig.json --target ES5 --module commonjs --outDir target/cjs --tsBuildInfoFile buildcache/cjs.json",
     "build:esm": "mkdirp target/esm && tsc -p tsconfig.json --target ES2020 --module es2020 --outDir target/esm --tsBuildInfoFile buildcache/esm.json",
     "build:esmfix": "yarn tsc-esm-fix --target=target/esm",
@@ -39,7 +39,7 @@
   "devDependencies": {
     "@qiwi/substrate-infra": "1.2.3",
     "@types/jest": "29.4.0",
-    "@types/node": "18.11.19",
+    "@types/node": "18.13.0",
     "fs-extra": "^11.1.0"
   },
   "license": "MIT",
