@@ -1054,12 +1054,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@qiwi/substrate-abstract@1.20.10, @qiwi/substrate-abstract@workspace:packages/abstract":
+"@qiwi/substrate-abstract@npm:1.20.10":
+  version: 1.20.10
+  resolution: "@qiwi/substrate-abstract@npm:1.20.10"
+  dependencies:
+    "@qiwi/substrate-types": 1.55.1
+  checksum: 1321d760c691c7f817aefb702f4eed9337bff5a913408b4ba13577af795a27947d477e71bf7671d082cea3221c157341dc624483bf411a642c0bdb8cd9716104
+  languageName: node
+  linkType: hard
+
+"@qiwi/substrate-abstract@workspace:packages/abstract":
   version: 0.0.0-use.local
   resolution: "@qiwi/substrate-abstract@workspace:packages/abstract"
   dependencies:
     "@qiwi/substrate-infra": 1.2.3
-    "@qiwi/substrate-types": 1.55.1
+    "@qiwi/substrate-types": 2.0.0
     "@qiwi/uniconfig": 3.5.11
     "@types/bluebird": 3.5.38
     "@types/config": 3.3.0
@@ -1137,14 +1146,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@qiwi/substrate-types@npm:1.55.1":
-  version: 1.55.1
-  resolution: "@qiwi/substrate-types@npm:1.55.1"
-  checksum: 8c5c66facd5a6c2ef99e45dfb2f4addefee574b7eb0b1d47e9c91126abc8c16ca2d8226b29610361ff69c850bb77831a8ecf8f5f5c3cdde3e9ce521d4c64b27e
-  languageName: node
-  linkType: hard
-
-"@qiwi/substrate-types@workspace:packages/types":
+"@qiwi/substrate-types@2.0.0, @qiwi/substrate-types@workspace:packages/types":
   version: 0.0.0-use.local
   resolution: "@qiwi/substrate-types@workspace:packages/types"
   dependencies:
@@ -1167,6 +1169,13 @@ __metadata:
     underscore: 1.13.6
   languageName: unknown
   linkType: soft
+
+"@qiwi/substrate-types@npm:1.55.1":
+  version: 1.55.1
+  resolution: "@qiwi/substrate-types@npm:1.55.1"
+  checksum: 8c5c66facd5a6c2ef99e45dfb2f4addefee574b7eb0b1d47e9c91126abc8c16ca2d8226b29610361ff69c850bb77831a8ecf8f5f5c3cdde3e9ce521d4c64b27e
+  languageName: node
+  linkType: hard
 
 "@qiwi/substrate@workspace:packages/facade":
   version: 0.0.0-use.local
