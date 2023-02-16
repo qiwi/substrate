@@ -7,8 +7,7 @@
   "private": true,
   "scripts": {
     "clean": "yarn workspaces foreach -tp run clean",
-    "prebuild": "tsc -b packages/facade/tsconfig.json",
-    "build": "yarn prebuild && yarn workspaces foreach -tp run build && yarn format",
+    "build": "yarn workspaces foreach -tp run build && yarn format",
     "test": "node_modules/.bin/jest && yarn lint && yarn test:libdef",
     "test:libdef": "yarn workspaces foreach -p run test:libdef",
     "test:report": "yarn test && yarn coveralls:push",
