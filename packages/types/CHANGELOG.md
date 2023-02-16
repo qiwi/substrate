@@ -1,3 +1,15 @@
+# @qiwi/substrate-types [2.0.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.55.1...@qiwi/substrate-types@2.0.0) (2023-02-16)
+
+
+### Features
+
+* drop flow-type generation ([2fcf4b4](https://github.com/qiwi/substrate/commit/2fcf4b4ef804d3767b048aa7c01591f9364fd030))
+
+
+### BREAKING CHANGES
+
+* flow typings are no longer provided
+
 ## @qiwi/substrate-types [1.55.1](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.55.0...@qiwi/substrate-types@1.55.1) (2022-11-29)
 
 
