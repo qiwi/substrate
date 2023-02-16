@@ -5,12 +5,12 @@ on: [push, pull_request]
 jobs:
   lint:
     name: lint
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
       - name: Install deps
         run: yarn
       - name: Lint
@@ -19,15 +19,14 @@ jobs:
   build:
     name: build
     needs: lint
-    if: ${{ needs.init.outputs.skip == 'false' }}
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout
         uses: actions/checkout@v3
 
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
       - name: Install deps
         run: yarn
 
@@ -50,7 +49,7 @@ jobs:
   test_push:
     needs: build
     if: github.event_name == 'push'
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -61,7 +60,7 @@ jobs:
           name: target
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
       - name: Install deps
         run: |
           sudo apt-get install moreutils
@@ -83,7 +82,7 @@ jobs:
     needs: build
     strategy:
       matrix:
-        os: [ ubuntu-20.04 ]
+        os: [ ubuntu-22.04 ]
         node-version: [ 14, 16 ]
     name: Test (Node v${{ matrix.node-version }}, OS ${{ matrix.os }})
     runs-on: ${{ matrix.os }}
@@ -103,10 +102,10 @@ jobs:
           sudo apt-get install moreutils
           yarn
       - name: Unit test only
-        if: matrix.node-version != '16' || matrix.os != 'ubuntu-20.04'
+        if: matrix.node-version != '16' || matrix.os != 'ubuntu-22.04'
         run: yarn test
       - name: Full test with report
-        if: matrix.node-version == '16' && matrix.os == 'ubuntu-20.04'
+        if: matrix.node-version == '16' && matrix.os == 'ubuntu-22.04'
         run: yarn test:report
 
   release:
@@ -114,7 +113,7 @@ jobs:
     # https://github.community/t/trigger-job-on-tag-push-only/18076
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
     needs: test_push
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -126,7 +125,7 @@ jobs:
           name: target
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
 
       - name: Codeclimate
         uses: paambaati/codeclimate-action@v3.2.0
