@@ -1054,16 +1054,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@qiwi/substrate-abstract@npm:1.20.10":
-  version: 1.20.10
-  resolution: "@qiwi/substrate-abstract@npm:1.20.10"
-  dependencies:
-    "@qiwi/substrate-types": 1.55.1
-  checksum: 1321d760c691c7f817aefb702f4eed9337bff5a913408b4ba13577af795a27947d477e71bf7671d082cea3221c157341dc624483bf411a642c0bdb8cd9716104
-  languageName: node
-  linkType: hard
-
-"@qiwi/substrate-abstract@workspace:packages/abstract":
+"@qiwi/substrate-abstract@1.20.11, @qiwi/substrate-abstract@workspace:packages/abstract":
   version: 0.0.0-use.local
   resolution: "@qiwi/substrate-abstract@workspace:packages/abstract"
   dependencies:
@@ -1125,17 +1116,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@qiwi/substrate-std@npm:1.3.11":
-  version: 1.3.11
-  resolution: "@qiwi/substrate-std@npm:1.3.11"
-  dependencies:
-    "@qiwi/substrate-types": 1.55.1
-    tslib: ^2.4.1
-  checksum: 858ec2fcee5d21f3eb265f8177f188b6a5d88906a0768eca5febb66ac5a4fc3d91e87e1c8f75cca9d8268b81354af0f96a8d29719ea0808d413635045eff1971
-  languageName: node
-  linkType: hard
-
-"@qiwi/substrate-std@workspace:packages/std":
+"@qiwi/substrate-std@1.3.12, @qiwi/substrate-std@workspace:packages/std":
   version: 0.0.0-use.local
   resolution: "@qiwi/substrate-std@workspace:packages/std"
   dependencies:
@@ -1180,21 +1161,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@qiwi/substrate-types@npm:1.55.1":
-  version: 1.55.1
-  resolution: "@qiwi/substrate-types@npm:1.55.1"
-  checksum: 8c5c66facd5a6c2ef99e45dfb2f4addefee574b7eb0b1d47e9c91126abc8c16ca2d8226b29610361ff69c850bb77831a8ecf8f5f5c3cdde3e9ce521d4c64b27e
-  languageName: node
-  linkType: hard
-
 "@qiwi/substrate@workspace:packages/facade":
   version: 0.0.0-use.local
   resolution: "@qiwi/substrate@workspace:packages/facade"
   dependencies:
-    "@qiwi/substrate-abstract": 1.20.10
+    "@qiwi/substrate-abstract": 1.20.11
     "@qiwi/substrate-infra": 1.2.3
-    "@qiwi/substrate-std": 1.3.11
-    "@qiwi/substrate-types": 1.55.1
+    "@qiwi/substrate-std": 1.3.12
+    "@qiwi/substrate-types": 2.0.0
     "@types/jest": 29.4.0
     "@types/node": 18.13.0
     fs-extra: ^11.1.0
