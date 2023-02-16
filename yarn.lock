@@ -1054,7 +1054,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@qiwi/substrate-abstract@1.20.11, @qiwi/substrate-abstract@workspace:packages/abstract":
+"@qiwi/substrate-abstract@npm:1.20.11":
+  version: 1.20.11
+  resolution: "@qiwi/substrate-abstract@npm:1.20.11"
+  dependencies:
+    "@qiwi/substrate-types": 2.0.0
+  checksum: a603a5c39a930686e081e355d646a5d7731c984dc0b99846b4b8eb26b16be0e76f8ee5ca8eb77e9e558b90b643165f4cf48efb45168cfa26b3d9228d4c9bb2ad
+  languageName: node
+  linkType: hard
+
+"@qiwi/substrate-abstract@workspace:packages/abstract":
   version: 0.0.0-use.local
   resolution: "@qiwi/substrate-abstract@workspace:packages/abstract"
   dependencies:

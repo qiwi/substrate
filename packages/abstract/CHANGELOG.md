@@ -1,3 +1,15 @@
+# @qiwi/substrate-abstract [2.0.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-abstract@1.20.11...@qiwi/substrate-abstract@2.0.0) (2023-02-16)
+
+
+### Features
+
+* set v2 ([4e39def](https://github.com/qiwi/substrate/commit/4e39def29321fa0e470c5a9c8dbf5c7360f27cf4))
+
+
+### BREAKING CHANGES
+
+* drop flowtype support
+
 ## @qiwi/substrate-abstract [1.20.11](https://github.com/qiwi/substrate/compare/@qiwi/substrate-abstract@1.20.10...@qiwi/substrate-abstract@1.20.11) (2023-02-16)
 
 
