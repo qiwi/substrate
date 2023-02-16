@@ -18,7 +18,7 @@
     "build:ts": "mkdirp target/ts && cp -R ./src/main/ts/. ./target/ts/.",
     "build:stamp": "buildstamp --git --out.path buildstamp.json",
     "test": "yarn test:gen && yarn test:libdef && yarn test:unit",
-    "test:gen": "rsync -a ../types/src/test/ts/dts/I*.ts ./src/test/dts/ && rsync -a ../abstract/src/test/ts/*.ts ./src/test/ts/ && rsync -a ../std/src/test/ts/*.ts ./src/test/ts/",
+    "test:gen": "rsync -a ../types/src/test/dts/I*.ts ./src/test/dts/ && rsync -a ../abstract/src/test/ts/*.ts ./src/test/ts/ && rsync -a ../std/src/test/ts/*.ts ./src/test/ts/",
     "test:libdef": "dtslint src/test/dts --localTs ../../node_modules/typescript/lib --expectOnly",
     "test:unit": "jest --config=jest.config.json --detectOpenHandles --forceExit --passWithNoTests"
   },
