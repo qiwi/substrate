@@ -6,7 +6,7 @@
     "^.+\\.tsx?$": ["ts-jest", { "tsconfig": "<rootDir>/tsconfig.json" }]
   },
   "testMatch": [
-    "<rootDir>/facade/src/test/ts/unit/*.ts"
+    "<rootDir>/facade/src/test/ts/*.ts"
   ],
   "transformIgnorePatterns": [
     "./node_modules",

@@ -1096,6 +1096,7 @@ __metadata:
     terser: ^5.16.3
     ts-jest: ^29.0.5
     ts-node: 10.9.1
+    tsc-esm-fix: ^2.20.12
     typedoc: ^0.23.24
     typescript: 4.9.x
   bin:
@@ -5678,7 +5679,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"json5@npm:^2.1.2, json5@npm:^2.2.2, json5@npm:^2.2.3":
+"json5@npm:^2.1.2, json5@npm:^2.2.1, json5@npm:^2.2.2, json5@npm:^2.2.3":
   version: 2.2.3
   resolution: "json5@npm:2.2.3"
   bin:
@@ -8240,6 +8241,21 @@ __metadata:
     ts-node-transpile-only: dist/bin-transpile.js
     ts-script: dist/bin-script-deprecated.js
   checksum: 090adff1302ab20bd3486e6b4799e90f97726ed39e02b39e566f8ab674fd5bd5f727f43615debbfc580d33c6d9d1c6b1b3ce7d8e3cca3e20530a145ffa232c35
+  languageName: node
+  linkType: hard
+
+"tsc-esm-fix@npm:^2.20.12":
+  version: 2.20.12
+  resolution: "tsc-esm-fix@npm:2.20.12"
+  dependencies:
+    fs-extra: ^11.1.0
+    globby: ^13.1.3
+    json5: ^2.2.1
+    meow: ^11.0.0
+    tslib: ^2.4.1
+  bin:
+    tsc-esm-fix: target/es6/cli.mjs
+  checksum: 8a6e6a646ef2d5b09daab0d0640ab96f8223548d372e581082d577bcd0111567b25e65aa1da3e0a118d8237eef0fa574fcc05fc3ad4b12e54504c222a15077d6
   languageName: node
   linkType: hard
 

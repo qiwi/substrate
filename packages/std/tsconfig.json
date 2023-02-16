@@ -5,6 +5,7 @@
     "baseUrl": "./src/main/ts/",
     "target": "es5",
     "outDir": "target/es5",
+    "moduleResolution": "nodenext",
     "tsBuildInfoFile": "./buildcache/.tsbuildinfo"
   },
   "references": [
