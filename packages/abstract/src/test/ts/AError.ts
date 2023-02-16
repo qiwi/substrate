@@ -1,4 +1,4 @@
-import { AbstractError } from '../../../main/ts'
+import { AbstractError } from '../../main/ts'
 
 describe('AbstractError', () => {
   describe('constructor', () => {

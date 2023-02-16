@@ -1,31 +1,26 @@
 {
   "name": "@qiwi/substrate",
   "version": "1.20.16",
-  "main": "target/es5/index.js",
-  "types": "target/es5/index.d.ts",
-  "typescript": {
-    "definition": "target/es5/index.d.ts"
-  },
-  "typesVersions": {
-    ">=4": {
-      "*": [
-        "target/es5/index.d.ts",
-        "src/test/ts/*"
-      ]
+  "exports": {
+    ".": {
+      "import": "./target/esm/index.js",
+      "require": "./target/cjs/index.js",
+      "types": "./target/esm/index.d.ts"
     }
   },
+  "types": "./target/esm/index.d.ts",
   "scripts": {
-    "clean": "rimraf target buildcache flow-typed typings docs coverage buildstamp.json",
-    "build": "concurrently -n yarn:build:es5 yarn:build:es6 yarn:build:ts yarn:build:libdef yarn:build:stamp",
-    "build:es5": "mkdirp target/es5 && tsc -p ./tsconfig.json --target ES5 --outDir target/es5",
-    "build:es6": "mkdirp target/es6 && tsc -p ./tsconfig.json --target ES6 --outDir target/es6",
-    "build:ts": "cpy src/main/ts/ target/ts/ --flat",
-    "build:libdef": "npx @qiwi/libdefkit -p libdefkit --tsconfig=tsconfig.json",
-    "testgen": "cp typings/index.d.ts src/test/ts/libdef/index.d.ts && rsync -a ../types/src/test/ts/libdef/I*.ts ./src/test/ts/libdef/ && rsync -a ../abstract/src/test/ts/unit/*.ts ./src/test/ts/unit/ && rsync -a ../std/src/test/ts/unit/*.ts ./src/test/ts/unit/",
-    "test": "yarn testgen && yarn dtslint && yarn jest",
-    "jest": "jest --config=jest.config.json --detectOpenHandles --forceExit --passWithNoTests",
-    "dtslint": "dtslint src/test/ts/libdef --localTs ../../node_modules/typescript/lib --expectOnly",
-    "build:stamp": "buildstamp --git --out.path buildstamp.json"
+    "clean": "rimraf target buildcache docs coverage buildstamp.json",
+    "build": "concurrently -n yarn:build:cjs yarn:build:ts yarn:docs yarn:build:stamp && yarn build:esm && yarn build:esmfix",
+    "build:cjs": "mkdirp target/cjs && tsc -p tsconfig.json --target ES5 --module commonjs --outDir target/cjs --tsBuildInfoFile buildcache/cjs.json",
+    "build:esm": "mkdirp target/esm && tsc -p tsconfig.json --target ES2020 --module es2020 --outDir target/esm --tsBuildInfoFile buildcache/esm.json",
+    "build:esmfix": "yarn tsc-esm-fix --target=target/esm",
+    "build:ts": "mkdirp target/ts && cp -R ./src/main/ts/. ./target/ts/.",
+    "build:stamp": "buildstamp --git --out.path buildstamp.json",
+    "test": "yarn test:gen && yarn test:libdef && yarn test:unit",
+    "test:gen": "rsync -a ../types/src/test/ts/dts/I*.ts ./src/test/dts/ && rsync -a ../abstract/src/test/ts/*.ts ./src/test/ts/ && rsync -a ../std/src/test/ts/*.ts ./src/test/ts/",
+    "test:libdef": "dtslint src/test/dts --localTs ../../node_modules/typescript/lib --expectOnly",
+    "test:unit": "jest --config=jest.config.json --detectOpenHandles --forceExit --passWithNoTests"
   },
   "files": [
     "README.md",
