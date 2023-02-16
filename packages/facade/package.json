@@ -25,8 +25,6 @@
   "files": [
     "README.md",
     "CHANGELOG.md",
-    "typings",
-    "flow-typed",
     "target",
     "buildstamp.json"
   ],

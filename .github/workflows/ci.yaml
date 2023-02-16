@@ -83,7 +83,7 @@ jobs:
     strategy:
       matrix:
         os: [ ubuntu-22.04 ]
-        node-version: [ 14, 16 ]
+        node-version: [ 14, 18 ]
     name: Test (Node v${{ matrix.node-version }}, OS ${{ matrix.os }})
     runs-on: ${{ matrix.os }}
     steps:
@@ -102,10 +102,10 @@ jobs:
           sudo apt-get install moreutils
           yarn
       - name: Unit test only
-        if: matrix.node-version != '16' || matrix.os != 'ubuntu-22.04'
+        if: matrix.node-version != '18' || matrix.os != 'ubuntu-22.04'
         run: yarn test
       - name: Full test with report
-        if: matrix.node-version == '16' && matrix.os == 'ubuntu-22.04'
+        if: matrix.node-version == '18' && matrix.os == 'ubuntu-22.04'
         run: yarn test:report
 
   release:
