@@ -1,3 +1,10 @@
+## @qiwi/substrate-types [2.0.1](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@2.0.0...@qiwi/substrate-types@2.0.1) (2023-02-17)
+
+
+### Bug Fixes
+
+* fix build queues ([79be4e2](https://github.com/qiwi/substrate/commit/79be4e24a76887f9fb6a1dc1e831170401771649))
+
 # @qiwi/substrate-types [2.0.0](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@1.55.1...@qiwi/substrate-types@2.0.0) (2023-02-16)
 
 
