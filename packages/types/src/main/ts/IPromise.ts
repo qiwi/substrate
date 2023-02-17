@@ -5,13 +5,13 @@ export type TPromiseExecutor<TValue = any, TReason = any> = (
   reject: (reason: TReason) => void,
 ) => void
 
-export interface IPromise<TValue = any, TReason = any> {
+export interface IPromise<TValue = any, TReason = any> extends Promise<TValue> {
   then: (
     onSuccess?: (value: TValue) => any,
     onReject?: (reason: TReason) => any,
   ) => IPromise
   catch: (onReject: (reason: TReason) => any) => IPromise
-  finally?: (onFinally: () => any) => IPromise
+  // finally: (onFinally: () => any) => IPromise
   readonly [Symbol.toStringTag]: string
 }
 

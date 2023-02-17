@@ -3,11 +3,12 @@
   "compilerOptions": {
     "rootDir": "./src/main/ts/",
     "baseUrl": "./src/main/ts/",
-    "target": "es5",
+    "target": "es6",
     "outDir": "target/cjs",
     "tsBuildInfoFile": "./buildcache/.tsbuildinfo",
     "lib": [
-      "es5",
+      "es6",
+      "es2015.promise",
       "dom"
     ]
   },
