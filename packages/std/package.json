@@ -1,6 +1,6 @@
 {
   "name": "@qiwi/substrate-std",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "exports": {
     ".": {
       "import": "./target/esm/index.js",
@@ -43,7 +43,7 @@
     "underscore": "1.13.6"
   },
   "dependencies": {
-    "@qiwi/substrate-types": "2.0.1",
+    "@qiwi/substrate-types": "2.0.2",
     "tslib": "^2.5.0"
   },
   "license": "MIT",
