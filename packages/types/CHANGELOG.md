@@ -1,3 +1,10 @@
+## @qiwi/substrate-types [2.0.2](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@2.0.1...@qiwi/substrate-types@2.0.2) (2023-02-17)
+
+
+### Bug Fixes
+
+* type relax promise finally ([21223d3](https://github.com/qiwi/substrate/commit/21223d30911c7e5bcd15a2623b8ba7e3f98a3483))
+
 ## @qiwi/substrate-types [2.0.1](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@2.0.0...@qiwi/substrate-types@2.0.1) (2023-02-17)
 
 

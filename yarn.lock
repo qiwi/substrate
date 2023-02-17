@@ -1137,7 +1137,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@qiwi/substrate-types@2.0.1, @qiwi/substrate-types@workspace:packages/types":
+"@qiwi/substrate-types@npm:2.0.1":
+  version: 2.0.1
+  resolution: "@qiwi/substrate-types@npm:2.0.1"
+  checksum: e90e97efb5fc9476cb06e148aa1d695767031012ec9991c32e7cf14ca48435452ec0985e15e6888beabdac8bd2425dfd5e799d800f207865f12f51d01bcc8f82
+  languageName: node
+  linkType: hard
+
+"@qiwi/substrate-types@workspace:packages/types":
   version: 0.0.0-use.local
   resolution: "@qiwi/substrate-types@workspace:packages/types"
   dependencies:

@@ -1,6 +1,6 @@
 {
   "name": "@qiwi/substrate-types",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "exports": {
     ".": {
       "import": "./target/esm/index.js",
