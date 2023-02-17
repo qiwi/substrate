@@ -11,23 +11,19 @@
   "types": "./target/esm/index.d.ts",
   "scripts": {
     "clean": "rimraf target buildcache flow-typed typings docs coverage buildstamp.json",
-    "build": "yarn aliasgen && concurrently -n yarn:build:cjs yarn:build:ts yarn:docs yarn:build:stamp && yarn build:esm && yarn build:esmfix",
-    "build:cjs": "mkdirp target/cjs && tsc -p tsconfig.json --target ES5 --module commonjs --outDir target/cjs",
-    "build:esm": "mkdirp target/esm && tsc -p tsconfig.json --target ES2020 --module es2020  --outDir target/esm",
-    "build:esmfix": "yarn tsc-esm-fix --target=target/esm",
+    "build": "yarn aliasgen && concurrently 'npm:build:*'",
+    "build:cjs": "mkdirp target/cjs && tsc -p tsconfig.json --target ES5 --module commonjs --outDir target/cjs --tsBuildInfoFile buildcache/cjs.json",
+    "build:esm": "mkdirp target/esm && tsc -p tsconfig.json --target ES2020 --module es2020 --outDir target/esm --tsBuildInfoFile buildcache/esm.json && tsc-esm-fix --target=target/esm",
     "build:ts": "mkdirp target/ts && cp -R ./src/main/ts/. ./target/ts/.",
     "build:stamp": "buildstamp --git --out.path buildstamp.json",
+    "build:docs": "typedoc",
     "test": "yarn test:libdef",
-    "test:unit": "yarn jest --config=jest.config.json --detectOpenHandles --forceExit",
     "test:libdef": "yarn dtslint src/test/dts --localTs ../../node_modules/typescript/lib --expectOnly && echo 'dts is fine'",
-    "aliasgen": "node ../../scripts/js/alias-gen.js",
-    "docs": "typedoc"
+    "aliasgen": "node ../../scripts/js/alias-gen.js"
   },
   "files": [
     "README.md",
     "CHANGELOG.md",
-    "typings",
-    "flow-typed",
     "target",
     "buildstamp.json"
   ],

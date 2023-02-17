@@ -11,14 +11,13 @@
   "types": "./target/esm/index.d.ts",
   "scripts": {
     "clean": "rimraf target buildcache docs coverage buildstamp.json",
-    "build": "concurrently -n test:gen yarn:build:cjs yarn:build:ts yarn:build:stamp && yarn build:esm && yarn build:esmfix",
+    "build": "concurrently 'npm:build:*'",
     "build:cjs": "mkdirp target/cjs && tsc -p tsconfig.json --target ES5 --module commonjs --outDir target/cjs --tsBuildInfoFile buildcache/cjs.json",
-    "build:esm": "mkdirp target/esm && tsc -p tsconfig.json --target ES2020 --module es2020 --outDir target/esm --tsBuildInfoFile buildcache/esm.json",
-    "build:esmfix": "yarn tsc-esm-fix --target=target/esm",
+    "build:esm": "mkdirp target/esm && tsc -p tsconfig.json --target ES2020 --module es2020 --outDir target/esm --tsBuildInfoFile buildcache/esm.json && tsc-esm-fix --target=target/esm",
     "build:ts": "mkdirp target/ts && cp -R ./src/main/ts/. ./target/ts/.",
     "build:stamp": "buildstamp --git --out.path buildstamp.json",
-    "test": "yarn test:libdef && yarn test:unit",
-    "test:gen": "rsync -a ../types/src/test/dts/I*.ts ./src/test/dts/ && rsync -a ../abstract/src/test/ts/*.ts ./src/test/ts/ && rsync -a ../std/src/test/ts/*.ts ./src/test/ts/",
+    "build:test": "rsync -a ../types/src/test/dts/I*.ts ./src/test/dts/ && rsync -a ../abstract/src/test/ts/*.ts ./src/test/ts/ && rsync -a ../std/src/test/ts/*.ts ./src/test/ts/",
+    "test": "concurrently 'npm:test:*'",
     "test:libdef": "dtslint src/test/dts --localTs ../../node_modules/typescript/lib --expectOnly && echo 'dts is fine'",
     "test:unit": "jest --config=jest.config.json --detectOpenHandles --forceExit --passWithNoTests"
   },
