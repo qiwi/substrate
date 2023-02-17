@@ -1,7 +1,7 @@
 {
   "name": "@qiwi/substrate-abstract",
   "description": "Abstract classes",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "exports": {
     ".": {
       "import": "./target/esm/index.js",
@@ -44,7 +44,7 @@
     "underscore": "1.13.6"
   },
   "dependencies": {
-    "@qiwi/substrate-types": "2.0.0"
+    "@qiwi/substrate-types": "2.0.1"
   },
   "license": "MIT",
   "repository": {
