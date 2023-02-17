@@ -1,6 +1,6 @@
 {
   "name": "@qiwi/substrate",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "exports": {
     ".": {
       "import": "./target/esm/index.js",
@@ -28,9 +28,9 @@
     "buildstamp.json"
   ],
   "dependencies": {
-    "@qiwi/substrate-abstract": "2.0.0",
-    "@qiwi/substrate-std": "2.0.0",
-    "@qiwi/substrate-types": "2.0.0",
+    "@qiwi/substrate-abstract": "2.0.1",
+    "@qiwi/substrate-std": "2.0.1",
+    "@qiwi/substrate-types": "2.0.1",
     "tslib": "^2.5.0"
   },
   "devDependencies": {
