@@ -9,6 +9,8 @@
       "types": "./target/esm/index.d.ts"
     }
   },
+  "main": "./target/cjs/index.js",
+  "module": "./target/esm/index.js",
   "types": "./target/esm/index.d.ts",
   "scripts": {
     "clean": "rimraf target buildcache docs coverage buildstamp.json",
