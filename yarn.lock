@@ -1171,7 +1171,7 @@ __metadata:
     "@types/config": 3.3.0
     "@types/jest": 29.4.0
     "@types/lodash": 4.14.191
-    "@types/node": 18.14.1
+    "@types/node": 18.14.2
     "@types/parsimmon": 1.10.6
     "@types/underscore": 1.11.4
     axios: 1.3.4
@@ -1194,7 +1194,7 @@ __metadata:
     "@qiwi/substrate-std": 2.0.2
     "@qiwi/substrate-types": 2.0.2
     "@types/jest": 29.4.0
-    "@types/node": 18.14.1
+    "@types/node": 18.14.2
     fs-extra: ^11.1.0
     tslib: ^2.5.0
   languageName: unknown
@@ -1676,10 +1676,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:18.14.1":
-  version: 18.14.1
-  resolution: "@types/node@npm:18.14.1"
-  checksum: 58556bbdb0050e44a4934742c1da2530812782c06d266a758e669e44c5aa196166c5fce45fdb03f016876717e3840478b3220129bb77367f979607564047f0a3
+"@types/node@npm:18.14.2":
+  version: 18.14.2
+  resolution: "@types/node@npm:18.14.2"
+  checksum: 53c07e721f6ae33de71306f6a0b75dae6066a4f55bd5484c93bd59ff25f0c5f004ceafeef509a4d0cb9e24a247efc34d50489bcc1b05a53ecc68e2fc088e65cb
   languageName: node
   linkType: hard
 
