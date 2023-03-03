@@ -23,7 +23,7 @@
   "devDependencies": {
     "eslint": "8.35.0",
     "eslint-config-prettier": "^8.6.0",
-    "eslint-config-qiwi": "2.0.8",
+    "eslint-config-qiwi": "2.0.9",
     "find-git-root": "1.0.4",
     "lodash": "4.17.21",
     "prettier": "^2.8.4",
