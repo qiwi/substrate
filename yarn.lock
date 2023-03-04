@@ -3568,19 +3568,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-qiwi@npm:2.0.9":
-  version: 2.0.9
-  resolution: "eslint-config-qiwi@npm:2.0.9"
+"eslint-config-qiwi@npm:2.0.10":
+  version: 2.0.10
+  resolution: "eslint-config-qiwi@npm:2.0.10"
   dependencies:
     "@typescript-eslint/eslint-plugin": ^5.46.0
     "@typescript-eslint/parser": ^5.46.0
     eslint-plugin-react: ^7.31.11
     eslint-plugin-react-hooks: ^4.6.0
     eslint-plugin-sonarjs: ^0.18.0
-    eslint-plugin-unicorn: ^45.0.1
+    eslint-plugin-unicorn: ^46.0.0
   peerDependencies:
     eslint: "*"
-  checksum: 94a1c10327cb0230a138cb4913d7d343a105527f4deec573921b3d57f475f374ef45d5a65b8ff4454b24e56631218f16456753145021d0996068710c3e0070bb
+  checksum: ae015d45435424f99070be9b9d7aecbddb75f40a91e1f3e600b4baffb0e7a692c16c8e0aed92833fc967487ee4a2ecb96666904368d940abe19c16a3b1cafb6e
   languageName: node
   linkType: hard
 
@@ -3666,6 +3666,32 @@ __metadata:
   peerDependencies:
     eslint: ">=8.28.0"
   checksum: c6ef0a0694f147b58bcb389090d0da87892b469de176c26cf062758a670d288753336d98613f5519d7997d272248eadbc45a4d5127c0cbd39804c61dd0975962
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-unicorn@npm:^46.0.0":
+  version: 46.0.0
+  resolution: "eslint-plugin-unicorn@npm:46.0.0"
+  dependencies:
+    "@babel/helper-validator-identifier": ^7.19.1
+    "@eslint-community/eslint-utils": ^4.1.2
+    ci-info: ^3.6.1
+    clean-regexp: ^1.0.0
+    esquery: ^1.4.0
+    indent-string: ^4.0.0
+    is-builtin-module: ^3.2.0
+    jsesc: ^3.0.2
+    lodash: ^4.17.21
+    pluralize: ^8.0.0
+    read-pkg-up: ^7.0.1
+    regexp-tree: ^0.1.24
+    regjsparser: ^0.9.1
+    safe-regex: ^2.1.1
+    semver: ^7.3.8
+    strip-indent: ^3.0.0
+  peerDependencies:
+    eslint: ">=8.28.0"
+  checksum: 30f9c67b9f94e42ae9917601ce203aa89a33c5fb821a1f45db389c8a143d3887c6b3316a74f0de7edc5e6cdac7a54d9e527cd109b96426cf2eca8f37478d0021
   languageName: node
   linkType: hard
 
@@ -7056,7 +7082,7 @@ __metadata:
   dependencies:
     eslint: 8.35.0
     eslint-config-prettier: ^8.6.0
-    eslint-config-qiwi: 2.0.9
+    eslint-config-qiwi: 2.0.10
     find-git-root: 1.0.4
     lodash: 4.17.21
     prettier: ^2.8.4
