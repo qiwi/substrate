@@ -4,8 +4,7 @@
     "rootDir": "./src/main/ts/",
     "baseUrl": "./src/main/ts/",
     "target": "es5",
-    "outDir": "target/es5",
-    "moduleResolution": "nodenext",
+    "outDir": "target/cjs",
     "tsBuildInfoFile": "./buildcache/.tsbuildinfo"
   },
   "references": [

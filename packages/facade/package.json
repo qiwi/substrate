@@ -16,7 +16,7 @@
     "clean": "rimraf target buildcache docs coverage buildstamp.json",
     "build": "concurrently 'npm:build:*'",
     "build:cjs": "mkdirp target/cjs && tsc -p tsconfig.json --target ES5 --module commonjs --outDir target/cjs --tsBuildInfoFile buildcache/cjs.json && tsc-esm-fix --target=target/cjs --ext=.cjs",
-    "build:esm": "mkdirp target/esm && tsc -p tsconfig.json --target ES2020 --module es2020 --outDir target/esm --tsBuildInfoFile buildcache/esm.json",
+    "build:esm": "mkdirp target/esm && tsc -p tsconfig.json --target ES2020 --module es2020 --outDir target/esm --tsBuildInfoFile buildcache/esm.json && tsc-esm-fix --target=target/esm",
     "build:ts": "mkdirp target/ts && cp -R ./src/main/ts/. ./target/ts/.",
     "build:stamp": "buildstamp --git --out.path buildstamp.json",
     "build:test": "rsync -a ../types/src/test/dts/I*.ts ./src/test/dts/ && rsync -a ../abstract/src/test/ts/*.ts ./src/test/ts/ && rsync -a ../std/src/test/ts/*.ts ./src/test/ts/",

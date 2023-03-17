@@ -3545,7 +3545,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:^8.6.0":
+"eslint-config-prettier@npm:^8.7.0":
   version: 8.7.0
   resolution: "eslint-config-prettier@npm:8.7.0"
   peerDependencies:
@@ -3556,24 +3556,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-qiwi@npm:2.1.0":
-  version: 2.1.0
-  resolution: "eslint-config-qiwi@npm:2.1.0"
-  dependencies:
-    "@typescript-eslint/eslint-plugin": ^5.55.0
-    "@typescript-eslint/parser": ^5.55.0
-    eslint-plugin-react: ^7.32.2
-    eslint-plugin-react-hooks: ^4.6.0
-    eslint-plugin-sonarjs: ^0.18.0
-    eslint-plugin-unicorn: ^46.0.0
-  peerDependencies:
-    eslint: ^8.0.0
-    typescript: ^4.0.0
-  checksum: 1d7e5b9ef02511e088f32cd83cc442b833dc08d64f1f46173999d1832c1d247528b619c7c6273b07f688117ee65349d24eb2dcdae75b82c00e5e892b41a634e2
-  languageName: node
-  linkType: hard
-
-"eslint-config-qiwi@npm:^2.1.1":
+"eslint-config-qiwi@npm:2.1.1, eslint-config-qiwi@npm:^2.1.1":
   version: 2.1.1
   resolution: "eslint-config-qiwi@npm:2.1.1"
   dependencies:
@@ -6889,7 +6872,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-config-qiwi@npm:^2.0.1":
+"prettier-config-qiwi@npm:^2.1.0":
   version: 2.1.0
   resolution: "prettier-config-qiwi@npm:2.1.0"
   dependencies:
@@ -7008,12 +6991,12 @@ __metadata:
   resolution: "qiwi-substrate-monorepo@workspace:."
   dependencies:
     eslint: 8.36.0
-    eslint-config-prettier: ^8.6.0
-    eslint-config-qiwi: 2.1.0
+    eslint-config-prettier: ^8.7.0
+    eslint-config-qiwi: 2.1.1
     find-git-root: 1.0.4
     lodash: 4.17.21
     prettier: ^2.8.4
-    prettier-config-qiwi: ^2.0.1
+    prettier-config-qiwi: ^2.1.0
     replace-in-file: ^6.3.5
     snazzy: 9.0.0
     typescript: 4.9.x

@@ -1,7 +1,7 @@
 /** @module @qiwi/substrate-std */
 
 /** */
-import { IStack } from '@qiwi/substrate-types'
+import type { IStack } from '@qiwi/substrate-types'
 
 /**
  * Standard stack implementation
