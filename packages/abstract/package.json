@@ -5,18 +5,19 @@
   "exports": {
     ".": {
       "import": "./target/esm/index.js",
-      "require": "./target/cjs/index.js",
+      "require": "./target/cjs/index.cjs",
       "types": "./target/esm/index.d.ts"
     }
   },
-  "main": "./target/cjs/index.js",
+  "type": "module",
+  "main": "./target/cjs/index.cjs",
   "module": "./target/esm/index.js",
   "types": "./target/esm/index.d.ts",
   "scripts": {
     "clean": "rimraf target buildcache docs coverage buildstamp.json",
     "build": "yarn aliasgen && concurrently 'npm:build:*'",
-    "build:cjs": "mkdirp target/cjs && tsc -p tsconfig.json --target ES5 --module commonjs --outDir target/cjs --tsBuildInfoFile buildcache/cjs.json",
-    "build:esm": "mkdirp target/esm && tsc -p tsconfig.json --target ES2020 --module es2020 --outDir target/esm --tsBuildInfoFile buildcache/esm.json && tsc-esm-fix --target=target/esm",
+    "build:cjs": "mkdirp target/cjs && tsc -p tsconfig.json --target ES5 --module commonjs --outDir target/cjs --tsBuildInfoFile buildcache/cjs.json && tsc-esm-fix --target=target/esm --ext=.cjs",
+    "build:esm": "mkdirp target/esm && tsc -p tsconfig.json --target ES2020 --module es2020 --outDir target/esm --tsBuildInfoFile buildcache/esm.json",
     "build:ts": "mkdirp target/ts && cp -R ./src/main/ts/. ./target/ts/.",
     "build:stamp": "buildstamp --git --out.path buildstamp.json",
     "build:docs": "typedoc",
