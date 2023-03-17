@@ -1,3 +1,10 @@
+## @qiwi/substrate-types [2.0.3](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@2.0.2...@qiwi/substrate-types@2.0.3) (2023-03-17)
+
+
+### Bug Fixes
+
+* declare modules as esm by default ([21d61b4](https://github.com/qiwi/substrate/commit/21d61b441c1b608b273b1d0be09d01694e9f11de))
+
 ## @qiwi/substrate-types [2.0.2](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@2.0.1...@qiwi/substrate-types@2.0.2) (2023-02-17)
 
 
