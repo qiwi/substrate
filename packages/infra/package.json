@@ -36,7 +36,7 @@
     "@types/jest": "^29.5.0",
     "@types/node": "^18.15.3",
     "buildstamp": "^2.1.1",
-    "concurrently": "^7.6.0",
+    "concurrently": "^8.0.0",
     "cpy-cli": "^4.2.0",
     "dtslint": "4.2.1",
     "eslint": "*",
