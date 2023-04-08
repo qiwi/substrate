@@ -39,8 +39,8 @@
   "devDependencies": {
     "@qiwi/substrate-infra": "1.2.3",
     "@types/jest": "29.5.0",
-    "@types/node": "18.15.10",
-    "fs-extra": "^11.1.0"
+    "@types/node": "18.15.11",
+    "fs-extra": "^11.1.1"
   },
   "license": "MIT",
   "repository": {
