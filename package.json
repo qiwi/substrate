@@ -31,7 +31,7 @@
     "replace-in-file": "^6.3.5",
     "snazzy": "9.0.0",
     "typescript": "5.0.x",
-    "yargs": "17.7.1"
+    "yargs": "17.7.2"
   },
   "license": "MIT",
   "repository": {
