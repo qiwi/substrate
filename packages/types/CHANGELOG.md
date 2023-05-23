@@ -1,3 +1,10 @@
+## @qiwi/substrate-types [2.0.4](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@2.0.3...@qiwi/substrate-types@2.0.4) (2023-05-23)
+
+
+### Bug Fixes
+
+* switch file ext to mjs for esm entry points ([69d6d58](https://github.com/qiwi/substrate/commit/69d6d58ccce24cc5914fdd4f84eb74f312df5d56))
+
 ## @qiwi/substrate-types [2.0.3](https://github.com/qiwi/substrate/compare/@qiwi/substrate-types@2.0.2...@qiwi/substrate-types@2.0.3) (2023-03-17)
 
 
