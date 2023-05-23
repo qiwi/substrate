@@ -1165,12 +1165,22 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@qiwi/substrate-std@2.0.3, @qiwi/substrate-std@workspace:packages/std":
+"@qiwi/substrate-std@npm:2.0.3":
+  version: 2.0.3
+  resolution: "@qiwi/substrate-std@npm:2.0.3"
+  dependencies:
+    "@qiwi/substrate-types": 2.0.3
+    tslib: ^2.5.0
+  checksum: 98cbc225c990e67c3c1440994dea7dad170ecf1764ff94c2ef4ffb34fc1c03537f191bdd138ce651f31063975954b5a53a6e378c9d2671529b88fc332a4f2fe3
+  languageName: node
+  linkType: hard
+
+"@qiwi/substrate-std@workspace:packages/std":
   version: 0.0.0-use.local
   resolution: "@qiwi/substrate-std@workspace:packages/std"
   dependencies:
     "@qiwi/substrate-infra": 1.2.3
-    "@qiwi/substrate-types": 2.0.3
+    "@qiwi/substrate-types": 2.0.4
     "@qiwi/uniconfig": 3.5.11
     "@types/bluebird": 3.5.38
     "@types/config": 3.3.0
