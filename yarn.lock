@@ -4392,7 +4392,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:^7.0.0, glob@npm:^7.1.1, glob@npm:^7.1.3, glob@npm:^7.1.4, glob@npm:^7.1.6, glob@npm:^7.2.0":
+"glob@npm:^7.0.0, glob@npm:^7.1.1, glob@npm:^7.1.3, glob@npm:^7.1.4, glob@npm:^7.1.6":
   version: 7.2.3
   resolution: "glob@npm:7.2.3"
   dependencies:
@@ -4406,7 +4406,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:^8.0.1":
+"glob@npm:^8.0.1, glob@npm:^8.1.0":
   version: 8.1.0
   resolution: "glob@npm:8.1.0"
   dependencies:
@@ -7152,7 +7152,7 @@ __metadata:
     lodash: 4.17.21
     prettier: ^2.8.8
     prettier-config-qiwi: ^2.1.2
-    replace-in-file: ^6.3.5
+    replace-in-file: ^7.0.0
     snazzy: 9.0.0
     typescript: 5.0.x
     yargs: 17.7.2
@@ -7376,16 +7376,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"replace-in-file@npm:^6.3.5":
-  version: 6.3.5
-  resolution: "replace-in-file@npm:6.3.5"
+"replace-in-file@npm:^7.0.0":
+  version: 7.0.1
+  resolution: "replace-in-file@npm:7.0.1"
   dependencies:
     chalk: ^4.1.2
-    glob: ^7.2.0
-    yargs: ^17.2.1
+    glob: ^8.1.0
+    yargs: ^17.7.2
   bin:
     replace-in-file: bin/cli.js
-  checksum: e5ac3bfee531dcb70cfbb327e6d4ec86bcf4c8045f292e46fb0e4c8743bd70a274c2402918d2609a25fde829862b6e1fe5f09f6c171aabbdde142a9f33008cf1
+  checksum: da6115387bf79ac7fb2057a4212da4159cc85889e34212df62d86cc3b5ceb23167a7c22ce0dc0cebfe55c01a08ccd99fd496398375dfa29e30f173013c81579a
   languageName: node
   linkType: hard
 
@@ -9187,7 +9187,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yargs@npm:17.7.2, yargs@npm:^17.2.1, yargs@npm:^17.3.1, yargs@npm:^17.5.1, yargs@npm:^17.7.1":
+"yargs@npm:17.7.2, yargs@npm:^17.3.1, yargs@npm:^17.5.1, yargs@npm:^17.7.1, yargs@npm:^17.7.2":
   version: 17.7.2
   resolution: "yargs@npm:17.7.2"
   dependencies:
