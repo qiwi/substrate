@@ -37,7 +37,7 @@
     "@types/node": "^20.2.3",
     "buildstamp": "^3.0.0",
     "concurrently": "^8.0.1",
-    "cpy-cli": "^4.2.0",
+    "cpy-cli": "^5.0.0",
     "dtslint": "4.2.1",
     "eslint": "*",
     "eslint-config-qiwi": "^2.1.3",
