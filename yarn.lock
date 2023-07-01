@@ -1142,7 +1142,7 @@ __metadata:
     "@swissquote/crafty-preset-jest": ^1.22.3
     "@types/jest": ^29.5.1
     "@types/node": ^20.2.3
-    buildstamp: ^2.1.1
+    buildstamp: ^3.0.0
     concurrently: ^8.0.1
     cpy-cli: ^4.2.0
     dtslint: 4.2.1
@@ -2598,16 +2598,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"buildstamp@npm:^2.1.1":
-  version: 2.1.1
-  resolution: "buildstamp@npm:2.1.1"
+"buildstamp@npm:^3.0.0":
+  version: 3.0.3
+  resolution: "buildstamp@npm:3.0.3"
   dependencies:
-    find-git-root: ^1.0.4
-    meow: ^11.0.0
-    tslib: ^2.4.0
+    minimist: ^1.2.8
   bin:
-    buildstamp: target/es6/cli.js
-  checksum: ec8402ace9e8175b311921f18adddf04aee93051d1f9966ce6567f66a77352b526f0ff2816463f1283e2cd64cd9abc68493b66f6f19cfa0dcafc0a187816d0a6
+    buildstamp: target/esm/cli.mjs
+  checksum: d3c445562cdbbfb85d3b9e3c9a8b669fb54eb6f510d7ccde0acc0cc8a7cee7f076f0e84febe78b7e42ea628805ba81c37c6cbfdc9916861626b2aeb243e56a59
   languageName: node
   linkType: hard
 
@@ -4091,7 +4089,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"find-git-root@npm:1.0.4, find-git-root@npm:^1.0.4":
+"find-git-root@npm:1.0.4":
   version: 1.0.4
   resolution: "find-git-root@npm:1.0.4"
   checksum: 07fd9ffd78b13e60e437823b368a599fff4e5b69bfeb842ceb323c4d7a06c4c412d9e7230a6fbbba586bfe39a6023413f2d160a57148cbdb61e77638f8bab439
@@ -6354,7 +6352,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimist@npm:^1.2.5, minimist@npm:^1.2.6":
+"minimist@npm:^1.2.5, minimist@npm:^1.2.6, minimist@npm:^1.2.8":
   version: 1.2.8
   resolution: "minimist@npm:1.2.8"
   checksum: 75a6d645fb122dad29c06a7597bddea977258957ed88d7a6df59b5cd3fe4a527e253e9bbf2e783e4b73657f9098b96a5fe96ab8a113655d4109108577ecf85b0
