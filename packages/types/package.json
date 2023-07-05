@@ -36,7 +36,7 @@
     "@types/config": "3.3.0",
     "@types/jest": "29.5.2",
     "@types/lodash": "4.14.195",
-    "@types/node": "20.3.3",
+    "@types/node": "20.4.0",
     "@types/parsimmon": "1.10.6",
     "@types/underscore": "1.11.5",
     "axios": "1.4.0",
