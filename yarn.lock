@@ -1149,7 +1149,7 @@ __metadata:
     "@types/parsimmon": 1.10.6
     "@types/underscore": 1.11.5
     bluebird: 3.7.2
-    conf: 11.0.1
+    conf: 11.0.2
     config: 3.3.9
     lodash: 4.17.21
     underscore: 1.13.6
@@ -1211,7 +1211,7 @@ __metadata:
     "@types/parsimmon": 1.10.6
     "@types/underscore": 1.11.5
     bluebird: 3.7.2
-    conf: 11.0.1
+    conf: 11.0.2
     config: 3.3.9
     lodash: 4.17.21
     tslib: ^2.5.2
@@ -1234,7 +1234,7 @@ __metadata:
     "@types/underscore": 1.11.5
     axios: 1.4.0
     bluebird: 3.7.2
-    conf: 11.0.1
+    conf: 11.0.2
     config: 3.3.9
     cross-fetch: 4.0.0
     lodash: 4.17.21
@@ -3028,9 +3028,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conf@npm:11.0.1":
-  version: 11.0.1
-  resolution: "conf@npm:11.0.1"
+"conf@npm:11.0.2":
+  version: 11.0.2
+  resolution: "conf@npm:11.0.2"
   dependencies:
     ajv: ^8.12.0
     ajv-formats: ^2.1.1
@@ -3040,7 +3040,7 @@ __metadata:
     env-paths: ^3.0.0
     json-schema-typed: ^8.0.1
     semver: ^7.3.8
-  checksum: e787dc6fbf73144f6bcea3c226a46d3651cf2c941e2048f512d3038a033e0653029dab259345dbd60e00ba6de331789a2fcec68d93b291c4dcc3d6b2f06e88a5
+  checksum: 4b4ff645bfd6e25f7595f909906f711dd3ebeb3e462d2ee8d27430991c0757d783968a8f36367d7db1401b022f9a7cebeaf43da816b80753dbad8cca12118215
   languageName: node
   linkType: hard
 
