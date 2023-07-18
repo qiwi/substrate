@@ -41,7 +41,7 @@
     "@types/underscore": "1.11.5",
     "axios": "1.4.0",
     "bluebird": "3.7.2",
-    "conf": "11.0.1",
+    "conf": "11.0.2",
     "config": "3.3.9",
     "cross-fetch": "4.0.0",
     "lodash": "4.17.21",
