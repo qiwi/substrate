@@ -30,7 +30,7 @@
     "prettier-config-qiwi": "^2.1.2",
     "replace-in-file": "^7.0.0",
     "snazzy": "9.0.0",
-    "typescript": "5.1.x",
+    "typescript": "5.2.x",
     "yargs": "17.7.2"
   },
   "license": "MIT",
