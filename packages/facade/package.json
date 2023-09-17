@@ -33,12 +33,12 @@
     "@qiwi/substrate-abstract": "2.0.4",
     "@qiwi/substrate-std": "2.0.4",
     "@qiwi/substrate-types": "2.0.4",
-    "tslib": "^2.5.2"
+    "tslib": "^2.6.2"
   },
   "devDependencies": {
     "@qiwi/substrate-infra": "1.2.3",
-    "@types/jest": "29.5.3",
-    "@types/node": "20.5.0",
+    "@types/jest": "29.5.5",
+    "@types/node": "20.6.2",
     "fs-extra": "^11.1.1"
   },
   "license": "MIT",

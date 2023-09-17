@@ -42,18 +42,22 @@ export interface IFetch<
   Req extends IHttpRequest = IHttpRequest,
   Res extends IFetchResponse = IFetchResponse,
 > {
-  <D = any>(url: string, req?: Req): IPromise<
-    Omit<Res, 'json'> & IFetchResponse<D>
-  >
+  <D = any>(
+    url: string,
+    req?: Req,
+  ): IPromise<Omit<Res, 'json'> & IFetchResponse<D>>
 }
 
 export interface IHttpReqPerform<Req = IHttpRequest, Res = IHttpResponse> {
-  <D = any>(url: string, body?: any, req?: Req): IPromise<
-    Omit<Res, 'data'> & IHttpResponse<D>
-  >
-  <D = any>(url: string, req?: Req): IPromise<
-    Omit<Res, 'data'> & IHttpResponse<D>
-  >
+  <D = any>(
+    url: string,
+    body?: any,
+    req?: Req,
+  ): IPromise<Omit<Res, 'data'> & IHttpResponse<D>>
+  <D = any>(
+    url: string,
+    req?: Req,
+  ): IPromise<Omit<Res, 'data'> & IHttpResponse<D>>
 }
 
 export interface IHttpClient<
@@ -61,9 +65,10 @@ export interface IHttpClient<
   Res extends IHttpResponse = IHttpResponse,
 > {
   <D = any>(req: Req): IPromise<Omit<Res, 'data'> & IHttpResponse<D>>
-  <D = any>(url: string, req?: Req): IPromise<
-    Omit<Res, 'data'> & IHttpResponse<D>
-  >
+  <D = any>(
+    url: string,
+    req?: Req,
+  ): IPromise<Omit<Res, 'data'> & IHttpResponse<D>>
   get: IHttpReqPerform<Req, Res>
   post: IHttpReqPerform<Req, Res>
   put: IHttpReqPerform<Req, Res>
