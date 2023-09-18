@@ -30,7 +30,7 @@
   ],
   "devDependencies": {
     "@qiwi/substrate-infra": "1.2.3",
-    "@qiwi/uniconfig": "3.5.13",
+    "@qiwi/uniconfig": "3.5.14",
     "@types/bluebird": "3.5.39",
     "@types/config": "3.3.1",
     "@types/lodash": "4.14.198",
