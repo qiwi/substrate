@@ -1073,7 +1073,7 @@ __metadata:
   dependencies:
     "@qiwi/substrate-infra": 1.2.3
     "@qiwi/substrate-types": 2.0.4
-    "@qiwi/uniconfig": 3.5.13
+    "@qiwi/uniconfig": 3.5.14
     "@types/bluebird": 3.5.39
     "@types/config": 3.3.1
     "@types/lodash": 4.14.198
@@ -1135,7 +1135,7 @@ __metadata:
   dependencies:
     "@qiwi/substrate-infra": 1.2.3
     "@qiwi/substrate-types": 2.0.4
-    "@qiwi/uniconfig": 3.5.13
+    "@qiwi/uniconfig": 3.5.14
     "@types/bluebird": 3.5.39
     "@types/config": 3.3.1
     "@types/lodash": 4.14.198
@@ -1155,7 +1155,7 @@ __metadata:
   resolution: "@qiwi/substrate-types@workspace:packages/types"
   dependencies:
     "@qiwi/substrate-infra": 1.2.3
-    "@qiwi/uniconfig": 3.5.13
+    "@qiwi/uniconfig": 3.5.14
     "@types/bluebird": 3.5.39
     "@types/config": 3.3.1
     "@types/jest": 29.5.5
@@ -1212,13 +1212,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@qiwi/uniconfig-plugin-api-file@npm:3.6.0":
-  version: 3.6.0
-  resolution: "@qiwi/uniconfig-plugin-api-file@npm:3.6.0"
+"@qiwi/uniconfig-plugin-api-file@npm:4.0.0":
+  version: 4.0.0
+  resolution: "@qiwi/uniconfig-plugin-api-file@npm:4.0.0"
   dependencies:
     "@qiwi/uniconfig-core": 3.5.4
     tslib: ^2.4.0
-  checksum: 8f0cb8a00ba276958de302beb6987b7b0c1d349eec54215588a639898aea5c7b9d1cda7d294c489d6987feed8ff058e89fe45638bb2fd86569cf92996769a130
+  checksum: a0f3b291922e25e46d1f7747440598ee5ff91420bba1afac3d5a14023cd388347e449b202cf2d656bd3c5a43c69bf6f7a2bc1760647f53484fe5e840d3387834
   languageName: node
   linkType: hard
 
@@ -1309,13 +1309,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@qiwi/uniconfig-plugin-json@npm:3.5.6":
-  version: 3.5.6
-  resolution: "@qiwi/uniconfig-plugin-json@npm:3.5.6"
+"@qiwi/uniconfig-plugin-json@npm:3.5.7":
+  version: 3.5.7
+  resolution: "@qiwi/uniconfig-plugin-json@npm:3.5.7"
   dependencies:
     "@qiwi/uniconfig-core": 3.5.4
     tslib: ^2.4.0
-  checksum: 787bbf9b7a070af8a7f63ed2ea0fb76fc2f74c230b6297207db83b54d1f7b8ec5fafce7fefcd9495406af691874e6c058675530226438928cdd2a3597e890436
+  checksum: 773317cef00921fd91b28b857d2111f3f24f0295b96cb60337de0eaa6722978eba760603dc71bdfedf489a54d650a27d43b64b418fe66c87a910dbd449f69362
   languageName: node
   linkType: hard
 
@@ -1351,24 +1351,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@qiwi/uniconfig-plugin-yaml@npm:3.5.6":
-  version: 3.5.6
-  resolution: "@qiwi/uniconfig-plugin-yaml@npm:3.5.6"
+"@qiwi/uniconfig-plugin-yaml@npm:3.5.7":
+  version: 3.5.7
+  resolution: "@qiwi/uniconfig-plugin-yaml@npm:3.5.7"
   dependencies:
     "@qiwi/uniconfig-core": 3.5.4
     js-yaml: ^4.1.0
     tslib: ^2.4.0
-  checksum: a6adeddf90166c30a17e90cd723661142f49d6c569c942edd8f9b6b6760a73e6d35b9922d5b262013473dee6b50e08f4303974b47aace72933719e6d77ff6451
+  checksum: c7a8e63efc0fa923cba9b5de4954fd22d10a1b33c91dcb22e3e762c0ec52ce3e24e1a65848b92b27f438f619b275527158298abf1bb147c5d36141b7c98281f6
   languageName: node
   linkType: hard
 
-"@qiwi/uniconfig@npm:3.5.13":
-  version: 3.5.13
-  resolution: "@qiwi/uniconfig@npm:3.5.13"
+"@qiwi/uniconfig@npm:3.5.14":
+  version: 3.5.14
+  resolution: "@qiwi/uniconfig@npm:3.5.14"
   dependencies:
     "@qiwi/uniconfig-core": 3.5.4
     "@qiwi/uniconfig-plugin-ajv": 3.5.5
-    "@qiwi/uniconfig-plugin-api-file": 3.6.0
+    "@qiwi/uniconfig-plugin-api-file": 4.0.0
     "@qiwi/uniconfig-plugin-api-http": 3.5.5
     "@qiwi/uniconfig-plugin-argv": 3.5.5
     "@qiwi/uniconfig-plugin-datatree": 3.5.5
@@ -1377,12 +1377,12 @@ __metadata:
     "@qiwi/uniconfig-plugin-env": 3.5.5
     "@qiwi/uniconfig-plugin-global": 3.5.5
     "@qiwi/uniconfig-plugin-ip": 3.5.5
-    "@qiwi/uniconfig-plugin-json": 3.5.6
+    "@qiwi/uniconfig-plugin-json": 3.5.7
     "@qiwi/uniconfig-plugin-path": 3.6.0
     "@qiwi/uniconfig-plugin-pkg": 3.5.5
     "@qiwi/uniconfig-plugin-root": 3.5.5
-    "@qiwi/uniconfig-plugin-yaml": 3.5.6
-  checksum: 37d9dc57431809e14294f31780a5912b480a80374798b83c15ca4e52e73dd059afaf8e1a20fe1b3da005d4716a94f6ce17b5033946a59d164dbf2be07681d43f
+    "@qiwi/uniconfig-plugin-yaml": 3.5.7
+  checksum: 5de9828846004348233054fa4bb92d46a1ef3cb9deecf116337087733536d49892002a2605d686f8024323e6b49bfc54a7f3572f6577d06950c203e58b4db236
   languageName: node
   linkType: hard
 
