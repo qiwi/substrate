@@ -1078,7 +1078,7 @@ __metadata:
     "@types/config": 3.3.1
     "@types/lodash": 4.14.198
     "@types/parsimmon": 1.10.6
-    "@types/underscore": 1.11.9
+    "@types/underscore": 1.11.11
     bluebird: 3.7.2
     conf: 11.0.2
     config: 3.3.9
@@ -1140,7 +1140,7 @@ __metadata:
     "@types/config": 3.3.1
     "@types/lodash": 4.14.198
     "@types/parsimmon": 1.10.6
-    "@types/underscore": 1.11.9
+    "@types/underscore": 1.11.11
     bluebird: 3.7.2
     conf: 11.0.2
     config: 3.3.9
@@ -1162,7 +1162,7 @@ __metadata:
     "@types/lodash": 4.14.198
     "@types/node": 20.6.2
     "@types/parsimmon": 1.10.6
-    "@types/underscore": 1.11.9
+    "@types/underscore": 1.11.11
     axios: 1.5.0
     bluebird: 3.7.2
     conf: 11.0.2
@@ -1755,10 +1755,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/underscore@npm:1.11.9":
-  version: 1.11.9
-  resolution: "@types/underscore@npm:1.11.9"
-  checksum: 432a65271cb5567784aeccd99aeea9af6a8bef00c709c3c6ef9f161a9ad03a9c8fc6ebfbff4ff9c26c474b84a4381d201cfc24a072225868755eef95f5152e72
+"@types/underscore@npm:1.11.11":
+  version: 1.11.11
+  resolution: "@types/underscore@npm:1.11.11"
+  checksum: 56fbd04305d0982178f32fd4adcfcf6012f75005a3cf2e33eca7f0bf99dadc31c6c8c4884cb0d3896af16c4e06ccf02810305e970899d4766ec2760b19f61511
   languageName: node
   linkType: hard
 
