@@ -37,7 +37,7 @@
     "@types/jest": "29.5.5",
     "@types/lodash": "4.14.198",
     "@types/node": "20.6.2",
-    "@types/parsimmon": "1.10.6",
+    "@types/parsimmon": "1.10.7",
     "@types/underscore": "1.11.11",
     "axios": "1.5.1",
     "bluebird": "3.7.2",
