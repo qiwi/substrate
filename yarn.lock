@@ -1167,7 +1167,7 @@ __metadata:
     "@types/config": 3.3.1
     "@types/jest": 29.5.5
     "@types/lodash": 4.14.199
-    "@types/node": 20.6.2
+    "@types/node": 20.8.5
     "@types/parsimmon": 1.10.7
     "@types/underscore": 1.11.11
     axios: 1.5.1
@@ -1190,7 +1190,7 @@ __metadata:
     "@qiwi/substrate-std": 2.0.4
     "@qiwi/substrate-types": 2.0.4
     "@types/jest": 29.5.5
-    "@types/node": 20.6.2
+    "@types/node": 20.8.5
     fs-extra: ^11.1.1
     tslib: ^2.6.2
   languageName: unknown
@@ -1685,7 +1685,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:20.6.2, @types/node@npm:^20.6.2":
+"@types/node@npm:*, @types/node@npm:^20.6.2":
   version: 20.6.2
   resolution: "@types/node@npm:20.6.2"
   checksum: 96fe5303872640a173f3fd43e289a451776ed5b8f0090094447c6790b43f23fb607eea8268af0829cef4d132e5afa0bfa4cd871aa7412e9042a414a698e9e971
@@ -1696,6 +1696,15 @@ __metadata:
   version: 14.14.35
   resolution: "@types/node@npm:14.14.35"
   checksum: 6d6e428b6c504ede62e63dddf83439d3f10b3b283132172f7c3b1ef49b4f499afcfd2e4601e3019074b2dd140ee109a9b63bbd6a18a089c89e45108fa8d5b1ee
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:20.8.5":
+  version: 20.8.5
+  resolution: "@types/node@npm:20.8.5"
+  dependencies:
+    undici-types: ~5.25.1
+  checksum: 4bca4e4f6307a6f5dc78812015eca9c5a998b35fcf3ba4058c9851d3dde2b22c914fa25a85b804eab5af2ab95375d15943dce8e9ba5e01d15f4bf516ca0d2816
   languageName: node
   linkType: hard
 
@@ -8906,6 +8915,13 @@ __metadata:
   version: 1.13.6
   resolution: "underscore@npm:1.13.6"
   checksum: d5cedd14a9d0d91dd38c1ce6169e4455bb931f0aaf354108e47bd46d3f2da7464d49b2171a5cf786d61963204a42d01ea1332a903b7342ad428deaafaf70ec36
+  languageName: node
+  linkType: hard
+
+"undici-types@npm:~5.25.1":
+  version: 5.25.3
+  resolution: "undici-types@npm:5.25.3"
+  checksum: ec9d2cc36520cbd9fbe3b3b6c682a87fe5be214699e1f57d1e3d9a2cb5be422e62735f06e0067dc325fd3dd7404c697e4d479f9147dc8a804e049e29f357f2ff
   languageName: node
   linkType: hard
 
