@@ -38,7 +38,7 @@
     "@types/lodash": "4.14.199",
     "@types/node": "20.8.6",
     "@types/parsimmon": "1.10.7",
-    "@types/underscore": "1.11.14",
+    "@types/underscore": "1.11.15",
     "axios": "1.6.0",
     "bluebird": "3.7.2",
     "conf": "11.0.2",
