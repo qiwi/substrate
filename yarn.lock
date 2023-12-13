@@ -1116,7 +1116,7 @@ __metadata:
     "@qiwi/substrate-infra": 1.2.3
     "@qiwi/substrate-types": 2.0.4
     "@qiwi/uniconfig": 3.5.14
-    "@types/bluebird": 3.5.40
+    "@types/bluebird": 3.5.42
     "@types/config": 3.3.3
     "@types/lodash": 4.14.199
     "@types/parsimmon": 1.10.7
@@ -1178,7 +1178,7 @@ __metadata:
     "@qiwi/substrate-infra": 1.2.3
     "@qiwi/substrate-types": 2.0.4
     "@qiwi/uniconfig": 3.5.14
-    "@types/bluebird": 3.5.40
+    "@types/bluebird": 3.5.42
     "@types/config": 3.3.3
     "@types/lodash": 4.14.199
     "@types/parsimmon": 1.10.7
@@ -1198,7 +1198,7 @@ __metadata:
   dependencies:
     "@qiwi/substrate-infra": 1.2.3
     "@qiwi/uniconfig": 3.5.14
-    "@types/bluebird": 3.5.40
+    "@types/bluebird": 3.5.42
     "@types/config": 3.3.3
     "@types/jest": 29.5.5
     "@types/lodash": 4.14.199
@@ -1586,10 +1586,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/bluebird@npm:3.5.40":
-  version: 3.5.40
-  resolution: "@types/bluebird@npm:3.5.40"
-  checksum: 31d1d32d621cdc3af6a6180a3831a1f8a1cc951d1243166f554906e80cd89161015cf17d0ce45d9453be48daae7b60cb4d3ebda0895419abaef2eb578433e413
+"@types/bluebird@npm:3.5.42":
+  version: 3.5.42
+  resolution: "@types/bluebird@npm:3.5.42"
+  checksum: bab9c7ee7cf05f241f119a1401d230def75981a71c2f4ea4d4ef7297bb10f2ae8b6ce7b249532faf994492d7e36e1f1f21f7a9895e466bf7b31b298b0537d8d0
   languageName: node
   linkType: hard
 
