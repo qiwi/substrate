@@ -46,7 +46,7 @@
     "rimraf": "^5.0.1",
     "terser": "^5.19.4",
     "ts-jest": "^29.1.1",
-    "ts-node": "10.9.1",
+    "ts-node": "10.9.2",
     "tsc-esm-fix": "^2.20.15",
     "typedoc": "^0.25.1",
     "typescript": "5.2.x"
