@@ -12,16 +12,15 @@
   "module": "./target/esm/index.mjs",
   "types": "./target/esm/index.d.ts",
   "scripts": {
-    "clean": "rimraf target buildcache flow-typed typings docs coverage buildstamp.json",
-    "build": "yarn aliasgen && concurrently 'npm:build:*'",
-    "build:cjs": "mkdirp target/cjs && tsc -p tsconfig.json --target ES5 --module commonjs --outDir target/cjs --tsBuildInfoFile buildcache/cjs.json && tsc-esm-fix --target=target/cjs --ext=.cjs",
-    "build:esm": "mkdirp target/esm && tsc -p tsconfig.json --target ES2020 --module es2020 --outDir target/esm --tsBuildInfoFile buildcache/esm.json && tsc-esm-fix --target=target/esm --ext=.mjs",
-    "build:ts": "mkdirp target/ts && cp -R ./src/main/ts/. ./target/ts/.",
-    "build:stamp": "buildstamp --git --out.path buildstamp.json",
-    "build:docs": "typedoc",
+    "clean": "yarn clean:target",
+    "build": "yarn build:alias && concurrently 'npm:build:*'",
+    "build:cjs": "yarn build:tsc:cjs",
+    "build:esm": "yarn build:tsc:esm",
+    "build:ts": "yarn build:copy:src",
+    "build:docs": "yarn build:typedoc",
+    "build:stamp": "yarn build:buildstamp",
     "test": "yarn test:libdef",
-    "test:libdef": "yarn dtslint src/test/dts --localTs ../../node_modules/typescript/lib --expectOnly && echo 'dts is fine'",
-    "aliasgen": "node ../../scripts/js/alias-gen.js"
+    "test:libdef": "yarn dtslint src/test/dts --localTs ../../node_modules/typescript/lib --expectOnly && echo 'dts is fine'"
   },
   "files": [
     "README.md",

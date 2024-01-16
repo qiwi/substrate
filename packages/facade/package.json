@@ -12,12 +12,13 @@
   "module": "./target/esm/index.mjs",
   "types": "./target/esm/index.d.ts",
   "scripts": {
-    "clean": "rimraf target buildcache docs coverage buildstamp.json",
+    "clean": "yarn clean:target",
     "build": "concurrently 'npm:build:*'",
-    "build:cjs": "mkdirp target/cjs && tsc -p tsconfig.json --target ES5 --module commonjs --outDir target/cjs --tsBuildInfoFile buildcache/cjs.json && tsc-esm-fix --target=target/cjs --ext=.cjs",
-    "build:esm": "mkdirp target/esm && tsc -p tsconfig.json --target ES2020 --module es2020 --outDir target/esm --tsBuildInfoFile buildcache/esm.json && tsc-esm-fix --target=target/esm --ext=.mjs",
-    "build:ts": "mkdirp target/ts && cp -R ./src/main/ts/. ./target/ts/.",
-    "build:stamp": "buildstamp --git --out.path buildstamp.json",
+    "build:cjs": "yarn build:tsc:cjs",
+    "build:esm": "yarn build:tsc:esm",
+    "build:ts": "yarn build:copy:src",
+    "build:docs": "yarn build:typedoc",
+    "build:stamp": "yarn build:buildstamp",
     "build:test": "rsync -a ../types/src/test/dts/I*.ts ./src/test/dts/ && rsync -a ../abstract/src/test/ts/*.ts ./src/test/ts/ && rsync -a ../std/src/test/ts/*.ts ./src/test/ts/",
     "test": "concurrently 'npm:test:*'",
     "test:libdef": "dtslint src/test/dts --localTs ../../node_modules/typescript/lib --expectOnly && echo 'dts is fine'",
@@ -30,13 +31,13 @@
     "buildstamp.json"
   ],
   "dependencies": {
-    "@qiwi/substrate-abstract": "2.0.4",
-    "@qiwi/substrate-std": "2.0.4",
-    "@qiwi/substrate-types": "2.0.4",
+    "@qiwi/substrate-abstract": "workspace:*",
+    "@qiwi/substrate-std": "workspace:*",
+    "@qiwi/substrate-types": "workspace:*",
     "tslib": "^2.6.2"
   },
   "devDependencies": {
-    "@qiwi/substrate-infra": "1.2.3",
+    "@qiwi/substrate-infra": "workspace:*",
     "@types/jest": "29.5.5",
     "@types/node": "20.8.6",
     "fs-extra": "^11.1.1"
