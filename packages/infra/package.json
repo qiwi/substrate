@@ -1,6 +1,7 @@
 {
   "name": "@qiwi/substrate-infra",
   "version": "1.2.3",
+  "private": true,
   "publishConfig": {
     "access": "public"
   },
@@ -9,9 +10,17 @@
   "files": [],
   "scripts": {
     "postupdate": "yarn",
-    "build": "exit 0",
+    "clean:target": "rimraf target buildcache flow-typed typings docs coverage buildstamp.json",
+    "clean": "exit 0",
     "test": "exit 0",
-    "clean": "exit 0"
+    "build": "exit 0",
+    "build:buildstamp": "cd $INIT_CWD && buildstamp --git --out.path buildstamp.json",
+    "build:alias": "cd $INIT_CWD && node ../infra/scripts/alias-gen.cjs",
+    "build:tsc:dts": "cd $INIT_CWD && tsc --emitDeclarationOnly --outDir target/dts",
+    "build:tsc:cjs": "cd $INIT_CWD && mkdirp target/cjs && tsc -p tsconfig.json --target ES5 --module commonjs --outDir target/cjs --tsBuildInfoFile buildcache/cjs.json && tsc-esm-fix --target=target/cjs --ext=.cjs",
+    "build:tsc:esm": "cd $INIT_CWD && mkdirp target/esm && tsc -p tsconfig.json --target ES2020 --module es2020 --outDir target/esm --tsBuildInfoFile buildcache/esm.json && tsc-esm-fix --target=target/esm --ext=.mjs",
+    "build:typedoc": "cd $INIT_CWD && typedoc",
+    "build:copy:src": "cd $INIT_CWD && mkdirp target/ts && cp -R ./src/main/ts/. ./target/ts/."
   },
   "bin": {
     "buildstamp": "../../node_modules/.bin/buildstamp",
