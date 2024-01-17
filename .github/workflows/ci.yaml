@@ -36,6 +36,9 @@ jobs:
       - name: Build
         run: yarn build
 
+      - name: Test
+        run: yarn test
+
       - name: Codeclimate
         if: github.ref == 'refs/heads/master'
         uses: paambaati/codeclimate-action@v5.0.0
@@ -86,3 +89,6 @@ jobs:
 
       - name: Build
         run: yarn build
+
+      - name: Test
+        run: yarn test
