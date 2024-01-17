@@ -43,7 +43,7 @@ jobs:
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
         with:
           coverageLocations: |
-            ${{github.workspace}}/lcov.info:lcov
+            ${{github.workspace}}/coverage/lcov.info:lcov
 
       - name: Semantic Release
         if: github.ref == 'refs/heads/master'
@@ -64,7 +64,7 @@ jobs:
     strategy:
       matrix:
         os: [ ubuntu-22.04 ]
-        node-version: [ 14, 20 ]
+        node-version: [ 16, 20 ]
 
     runs-on: ${{ matrix.os }}
     steps:
