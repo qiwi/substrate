@@ -16,7 +16,7 @@ const reserved = [
 
 replaceSync({
   files: [DST],
-  from: /((I|T|A|S)[A-Z]\w+(?:,|\n|\s))/g,
+  from: /(([ITAS])[A-Z]\w+(?:,|\n|\s))/g,
   to: match => {
     const first = match.charAt(0)
     const rest = match.slice(1)
