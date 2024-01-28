@@ -1112,7 +1112,7 @@ __metadata:
     "@types/parsimmon": 1.10.9
     "@types/underscore": 1.11.15
     bluebird: 3.7.2
-    conf: 11.0.2
+    conf: 12.0.0
     config: 3.3.10
     lodash: 4.17.21
     underscore: 1.13.6
@@ -1174,7 +1174,7 @@ __metadata:
     "@types/parsimmon": 1.10.9
     "@types/underscore": 1.11.15
     bluebird: 3.7.2
-    conf: 11.0.2
+    conf: 12.0.0
     config: 3.3.10
     lodash: 4.17.21
     tslib: ^2.6.2
@@ -1197,7 +1197,7 @@ __metadata:
     "@types/underscore": 1.11.15
     axios: 1.6.7
     bluebird: 3.7.2
-    conf: 11.0.2
+    conf: 12.0.0
     config: 3.3.10
     cross-fetch: 4.0.0
     lodash: 4.17.21
@@ -2342,7 +2342,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"atomically@npm:^2.0.0":
+"atomically@npm:^2.0.2":
   version: 2.0.2
   resolution: "atomically@npm:2.0.2"
   dependencies:
@@ -2958,19 +2958,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conf@npm:11.0.2":
-  version: 11.0.2
-  resolution: "conf@npm:11.0.2"
+"conf@npm:12.0.0":
+  version: 12.0.0
+  resolution: "conf@npm:12.0.0"
   dependencies:
     ajv: ^8.12.0
     ajv-formats: ^2.1.1
-    atomically: ^2.0.0
+    atomically: ^2.0.2
     debounce-fn: ^5.1.2
-    dot-prop: ^7.2.0
+    dot-prop: ^8.0.2
     env-paths: ^3.0.0
     json-schema-typed: ^8.0.1
-    semver: ^7.3.8
-  checksum: 4b4ff645bfd6e25f7595f909906f711dd3ebeb3e462d2ee8d27430991c0757d783968a8f36367d7db1401b022f9a7cebeaf43da816b80753dbad8cca12118215
+    semver: ^7.5.4
+    uint8array-extras: ^0.3.0
+  checksum: 111133eacdf94b440806f6adb91afd1cc5b06584113ffbb45f07abf1abb808ae96f2411e764f0ecf315d91a0c995c1b172b8dc82cfa9052258b33173a83abcd7
   languageName: node
   linkType: hard
 
@@ -3347,12 +3348,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dot-prop@npm:^7.2.0":
-  version: 7.2.0
-  resolution: "dot-prop@npm:7.2.0"
+"dot-prop@npm:^8.0.2":
+  version: 8.0.2
+  resolution: "dot-prop@npm:8.0.2"
   dependencies:
-    type-fest: ^2.11.2
-  checksum: 08e4ff14f7305ffb5fda7e4c88f3cdbeb3cd97bd27efa4f47503869a2ee7f96938b4c21b0a2abf9c37d891a1bdb3994a09d219b0dcfd6130da4eaeb44c6f067e
+    type-fest: ^3.8.0
+  checksum: 6bb27f4a1790c340a8d848063ee8410184be0535082b942731a5d6d84763766d5811d9d7015c7f678e1e6b0d3839f65ce19a453525746bd853d2c09a064d4fdb
   languageName: node
   linkType: hard
 
@@ -8636,14 +8637,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"type-fest@npm:^2.0.0, type-fest@npm:^2.11.2, type-fest@npm:^2.12.2, type-fest@npm:^2.13.0, type-fest@npm:^2.5.0":
+"type-fest@npm:^2.0.0, type-fest@npm:^2.12.2, type-fest@npm:^2.13.0, type-fest@npm:^2.5.0":
   version: 2.19.0
   resolution: "type-fest@npm:2.19.0"
   checksum: a4ef07ece297c9fba78fc1bd6d85dff4472fe043ede98bd4710d2615d15776902b595abf62bd78339ed6278f021235fb28a96361f8be86ed754f778973a0d278
   languageName: node
   linkType: hard
 
-"type-fest@npm:^3.1.0":
+"type-fest@npm:^3.1.0, type-fest@npm:^3.8.0":
   version: 3.13.1
   resolution: "type-fest@npm:3.13.1"
   checksum: c06b0901d54391dc46de3802375f5579868949d71f93b425ce564e19a428a0d411ae8d8cb0e300d330071d86152c3ea86e744c3f2860a42a79585b6ec2fdae8e
@@ -8844,6 +8845,13 @@ __metadata:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 3d1b04449662193544b81d055479d03b4c5dca95f1a82f8922596f089d894c9fefbe16639d1d9dfe26a7054419645530cef44001bc17aed1fe1eb3c237e9b3c7
+  languageName: node
+  linkType: hard
+
+"uint8array-extras@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "uint8array-extras@npm:0.3.0"
+  checksum: d5c0fbc1bcdf3720bc497111812ffdf7073cf4d65146ef14d5a420eefac66789ab8925817ab6bca5bf3b4390e0065cb3df82e07a69b2a66368f3aa9ded4b9edc
   languageName: node
   linkType: hard
 
