@@ -4,7 +4,7 @@
     "rootDir": "./src/main/ts/",
     "baseUrl": "./src/main/ts/",
     "target": "es6",
-    "outDir": "target/cjs",
+    "outDir": "target/esm",
     "tsBuildInfoFile": "./buildcache/.tsbuildinfo",
     "lib": [
       "es6",
