@@ -5,12 +5,12 @@
     ".": {
       "import": "./target/esm/index.mjs",
       "require": "./target/cjs/index.cjs",
-      "types": "./target/esm/index.d.ts"
+      "types": "./target/dts/index.d.ts"
     }
   },
   "main": "./target/cjs/index.cjs",
   "module": "./target/esm/index.mjs",
-  "types": "./target/esm/index.d.ts",
+  "types": "./target/dts/index.d.ts",
   "scripts": {
     "clean": "yarn clean:target",
     "build": "concurrently 'npm:build:*'",
@@ -19,14 +19,18 @@
     "build:ts": "yarn build:copy:src",
     "build:docs": "yarn build:typedoc",
     "build:stamp": "yarn build:buildstamp",
+    "build:dts": "yarn build:libdef",
     "test": "yarn test:unit",
     "test:unit": "jest --config=jest.config.json --detectOpenHandles --forceExit"
   },
   "files": [
-    "README.md",
-    "CHANGELOG.md",
-    "target",
-    "buildstamp.json"
+    "target/cjs",
+    "target/esm",
+    "target/dts",
+    "target/ts",
+    "target/coverage/lcov.info",
+    "buildstamp.json",
+    "flow-typed"
   ],
   "devDependencies": {
     "@qiwi/substrate-infra": "workspace:*",

@@ -5,12 +5,12 @@
     ".": {
       "import": "./target/esm/index.mjs",
       "require": "./target/cjs/index.cjs",
-      "types": "./target/esm/index.d.ts"
+      "types": "./target/dts/index.d.ts"
     }
   },
   "main": "./target/cjs/index.cjs",
   "module": "./target/esm/index.mjs",
-  "types": "./target/esm/index.d.ts",
+  "types": "./target/dts/index.d.ts",
   "scripts": {
     "clean": "yarn clean:target",
     "build": "yarn build:alias && concurrently 'npm:build:*'",
@@ -24,10 +24,13 @@
     "test:libdef": "yarn dtslint src/test/dts --localTs ../../node_modules/typescript/lib --expectOnly && echo 'dts is fine'"
   },
   "files": [
-    "README.md",
-    "CHANGELOG.md",
-    "target",
-    "buildstamp.json"
+    "target/cjs",
+    "target/esm",
+    "target/dts",
+    "target/ts",
+    "target/coverage/lcov.info",
+    "buildstamp.json",
+    "flow-typed"
   ],
   "devDependencies": {
     "@qiwi/substrate-infra": "1.2.3",

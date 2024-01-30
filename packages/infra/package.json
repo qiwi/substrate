@@ -20,7 +20,7 @@
     "build:tsc:cjs": "cd $INIT_CWD && mkdirp target/cjs && tsc -p tsconfig.json --target ES5 --module commonjs --outDir target/cjs --tsBuildInfoFile buildcache/cjs.json && tsc-esm-fix --target=target/cjs --ext=.cjs",
     "build:tsc:esm": "cd $INIT_CWD && mkdirp target/esm && tsc -p tsconfig.json --target ES2020 --module es2020 --outDir target/esm --tsBuildInfoFile buildcache/esm.json && tsc-esm-fix --target=target/esm --ext=.mjs",
     "build:typedoc": "cd $INIT_CWD && typedoc",
-    "build:libdef": "cd $INIT_CWD && libdefkit --tsconfig='tsconfig.json' --ext='.mjs'",
+    "build:libdef": "cd $INIT_CWD && libdefkit --tsconfig='tsconfig.json' --ext='.mjs' --dtsOut='target/dts/index.d.ts'",
     "build:copy:src": "cd $INIT_CWD && mkdirp target/ts && cp -R ./src/main/ts/. ./target/ts/."
   },
   "bin": {
@@ -38,7 +38,7 @@
     "typedoc": "../../node_modules/.bin/typedoc"
   },
   "devDependencies": {
-    "@qiwi/libdefkit": "^6.0.1",
+    "@qiwi/libdefkit": "^6.1.2",
     "@swissquote/crafty-preset-jest": "^1.24.0",
     "@types/jest": "^29.5.11",
     "@types/node": "^20.11.10",

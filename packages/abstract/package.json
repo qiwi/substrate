@@ -5,19 +5,20 @@
   "main": "./target/cjs/index.cjs",
   "exports": {
     ".": {
-      "types": "./target/esm/index.d.ts",
+      "types": "./target/dts/index.d.ts",
       "import": "./target/esm/index.mjs",
       "require": "./target/cjs/index.cjs"
     }
   },
   "module": "./target/esm/index.mjs",
-  "types": "./target/esm/index.d.ts",
+  "types": "./target/dts/index.d.ts",
   "scripts": {
     "clean": "rimraf target buildcache docs coverage buildstamp.json",
     "build": "yarn build:alias && concurrently 'npm:build:*'",
-    "build:cjs": "mkdirp target/cjs && tsc -p tsconfig.json --target ES5 --module commonjs --outDir target/cjs --tsBuildInfoFile buildcache/cjs.json && tsc-esm-fix --target=target/cjs --ext=.cjs",
-    "build:esm": "mkdirp target/esm && tsc -p tsconfig.json --target ES2020 --module es2020 --outDir target/esm --tsBuildInfoFile buildcache/esm.json && tsc-esm-fix --target=target/esm --ext=.mjs",
-    "build:ts": "mkdirp target/ts && cp -R ./src/main/ts/. ./target/ts/.",
+    "build:cjs": "yarn build:tsc:cjs",
+    "build:esm": "yarn build:tsc:esm",
+    "build:ts": "yarn build:copy:src",
+    "build:dts": "yarn build:libdef",
     "build:stamp": "buildstamp --git --out.path buildstamp.json",
     "build:docs": "typedoc",
     "test": "concurrently 'npm:test:*'",
@@ -25,10 +26,12 @@
     "test:unit": "jest --config=jest.config.json --detectOpenHandles --forceExit"
   },
   "files": [
-    "README.md",
-    "CHANGELOG.md",
-    "target",
-    "buildstamp.json"
+    "target/cjs",
+    "target/esm",
+    "target/dts",
+    "target/ts",
+    "target/coverage/lcov.info",
+    "flow-typed"
   ],
   "devDependencies": {
     "@qiwi/substrate-infra": "workspace:*",
