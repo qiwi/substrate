@@ -1,1 +1,1 @@
-export * from '../../../target/esm/index';
+export * from '@qiwi/substrate-abstract';
