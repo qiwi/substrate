@@ -1010,11 +1010,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@qiwi/libdefkit@npm:^6.0.1":
-  version: 6.0.1
-  resolution: "@qiwi/libdefkit@npm:6.0.1"
+"@qiwi/libdefkit@npm:^6.1.2":
+  version: 6.1.2
+  resolution: "@qiwi/libdefkit@npm:6.1.2"
   dependencies:
-    "@topoconfig/extends": ^0.1.8
+    "@topoconfig/extends": ^0.1.9
     chalk: ^5.3.0
     find-up: ^6.3.0
     flowgen: 1.21.0
@@ -1023,11 +1023,11 @@ __metadata:
     meow: ^11.0.0
     pkg-dir: ^7.0.0
     tempy: ^3.1.0
-    tsc-dts-fix: ^0.0.5
+    tsc-dts-fix: ^0.0.7
     tslib: ^2.6.2
   bin:
     libdefkit: target/es6/cli.js
-  checksum: 725d445976cbde1858186ee9ac8747542b944941a1dff0439b5cbdb7b7cdc95508c080102533d067dcbe1f1cdfd891a159b8963bc6fb337f7746e77bffef2d82
+  checksum: a7761d6a073c6e26b29447be9b1f8004c97e0654c0c8061ebdf45018554e8f002e5d9c6fe7cebd3c820c51189bdbf82e28de939cad5c5e7c055d728686e7e473
   languageName: node
   linkType: hard
 
@@ -1078,7 +1078,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@qiwi/substrate-infra@workspace:packages/infra"
   dependencies:
-    "@qiwi/libdefkit": ^6.0.1
+    "@qiwi/libdefkit": ^6.1.2
     "@swissquote/crafty-preset-jest": ^1.24.0
     "@types/jest": ^29.5.11
     "@types/node": ^20.11.10
@@ -1444,14 +1444,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@topoconfig/extends@npm:0.1.8":
-  version: 0.1.8
-  resolution: "@topoconfig/extends@npm:0.1.8"
-  checksum: dbb74349f31a2012cd2dc8c2913204d30b773496103c0882794a1fb06dd253fabc1f1e65da7dd07854b9d8c7d65f1a452d093435954ebca484e40d967d0bf476
-  languageName: node
-  linkType: hard
-
-"@topoconfig/extends@npm:^0.1.8":
+"@topoconfig/extends@npm:0.1.9, @topoconfig/extends@npm:^0.1.9":
   version: 0.1.9
   resolution: "@topoconfig/extends@npm:0.1.9"
   checksum: 02b610aa0000daf52446ab546a8a5139c41c5971553dbff6ff0ef578f2f83ed9219cd8e3c1e8c35f46e8b35055d99c51c88f29e81dac09cf3f76cd5452e2cd90
@@ -8364,18 +8357,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsc-dts-fix@npm:^0.0.5":
-  version: 0.0.5
-  resolution: "tsc-dts-fix@npm:0.0.5"
+"tsc-dts-fix@npm:^0.0.7":
+  version: 0.0.7
+  resolution: "tsc-dts-fix@npm:0.0.7"
   dependencies:
-    "@topoconfig/extends": 0.1.8
+    "@topoconfig/extends": 0.1.9
     depseek: 0.2.4
     minimist: ^1.2.8
   peerDependencies:
     typescript: ">=4.0.0"
   bin:
     tsc-dts-fix: target/esm/cli.mjs
-  checksum: 7b45f0c0e21b990b0bd50c27661b1218e8ff0e05e1e982e5e603f14eccffbb22e4e3df06173def34f4697890edab0e49e21b909e6d54b49a3ab9e6d5ebcbd5ff
+  checksum: c010e7db7b885220db582c43a8e2f257f52f4879d4b9de3b729f86b35d781db186c716bbef3521012f2adb2106f07d692932c2a06d9e2837e78c028f08775116
   languageName: node
   linkType: hard
 

@@ -5,18 +5,19 @@
     ".": {
       "import": "./target/esm/index.mjs",
       "require": "./target/cjs/index.cjs",
-      "types": "./target/esm/index.d.ts"
+      "types": "./target/dts/index.d.ts"
     }
   },
   "main": "./target/cjs/index.cjs",
   "module": "./target/esm/index.mjs",
-  "types": "./target/esm/index.d.ts",
+  "types": "./target/dts/index.d.ts",
   "scripts": {
     "clean": "yarn clean:target",
     "build": "concurrently 'npm:build:*'",
     "build:cjs": "yarn build:tsc:cjs",
     "build:esm": "yarn build:tsc:esm",
     "build:ts": "yarn build:copy:src",
+    "build:dts": "yarn build:libdef",
     "build:docs": "yarn build:typedoc",
     "build:stamp": "yarn build:buildstamp",
     "build:test": "rsync -a ../types/src/test/dts/I*.ts ./src/test/dts/ && rsync -a ../abstract/src/test/ts/*.ts ./src/test/ts/ && rsync -a ../std/src/test/ts/*.ts ./src/test/ts/",
@@ -25,10 +26,13 @@
     "test:unit": "jest --config=jest.config.json --detectOpenHandles --forceExit --passWithNoTests"
   },
   "files": [
-    "README.md",
-    "CHANGELOG.md",
-    "target",
-    "buildstamp.json"
+    "target/cjs",
+    "target/esm",
+    "target/dts",
+    "target/ts",
+    "target/coverage/lcov.info",
+    "buildstamp.json",
+    "flow-typed"
   ],
   "dependencies": {
     "@qiwi/substrate-abstract": "workspace:*",
