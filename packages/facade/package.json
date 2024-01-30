@@ -14,8 +14,7 @@
   "scripts": {
     "clean": "yarn clean:target",
     "build": "concurrently 'npm:build:*'",
-    "build:cjs": "yarn build:tsc:cjs",
-    "build:esm": "yarn build:tsc:esm",
+    "build:js": "yarn build:esbuild",
     "build:ts": "yarn build:copy:src",
     "build:dts": "yarn build:libdef",
     "build:docs": "yarn build:typedoc",
