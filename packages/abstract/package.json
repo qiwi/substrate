@@ -15,8 +15,7 @@
   "scripts": {
     "clean": "rimraf target buildcache docs coverage buildstamp.json",
     "build": "yarn build:alias && concurrently 'npm:build:*'",
-    "build:cjs": "yarn build:tsc:cjs",
-    "build:esm": "yarn build:tsc:esm",
+    "build:js": "yarn build:esbuild",
     "build:ts": "yarn build:copy:src",
     "build:dts": "yarn build:libdef",
     "build:stamp": "buildstamp --git --out.path buildstamp.json",
