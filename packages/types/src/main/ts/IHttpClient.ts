@@ -10,7 +10,14 @@ export const enum HttpMethod {
   PATCH = 'PATCH',
 }
 
-export type IHttpMethodV2 = `${HttpMethod}`
+export type IHttpMethodV2 =
+  | 'GET'
+  | 'DELETE'
+  | 'HEAD'
+  | 'OPTIONS'
+  | 'POST'
+  | 'PUT'
+  | 'PATCH'
 
 export type IHttpHeaders = Record<string, any>
 

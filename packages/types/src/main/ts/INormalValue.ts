@@ -8,8 +8,8 @@ export interface IIdentified {
 export type IWrappedValue<V = any, W = Object> = (W extends object[]
   ? UnionToIntersection<W[number]>
   : W extends object
-  ? W
-  : object) & { value: V }
+    ? W
+    : object) & { value: V }
 
 export type ITyped<T = any> = {
   type: T
