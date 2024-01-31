@@ -42,7 +42,7 @@
   "devDependencies": {
     "@qiwi/substrate-infra": "workspace:*",
     "@types/jest": "29.5.11",
-    "@types/node": "20.11.13",
+    "@types/node": "20.11.14",
     "fs-extra": "^11.2.0"
   },
   "license": "MIT",
