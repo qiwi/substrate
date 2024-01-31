@@ -1,0 +1,9 @@
+{
+  "META_VERSION": "1",
+  "hash": "0b349ddb86b7941db5a98cf97a86f61e4274c135",
+  "name": "@qiwi/substrate-abstract",
+  "version": "2.1.0",
+  "dependencies": {
+    "@qiwi/substrate-types": "2.1.0"
+  }
+}
