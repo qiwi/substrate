@@ -1229,7 +1229,7 @@ __metadata:
     "@types/underscore": 1.11.15
     bluebird: 3.7.2
     conf: 12.0.0
-    config: 3.3.10
+    config: 3.3.11
     lodash: 4.17.21
     underscore: 1.13.6
   languageName: unknown
@@ -1296,7 +1296,7 @@ __metadata:
     "@types/underscore": 1.11.15
     bluebird: 3.7.2
     conf: 12.0.0
-    config: 3.3.10
+    config: 3.3.11
     lodash: 4.17.21
     tslib: ^2.6.2
     underscore: 1.13.6
@@ -1319,7 +1319,7 @@ __metadata:
     axios: 1.6.7
     bluebird: 3.7.2
     conf: 12.0.0
-    config: 3.3.10
+    config: 3.3.11
     cross-fetch: 4.0.0
     lodash: 4.17.21
     reflect-metadata: 0.2.1
@@ -3072,12 +3072,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"config@npm:3.3.10":
-  version: 3.3.10
-  resolution: "config@npm:3.3.10"
+"config@npm:3.3.11":
+  version: 3.3.11
+  resolution: "config@npm:3.3.11"
   dependencies:
     json5: ^2.2.3
-  checksum: c0b472fb9366418687c8ddfa167152dfbfd77bba698cc5d5f1eac3867282302c3d63aa299f403dbe75efc0c5ccd9c82526d73c69b85874d87457564d53ffe37c
+  checksum: 84d783978ca7bf74bc6347868b6db29b853f5eda66021a04d77a84027b8b8b9d2fb5744409de5a39a5d63d867c3ac5f4169407701fa48f380015065b2701b221
   languageName: node
   linkType: hard
 
