@@ -44,7 +44,7 @@
     "axios": "1.6.7",
     "bluebird": "3.7.2",
     "conf": "12.0.0",
-    "config": "3.3.10",
+    "config": "3.3.11",
     "cross-fetch": "4.0.0",
     "lodash": "4.17.21",
     "reflect-metadata": "0.2.1",
