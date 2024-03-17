@@ -41,7 +41,7 @@
     "@types/node": "20.11.28",
     "@types/parsimmon": "1.10.9",
     "@types/underscore": "1.11.15",
-    "axios": "1.6.7",
+    "axios": "1.6.8",
     "bluebird": "3.7.2",
     "conf": "12.0.0",
     "config": "3.3.11",
