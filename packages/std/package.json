@@ -40,7 +40,7 @@
     "@types/parsimmon": "1.10.9",
     "@types/underscore": "1.11.15",
     "bluebird": "3.7.2",
-    "conf": "12.0.0",
+    "conf": "13.0.0",
     "config": "3.3.11",
     "lodash": "4.17.21",
     "underscore": "1.13.6"
