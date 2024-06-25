@@ -31,5 +31,5 @@
   "bugs": {
     "url": "https://github.com/qiwi/substrate/issues"
   },
-  "packageManager": "yarn@3.8.2"
+  "packageManager": "yarn@3.8.3"
 }
