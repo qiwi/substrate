@@ -1224,7 +1224,7 @@ __metadata:
     "@qiwi/uniconfig": 3.5.16
     "@types/bluebird": 3.5.42
     "@types/config": 3.3.4
-    "@types/lodash": 4.17.5
+    "@types/lodash": 4.17.6
     "@types/parsimmon": 1.10.9
     "@types/underscore": 1.11.15
     bluebird: 3.7.2
@@ -1291,7 +1291,7 @@ __metadata:
     "@qiwi/uniconfig": 3.5.16
     "@types/bluebird": 3.5.42
     "@types/config": 3.3.4
-    "@types/lodash": 4.17.5
+    "@types/lodash": 4.17.6
     "@types/parsimmon": 1.10.9
     "@types/underscore": 1.11.15
     bluebird: 3.7.2
@@ -1312,7 +1312,7 @@ __metadata:
     "@types/bluebird": 3.5.42
     "@types/config": 3.3.4
     "@types/jest": 29.5.12
-    "@types/lodash": 4.17.5
+    "@types/lodash": 4.17.6
     "@types/node": 20.14.6
     "@types/parsimmon": 1.10.9
     "@types/underscore": 1.11.15
@@ -1808,10 +1808,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash@npm:4.17.5":
-  version: 4.17.5
-  resolution: "@types/lodash@npm:4.17.5"
-  checksum: 3c9bb15772509f0ecb40428531863dbc3f064f2bf34bbccc2ce2b2923c69fb0868aec7e357b1d97fd0d7f7e435a014ea5c1adef8a64715529887179c97a5a823
+"@types/lodash@npm:4.17.6":
+  version: 4.17.6
+  resolution: "@types/lodash@npm:4.17.6"
+  checksum: f748c672f49c54ee631a0fab6f26d56ab99bd68a4fb91604b5d7525a72102dd1917209c12d7078c988a375edb5dc70ca600db05ac01785306fd64470048cd16c
   languageName: node
   linkType: hard
 
