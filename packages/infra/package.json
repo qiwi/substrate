@@ -63,7 +63,7 @@
     "ts-jest": "^29.1.2",
     "ts-node": "10.9.2",
     "tsc-esm-fix": "^2.20.22",
-    "typedoc": "^0.25.7",
+    "typedoc": "^0.26.0",
     "typescript": "5.4.x",
     "yargs": "^17.0.1"
   },
