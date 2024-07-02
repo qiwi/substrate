@@ -47,7 +47,7 @@
     "concurrently": "^8.2.2",
     "cpy-cli": "^5.0.0",
     "dtslint": "4.2.1",
-    "esbuild": "^0.21.0",
+    "esbuild": "^0.23.0",
     "esbuild-node-externals": "^1.12.0",
     "esbuild-plugin-entry-chunks": "^0.1.5",
     "eslint": "*",
