@@ -44,7 +44,7 @@
     "conf": "13.0.1",
     "config": "3.3.12",
     "lodash": "4.17.21",
-    "underscore": "1.13.6"
+    "underscore": "1.13.7"
   },
   "dependencies": {
     "@qiwi/substrate-types": "workspace:*"
