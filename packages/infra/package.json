@@ -58,7 +58,7 @@
     "prettier": "^3.2.4",
     "prettier-config-qiwi": "^2.1.2",
     "replace-in-file": "^7.1.0",
-    "rimraf": "^5.0.5",
+    "rimraf": "^6.0.0",
     "terser": "^5.27.0",
     "ts-jest": "^29.1.2",
     "ts-node": "10.9.2",
