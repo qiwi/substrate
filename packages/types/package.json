@@ -38,7 +38,7 @@
     "@types/config": "3.3.4",
     "@types/jest": "29.5.12",
     "@types/lodash": "4.17.7",
-    "@types/node": "20.15.0",
+    "@types/node": "20.16.1",
     "@types/parsimmon": "1.10.9",
     "@types/underscore": "1.11.15",
     "axios": "1.7.4",
