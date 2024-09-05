@@ -1323,7 +1323,7 @@ __metadata:
     "@types/node": 20.16.5
     "@types/parsimmon": 1.10.9
     "@types/underscore": 1.11.15
-    axios: 1.7.6
+    axios: 1.7.7
     bluebird: 3.7.2
     conf: 13.0.1
     config: 3.3.12
@@ -2506,14 +2506,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:1.7.6":
-  version: 1.7.6
-  resolution: "axios@npm:1.7.6"
+"axios@npm:1.7.7":
+  version: 1.7.7
+  resolution: "axios@npm:1.7.7"
   dependencies:
     follow-redirects: ^1.15.6
     form-data: ^4.0.0
     proxy-from-env: ^1.1.0
-  checksum: a40f63fcf3ea1a171c762d0ad93f9b4754ef7361bcb5eca17cc1b7cb465a515d15c11530a01bd496893fd5c7c6cf2916f55b422d6ff82da46fcaaa1961632e6e
+  checksum: 882d4fe0ec694a07c7f5c1f68205eb6dc5a62aecdb632cc7a4a3d0985188ce3030e0b277e1a8260ac3f194d314ae342117660a151fabffdc5081ca0b5a8b47fe
   languageName: node
   linkType: hard
 
