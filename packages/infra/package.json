@@ -44,7 +44,7 @@
     "@types/jest": "^29.5.11",
     "@types/node": "^20.11.10",
     "buildstamp": "^3.3.2",
-    "concurrently": "^8.2.2",
+    "concurrently": "^9.0.0",
     "cpy-cli": "^5.0.0",
     "dtslint": "4.2.1",
     "esbuild": "^0.23.0",
