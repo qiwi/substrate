@@ -1309,7 +1309,7 @@ __metadata:
     "@qiwi/uniconfig": 3.5.16
     "@types/bluebird": 3.5.42
     "@types/config": 3.3.5
-    "@types/jest": 29.5.12
+    "@types/jest": 29.5.13
     "@types/lodash": 4.17.9
     "@types/node": 20.16.10
     "@types/parsimmon": 1.10.9
@@ -1333,7 +1333,7 @@ __metadata:
     "@qiwi/substrate-infra": "workspace:*"
     "@qiwi/substrate-std": "workspace:*"
     "@qiwi/substrate-types": "workspace:*"
-    "@types/jest": 29.5.12
+    "@types/jest": 29.5.13
     "@types/node": 20.16.10
     fs-extra: ^11.2.0
     tslib: ^2.6.2
@@ -1775,13 +1775,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:29.5.12":
-  version: 29.5.12
-  resolution: "@types/jest@npm:29.5.12"
+"@types/jest@npm:29.5.13":
+  version: 29.5.13
+  resolution: "@types/jest@npm:29.5.13"
   dependencies:
     expect: ^29.0.0
     pretty-format: ^29.0.0
-  checksum: 19b1efdeed9d9a60a81edc8226cdeae5af7479e493eaed273e01243891c9651f7b8b4c08fc633a7d0d1d379b091c4179bbaa0807af62542325fd72f2dd17ce1c
+  checksum: 875ac23c2398cdcf22aa56c6ba24560f11d2afda226d4fa23936322dde6202f9fdbd2b91602af51c27ecba223d9fc3c1e33c9df7e47b3bf0e2aefc6baf13ce53
   languageName: node
   linkType: hard
 
