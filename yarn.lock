@@ -1254,7 +1254,7 @@ __metadata:
     jest: ^29.7.0
     mkdirp: ^3.0.1
     prettier: ^3.2.4
-    prettier-config-qiwi: ^2.1.2
+    prettier-config-qiwi: ^3.0.0
     replace-in-file: ^7.1.0
     rimraf: ^6.0.0
     terser: ^5.27.0
@@ -1620,7 +1620,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@trivago/prettier-plugin-sort-imports@npm:^4.1.1":
+"@trivago/prettier-plugin-sort-imports@npm:^4.3.0":
   version: 4.3.0
   resolution: "@trivago/prettier-plugin-sort-imports@npm:4.3.0"
   dependencies:
@@ -7272,15 +7272,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-config-qiwi@npm:^2.1.2":
-  version: 2.1.2
-  resolution: "prettier-config-qiwi@npm:2.1.2"
+"prettier-config-qiwi@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "prettier-config-qiwi@npm:3.0.0"
   dependencies:
-    "@trivago/prettier-plugin-sort-imports": ^4.1.1
+    "@trivago/prettier-plugin-sort-imports": ^4.3.0
   peerDependencies:
-    prettier: ^2.0.0
+    prettier: ^3.0.0
     typescript: ^5.0.0
-  checksum: 83cb73bf851d60e19bdd0938d61c9e2c0d7234e274921d69754c8724131e65420fca505072bd0649274eb00e9539a6dd6926d22728632a1e17ebf85f90799396
+  checksum: ea54e55c5a65d0556a23363939672a02f9e24e20458409b0f3e09c061585eb0f855560fc031f296f5513ac59d4650bd13aa32e8e8c4dfea8ad5b747fc2a4ae4f
   languageName: node
   linkType: hard
 
