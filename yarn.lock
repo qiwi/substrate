@@ -1262,7 +1262,7 @@ __metadata:
     ts-node: 10.9.2
     tsc-esm-fix: ^3.0.0
     typedoc: ^0.26.0
-    typescript: 5.5.x
+    typescript: 5.6.x
     yargs: ^17.0.1
   bin:
     buildstamp: ../../node_modules/.bin/buildstamp
@@ -9100,13 +9100,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:5.5.x":
-  version: 5.5.2
-  resolution: "typescript@npm:5.5.2"
+"typescript@npm:5.6.x":
+  version: 5.6.3
+  resolution: "typescript@npm:5.6.3"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 9c5a7982dadcb2d38d129c575dd38645ae11588ae0d4a12852fb04482bbc5a1660b2371e48fd5b33b6b605cc57cefe777670054546856945a05e77bd22c8c2cd
+  checksum: ba302f8822777ebefb28b554105f3e074466b671e7444ec6b75dadc008a62f46f373d9e57ceced1c433756d06c8b7dc569a7eefdf3a9573122a49205ff99021a
   languageName: node
   linkType: hard
 
@@ -9120,13 +9120,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@5.5.x#~builtin<compat/typescript>":
-  version: 5.5.2
-  resolution: "typescript@patch:typescript@npm%3A5.5.2#~builtin<compat/typescript>::version=5.5.2&hash=379a07"
+"typescript@patch:typescript@5.6.x#~builtin<compat/typescript>":
+  version: 5.6.3
+  resolution: "typescript@patch:typescript@npm%3A5.6.3#~builtin<compat/typescript>::version=5.6.3&hash=8c6c40"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: d8c8af1adb92ef36998cc9293ad8607dda68564ecc2f315a7298d6d40edae1906e0ed88e0b2b02da686adc61d638cbecb82b4c694d5bccc621b8baf6e6274f7c
+  checksum: f6947c263dc67ea8429eefc3921683320f901a07d9ef29a1101a34f5b30108343b5a29aa77a581217a17f2616091ae7bd3043b304cf37f37d5e128e19296c08b
   languageName: node
   linkType: hard
 
