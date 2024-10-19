@@ -39,7 +39,7 @@
     "@types/config": "3.3.5",
     "@types/lodash": "4.17.12",
     "@types/parsimmon": "1.10.9",
-    "@types/underscore": "1.11.15",
+    "@types/underscore": "1.13.0",
     "bluebird": "3.7.2",
     "conf": "13.0.1",
     "config": "3.3.12",
