@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@qiwi/substrate-infra": "workspace:*",
-    "@types/jest": "29.5.13",
+    "@types/jest": "29.5.14",
     "@types/node": "20.16.13",
     "fs-extra": "^11.2.0"
   },
