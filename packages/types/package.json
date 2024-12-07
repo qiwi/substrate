@@ -43,7 +43,7 @@
     "@types/underscore": "1.13.0",
     "axios": "1.7.9",
     "bluebird": "3.7.2",
-    "conf": "13.0.1",
+    "conf": "13.1.0",
     "config": "3.3.12",
     "cross-fetch": "4.0.0",
     "lodash": "4.17.21",
