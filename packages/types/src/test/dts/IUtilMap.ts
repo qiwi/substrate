@@ -3,7 +3,8 @@ import { map as underscoreMap } from 'underscore'
 
 import { TUtilMap } from '.'
 
-const brokenUtilMap: TUtilMap = ( // $ExpectError
+// @ts-expect-error
+const brokenUtilMap: TUtilMap = (
   collection: object,
   handler: (value: string, key: boolean, collection: object) => object,
 ): any[] => [handler(JSON.stringify(collection), false, collection)]

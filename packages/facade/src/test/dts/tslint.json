@@ -1,9 +1,0 @@
-{
-  "extends": "dtslint/dtslint.json",
-  "rules": {
-    "strict-type-predicates": true,
-    "interface-over-type-literal": false,
-    "interface-name": [true, "always-prefix"],
-    "max-line-length": [true, 1000]
-  }
-}

@@ -1,20 +1,34 @@
 import { IStack } from '.'
 
 const brokenStack: IStack<number> = {
-  push: (item) => 'foo', // $ExpectError
-  pop: (item: string) => 123, // $ExpectError
-  unshift: (item) => 'bar', // $ExpectError
-  shift: (item: string) => 'baz', // $ExpectError
-  indexOf: (item: any) => 10, // $ExpectError
-  first: (item: string) => '123', // $ExpectError
-  last: (item: string) => '321', // $ExpectError
-  isEmpty: () => 123, // $ExpectError
-  size: 'baz', // $ExpectError
-  remove: (item) => 'foo', // $ExpectError
-  add: (index: string, item: string) => ({}), // $ExpectError
-  get: (index: boolean) => index, // $ExpectError
-  clear: (item: string) => item, // $ExpectError
-  toArray: () => null, // $ExpectError
+  // @ts-expect-error
+  push: (item) => 'foo',
+  // @ts-expect-error
+  pop: (item: string) => 123,
+  // @ts-expect-error
+  unshift: (item) => 'bar',
+  // @ts-expect-error
+  shift: (item: string) => 'baz',
+  // @ts-expect-error
+  indexOf: (item: any) => 10,
+  // @ts-expect-error
+  first: (item: string) => '123',
+  // @ts-expect-error
+  last: (item: string) => '321',
+  // @ts-expect-error
+  isEmpty: () => 123,
+  // @ts-expect-error
+  size: 'baz',
+  // @ts-expect-error
+  remove: (item) => 'foo',
+  // @ts-expect-error
+  add: (index: string, item: string) => ({}),
+  // @ts-expect-error
+  get: (index: boolean) => index,
+  // @ts-expect-error
+  clear: (item: string) => item,
+  // @ts-expect-error
+  toArray: () => null,
 }
 
 const stack: IStack<number> = {

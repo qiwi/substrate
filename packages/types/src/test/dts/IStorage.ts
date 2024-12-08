@@ -17,7 +17,8 @@ const storage: IStorage = {
 const brokenStorage: IStorage = {
   get: (key: string): any => key,
   set: (key: string, value: any, ttl?: number): any => ttl || key || value,
-  has: (key: string) => { // $ExpectError
+  // @ts-expect-error
+  has: (key: string) => {
     void key
     return 42
   },

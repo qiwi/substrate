@@ -19,9 +19,7 @@
     "build:dts": "yarn build:libdef",
     "build:docs": "yarn build:typedoc",
     "build:stamp": "yarn build:buildstamp",
-    "build:test": "rsync -a ../types/src/test/dts/I*.ts ./src/test/dts/ && rsync -a ../abstract/src/test/ts/*.ts ./src/test/ts/ && rsync -a ../std/src/test/ts/*.ts ./src/test/ts/",
     "test": "concurrently 'npm:test:*'",
-    "test:libdef": "dtslint src/test/dts --localTs ../../node_modules/typescript/lib --expectOnly && echo 'dts is fine'",
     "test:unit": "jest --config=jest.config.json --detectOpenHandles --forceExit --passWithNoTests"
   },
   "files": [

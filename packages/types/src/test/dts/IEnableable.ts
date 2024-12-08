@@ -6,8 +6,11 @@ const enableable: IEnableable = {
 }
 
 const brokenEnableable1: IEnableable = {
-  disable: 1, // $ExpectError
-  enable: null, // $ExpectError
+  // @ts-expect-error
+  disable: 1,
+  // @ts-expect-error
+  enable: null,
 }
 
-const brokenEnableable2: IEnableable = {} // $ExpectError
+// @ts-expect-error
+const brokenEnableable2: IEnableable = {}

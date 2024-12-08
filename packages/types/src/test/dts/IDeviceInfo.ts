@@ -19,8 +19,10 @@ const deviceInfo: IDeviceInfo = {
   },
 }
 
-const wrongDeviceInfo: IDeviceInfo = 'foo' // $ExpectError
-const wrongDeviceInfo1: IDeviceInfo = 123 // $ExpectError
+// @ts-expect-error
+const wrongDeviceInfo: IDeviceInfo = 'foo'
+// @ts-expect-error
+const wrongDeviceInfo1: IDeviceInfo = 123
 
 const deviceInfoStrict: IDeviceInfoStrict = {
   browser: {
@@ -43,18 +45,21 @@ const deviceInfoStrict: IDeviceInfoStrict = {
 
 const wrongDeviceInfoStrict: IDeviceInfoStrict = {
   browser: {
-    name: 1234, // $ExpectError
+    // @ts-expect-error
+    name: 1234,
     version: 'bar',
     layout: 'baz',
   },
   model: {
-    name: 123, // $ExpectError
+    // @ts-expect-error
+    name: 123,
     manufacturer: null,
   },
   isMobile: false,
   os: {
     name: 'MS-DOS',
-    architecture: {}, // $ExpectError
+    // @ts-expect-error
+    architecture: {},
     family: 'qaz',
     version: undefined,
   },

@@ -29,4 +29,5 @@ export const factory = <T extends FooCtor>(Ctor: T, param: string): FooIface =>
   new Ctor(param)
 
 export const foo = factory(Foo, 'foo')
-export const bar = factory(Bar, 'foo') // $ExpectError
+// @ts-expect-error
+export const bar = factory(Bar, 'foo')

@@ -1,0 +1,10 @@
+{
+  "name": "@types/dts",
+  "private": true,
+  "version": "0.0.9999",
+  "projects": ["*"],
+  "owners": [],
+  "devDependencies": {
+    "@types/dts": "workspace:."
+  }
+}

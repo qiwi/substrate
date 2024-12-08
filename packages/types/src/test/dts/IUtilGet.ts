@@ -2,7 +2,8 @@ import { get as lodashGet } from 'lodash'
 
 import { TUtilGet } from '.'
 
-const brokenUtilGet: TUtilGet = ( // $ExpectError
+// @ts-expect-error
+const brokenUtilGet: TUtilGet = (
   obj: object,
   path: any[],
   defaultValue?: any,
