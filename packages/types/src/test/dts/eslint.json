@@ -1,5 +1,5 @@
 {
-  "extends": "dtslint/dtslint.json",
+  "extends": "@definitelytyped/dtslint/dt.json",
   "rules": {
     "strict-type-predicates": true,
     "interface-over-type-literal": false,

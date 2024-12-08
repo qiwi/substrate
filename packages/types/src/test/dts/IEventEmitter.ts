@@ -1,6 +1,7 @@
 import { IEventEmitter } from '.'
 
-const brokenEmitter: IEventEmitter = { // $ExpectError
+// @ts-expect-error
+const brokenEmitter: IEventEmitter = {
   on (event: string, handler: (...args: any[]) => void) {
     handler(event)
   },
@@ -8,6 +9,7 @@ const brokenEmitter: IEventEmitter = { // $ExpectError
 
 const emitter: IEventEmitter = {
   emit (event: string, ...args: any[]) {
+    // @ts-expect-error
     return void event && args
   },
   on (event: string, handler: (...args: any[]) => void) {

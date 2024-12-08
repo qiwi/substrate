@@ -1,6 +1,7 @@
 import { IConfigurable } from '.'
 
-class WrongConfigurable implements IConfigurable { // $ExpectError
+// @ts-expect-error
+class WrongConfigurable implements IConfigurable {
   someStringField: string
 
   constructor (value: string) {

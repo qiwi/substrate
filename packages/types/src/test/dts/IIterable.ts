@@ -18,18 +18,21 @@ const iterable: IIterable = {
 }
 
 const brokenIteratorResult: IIteratorResult = {
-  done: 'false', // $ExpectError
+  // @ts-expect-error
+  done: 'false',
   value: 'foo',
 }
 
 const brokenIterator: IIterator = {
-  next () { // $ExpectError
+  // @ts-expect-error
+  next () {
     return 'foo'
   },
 }
 
 const brokenIterable: IIterable = {
-  [Symbol.iterator] () { // $ExpectError
+  // @ts-expect-error
+  [Symbol.iterator] () {
     return 'foo'
   },
 }

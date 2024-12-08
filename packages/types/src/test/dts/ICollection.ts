@@ -1,12 +1,18 @@
 import { ICollection } from '.'
 
 const brokenCollection: ICollection<number> = {
-  isEmpty: () => 123, // $ExpectError
-  size: 'baz', // $ExpectError
-  remove: (index) => 'foo', // $ExpectError
-  add: (index: string, item: string) => ({}), // $ExpectError
-  get: (item: boolean) => item, // $ExpectError
-  clear: (item: string) => item, // $ExpectError
+  // @ts-expect-error
+  isEmpty: () => 123,
+  // @ts-expect-error
+  size: 'baz',
+  // @ts-expect-error
+  remove: (index) => 'foo',
+  // @ts-expect-error
+  add: (index: string, item: string) => ({}),
+  // @ts-expect-error
+  get: (item: boolean) => item,
+  // @ts-expect-error
+  clear: (item: string) => item,
 }
 
 const collection: ICollection<number> = {

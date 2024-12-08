@@ -2,5 +2,6 @@ import { IStringMap } from '.'
 
 // IStringMap
 const map: IStringMap = {
-  foo: 1, // $ExpectError
+  // @ts-expect-error
+  foo: 1,
 }

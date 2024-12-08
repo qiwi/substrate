@@ -1,14 +1,18 @@
 import { ILogger, ILoggerMethod, LogLevel } from '.'
 
-const brokenLogLevel: LogLevel = 'unknown' // $ExpectError
+// @ts-expect-error
+const brokenLogLevel: LogLevel = 'unknown'
 const traceLogLevel: LogLevel = LogLevel.TRACE
 const traceLogLevel2: LogLevel = LogLevel.trace
-const debugLogLevel: LogLevel = 'debug' // $ExpectError
-const infoLogLevel: LogLevel = 'INFO' // $ExpectError
+// @ts-expect-error
+const debugLogLevel: LogLevel = 'debug'
+// @ts-expect-error
+const infoLogLevel: LogLevel = 'INFO'
 
 const aliasmatch = LogLevel.TRACE === LogLevel.trace
 
-const brokenLogMethod: ILoggerMethod = null // $ExpectError
+// @ts-expect-error
+const brokenLogMethod: ILoggerMethod = null
 const logMethod: ILoggerMethod = () => {}
 
 const brokenLogger: ILogger = {
@@ -17,7 +21,8 @@ const brokenLogger: ILogger = {
   info: logMethod,
   log: logMethod,
   warn: logMethod,
-  error: null, // $ExpectError
+  // @ts-expect-error
+  error: null,
 }
 
 const logger: ILogger = {

@@ -9,14 +9,21 @@ import {
 } from '.'
 
 // IMiddleware
-const brokenMiddleware1: IMiddleware = {} // $ExpectError
-const brokenMiddleware2: IMiddleware = (res: string, req: object) => 123 // $ExpectError
-const brokenMiddleware3: IMiddleware = ( // $ExpectError
-  res: boolean, // $ExpectError
-  req: boolean, // $ExpectError
-  next: boolean, // $ExpectError
+// @ts-expect-error
+const brokenMiddleware1: IMiddleware = {}
+// @ts-expect-error
+const brokenMiddleware2: IMiddleware = (res: string, req: object) => 123
+// @ts-expect-error
+const brokenMiddleware3: IMiddleware = (
+  // @ts-expect-error
+  res: boolean,
+  // @ts-expect-error
+  req: boolean,
+  // @ts-expect-error
+  next: boolean,
 ) => ({})
-const brokenMiddleware4: IMiddleware = 123 // $ExpectError
+// @ts-expect-error
+const brokenMiddleware4: IMiddleware = 123
 
 const middleware1: IMiddleware = (
   req: IRequest,
@@ -36,9 +43,12 @@ const middleware2: IMiddleware = (
 }
 
 // IAsyncMiddleware
-const brokenAsyncMiddleware1: IAsyncMiddleware = () => {} // $ExpectError
-const brokenAsyncMiddleware2: IAsyncMiddleware = {} // $ExpectError
-const brokenAsyncMiddleware3: IAsyncMiddleware = async () => 123 // $ExpectError
+// @ts-expect-error
+const brokenAsyncMiddleware1: IAsyncMiddleware = () => {}
+// @ts-expect-error
+const brokenAsyncMiddleware2: IAsyncMiddleware = {}
+// @ts-expect-error
+const brokenAsyncMiddleware3: IAsyncMiddleware = async () => 123
 
 const asyncMiddleware1: IAsyncMiddleware = (
   err: Error,
@@ -59,10 +69,13 @@ const asyncMiddleware2: IAsyncMiddleware = async (
 }
 
 // IErrorMiddleware
-const brokenErrorMiddleware1: IErrorMiddleware = (err: number) => err // $ExpectError
-const brokenErrorMiddleware2: IErrorMiddleware = (req: boolean, res: string) => // $ExpectError
+// @ts-expect-error
+const brokenErrorMiddleware1: IErrorMiddleware = (err: number) => err
+// @ts-expect-error
+const brokenErrorMiddleware2: IErrorMiddleware = (req: boolean, res: string) =>
   req + res
-const brokenErrorMiddleware3: IErrorMiddleware = 'foo' // $ExpectError
+// @ts-expect-error
+const brokenErrorMiddleware3: IErrorMiddleware = 'foo'
 
 const errorMiddleware: IErrorMiddleware = (
   err: Error,
@@ -71,29 +84,37 @@ const errorMiddleware: IErrorMiddleware = (
 ) => void { err, res, req }
 
 // IRequestMiddleware
-const brokenRequestMiddleware1: IRequestMiddleware = (err: number) => err // $ExpectError
-const brokenRequestMiddleware2: IRequestMiddleware = ( // $ExpectError
+// @ts-expect-error
+const brokenRequestMiddleware1: IRequestMiddleware = (err: number) => err
+// @ts-expect-error
+const brokenRequestMiddleware2: IRequestMiddleware = (
   req: boolean,
   res: string,
 ) => req + res
-const brokenRequestMiddleware2: IRequestMiddleware = 'bar' // $ExpectError
+// @ts-expect-error
+const brokenRequestMiddleware2: IRequestMiddleware = 'bar'
 
 const requestMiddleware: IRequestMiddleware = (req: object, res: object) =>
   void { req, res }
 
 // IRequest
-const brokenRequest1: IRequest = 'foo' // $ExpectError
-const brokenRequest2: IRequest = true // $ExpectError
+// @ts-expect-error
+const brokenRequest1: IRequest = 'foo'
+// @ts-expect-error
+const brokenRequest2: IRequest = true
 
 const request: IRequest = {
   foo: 'bar',
 }
 
 // IResponse
-const brokenResponse1: IResponse = 'foo' // $ExpectError
-const brokenResponse2: IResponse = () => {} // $ExpectError
+// @ts-expect-error
+const brokenResponse1: IResponse = 'foo'
+// @ts-expect-error
+const brokenResponse2: IResponse = () => {}
 const brokenResponse3: IResponse = {
-  status: 'bar', // $ExpectError
+  // @ts-expect-error
+  status: 'bar',
 }
 
 const response: IResponse = {
@@ -110,7 +131,9 @@ const response: IResponse = {
 }
 
 // INext
-const brokenNext1: INext = 123 // $ExpectError
-const brokenNext2: INext = {} // $ExpectError
+// @ts-expect-error
+const brokenNext1: INext = 123
+// @ts-expect-error
+const brokenNext2: INext = {}
 
 const next: INext = () => ({})

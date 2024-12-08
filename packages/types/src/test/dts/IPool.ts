@@ -35,16 +35,21 @@ const pool: IPool<string> = {
   },
 }
 
-const brokenStatus: IPooledObjectStatus = 'foo' // $ExpectError
-const brokenStatus2: IPooledObjectStatus = 'ready' // $ExpectError
+// @ts-expect-error
+const brokenStatus: IPooledObjectStatus = 'foo'
+// @ts-expect-error
+const brokenStatus2: IPooledObjectStatus = 'ready'
 
-const brokenPooled: IPooledObject<any> = { // $ExpectError
+// @ts-expect-error
+const brokenPooled: IPooledObject<any> = {
   ref: 'foo',
 }
 
-const brokenPooledObjFactory: IPooledObjectFactory<string> = () => instance // $ExpectError
+// @ts-expect-error
+const brokenPooledObjFactory: IPooledObjectFactory<string> = () => instance
 
-const brokenPool: IPool<string> = { // $ExpectError
+// @ts-expect-error
+const brokenPool: IPool<string> = {
   factory: pooledObjFactory,
   release (instance: string): void {
     void instance

@@ -29,7 +29,8 @@ const customProvider: IMetadataProvider = {
 }
 const brokenProvider: IMetadataProvider = {
   defineMetadata () {},
-  hasMetadata () {}, // $ExpectError
+  // @ts-expect-error
+  hasMetadata () {},
   getMetadata () {},
   getOwnMetadata () {},
 }

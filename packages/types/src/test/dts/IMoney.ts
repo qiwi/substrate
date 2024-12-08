@@ -2,22 +2,27 @@ import { IMoney } from '.'
 
 const brokenMoney: IMoney = {
   value: 123,
-  toString () { // $ExpectError
+  // @ts-expect-error
+  toString () {
     return 123
   },
 }
 
-const brokenMoney2: IMoney = { // $ExpectError
+// @ts-expect-error
+const brokenMoney2: IMoney = {
   currency: 'bar',
 }
 
 const brokenMoney3: IMoney = {
-  value: 'foo', // $ExpectError
-  currency: 123, // $ExpectError
+  // @ts-expect-error
+  value: 'foo',
+  // @ts-expect-error
+  currency: 123,
 }
 
 const brokenMoney4: IMoney = {
-  value: {}, // $ExpectError
+  // @ts-expect-error
+  value: {},
   currency: 'bar',
 }
 
