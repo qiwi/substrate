@@ -45,7 +45,7 @@
     "bluebird": "3.7.2",
     "conf": "13.1.0",
     "config": "3.3.12",
-    "cross-fetch": "4.0.0",
+    "cross-fetch": "4.1.0",
     "lodash": "4.17.21",
     "reflect-metadata": "0.2.2",
     "underscore": "1.13.7"
