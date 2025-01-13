@@ -2538,7 +2538,7 @@ __metadata:
     "@types/config": 3.3.5
     "@types/jest": 29.5.14
     "@types/lodash": 4.17.14
-    "@types/node": 22.10.5
+    "@types/node": 22.10.6
     "@types/parsimmon": 1.10.9
     "@types/underscore": 1.13.0
     axios: 1.7.9
@@ -2561,7 +2561,7 @@ __metadata:
     "@qiwi/substrate-std": "workspace:*"
     "@qiwi/substrate-types": "workspace:*"
     "@types/jest": 29.5.14
-    "@types/node": 22.10.5
+    "@types/node": 22.10.6
     fs-extra: ^11.2.0
     tslib: ^2.8.1
   languageName: unknown
@@ -3105,12 +3105,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:22.10.5":
-  version: 22.10.5
-  resolution: "@types/node@npm:22.10.5"
+"@types/node@npm:22.10.6":
+  version: 22.10.6
+  resolution: "@types/node@npm:22.10.6"
   dependencies:
     undici-types: ~6.20.0
-  checksum: 3b0e966df4e130edac3ad034f1cddbe134e70f11556062468c9fbd749a3b07a44445a3a75a7eec68a104930bf05d4899f1a418c4ae48493d2c8c1544d8594bcc
+  checksum: 3bf26c7df8b7f0085f7a53d1f4ee124f8af01c7e4c072c3c10ec0ba91a03611fce124fed279f512b1ff259835bee5589e02f1ba0914ca6b372a7f99aef5faa3c
   languageName: node
   linkType: hard
 
