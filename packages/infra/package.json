@@ -48,7 +48,7 @@
     "buildstamp": "^3.5.0",
     "concurrently": "^9.1.0",
     "cpy-cli": "^5.0.0",
-    "esbuild": "^0.24.0",
+    "esbuild": "^0.25.0",
     "esbuild-node-externals": "^1.15.0",
     "esbuild-plugin-entry-chunks": "^0.1.15",
     "eslint": "^8.57.1",
