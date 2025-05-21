@@ -2516,7 +2516,7 @@ __metadata:
     mkdirp: ^3.0.1
     prettier: ^3.4.2
     prettier-config-qiwi: ^3.0.0
-    replace-in-file: ^7.1.0
+    replace-in-file: ^8.0.0
     rimraf: ^6.0.1
     terser: ^5.37.0
     ts-jest: ^29.2.5
@@ -6512,7 +6512,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:^10.2.2, glob@npm:^10.3.10, glob@npm:^10.3.7":
+"glob@npm:^10.2.2, glob@npm:^10.3.10, glob@npm:^10.3.7, glob@npm:^10.4.2":
   version: 10.4.5
   resolution: "glob@npm:10.4.5"
   dependencies:
@@ -6555,19 +6555,6 @@ __metadata:
     once: ^1.3.0
     path-is-absolute: ^1.0.0
   checksum: 29452e97b38fa704dabb1d1045350fb2467cf0277e155aa9ff7077e90ad81d1ea9d53d3ee63bd37c05b09a065e90f16aec4a65f5b8de401d1dac40bc5605d133
-  languageName: node
-  linkType: hard
-
-"glob@npm:^8.1.0":
-  version: 8.1.0
-  resolution: "glob@npm:8.1.0"
-  dependencies:
-    fs.realpath: ^1.0.0
-    inflight: ^1.0.4
-    inherits: 2
-    minimatch: ^5.0.1
-    once: ^1.3.0
-  checksum: 92fbea3221a7d12075f26f0227abac435de868dd0736a17170663783296d0dd8d3d532a5672b4488a439bf5d7fb85cdd07c11185d6cd39184f0385cbdfb86a47
   languageName: node
   linkType: hard
 
@@ -9718,16 +9705,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"replace-in-file@npm:^7.1.0":
-  version: 7.2.0
-  resolution: "replace-in-file@npm:7.2.0"
+"replace-in-file@npm:^8.0.0":
+  version: 8.3.0
+  resolution: "replace-in-file@npm:8.3.0"
   dependencies:
-    chalk: ^4.1.2
-    glob: ^8.1.0
+    chalk: ^5.3.0
+    glob: ^10.4.2
     yargs: ^17.7.2
   bin:
     replace-in-file: bin/cli.js
-  checksum: 773cfff187a404a293ed0f8ee433fa6c14230b96c506455bd3a880a217b3a3ec31791b8acb3e32a629286e6d8a7825b94255f443d0873c52cb7593b05cda52ba
+  checksum: b8ab1e0d8f57739b0500e648b4cbdbbbf0eec6bcc63cf0f32738aafb6b00d681fe4e6b7782b0d31aac5097418d50693a8c3041fe0a59f42a6d9f1de04e308e68
   languageName: node
   linkType: hard
 
