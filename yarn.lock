@@ -2487,7 +2487,7 @@ __metadata:
     bluebird: 3.7.2
     conf: 13.1.0
     config: 3.3.12
-    lodash: 4.17.21
+    lodash: 4.18.1
     underscore: 1.13.7
   languageName: unknown
   linkType: soft
@@ -2556,7 +2556,7 @@ __metadata:
     bluebird: 3.7.2
     conf: 13.1.0
     config: 3.3.12
-    lodash: 4.17.21
+    lodash: 4.18.1
     tslib: ^2.8.1
     underscore: 1.13.7
   languageName: unknown
@@ -2587,7 +2587,7 @@ __metadata:
     conf: 13.1.0
     config: 3.3.12
     cross-fetch: 4.1.0
-    lodash: 4.17.21
+    lodash: 4.18.1
     reflect-metadata: 0.2.2
     underscore: 1.13.7
   languageName: unknown
@@ -8344,7 +8344,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:4.17.21, lodash@npm:^4.17.20, lodash@npm:^4.17.21":
+"lodash@npm:4.18.1":
+  version: 4.18.1
+  resolution: "lodash@npm:4.18.1"
+  checksum: bb5f5b49aad29614e709af02b64c56b0f8b78c6a81434a3c1ae527d2f0f78ca08f9d9fb22aa825a053876c9d2166e9c01f31c356014b5e2bdc0556c057433102
+  languageName: node
+  linkType: hard
+
+"lodash@npm:^4.17.20, lodash@npm:^4.17.21":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7
